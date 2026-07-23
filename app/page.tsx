@@ -1,0 +1,448 @@
+"use client";
+
+import { useEffect, useMemo, useState } from "react";
+import eventData from "@/data/events.json";
+import kitchenCarData from "@/data/kitchen-car-sources.json";
+
+type Period = "all" | "weekend" | "august";
+type Category =
+  | "すべて"
+  | "祭り"
+  | "舞台"
+  | "音楽"
+  | "展覧会"
+  | "学び"
+  | "交流"
+  | "スポーツ";
+
+type EventItem = {
+  id: string;
+  month: string;
+  day: string;
+  weekday: string;
+  isoDate: string;
+  time: string;
+  region: string;
+  municipality: string;
+  category: Exclude<Category, "すべて">;
+  title: string;
+  venue: string;
+  cost: string;
+  audience: string;
+  summary: string;
+  tags: string[];
+  period: Exclude<Period, "all">;
+  status: "published";
+  source: {
+    kind: "primary";
+    label: string;
+    url: string;
+    verifiedAt: string;
+    nextCheckAt: string;
+  };
+};
+
+type KitchenCarSource = {
+  id: string;
+  name: string;
+  baseMunicipality: string | null;
+  calendarUrl: string;
+  calendarTypeLabel: string;
+  lastScheduleMonth: string | null;
+  lastCheckedAt: string;
+  freshnessStatus:
+    | "current"
+    | "recent_not_current"
+    | "calendar_empty"
+    | "no_calendar_found"
+    | "inaccessible";
+  displayNote: string;
+  sameDayNote: string;
+};
+
+const events = (eventData.events as EventItem[])
+  .slice()
+  .sort((left, right) => left.isoDate.localeCompare(right.isoDate));
+
+const currentKitchenCars = (kitchenCarData.vehicles as KitchenCarSource[]).filter(
+  (source) => source.freshnessStatus === "current",
+);
+
+function displayDate(value: string) {
+  return value.replaceAll("-", ".");
+}
+
+const periods: { id: Period; label: string; note: string }[] = [
+  { id: "all", label: "すべて", note: `${events.length}件` },
+  {
+    id: "weekend",
+    label: "7月末まで",
+    note: `${events.filter((event) => event.period === "weekend").length}件`,
+  },
+  {
+    id: "august",
+    label: "8月",
+    note: `${events.filter((event) => event.period === "august").length}件`,
+  },
+];
+
+const needs = ["ライブ", "大型ライブ", "無料", "申込不要", "子ども", "屋内", "託児あり"];
+
+function matchesNeed(event: EventItem, need: string) {
+  if (!need) return true;
+  if (need === "子ども") {
+    return /0歳|未就学児|園児|小学生|中学生|子ども|児童|生徒/.test(event.audience);
+  }
+  return `${event.tags.join(" ")} ${event.cost} ${event.audience}`.includes(need);
+}
+
+export default function Home() {
+  const [period, setPeriod] = useState<Period>("all");
+  const [region, setRegion] = useState("すべて");
+  const [category, setCategory] = useState<Category>("すべて");
+  const [need, setNeed] = useState("");
+  const [query, setQuery] = useState("");
+  const [saved, setSaved] = useState<string[]>([]);
+
+  useEffect(() => {
+    let restoreTimer: number | undefined;
+    try {
+      const value = localStorage.getItem("mie-monosashi-saved-v1");
+      if (value) {
+        const restored = JSON.parse(value) as string[];
+        restoreTimer = window.setTimeout(() => setSaved(restored), 0);
+      }
+    } catch {
+      // The mock remains usable when browser storage is unavailable.
+    }
+    return () => window.clearTimeout(restoreTimer);
+  }, []);
+
+  const results = useMemo(() => {
+    const normalized = query.trim().toLowerCase();
+    return events.filter((event) => {
+      const periodMatch = period === "all" || event.period === period;
+      const regionMatch =
+        region === "すべて" || event.region.split("・").includes(region);
+      const categoryMatch = category === "すべて" || event.category === category;
+      const needMatch = matchesNeed(event, need);
+      const queryMatch =
+        !normalized ||
+        `${event.category} ${event.title} ${event.municipality} ${event.venue} ${event.tags.join(" ")}`
+          .toLowerCase()
+          .includes(normalized);
+      return periodMatch && regionMatch && categoryMatch && needMatch && queryMatch;
+    });
+  }, [category, need, period, query, region]);
+
+  const toggleSaved = (id: string) => {
+    const next = saved.includes(id)
+      ? saved.filter((savedId) => savedId !== id)
+      : [...saved, id];
+    setSaved(next);
+    try {
+      localStorage.setItem("mie-monosashi-saved-v1", JSON.stringify(next));
+    } catch {
+      // Device-local saving is an enhancement, not a requirement.
+    }
+  };
+
+  const reset = () => {
+    setPeriod("all");
+    setRegion("すべて");
+    setCategory("すべて");
+    setNeed("");
+    setQuery("");
+  };
+
+  return (
+    <main>
+      <header className="site-header">
+        <a className="wordmark" href="#top" aria-label="みえのものさし ホーム">
+          <span className="mie-silhouette" aria-hidden="true" />
+          <span className="wordmark-copy">
+            <span className="wordmark-main">みえのものさし</span>
+            <span className="wordmark-sub">EVENT FINDER / BETA</span>
+          </span>
+        </a>
+        <div className="header-actions">
+          <span className="checked-badge">一次資料を確認</span>
+          <a className="saved-link" href="#results">
+            候補 <strong>{saved.length}</strong>
+          </a>
+        </div>
+      </header>
+
+      <section className="hero" id="top">
+        <div className="hero-copy">
+          <p className="eyebrow">祭りも、試合も、音も、展覧会も、三重の予定へ。</p>
+          <h1>
+            今度の休み、
+            <br />
+            どこまで行こう。
+          </h1>
+          <p className="hero-lead">
+            日付、地域、参加条件をひと目で比べる。
+            <br />
+            最後の確認は、主催者の公式情報へ。
+          </p>
+        </div>
+        <div className="week-scale" aria-label="直近の日付の目盛り">
+          <span className="scale-caption">JULY 2026</span>
+          {["23 木", "24 金", "25 土", "26 日", "27 月", "28 火", "29 水"].map(
+            (date, index) => (
+              <span className={index === 0 ? "today" : index >= 1 && index <= 3 ? "weekend" : ""} key={date}>
+                {date}
+              </span>
+            ),
+          )}
+        </div>
+      </section>
+
+      <section className="source-principle" aria-label="情報の扱い方">
+        <span className="principle-number">01</span>
+        <p>
+          <strong>掲載元ではなく、一次資料へ。</strong>
+          観光サイトなどで見つけた催しも、主催者・自治体の情報で確認した事実だけを整理します。
+        </p>
+        <span className="principle-date">データ更新 {displayDate(eventData.updatedAt)}</span>
+      </section>
+
+      <section className="finder" aria-label="イベントを絞り込む">
+        <div className="finder-topline">
+          <span>週末のものさし</span>
+          <button type="button" onClick={reset} className="reset-button">
+            条件をリセット
+          </button>
+        </div>
+
+        <div className="filter-grid">
+          <fieldset className="period-filter">
+            <legend>いつ行く？</legend>
+            <div className="segmented">
+              {periods.map((item) => (
+                <button
+                  aria-pressed={period === item.id}
+                  className={period === item.id ? "active" : ""}
+                  key={item.id}
+                  onClick={() => setPeriod(item.id)}
+                  type="button"
+                >
+                  <span>{item.label}</span>
+                  <small>{item.note}</small>
+                </button>
+              ))}
+            </div>
+          </fieldset>
+
+          <label className="select-field">
+            <span>どの地域？</span>
+            <select value={region} onChange={(event) => setRegion(event.target.value)}>
+              <option>すべて</option>
+              <option>北勢</option>
+              <option>中勢</option>
+              <option>伊勢志摩</option>
+              <option>東紀州</option>
+              <option>伊賀</option>
+            </select>
+          </label>
+
+          <label className="select-field">
+            <span>何を見たい？</span>
+            <select
+              value={category}
+              onChange={(event) => setCategory(event.target.value as Category)}
+            >
+              <option>すべて</option>
+              <option>スポーツ</option>
+              <option>祭り</option>
+              <option>舞台</option>
+              <option value="音楽">音楽・ライブ</option>
+              <option>展覧会</option>
+              <option>学び</option>
+              <option>交流</option>
+            </select>
+          </label>
+
+          <label className="search-field">
+            <span>ことばで探す</span>
+            <input
+              type="search"
+              value={query}
+              onChange={(event) => setQuery(event.target.value)}
+              placeholder="ライブ、JFL、花火、展覧会…"
+            />
+          </label>
+        </div>
+
+        <div className="need-filter" aria-label="参加条件">
+          <span className="need-label">気になる条件</span>
+          {needs.map((item) => (
+            <button
+              aria-pressed={need === item}
+              className={need === item ? "active" : ""}
+              key={item}
+              onClick={() => setNeed(need === item ? "" : item)}
+              type="button"
+            >
+              {item}
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <section className="kitchen-car-lab" aria-labelledby="kitchen-car-title">
+        <div className="kitchen-car-heading">
+          <div>
+            <p className="eyebrow">KITCHEN CAR / EXPERIMENTAL</p>
+            <h2 id="kitchen-car-title">キッチンカーは、今日どこへ。</h2>
+          </div>
+          <div className="trial-note">
+            <strong>試験中</strong>
+            <span>使うかどうかは未定</span>
+          </div>
+        </div>
+
+        <p className="kitchen-car-lead">
+          公開情報から当月の予定を確認できた車両だけを仮掲載しています。
+          出店場所や時間は変わるため、出発前に公式情報を確認してください。
+        </p>
+
+        <div className="kitchen-car-grid">
+          {currentKitchenCars.map((source, index) => (
+            <article className="kitchen-car-card" key={source.id}>
+              <span className="kitchen-car-number" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <div className="kitchen-car-copy">
+                <div className="kitchen-car-meta">
+                  <span>{source.baseMunicipality ?? "三重県内"}</span>
+                  <span>{source.calendarTypeLabel}</span>
+                </div>
+                <h3>{source.name}</h3>
+                <p>{source.displayNote}</p>
+                <small>{source.sameDayNote}</small>
+              </div>
+              <a href={source.calendarUrl} target="_blank" rel="noreferrer">
+                出店予定を見る <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          ))}
+        </div>
+
+        <div className="kitchen-car-footnote">
+          <span>{`現在表示 ${currentKitchenCars.length}台 / 調査候補 ${kitchenCarData.vehicles.length}台`}</span>
+          <span>確認 {displayDate(kitchenCarData.updatedAt)}</span>
+          <p>
+            古い予定、空欄のカレンダー、SNSで確認できない車両は表示せず、情報源台帳にだけ残しています。
+          </p>
+        </div>
+      </section>
+
+      <section className="results-section" id="results">
+        <div className="results-heading">
+          <div>
+            <p className="eyebrow">MATCHED EVENTS</p>
+            <h2>条件に合う催し</h2>
+          </div>
+          <p>
+            <strong>{results.length}</strong> / {events.length}件
+          </p>
+        </div>
+
+        <div className="event-list" aria-live="polite">
+          {results.map((event) => {
+            const isSaved = saved.includes(event.id);
+            return (
+              <article
+                className="event-card"
+                key={event.id}
+                data-region={event.region}
+                data-category={event.category}
+              >
+                <time className="event-date" dateTime={event.isoDate}>
+                  <span>{event.month}月</span>
+                  <strong>{event.day}</strong>
+                  <em>{event.weekday}</em>
+                </time>
+
+                <div className="event-main">
+                  <div className="event-kicker">
+                    <span>{event.category}</span>
+                    <span>{event.region}</span>
+                    <span>{event.municipality}</span>
+                    <span>{event.time}</span>
+                  </div>
+                  <h3>{event.title}</h3>
+                  <p className="event-summary">{event.summary}</p>
+
+                  <dl className="event-facts">
+                    <div>
+                      <dt>場所</dt>
+                      <dd>{event.venue}</dd>
+                    </div>
+                    <div>
+                      <dt>料金</dt>
+                      <dd>{event.cost}</dd>
+                    </div>
+                    <div>
+                      <dt>対象</dt>
+                      <dd>{event.audience}</dd>
+                    </div>
+                  </dl>
+
+                  <div className="event-tags">
+                    {event.tags.map((tag) => (
+                      <span key={tag}>{tag}</span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="event-actions">
+                  <button
+                    aria-label={`${event.title}を候補${isSaved ? "から外す" : "に保存"}`}
+                    aria-pressed={isSaved}
+                    className={`save-button ${isSaved ? "saved" : ""}`}
+                    onClick={() => toggleSaved(event.id)}
+                    type="button"
+                  >
+                    {isSaved ? "候補に保存済み" : "候補に入れる"}
+                  </button>
+                  <a href={event.source.url} target="_blank" rel="noreferrer">
+                    公式情報で最終確認 <span aria-hidden="true">↗</span>
+                  </a>
+                  <small>
+                    一次資料・{event.source.label}
+                    <br />
+                    確認 {displayDate(event.source.verifiedAt)}
+                    <br />
+                    再確認 {displayDate(event.source.nextCheckAt)}
+                  </small>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+
+        {results.length === 0 && (
+          <div className="empty-state">
+            <strong>今の条件では見つかりませんでした。</strong>
+            <p>地域か条件をひとつ外すと、候補が戻ります。</p>
+            <button type="button" onClick={reset}>すべての催しを見る</button>
+          </div>
+        )}
+      </section>
+
+      <footer>
+        <div>
+          <strong>みえのものさし</strong>
+          <p>これは企画検討用のモックです。掲載件数・機能・名称は未確定です。</p>
+        </div>
+        <p className="footer-policy">
+          説明文や写真を転載せず、一次資料から確認した事実を独自に整理する設計です。
+          開催前には必ず公式情報を確認してください。
+        </p>
+      </footer>
+    </main>
+  );
+}

@@ -1,0 +1,66 @@
+{
+  "updatedAt": "2026-07-23",
+  "publishRule": "発見用情報だけでは公開せず、主催者・会場・自治体の一次資料で日時と場所を確認する",
+  "sources": [
+    {
+      "id": "pecoco-schedule",
+      "label": "cafe＆crepe PECOCO",
+      "municipality": "鈴鹿市",
+      "sourceType": "vendor_schedule",
+      "role": "signal",
+      "url": "https://r.goope.jp/pecoco/",
+      "checkCadence": "weekly",
+      "note": "個別キッチンカーの月間出店予定から催し名と会場を逆引きする。"
+    },
+    {
+      "id": "mobimaru-ise",
+      "label": "モビマル・伊勢市の出店場所",
+      "municipality": "伊勢市",
+      "sourceType": "aggregator_schedule",
+      "role": "signal",
+      "url": "https://mobimaru.com/instances/1585",
+      "checkCadence": "weekly",
+      "note": "常設出店をイベントと誤認しないため、発見用に限定する。"
+    },
+    {
+      "id": "owase-tourism-events",
+      "label": "尾鷲観光物産協会 イベント",
+      "municipality": "尾鷲市",
+      "sourceType": "organizer_calendar",
+      "role": "confirmation",
+      "url": "https://owasekankou.com/event/",
+      "checkCadence": "weekly",
+      "note": "市場、体験、募集情報を主催者側で確認する。"
+    },
+    {
+      "id": "hokusei-park-recruitment",
+      "label": "北勢中央公園 イベント・出店者募集",
+      "municipality": "四日市市",
+      "sourceType": "venue_recruitment",
+      "role": "confirmation",
+      "url": "https://www.hokusei-park.jp/featured/featured_5041/",
+      "checkCadence": "monthly",
+      "note": "一般向け告知より早い出店者募集から開催日を確認する。"
+    },
+    {
+      "id": "kumano-koho",
+      "label": "広報くまの",
+      "municipality": "熊野市",
+      "sourceType": "municipal_newsletter",
+      "role": "confirmation",
+      "url": "https://www.city.kumano.lg.jp/administration/?content=2937",
+      "checkCadence": "monthly",
+      "note": "交流会、体験、参加者募集などカレンダー外の催しを拾う。"
+    },
+    {
+      "id": "kabuto-no-mori-booking",
+      "label": "かぶとの森農園 予約ページ",
+      "municipality": "亀山市",
+      "sourceType": "organizer_booking",
+      "role": "confirmation",
+      "url": "https://reserva.be/kabutonomorifarm/reserve?mode=service_staff&search_evt_no=f2eJwzNjU0NDMBAAQ4ATU",
+      "checkCadence": "weekly",
+      "note": "朝市に付随する体験の開催日、時間、参加条件を確認する。"
+    }
+  ]
+}

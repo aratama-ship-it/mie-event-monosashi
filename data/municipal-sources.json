@@ -1,0 +1,96 @@
+{
+  "updatedAt": "2026-07-23",
+  "coverageArea": "東紀州5市町",
+  "municipalities": [
+    {
+      "name": "熊野市",
+      "priority": "重点巡回",
+      "note": "市のカレンダーだけで終えず、観光協会と市の新着まで横断します。",
+      "sources": [
+        {
+          "label": "市イベントカレンダー",
+          "kind": "municipality",
+          "url": "https://www.city.kumano.lg.jp/calendar/"
+        },
+        {
+          "label": "市からのお知らせ",
+          "kind": "municipality",
+          "url": "https://www.city.kumano.lg.jp/news/"
+        },
+        {
+          "label": "熊野市観光協会",
+          "kind": "organizer",
+          "url": "https://www.kumano-kankou.info/"
+        }
+      ]
+    },
+    {
+      "name": "尾鷲市",
+      "priority": "定期巡回",
+      "note": "市の新着、観光情報、観光物産協会の催しを突き合わせます。",
+      "sources": [
+        {
+          "label": "尾鷲市",
+          "kind": "municipality",
+          "url": "https://www.city.owase.lg.jp/"
+        },
+        {
+          "label": "市公式観光サイト おわたび",
+          "kind": "municipality",
+          "url": "https://www.city.owase.lg.jp/owatabi/"
+        },
+        {
+          "label": "尾鷲観光物産協会",
+          "kind": "organizer",
+          "url": "https://owasekankou.com/event/"
+        }
+      ]
+    },
+    {
+      "name": "紀北町",
+      "priority": "定期巡回",
+      "note": "町の観光ページと観光協会を別々の入口として確認します。",
+      "sources": [
+        {
+          "label": "町公式観光ページ",
+          "kind": "municipality",
+          "url": "https://www.town.mie-kihoku.lg.jp/tourism/"
+        },
+        {
+          "label": "紀北町観光協会",
+          "kind": "organizer",
+          "url": "https://kihoku-kanko.com/"
+        }
+      ]
+    },
+    {
+      "name": "御浜町",
+      "priority": "重点巡回",
+      "note": "イベント欄が空でも、町の新着と広報まで確認して空振りを記録します。",
+      "sources": [
+        {
+          "label": "御浜町",
+          "kind": "municipality",
+          "url": "https://www.town.mihama.mie.jp/"
+        }
+      ]
+    },
+    {
+      "name": "紀宝町",
+      "priority": "定期巡回",
+      "note": "イベント分類と町の新着を横断し、掲載場所の違いを吸収します。",
+      "sources": [
+        {
+          "label": "町イベント情報",
+          "kind": "municipality",
+          "url": "https://www.town.kiho.lg.jp/news/news_category/event/"
+        },
+        {
+          "label": "町からのお知らせ",
+          "kind": "municipality",
+          "url": "https://www.town.kiho.lg.jp/news/"
+        }
+      ]
+    }
+  ]
+}
