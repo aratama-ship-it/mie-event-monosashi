@@ -79,6 +79,14 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(html, /みんなで食堂（夏休み子ども食堂）/);
   assert.match(html, /いがオレンジカフェ／オレンジカフェあやま（8月）/);
   assert.match(html, /手づくり絵本教室「オリジナル絵本を作ってみよう！」/);
+  assert.match(html, /員弁図書館 館内イベント「図書館ビンゴ」/);
+  assert.match(html, /企画展「いなべにも戦争がありました」/);
+  assert.match(html, /ロシアとおわせの文化交流/);
+  assert.match(html, /子ども科学教室「入浴剤で作るよく飛ぶロケット！」/);
+  assert.match(html, /ほんとカフェ＆夏のおたのしみ/);
+  assert.match(html, /親子で楽しむはじめてのコンサート「おんがくことはじめ」/);
+  assert.match(html, /初めてのお箏/);
+  assert.match(html, /キッズお仕事広場「ボクの、ワタシの名刺をつくろう！」/);
   assert.match(html, /data-category="交流"/);
   assert.match(html, /2026 きほく燈籠祭/);
   assert.match(html, /ジュン先生がやってきた！/);
@@ -101,10 +109,10 @@ test("all published records keep primary-source and sports-freshness fields", as
   const payload = JSON.parse(raw);
   const sports = payload.events.filter((event) => event.category === "スポーツ");
 
-  assert.equal(payload.events.length, 59);
-  assert.equal(new Set(payload.events.map((event) => event.id)).size, 59);
-  assert.equal(payload.events.filter((event) => event.category === "展覧会").length, 5);
-  assert.equal(payload.events.filter((event) => event.category === "交流").length, 6);
+  assert.equal(payload.events.length, 73);
+  assert.equal(new Set(payload.events.map((event) => event.id)).size, 73);
+  assert.equal(payload.events.filter((event) => event.category === "展覧会").length, 6);
+  assert.equal(payload.events.filter((event) => event.category === "交流").length, 9);
   assert.equal(sports.length, 3);
   assert.deepEqual(
     new Set(
@@ -117,6 +125,9 @@ test("all published records keep primary-source and sports-freshness fields", as
         "朝日町",
         "木曽岬町",
         "度会町",
+        "いなべ市",
+        "多気町",
+        "川越町",
       ].filter((name) =>
         payload.events.some((event) => event.municipality === name),
       ),
@@ -130,6 +141,9 @@ test("all published records keep primary-source and sports-freshness fields", as
       "朝日町",
       "木曽岬町",
       "度会町",
+      "いなべ市",
+      "多気町",
+      "川越町",
     ]),
   );
 
