@@ -426,6 +426,71 @@ main {
   padding: 8px 15px;
 }
 
+.child-scale {
+  align-items: center;
+  border: 1px solid var(--ink);
+  border-top: 0;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: 180px minmax(0, 1fr);
+  padding: 14px 22px;
+}
+
+.child-scale-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.child-scale-title span {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.child-scale-title small {
+  color: var(--ink-soft);
+  font-size: 9px;
+}
+
+.child-scale-keys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.child-scale-key,
+.child-fit-badge {
+  align-items: center;
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 700;
+  gap: 5px;
+}
+
+.child-scale-key strong,
+.child-fit-badge strong {
+  font-family: "Times New Roman", "Yu Mincho", serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.child-fit-for-children {
+  color: var(--sea);
+}
+
+.child-fit-allowed {
+  color: #2f6f7d;
+}
+
+.child-fit-conditional {
+  color: var(--rust);
+}
+
+.child-fit-unknown {
+  color: #68716d;
+}
+
 .kitchen-car-lab {
   border-bottom: 1px solid var(--ink);
   border-top: 2px solid var(--ink);
@@ -721,6 +786,29 @@ main {
 
 .event-kicker span:last-child {
   border: 0;
+}
+
+.event-kicker span.child-fit-badge {
+  border: 1px solid currentColor;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 4px 8px;
+}
+
+.event-kicker span.child-fit-badge.child-fit-for-children {
+  background: var(--sea-light);
+}
+
+.event-kicker span.child-fit-badge.child-fit-allowed {
+  background: #e0ebed;
+}
+
+.event-kicker span.child-fit-badge.child-fit-conditional {
+  background: #f0ddd4;
+}
+
+.event-kicker span.child-fit-badge.child-fit-unknown {
+  background: var(--paper-deep);
 }
 
 .event-card h3 {
@@ -1086,6 +1174,20 @@ footer p {
     padding: 6px 8px;
   }
 
+  .child-scale {
+    display: block;
+    padding: 14px 16px 16px;
+  }
+
+  .child-scale-keys {
+    gap: 8px 14px;
+    margin-top: 12px;
+  }
+
+  .child-scale-key {
+    flex: 1 1 calc(50% - 14px);
+  }
+
   .kitchen-car-lab {
     margin-top: 62px;
     padding-top: 22px;
@@ -1163,6 +1265,12 @@ footer p {
 
   .event-main {
     padding: 24px 16px 22px;
+  }
+
+  .event-kicker span.child-fit-badge {
+    flex: 0 0 auto;
+    margin-left: 0;
+    margin-top: 7px;
   }
 
   .event-card h3 {

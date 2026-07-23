@@ -34,6 +34,12 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(html, /祭りも、試合も、音も、展覧会も、三重の予定へ。/);
   assert.match(html, /何を見たい？/);
   assert.match(html, /音楽・ライブ/);
+  assert.match(html, /子どものものさし/);
+  assert.match(html, /公式の「対象」記載から判定/);
+  assert.match(html, /子ども向け/);
+  assert.match(html, /子ども参加可/);
+  assert.match(html, /条件あり/);
+  assert.match(html, /公式で要確認/);
   assert.match(html, /<option[^>]*>展覧会<\/option>/);
   assert.match(html, /<option[^>]*>伊賀<\/option>/);
   assert.doesNotMatch(html, /会場だけでは、拾いきれない。/);
@@ -102,6 +108,19 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(html, /data-category="展覧会"/);
   assert.match(html, /公式情報で最終確認/);
   assert.doesNotMatch(html, /codex-preview/);
+
+  const eventCards = [...html.matchAll(/<article class="event-card"[\s\S]*?<\/article>/g)].map(
+    (match) => match[0],
+  );
+  const cardFor = (title) => eventCards.find((card) => card.includes(title)) ?? "";
+
+  assert.match(
+    cardFor("三重ジュニア管弦楽団 こどもオーケストラ教室"),
+    /data-child-fit="for-children"/,
+  );
+  assert.match(cardFor("第71回 鳥羽みなとまつり"), /data-child-fit="allowed"/);
+  assert.match(cardFor("Quubi Japan Tour 2026 三重公演"), /data-child-fit="conditional"/);
+  assert.match(cardFor("吉例マクサ夏祭り"), /data-child-fit="unknown"/);
 });
 
 test("all published records keep primary-source and sports-freshness fields", async () => {

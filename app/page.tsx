@@ -42,6 +42,15 @@ type EventItem = {
   };
 };
 
+type ChildFitId = "for-children" | "allowed" | "conditional" | "unknown";
+
+type ChildFit = {
+  id: ChildFitId;
+  symbol: "◎" | "○" | "△" | "？";
+  label: string;
+  detail: string;
+};
+
 type KitchenCarSource = {
   id: string;
   name: string;
@@ -86,12 +95,84 @@ const periods: { id: Period; label: string; note: string }[] = [
   },
 ];
 
-const needs = ["ライブ", "大型ライブ", "無料", "申込不要", "子ども", "屋内", "託児あり"];
+const needs = [
+  "ライブ",
+  "大型ライブ",
+  "無料",
+  "申込不要",
+  "子ども向け",
+  "子ども参加可",
+  "屋内",
+  "託児あり",
+];
+
+const childFitScale: ChildFit[] = [
+  {
+    id: "for-children",
+    symbol: "◎",
+    label: "子ども向け",
+    detail: "公式の対象に、子ども・親子・ファミリーの記載があります",
+  },
+  {
+    id: "allowed",
+    symbol: "○",
+    label: "子ども参加可",
+    detail: "公式に「どなたでも」「年齢制限なし」などの記載があります",
+  },
+  {
+    id: "conditional",
+    symbol: "△",
+    label: "条件あり",
+    detail: "年齢制限、保護者同伴、託児などの条件を確認してください",
+  },
+  {
+    id: "unknown",
+    symbol: "？",
+    label: "公式で要確認",
+    detail: "一次資料だけでは子どもの参加可否を判断できません",
+  },
+];
+
+function assessChildFit(event: EventItem): ChildFit {
+  const positiveTags = event.tags.filter((tag) => !/不可|確認/.test(tag)).join(" ");
+  const positiveAudience = event.audience
+    .replace(/未就学児[^・／]*不可/g, "")
+    .replace(/3歳未満[^・／]*不可/g, "")
+    .replace(/子どものみ[^・／]*不可/g, "");
+  const text = `${positiveAudience} ${positiveTags}`;
+  const childTarget =
+    /子ども|子供|親子|ファミリー|児童館|小学生|中学生|未就学児|赤ちゃん|0歳から/.test(
+      text,
+    );
+
+  if (childTarget) return childFitScale[0];
+
+  if (
+    /どなたでも|一般参加可|年齢制限なし|0歳から入場可|子ども連れ歓迎|赤ちゃんスペース/.test(
+      event.audience,
+    )
+  ) {
+    return childFitScale[1];
+  }
+
+  if (
+    /未就学児.*不可|3歳未満.*不可|4歳以上|小学生以上|子どものみ.*不可|託児あり/.test(
+      `${event.audience} ${event.tags.join(" ")}`,
+    )
+  ) {
+    return childFitScale[2];
+  }
+
+  return childFitScale[3];
+}
 
 function matchesNeed(event: EventItem, need: string) {
   if (!need) return true;
-  if (need === "子ども") {
-    return /0歳|未就学児|園児|小学生|中学生|子ども|児童|生徒/.test(event.audience);
+  if (need === "子ども向け") {
+    return assessChildFit(event).id === "for-children";
+  }
+  if (need === "子ども参加可") {
+    return new Set<ChildFitId>(["for-children", "allowed"]).has(assessChildFit(event).id);
   }
   return `${event.tags.join(" ")} ${event.cost} ${event.audience}`.includes(need);
 }
@@ -289,6 +370,21 @@ export default function Home() {
             </button>
           ))}
         </div>
+
+        <div className="child-scale" aria-label="子どもの参加しやすさの見方">
+          <div className="child-scale-title">
+            <span>子どものものさし</span>
+            <small>公式の「対象」記載から判定</small>
+          </div>
+          <div className="child-scale-keys">
+            {childFitScale.map((item) => (
+              <span className={`child-scale-key child-fit-${item.id}`} key={item.id} title={item.detail}>
+                <strong aria-hidden="true">{item.symbol}</strong>
+                {item.label}
+              </span>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="kitchen-car-lab" aria-labelledby="kitchen-car-title">
@@ -353,12 +449,14 @@ export default function Home() {
         <div className="event-list" aria-live="polite">
           {results.map((event) => {
             const isSaved = saved.includes(event.id);
+            const childFit = assessChildFit(event);
             return (
               <article
                 className="event-card"
                 key={event.id}
                 data-region={event.region}
                 data-category={event.category}
+                data-child-fit={childFit.id}
               >
                 <time className="event-date" dateTime={event.isoDate}>
                   <span>{event.month}月</span>
@@ -372,6 +470,14 @@ export default function Home() {
                     <span>{event.region}</span>
                     <span>{event.municipality}</span>
                     <span>{event.time}</span>
+                    <span
+                      className={`child-fit-badge child-fit-${childFit.id}`}
+                      title={childFit.detail}
+                      aria-label={`子ども評価：${childFit.label}。${childFit.detail}`}
+                    >
+                      <strong aria-hidden="true">{childFit.symbol}</strong>
+                      {childFit.label}
+                    </span>
                   </div>
                   <h3>{event.title}</h3>
                   <p className="event-summary">{event.summary}</p>
