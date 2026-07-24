@@ -936,12 +936,20 @@ main {
   background: var(--sea);
 }
 
+.official-link-short {
+  display: none;
+}
+
 .event-actions small {
   color: var(--ink-soft);
   font-family: var(--font-geist-mono), monospace;
   font-size: 9px;
   line-height: 1.6;
   margin-top: 14px;
+}
+
+.source-meta span {
+  display: block;
 }
 
 .empty-state {
@@ -1353,48 +1361,96 @@ footer p {
   }
 
   .event-card {
-    grid-template-columns: 76px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
+    min-height: 0;
   }
 
   .event-date {
-    padding: 24px 8px 18px 12px;
+    align-items: center;
+    border-bottom: 1px solid var(--line);
+    border-right: 0;
+    display: grid;
+    gap: 8px;
+    grid-column: 1;
+    grid-template-columns: auto auto minmax(0, 1fr);
+    justify-content: start;
+    padding: 9px 14px 9px 18px;
+  }
+
+  .event-date span {
+    font-size: 11px;
   }
 
   .event-date strong {
-    font-size: 46px;
+    font-size: 34px;
+    margin: 0;
+    text-align: left;
   }
 
   .event-date strong.is-range {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   .event-date strong.is-long {
-    font-size: 22px;
+    font-size: 21px;
+    line-height: 1;
+  }
+
+  .event-date em {
+    border-radius: 999px;
+    height: 28px;
+    justify-self: end;
+    padding: 0 10px;
+    white-space: nowrap;
+    width: auto;
   }
 
   .event-main {
-    padding: 24px 16px 22px;
+    padding: 15px 16px 14px;
+  }
+
+  .event-kicker {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .event-kicker span {
+    margin-right: 7px;
+    padding-right: 7px;
   }
 
   .event-kicker span.child-fit-badge {
     flex: 0 0 auto;
-    margin-left: 0;
-    margin-top: 7px;
+    margin: 0;
+    padding: 3px 7px;
+    position: absolute;
+    right: 82px;
+    top: 10px;
+    z-index: 1;
   }
 
   .event-card h3 {
-    font-size: 23px;
+    font-size: 21px;
+    line-height: 1.35;
+    margin: 10px 0 0;
+  }
+
+  .event-summary,
+  .event-tags {
+    display: none;
   }
 
   .event-facts {
     display: block;
+    margin-top: 12px;
+    padding-top: 10px;
   }
 
   .event-facts div {
     display: grid;
-    gap: 8px;
-    grid-template-columns: 38px 1fr;
-    margin-bottom: 8px;
+    gap: 6px;
+    grid-template-columns: 34px minmax(0, 1fr);
+    margin-bottom: 5px;
     padding: 0;
   }
 
@@ -1402,19 +1458,46 @@ footer p {
     margin: 2px 0 0;
   }
 
+  .event-facts dd {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
   .event-actions {
-    display: flex;
-    grid-column: 1 / -1;
-    padding: 16px;
+    border-top: 1px solid var(--line);
+    display: grid;
+    gap: 6px;
+    grid-column: 1;
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    padding: 8px 16px 9px;
   }
 
   .event-actions .save-button,
   .event-actions a {
-    min-height: 50px;
+    font-size: 11px;
+    min-height: 44px;
   }
 
   .event-actions small {
-    margin-top: 4px;
+    display: flex;
+    font-size: 8px;
+    flex-wrap: wrap;
+    gap: 1px 10px;
+    grid-column: 1 / -1;
+    line-height: 1.35;
+    margin-top: 0;
+  }
+
+  .source-meta span {
+    display: inline;
+  }
+
+  .official-link-long {
+    display: none;
+  }
+
+  .official-link-short {
+    display: inline;
   }
 
   footer {
@@ -1484,31 +1567,56 @@ footer p {
   }
 
   .event-card {
-    grid-template-columns: 68px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .event-date {
-    padding: 20px 6px 16px 10px;
+    padding: 8px 12px 8px 16px;
   }
 
   .event-date strong {
-    font-size: 40px;
-  }
-
-  .event-date strong.is-range {
     font-size: 31px;
   }
 
+  .event-date strong.is-range {
+    font-size: 26px;
+  }
+
   .event-date strong.is-long {
-    font-size: 19px;
+    font-size: 20px;
   }
 
   .event-main {
-    padding: 20px 14px;
+    padding: 14px 14px 12px;
   }
 
   .event-card h3 {
-    font-size: 21px;
+    font-size: 20px;
+  }
+
+  .event-kicker {
+    padding-right: 34px;
+  }
+
+  .event-actions {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .event-kicker span.child-fit-badge {
+    align-items: center;
+    display: inline-flex;
+    font-size: 0;
+    height: 28px;
+    justify-content: center;
+    padding: 0;
+    right: 14px;
+    top: 56px;
+    width: 28px;
+  }
+
+  .event-kicker span.child-fit-badge strong {
+    font-size: 11px;
   }
 }
 

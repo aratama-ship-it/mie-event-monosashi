@@ -471,14 +471,13 @@ export default function Home() {
                     {isSaved ? "候補に保存済み" : "候補に入れる"}
                   </button>
                   <a href={event.source.url} target="_blank" rel="noreferrer">
-                    公式情報で最終確認 <span aria-hidden="true">↗</span>
+                    <span className="official-link-long">公式情報で最終確認</span>
+                    <span className="official-link-short">公式情報を見る</span>
+                    <span aria-hidden="true">↗</span>
                   </a>
-                  <small>
-                    一次資料・{event.source.label}
-                    <br />
-                    確認 {displayDate(event.source.verifiedAt)}
-                    <br />
-                    再確認 {displayDate(event.source.nextCheckAt)}
+                  <small className="source-meta">
+                    <span>一次資料・{event.source.label}</span>
+                    <span>確認 {displayDate(event.source.verifiedAt)}</span>
                   </small>
                 </div>
               </article>

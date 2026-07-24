@@ -125,6 +125,7 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(html, /2026きほく夏祭り KODO/);
   assert.match(html, /data-category="展覧会"/);
   assert.match(html, /公式情報で最終確認/);
+  assert.doesNotMatch(html, />再確認 /);
   assert.doesNotMatch(html, /codex-preview/);
 
   const eventCards = [...html.matchAll(/<article class="event-card"[\s\S]*?<\/article>/g)].map(
