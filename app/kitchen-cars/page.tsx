@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages -- vinext client navigation is more reliable with plain anchors */
+
 import type { Metadata } from "next";
 import kitchenCarData from "@/data/kitchen-car-sources.json";
 

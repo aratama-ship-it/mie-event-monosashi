@@ -48,6 +48,9 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.doesNotMatch(html, /薄い地域ほど、先に見に行く。/);
   assert.doesNotMatch(html, /出店予定から、町の一日を逆引きする。/);
   assert.match(html, /ライブ、JFL、花火、展覧会…/);
+  assert.match(html, /class="hero-mobile-actions"/);
+  assert.match(html, /href="#results">催しを見る <strong>88<\/strong><\/a>/);
+  assert.match(html, /id="finder" aria-label="イベントを絞り込む"/);
   assert.match(html, /href="\/kitchen-cars"[^>]*>キッチンカー<\/a>/);
   assert.doesNotMatch(html, /キッチンカーは、今日どこへ。/);
   assert.doesNotMatch(html, /cafe＆crepe PECOCO/);

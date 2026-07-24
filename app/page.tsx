@@ -268,6 +268,12 @@ export default function Home() {
             <br />
             最後の確認は、主催者の公式情報へ。
           </p>
+          <div className="hero-mobile-actions" aria-label="スマートフォン向けショートカット">
+            <a className="mobile-primary-link" href="#results">
+              催しを見る <strong>{events.length}</strong>
+            </a>
+            <a href="#finder">条件で絞る</a>
+          </div>
         </div>
         <div className="week-scale" aria-label="直近の日付の目盛り">
           <span className="scale-caption">JULY 2026</span>
@@ -281,7 +287,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="finder" aria-label="イベントを絞り込む">
+      <section className="finder" id="finder" aria-label="イベントを絞り込む">
         <div className="finder-topline">
           <span>週末のものさし</span>
           <button type="button" onClick={reset} className="reset-button">
@@ -394,6 +400,12 @@ export default function Home() {
           {results.map((event) => {
             const isSaved = saved.includes(event.id);
             const childFit = assessChildFit(event);
+            const daySize =
+              event.day.length >= 7
+                ? "is-long"
+                : event.day.length >= 4
+                  ? "is-range"
+                  : "";
             return (
               <article
                 className="event-card"
@@ -404,7 +416,7 @@ export default function Home() {
               >
                 <time className="event-date" dateTime={event.isoDate}>
                   <span>{event.month}月</span>
-                  <strong>{event.day}</strong>
+                  <strong className={daySize}>{event.day}</strong>
                   <em>{event.weekday}</em>
                 </time>
 
