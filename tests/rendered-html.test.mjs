@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
+import { eventOccursOn } from "../lib/event-dates.mjs";
 
 async function render(path = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -33,6 +34,12 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(html, /class="mie-silhouette" aria-hidden="true"/);
   assert.match(html, /祭りも、試合も、音も、展覧会も、三重の予定へ。/);
   assert.match(html, /何を見たい？/);
+  assert.match(html, />今日</);
+  assert.match(html, />明日</);
+  assert.match(html, /日付を指定/);
+  assert.match(html, /30日カレンダー/);
+  assert.match(html, /type="date"/);
+  assert.equal([...html.matchAll(/data-calendar-date=/g)].length, 30);
   assert.match(html, /音楽・ライブ/);
   assert.match(html, /子どものものさし/);
   assert.match(html, /公式の「対象」記載から判定/);
@@ -220,6 +227,42 @@ test("all published records keep primary-source and sports-freshness fields", as
   for (const event of sports) {
     assert.ok(event.tags.includes("日程変更注意"));
   }
+});
+
+test("30-day calendar counts single, continuous, and recurring dates", async () => {
+  const raw = await readFile(new URL("../data/events.json", import.meta.url), "utf8");
+  const payload = JSON.parse(raw);
+  const event = (id) => payload.events.find((item) => item.id === id);
+
+  assert.equal(eventOccursOn(event("tsu-hanabi-2026"), "2026-07-25"), true);
+  assert.equal(eventOccursOn(event("tsu-hanabi-2026"), "2026-07-26"), false);
+
+  assert.equal(
+    eventOccursOn(event("mie-art-rockefeller-flower-bird-prints-2026"), "2026-07-25"),
+    true,
+  );
+  assert.equal(
+    eventOccursOn(event("mie-art-rockefeller-flower-bird-prints-2026"), "2026-07-27"),
+    false,
+  );
+
+  assert.equal(
+    eventOccursOn(event("kawage-summer-storytime-special-2026"), "2026-08-09"),
+    true,
+  );
+  assert.equal(
+    eventOccursOn(event("kawage-summer-storytime-special-2026"), "2026-08-10"),
+    false,
+  );
+
+  assert.equal(
+    eventOccursOn(event("asahi-library-job-experience-2026"), "2026-07-30"),
+    true,
+  );
+  assert.equal(
+    eventOccursOn(event("asahi-library-job-experience-2026"), "2026-08-18"),
+    true,
+  );
 });
 
 test("municipal source registry covers all five East Kishu municipalities", async () => {

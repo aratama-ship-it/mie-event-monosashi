@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import eventData from "@/data/events.json";
+import { eventOccursOn } from "@/lib/event-dates.mjs";
 
 type Period = "all" | "weekend" | "august" | "september";
 type Category =
@@ -59,12 +60,42 @@ const events = (eventData.events as EventItem[])
   .slice()
   .sort((left, right) => left.isoDate.localeCompare(right.isoDate));
 
+const weekdayLabels = ["日", "月", "火", "水", "木", "金", "土"];
+
 function displayDate(value: string) {
   return value.replaceAll("-", ".");
 }
 
+function isoDateInJapan(date = new Date()) {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(date);
+  const value = Object.fromEntries(parts.map((part) => [part.type, part.value]));
+  return `${value.year}-${value.month}-${value.day}`;
+}
+
+function addDays(isoDate: string, amount: number) {
+  const date = new Date(`${isoDate}T00:00:00Z`);
+  date.setUTCDate(date.getUTCDate() + amount);
+  return date.toISOString().slice(0, 10);
+}
+
+function dateDetails(isoDate: string) {
+  const [, month, day] = isoDate.split("-").map(Number);
+  const weekday = new Date(`${isoDate}T00:00:00Z`).getUTCDay();
+  return {
+    day,
+    month,
+    monthDay: `${month}/${day}`,
+    weekday,
+    weekdayLabel: weekdayLabels[weekday],
+  };
+}
+
 const periods: { id: Period; label: string; note: string }[] = [
-  { id: "all", label: "すべて", note: `${events.length}件` },
   {
     id: "weekend",
     label: "7月末まで",
@@ -177,11 +208,23 @@ function matchesNeed(event: EventItem, need: string) {
 
 export default function Home() {
   const [period, setPeriod] = useState<Period>("all");
+  const [selectedDate, setSelectedDate] = useState("");
   const [region, setRegion] = useState("すべて");
   const [category, setCategory] = useState<Category>("すべて");
   const [need, setNeed] = useState("");
   const [query, setQuery] = useState("");
   const [saved, setSaved] = useState<string[]>([]);
+  const [todayIso] = useState(() => isoDateInJapan());
+  const tomorrowIso = addDays(todayIso, 1);
+  const calendarDays = useMemo(
+    () =>
+      Array.from({ length: 30 }, (_, index) => {
+        const isoDate = addDays(todayIso, index);
+        return { isoDate, ...dateDetails(isoDate) };
+      }),
+    [todayIso],
+  );
+  const heroDays = calendarDays.slice(0, 7);
 
   useEffect(() => {
     let restoreTimer: number | undefined;
@@ -197,10 +240,9 @@ export default function Home() {
     return () => window.clearTimeout(restoreTimer);
   }, []);
 
-  const results = useMemo(() => {
+  const resultsWithoutDate = useMemo(() => {
     const normalized = query.trim().toLowerCase();
     return events.filter((event) => {
-      const periodMatch = period === "all" || event.period === period;
       const regionMatch =
         region === "すべて" || event.region.split("・").includes(region);
       const categoryMatch = category === "すべて" || event.category === category;
@@ -210,9 +252,55 @@ export default function Home() {
         `${event.category} ${event.title} ${event.municipality} ${event.venue} ${event.tags.join(" ")}`
           .toLowerCase()
           .includes(normalized);
-      return periodMatch && regionMatch && categoryMatch && needMatch && queryMatch;
+      return regionMatch && categoryMatch && needMatch && queryMatch;
     });
-  }, [category, need, period, query, region]);
+  }, [category, need, query, region]);
+
+  const calendarCounts = useMemo(
+    () =>
+      Object.fromEntries(
+        calendarDays.map(({ isoDate }) => [
+          isoDate,
+          resultsWithoutDate.filter((event) => eventOccursOn(event, isoDate)).length,
+        ]),
+      ),
+    [calendarDays, resultsWithoutDate],
+  );
+
+  const results = useMemo(() => {
+    if (selectedDate) {
+      return resultsWithoutDate
+        .filter((event) => eventOccursOn(event, selectedDate))
+        .sort(
+          (left, right) =>
+            Number(right.isoDate === selectedDate) - Number(left.isoDate === selectedDate) ||
+            left.isoDate.localeCompare(right.isoDate),
+        );
+    }
+    if (period !== "all") {
+      return resultsWithoutDate.filter((event) => event.period === period);
+    }
+    return resultsWithoutDate;
+  }, [period, resultsWithoutDate, selectedDate]);
+
+  const chooseDate = (isoDate: string) => {
+    setSelectedDate(isoDate);
+    setPeriod("all");
+  };
+
+  const choosePeriod = (nextPeriod: Period) => {
+    setSelectedDate("");
+    setPeriod(nextPeriod);
+  };
+
+  const selectedDateLabel = selectedDate
+    ? (() => {
+        const date = dateDetails(selectedDate);
+        const relative =
+          selectedDate === todayIso ? "今日・" : selectedDate === tomorrowIso ? "明日・" : "";
+        return `${relative}${date.month}月${date.day}日（${date.weekdayLabel}）`;
+      })()
+    : "";
 
   const toggleSaved = (id: string) => {
     const next = saved.includes(id)
@@ -228,6 +316,7 @@ export default function Home() {
 
   const reset = () => {
     setPeriod("all");
+    setSelectedDate("");
     setRegion("すべて");
     setCategory("すべて");
     setNeed("");
@@ -276,14 +365,22 @@ export default function Home() {
           </div>
         </div>
         <div className="week-scale" aria-label="直近の日付の目盛り">
-          <span className="scale-caption">JULY 2026</span>
-          {["23 木", "24 金", "25 土", "26 日", "27 月", "28 火", "29 水"].map(
-            (date, index) => (
-              <span className={index === 0 ? "today" : index >= 1 && index <= 3 ? "weekend" : ""} key={date}>
-                {date}
-              </span>
-            ),
-          )}
+          <span className="scale-caption">
+            {new Date(`${todayIso}T00:00:00Z`)
+              .toLocaleDateString("en-US", { month: "long", timeZone: "UTC" })
+              .toUpperCase()}{" "}
+            {todayIso.slice(0, 4)}
+          </span>
+          {heroDays.map((date, index) => (
+            <span
+              className={
+                index === 0 ? "today" : date.weekday === 0 || date.weekday === 6 ? "weekend" : ""
+              }
+              key={date.isoDate}
+            >
+              {date.day} {date.weekdayLabel}
+            </span>
+          ))}
         </div>
       </section>
 
@@ -298,19 +395,108 @@ export default function Home() {
         <div className="filter-grid">
           <fieldset className="period-filter">
             <legend>いつ行く？</legend>
-            <div className="segmented">
-              {periods.map((item) => (
-                <button
-                  aria-pressed={period === item.id}
-                  className={period === item.id ? "active" : ""}
-                  key={item.id}
-                  onClick={() => setPeriod(item.id)}
-                  type="button"
-                >
-                  <span>{item.label}</span>
-                  <small>{item.note}</small>
-                </button>
-              ))}
+            <div className="date-shortcuts">
+              <button
+                aria-pressed={!selectedDate && period === "all"}
+                className={!selectedDate && period === "all" ? "active" : ""}
+                onClick={() => choosePeriod("all")}
+                type="button"
+              >
+                <span>すべて</span>
+                <small>{resultsWithoutDate.length}件</small>
+              </button>
+              <button
+                aria-pressed={selectedDate === todayIso}
+                className={selectedDate === todayIso ? "active" : ""}
+                onClick={() => chooseDate(todayIso)}
+                type="button"
+              >
+                <span>今日</span>
+                <small>{calendarCounts[todayIso] ?? 0}件</small>
+              </button>
+              <button
+                aria-pressed={selectedDate === tomorrowIso}
+                className={selectedDate === tomorrowIso ? "active" : ""}
+                onClick={() => chooseDate(tomorrowIso)}
+                type="button"
+              >
+                <span>明日</span>
+                <small>{calendarCounts[tomorrowIso] ?? 0}件</small>
+              </button>
+              <label className="specific-date">
+                <span>日付を指定</span>
+                <input
+                  type="date"
+                  min={todayIso}
+                  value={selectedDate}
+                  onChange={(event) =>
+                    event.target.value ? chooseDate(event.target.value) : choosePeriod("all")
+                  }
+                />
+              </label>
+            </div>
+
+            <div className="date-calendar" aria-label="今日から30日間のイベント件数">
+              <div className="date-calendar-heading">
+                <strong>30日カレンダー</strong>
+                <small>数字は現在の条件での件数</small>
+              </div>
+              <div className="date-calendar-weekdays" aria-hidden="true">
+                {weekdayLabels.map((weekday) => (
+                  <span key={weekday}>{weekday}</span>
+                ))}
+              </div>
+              <div className="date-calendar-grid">
+                {calendarDays.map((date, index) => {
+                  const count = calendarCounts[date.isoDate] ?? 0;
+                  return (
+                    <button
+                      aria-current={date.isoDate === todayIso ? "date" : undefined}
+                      aria-label={`${date.month}月${date.day}日（${date.weekdayLabel}）、${count}件`}
+                      aria-pressed={selectedDate === date.isoDate}
+                      className={[
+                        selectedDate === date.isoDate ? "active" : "",
+                        date.weekday === 0 ? "sunday" : "",
+                        date.weekday === 6 ? "saturday" : "",
+                      ]
+                        .filter(Boolean)
+                        .join(" ")}
+                      data-calendar-date={date.isoDate}
+                      key={date.isoDate}
+                      onClick={() => chooseDate(date.isoDate)}
+                      style={index === 0 ? { gridColumnStart: date.weekday + 1 } : undefined}
+                      type="button"
+                    >
+                      <span>{date.monthDay}</span>
+                      <small>{count}件</small>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="period-presets">
+              <span>期間で見る</span>
+              <div className="segmented">
+                {periods.map((item) => (
+                  <button
+                    aria-pressed={!selectedDate && period === item.id}
+                    className={!selectedDate && period === item.id ? "active" : ""}
+                    key={item.id}
+                    onClick={() => choosePeriod(item.id)}
+                    type="button"
+                  >
+                    <span>{item.label}</span>
+                    <small>
+                      {
+                        resultsWithoutDate.filter((event) => event.period === item.id)
+                          .length
+                      }
+                      件
+                    </small>
+                  </button>
+                ))}
+              </div>
             </div>
           </fieldset>
 
@@ -390,6 +576,7 @@ export default function Home() {
           <div>
             <p className="eyebrow">MATCHED EVENTS</p>
             <h2>条件に合う催し</h2>
+            {selectedDateLabel && <p className="results-date-caption">{selectedDateLabel}</p>}
           </div>
           <p>
             <strong>{results.length}</strong> / {events.length}件

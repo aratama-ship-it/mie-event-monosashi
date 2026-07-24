@@ -304,7 +304,7 @@ main {
 
 .filter-grid {
   display: grid;
-  grid-template-columns: 1.3fr 0.62fr 0.7fr 0.85fr;
+  grid-template-columns: 0.72fr 0.82fr 1.2fr;
 }
 
 .filter-grid fieldset,
@@ -321,6 +321,15 @@ main {
   border-left: 1px solid var(--ink);
 }
 
+.period-filter {
+  border-bottom: 1px solid var(--ink) !important;
+  grid-column: 1 / -1;
+}
+
+.period-filter + .select-field {
+  border-left: 1px solid var(--ink);
+}
+
 .filter-grid legend,
 .select-field > span,
 .search-field > span {
@@ -329,6 +338,156 @@ main {
   font-weight: 700;
   letter-spacing: 0.08em;
   margin-bottom: 12px;
+}
+
+.date-shortcuts {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(3, minmax(88px, 0.58fr)) minmax(180px, 1.4fr);
+}
+
+.date-shortcuts > button,
+.date-calendar-grid button {
+  background: transparent;
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.date-shortcuts > button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 54px;
+}
+
+.date-shortcuts > button small,
+.date-calendar-grid button small {
+  color: var(--ink-soft);
+  font-size: 9px;
+  margin-top: 2px;
+}
+
+.date-shortcuts > button.active,
+.date-calendar-grid button.active {
+  background: var(--sea);
+  border-color: var(--sea);
+  color: var(--white);
+}
+
+.date-shortcuts > button.active small,
+.date-calendar-grid button.active small {
+  color: var(--sea-light);
+}
+
+.specific-date {
+  align-items: center;
+  border: 1px solid var(--line);
+  display: grid;
+  gap: 12px;
+  grid-template-columns: auto minmax(0, 1fr);
+  min-height: 54px;
+  padding: 7px 10px 7px 14px;
+}
+
+.specific-date > span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.specific-date input {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--ink);
+  min-height: 38px;
+  min-width: 0;
+  width: 100%;
+}
+
+.date-calendar {
+  border-top: 1px solid var(--line);
+  margin-top: 18px;
+  padding-top: 14px;
+}
+
+.date-calendar-heading {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.date-calendar-heading strong {
+  font-family: "YuMincho", "Hiragino Mincho ProN", serif;
+  font-size: 18px;
+}
+
+.date-calendar-heading small {
+  color: var(--ink-soft);
+  font-size: 9px;
+}
+
+.date-calendar-weekdays,
+.date-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.date-calendar-weekdays span {
+  color: var(--ink-soft);
+  font-size: 9px;
+  padding: 0 5px 5px;
+  text-align: center;
+}
+
+.date-calendar-weekdays span:first-child,
+.date-calendar-grid button.sunday {
+  color: var(--rust);
+}
+
+.date-calendar-weekdays span:last-child,
+.date-calendar-grid button.saturday {
+  color: var(--sea);
+}
+
+.date-calendar-grid {
+  border-left: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+}
+
+.date-calendar-grid button {
+  border-bottom: 1px solid var(--line);
+  border-left: 0;
+  border-right: 1px solid var(--line);
+  border-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 56px;
+  padding: 6px 4px;
+}
+
+.date-calendar-grid button[aria-current="date"] {
+  box-shadow: inset 0 3px 0 var(--sun);
+  font-weight: 800;
+}
+
+.period-presets {
+  align-items: center;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 84px minmax(0, 420px);
+  margin-top: 16px;
+}
+
+.period-presets > span {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.period-presets .segmented {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .segmented {
@@ -668,6 +827,14 @@ main {
   font-family: "YuMincho", "Hiragino Mincho ProN", serif;
   font-size: clamp(32px, 4vw, 48px);
   margin: 0;
+}
+
+.results-date-caption {
+  color: var(--rust);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin: 5px 0 0;
 }
 
 .results-heading > p {
@@ -1239,6 +1406,58 @@ footer p {
   .segmented {
     gap: 6px;
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .date-shortcuts {
+    gap: 6px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .date-shortcuts > button {
+    min-height: 50px;
+  }
+
+  .specific-date {
+    grid-column: 1 / -1;
+    min-height: 50px;
+  }
+
+  .date-calendar {
+    margin-top: 16px;
+    padding-top: 12px;
+  }
+
+  .date-calendar-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .date-calendar-heading strong {
+    font-size: 17px;
+  }
+
+  .date-calendar-grid button {
+    font-size: 10px;
+    min-height: 49px;
+    padding: 5px 1px;
+  }
+
+  .date-calendar-grid button small {
+    font-size: 8px;
+  }
+
+  .period-presets {
+    display: block;
+  }
+
+  .period-presets > span {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .period-presets .segmented {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .segmented button {
