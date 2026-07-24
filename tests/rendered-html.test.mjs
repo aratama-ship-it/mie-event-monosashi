@@ -228,12 +228,43 @@ test("small-event discovery sources stay separate from publishable event sources
   );
   const payload = JSON.parse(raw);
 
-  assert.equal(payload.sources.length, 16);
+  assert.ok(payload.sources.length >= 28);
   assert.ok(payload.sources.some((source) => source.sourceType === "vendor_schedule"));
   assert.ok(payload.sources.some((source) => source.role === "signal"));
   assert.ok(payload.sources.some((source) => source.role === "confirmation"));
 
   for (const source of payload.sources) assert.match(source.url, /^https:\/\//);
+});
+
+test("festival watchlist fails closed until primary details are complete", async () => {
+  const raw = await readFile(
+    new URL("../data/festival-watchlist.json", import.meta.url),
+    "utf8",
+  );
+  const payload = JSON.parse(raw);
+
+  assert.ok(payload.candidates.length >= 14);
+  assert.equal(
+    payload.candidates.filter((candidate) => candidate.publishable !== false).length,
+    0,
+  );
+  assert.ok(
+    payload.candidates.some((candidate) => candidate.status === "source_conflict"),
+  );
+  assert.ok(
+    payload.candidates.some(
+      (candidate) => candidate.status === "needs_2026_confirmation",
+    ),
+  );
+
+  for (const candidate of payload.candidates) {
+    assert.match(candidate.expectedDate, /^\d{4}-\d{2}-\d{2}$/);
+    assert.match(candidate.nextCheckAt, /^\d{4}-\d{2}-\d{2}$/);
+    assert.equal(candidate.childStatus, "unknown");
+    for (const sourceUrl of candidate.sourceUrls) {
+      assert.match(sourceUrl, /^https:\/\//);
+    }
+  }
 });
 
 test("kitchen-car experiment exposes only current calendars and keeps all candidates", async () => {

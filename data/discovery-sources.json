@@ -161,6 +161,126 @@
       "url": "https://www.town.kiho.lg.jp/news/",
       "checkCadence": "weekly",
       "note": "募集型の交流、観光、地域行事を新着情報から拾い、締切と対象条件を確認する。"
+    },
+    {
+      "id": "toin-town-calendar",
+      "label": "東員町 町民カレンダー",
+      "municipality": "東員町",
+      "sourceType": "municipal_calendar",
+      "role": "confirmation",
+      "url": "https://www.town.toin.lg.jp/soshiki/1002/2/1/9/4980.html",
+      "checkCadence": "monthly",
+      "note": "検索結果に出にくい地区夏祭りを月別PDFから拾う。日付だけの場合は、時間・会場の一次資料が見つかるまで公開しない。"
+    },
+    {
+      "id": "toin-shakyo-community",
+      "label": "東員町社会福祉協議会 地域支えあい・ボランティア",
+      "municipality": "東員町",
+      "sourceType": "community_news",
+      "role": "signal",
+      "url": "https://www.toinshakyo.or.jp/category/69-1-0-0-0-0-0-0-0-0.html",
+      "checkCadence": "monthly",
+      "note": "自治会の夏祭りや地域交流の実施記録から翌年の候補を発見する。開催前の告知とは限らないため確認用には使わない。"
+    },
+    {
+      "id": "inabe-link-2026",
+      "label": "いなべ市 情報誌Link 2026年",
+      "municipality": "いなべ市",
+      "sourceType": "municipal_newsletter",
+      "role": "confirmation",
+      "url": "https://www.city.inabe.mie.jp/shisei/koho/1014760/1015363.html",
+      "checkCadence": "monthly",
+      "note": "文化財行事、地区祭り、募集企画を月次で確認する。恒例日の説明だけなら2026年開催確定とは扱わない。"
+    },
+    {
+      "id": "asahi-event-calendar",
+      "label": "朝日町 イベントカレンダー",
+      "municipality": "朝日町",
+      "sourceType": "municipal_calendar",
+      "role": "confirmation",
+      "url": "https://www2.town.asahi.mie.jp/www/genre/1000100000036/index.html",
+      "checkCadence": "monthly",
+      "note": "図書館、文化、子ども向け企画を確認する。八王子祭など地区行事が載らない場合があるため広報と併読する。"
+    },
+    {
+      "id": "asahi-koho",
+      "label": "朝日町 広報・町民課情報",
+      "municipality": "朝日町",
+      "sourceType": "municipal_newsletter",
+      "role": "confirmation",
+      "url": "https://www2.town.asahi.mie.jp/www/section/1485152659695/index.html",
+      "checkCadence": "monthly",
+      "note": "月刊広報の表紙、行事写真、地区案内から祭りの当年実施状況を確認する。"
+    },
+    {
+      "id": "taki-event-calendar",
+      "label": "多気町 イベントカレンダー",
+      "municipality": "多気町",
+      "sourceType": "municipal_calendar",
+      "role": "confirmation",
+      "url": "https://www.town.taki.mie.jp/calendar.html",
+      "checkCadence": "monthly",
+      "note": "図書館、文化、観光イベントを確認する。カレンダーにない恒例祭は観光協会と広報でも追う。"
+    },
+    {
+      "id": "taki-tourism-news",
+      "label": "多気町観光協会",
+      "municipality": "多気町",
+      "sourceType": "tourism_portal",
+      "role": "confirmation",
+      "url": "https://takichou-kanko.com/",
+      "checkCadence": "monthly",
+      "note": "あじさいまつり、おいないまつりなど、実行委員会系イベントの当年告知を確認する。"
+    },
+    {
+      "id": "odai-tourism-calendar",
+      "label": "大台町観光協会 イベントカレンダー",
+      "municipality": "大台町",
+      "sourceType": "organizer_calendar",
+      "role": "confirmation",
+      "url": "https://web-odai.info/calendar/",
+      "checkCadence": "weekly",
+      "note": "千客万来夏まつり、水上カーニバル、自然体験を確認し、町・教育委員会共催情報までたどる。"
+    },
+    {
+      "id": "mihama-town-promotion-news",
+      "label": "青を編む｜三重県御浜町 更新情報",
+      "municipality": "御浜町",
+      "sourceType": "tourism_portal",
+      "role": "confirmation",
+      "url": "https://mihama-mie-townpromotion.jp/news/",
+      "checkCadence": "weekly",
+      "note": "御浜町の販売会、マルシェ、地域文化イベントを日付・会場とともに確認する。"
+    },
+    {
+      "id": "kiho-koho-2026",
+      "label": "広報きほう 2026年",
+      "municipality": "紀宝町",
+      "sourceType": "municipal_newsletter",
+      "role": "confirmation",
+      "url": "https://www.town.kiho.lg.jp/2026/?post_type=koho_kiho",
+      "checkCadence": "monthly",
+      "note": "花火大会、みなと市、地区行事の開催告知・協賛募集・延期条件を月次PDFで確認する。"
+    },
+    {
+      "id": "komono-community-news",
+      "label": "菰野町 コミュニティ振興課",
+      "municipality": "菰野町",
+      "sourceType": "municipal_news",
+      "role": "confirmation",
+      "url": "https://www2.town.komono.mie.jp/soshiki/6/index-2.html",
+      "checkCadence": "monthly",
+      "note": "町民盆踊り、燈火まつり、地域文化行事を町の担当課から確認する。"
+    },
+    {
+      "id": "kankomie-festival-discovery",
+      "label": "観光三重 祭り特集",
+      "municipality": "三重県内",
+      "sourceType": "aggregator_schedule",
+      "role": "signal",
+      "url": "https://www.kankomie.or.jp/season/festival",
+      "checkCadence": "weekly",
+      "note": "県内の祭りを横断発見する入口。掲載時は必ず自治体、主催者、寺社、実行委員会の一次資料へ移る。"
     }
   ]
 }

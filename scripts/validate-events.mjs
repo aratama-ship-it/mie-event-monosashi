@@ -6,6 +6,8 @@ const municipalSourcesUrl = new URL("../data/municipal-sources.json", import.met
 const municipalSources = JSON.parse(await readFile(municipalSourcesUrl, "utf8"));
 const discoverySourcesUrl = new URL("../data/discovery-sources.json", import.meta.url);
 const discoverySources = JSON.parse(await readFile(discoverySourcesUrl, "utf8"));
+const festivalWatchlistUrl = new URL("../data/festival-watchlist.json", import.meta.url);
+const festivalWatchlist = JSON.parse(await readFile(festivalWatchlistUrl, "utf8"));
 
 const required = [
   "id",
@@ -135,6 +137,9 @@ const allowedDiscoveryTypes = new Set([
   "municipal_newsletter",
   "municipal_news",
   "organizer_booking",
+  "municipal_calendar",
+  "community_news",
+  "tourism_portal",
 ]);
 
 if (!Array.isArray(discoverySources.sources) || discoverySources.sources.length === 0) {
@@ -166,6 +171,64 @@ for (const [index, source] of (discoverySources.sources ?? []).entries()) {
   if (!source.url?.startsWith("https://")) errors.push(`${where}.url must be HTTPS`);
 }
 
+const festivalCandidateIds = new Set();
+const allowedFestivalStatuses = new Set([
+  "needs_details",
+  "needs_2026_confirmation",
+  "needs_primary_event_detail",
+  "needs_primary_source",
+  "source_conflict",
+]);
+
+if (!Array.isArray(festivalWatchlist.candidates)) {
+  errors.push("festival-watchlist.candidates must be an array");
+}
+
+for (const [index, candidate] of (festivalWatchlist.candidates ?? []).entries()) {
+  const where = `festival-watchlist[${index}]`;
+  for (const key of [
+    "id",
+    "municipality",
+    "title",
+    "expectedDate",
+    "status",
+    "nextCheckAt",
+    "childStatus",
+  ]) {
+    if (!candidate[key]) errors.push(`${where}.${key} is required`);
+  }
+  if (festivalCandidateIds.has(candidate.id)) {
+    errors.push(`${where}.id is duplicated: ${candidate.id}`);
+  }
+  festivalCandidateIds.add(candidate.id);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(candidate.expectedDate ?? "")) {
+    errors.push(`${where}.expectedDate must be YYYY-MM-DD`);
+  }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(candidate.nextCheckAt ?? "")) {
+    errors.push(`${where}.nextCheckAt must be YYYY-MM-DD`);
+  }
+  if (!allowedFestivalStatuses.has(candidate.status)) {
+    errors.push(`${where}.status is not allowed: ${candidate.status}`);
+  }
+  if (candidate.publishable !== false) {
+    errors.push(`${where}.publishable must stay false until promoted to events.json`);
+  }
+  if (!Array.isArray(candidate.known) || candidate.known.length === 0) {
+    errors.push(`${where}.known must contain evidence`);
+  }
+  if (!Array.isArray(candidate.missing) || candidate.missing.length === 0) {
+    errors.push(`${where}.missing must contain unresolved facts`);
+  }
+  if (!Array.isArray(candidate.sourceUrls) || candidate.sourceUrls.length === 0) {
+    errors.push(`${where}.sourceUrls must contain at least one source`);
+  }
+  for (const sourceUrl of candidate.sourceUrls ?? []) {
+    if (!sourceUrl.startsWith("https://")) {
+      errors.push(`${where}.sourceUrls must contain HTTPS URLs`);
+    }
+  }
+}
+
 if (errors.length) {
   console.error(`Event data validation failed (${errors.length})`);
   for (const error of errors) console.error(`- ${error}`);
@@ -173,5 +236,5 @@ if (errors.length) {
 }
 
 console.log(
-  `Event data OK: ${payload.events.length} primary-source records, ${ids.size} unique IDs; municipal routes OK: ${municipalityNames.size} East Kishu municipalities; discovery routes OK: ${discoverySourceIds.size} sources`,
+  `Event data OK: ${payload.events.length} primary-source records, ${ids.size} unique IDs; municipal routes OK: ${municipalityNames.size} East Kishu municipalities; discovery routes OK: ${discoverySourceIds.size} sources; festival watchlist OK: ${festivalCandidateIds.size} unpublished candidates`,
 );

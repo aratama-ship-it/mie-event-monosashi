@@ -301,15 +301,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="source-principle" aria-label="情報の扱い方">
-        <span className="principle-number">01</span>
-        <p>
-          <strong>掲載元ではなく、一次資料へ。</strong>
-          観光サイトなどで見つけた催しも、主催者・自治体の情報で確認した事実だけを整理します。
-        </p>
-        <span className="principle-date">データ更新 {displayDate(eventData.updatedAt)}</span>
-      </section>
-
       <section className="finder" aria-label="イベントを絞り込む">
         <div className="finder-topline">
           <span>週末のものさし</span>

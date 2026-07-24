@@ -21,6 +21,7 @@
 - `data/events.json`: 公開するイベント
 - `data/discovery-sources.json`: 小規模イベントを発見・確認する巡回先
 - `data/municipal-sources.json`: 東紀州5市町の公式情報源
+- `data/festival-watchlist.json`: 当年の一次資料や詳細確認を待つ、未公開の地区祭り候補
 - `data/kitchen-car-sources.json`: キッチンカー予定表の調査候補
 
 発見用の情報だけではイベントを公開せず、一次資料で日時と場所を確認する運用です。

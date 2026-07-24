@@ -254,43 +254,6 @@ main {
   font-weight: 700;
 }
 
-.source-principle {
-  align-items: center;
-  background: var(--ink);
-  color: var(--paper);
-  display: grid;
-  gap: 20px;
-  grid-template-columns: 54px 1fr auto;
-  margin: 0 auto;
-  max-width: 1240px;
-  padding: 24px 28px;
-}
-
-.principle-number {
-  color: var(--sun);
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 28px;
-}
-
-.source-principle p {
-  font-size: 13px;
-  line-height: 1.8;
-  margin: 0;
-}
-
-.source-principle strong {
-  color: var(--sun);
-  margin-right: 12px;
-}
-
-.principle-date {
-  color: #bec8c3;
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 10px;
-  letter-spacing: 0.08em;
-  white-space: nowrap;
-}
-
 .finder {
   border-bottom: 1px solid var(--ink);
   margin: 72px auto 0;
@@ -1112,29 +1075,6 @@ footer p {
     font-size: 11px;
     min-height: 68px;
     padding: 10px 2px;
-  }
-
-  .source-principle {
-    gap: 12px;
-    grid-template-columns: 38px 1fr;
-    padding: 20px 16px;
-  }
-
-  .principle-number {
-    font-size: 20px;
-  }
-
-  .source-principle p {
-    font-size: 12px;
-  }
-
-  .source-principle strong {
-    display: block;
-    margin: 0 0 4px;
-  }
-
-  .principle-date {
-    grid-column: 2;
   }
 
   .finder {
