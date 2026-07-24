@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useState } from "react";
 import eventData from "@/data/events.json";
-import kitchenCarData from "@/data/kitchen-car-sources.json";
 
 type Period = "all" | "weekend" | "august" | "september";
 type Category =
@@ -56,31 +55,9 @@ type ChildFit = {
   detail: string;
 };
 
-type KitchenCarSource = {
-  id: string;
-  name: string;
-  baseMunicipality: string | null;
-  calendarUrl: string;
-  calendarTypeLabel: string;
-  lastScheduleMonth: string | null;
-  lastCheckedAt: string;
-  freshnessStatus:
-    | "current"
-    | "recent_not_current"
-    | "calendar_empty"
-    | "no_calendar_found"
-    | "inaccessible";
-  displayNote: string;
-  sameDayNote: string;
-};
-
 const events = (eventData.events as EventItem[])
   .slice()
   .sort((left, right) => left.isoDate.localeCompare(right.isoDate));
-
-const currentKitchenCars = (kitchenCarData.vehicles as KitchenCarSource[]).filter(
-  (source) => source.freshnessStatus === "current",
-);
 
 function displayDate(value: string) {
   return value.replaceAll("-", ".");
@@ -269,6 +246,9 @@ export default function Home() {
         </a>
         <div className="header-actions">
           <span className="checked-badge">一次資料を確認</span>
+          <a className="header-nav-link" href="/kitchen-cars">
+            キッチンカー
+          </a>
           <a className="saved-link" href="#results">
             候補 <strong>{saved.length}</strong>
           </a>
@@ -396,54 +376,6 @@ export default function Home() {
               </span>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="kitchen-car-lab" aria-labelledby="kitchen-car-title">
-        <div className="kitchen-car-heading">
-          <div>
-            <p className="eyebrow">KITCHEN CAR / EXPERIMENTAL</p>
-            <h2 id="kitchen-car-title">キッチンカーは、今日どこへ。</h2>
-          </div>
-          <div className="trial-note">
-            <strong>試験中</strong>
-            <span>使うかどうかは未定</span>
-          </div>
-        </div>
-
-        <p className="kitchen-car-lead">
-          公開情報から当月の予定を確認できた車両だけを仮掲載しています。
-          出店場所や時間は変わるため、出発前に公式情報を確認してください。
-        </p>
-
-        <div className="kitchen-car-grid">
-          {currentKitchenCars.map((source, index) => (
-            <article className="kitchen-car-card" key={source.id}>
-              <span className="kitchen-car-number" aria-hidden="true">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              <div className="kitchen-car-copy">
-                <div className="kitchen-car-meta">
-                  <span>{source.baseMunicipality ?? "三重県内"}</span>
-                  <span>{source.calendarTypeLabel}</span>
-                </div>
-                <h3>{source.name}</h3>
-                <p>{source.displayNote}</p>
-                <small>{source.sameDayNote}</small>
-              </div>
-              <a href={source.calendarUrl} target="_blank" rel="noreferrer">
-                出店予定を見る <span aria-hidden="true">↗</span>
-              </a>
-            </article>
-          ))}
-        </div>
-
-        <div className="kitchen-car-footnote">
-          <span>{`現在表示 ${currentKitchenCars.length}台 / 調査候補 ${kitchenCarData.vehicles.length}台`}</span>
-          <span>確認 {displayDate(kitchenCarData.updatedAt)}</span>
-          <p>
-            古い予定、空欄のカレンダー、SNSで確認できない車両は表示せず、情報源台帳にだけ残しています。
-          </p>
         </div>
       </section>
 

@@ -2,13 +2,13 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-async function render() {
+async function render(path = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
   workerUrl.searchParams.set("test", `${process.pid}-${Date.now()}`);
   const { default: worker } = await import(workerUrl.href);
 
   return worker.fetch(
-    new Request("http://localhost/", {
+    new Request(`http://localhost${path}`, {
       headers: { accept: "text/html" },
     }),
     {
@@ -48,11 +48,9 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.doesNotMatch(html, /薄い地域ほど、先に見に行く。/);
   assert.doesNotMatch(html, /出店予定から、町の一日を逆引きする。/);
   assert.match(html, /ライブ、JFL、花火、展覧会…/);
-  assert.match(html, /キッチンカーは、今日どこへ。/);
-  assert.match(html, /使うかどうかは未定/);
-  assert.match(html, /cafe＆crepe PECOCO/);
-  assert.match(html, /Goofy BURGER/);
-  assert.match(html, /現在表示 2台 \/ 調査候補 15台/);
+  assert.match(html, /href="\/kitchen-cars"[^>]*>キッチンカー<\/a>/);
+  assert.doesNotMatch(html, /キッチンカーは、今日どこへ。/);
+  assert.doesNotMatch(html, /cafe＆crepe PECOCO/);
   assert.match(html, /data-category="スポーツ"/);
   assert.match(html, /第108回 全国高校野球選手権三重大会 準々決勝/);
   assert.match(html, /JFL第1節 ヴィアティン三重 vs ボンズ市原/);
@@ -139,6 +137,22 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(cardFor("Quubi Japan Tour 2026 三重公演"), /data-child-fit="conditional"/);
   assert.match(cardFor("恋旅in紀宝 vol.7"), /data-child-fit="not-for-children"/);
   assert.match(cardFor("吉例マクサ夏祭り"), /data-child-fit="unknown"/);
+});
+
+test("kitchen-car experiment lives on its own linked page", async () => {
+  const response = await render("/kitchen-cars");
+  assert.equal(response.status, 200);
+  assert.match(response.headers.get("content-type") ?? "", /^text\/html\b/i);
+
+  const html = await response.text();
+  assert.match(html, /<title>キッチンカーは、今日どこへ。｜みえのものさし<\/title>/);
+  assert.match(html, /aria-current="page"[^>]*>キッチンカー<\/a>/);
+  assert.match(html, /キッチンカーは、今日どこへ。/);
+  assert.match(html, /使うかどうかは未定/);
+  assert.match(html, /cafe＆crepe PECOCO/);
+  assert.match(html, /Goofy BURGER/);
+  assert.match(html, /現在表示 2台 \/ 調査候補 15台/);
+  assert.match(html, /href="\/"[^>]*>催し一覧へ戻る<\/a>/);
 });
 
 test("all published records keep primary-source and sports-freshness fields", async () => {
