@@ -63,6 +63,10 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(html, /GRe4N BOYZ イマーシブライブシアター2026/);
   assert.match(html, /第73回 おわせ港まつり/);
   assert.match(html, /2026年 熊野大花火大会/);
+  assert.match(html, /第一次お木曳行事（川曳）— 二見/);
+  assert.match(html, /第一次お木曳行事（川曳）— 宇治・二軒茶屋/);
+  assert.match(html, /第一次お木曳行事（川曳）— 四郷/);
+  assert.match(html, /第一次お木曳行事（川曳）— 大湊・修道/);
   assert.match(html, /かぶとの森の朝市（7月）/);
   assert.match(html, /野地町ビアガーデン2026/);
   assert.match(html, /亀山市納涼大会2026/);
@@ -142,11 +146,18 @@ test("all published records keep primary-source and sports-freshness fields", as
   const payload = JSON.parse(raw);
   const sports = payload.events.filter((event) => event.category === "スポーツ");
 
-  assert.equal(payload.events.length, 84);
-  assert.equal(new Set(payload.events.map((event) => event.id)).size, 84);
+  assert.equal(payload.events.length, 88);
+  assert.equal(new Set(payload.events.map((event) => event.id)).size, 88);
   assert.equal(payload.events.filter((event) => event.category === "展覧会").length, 7);
   assert.equal(payload.events.filter((event) => event.category === "交流").length, 11);
   assert.equal(sports.length, 4);
+  assert.deepEqual(
+    payload.events
+      .filter((event) => event.id.startsWith("ise-okihiki-kawabiki-"))
+      .map((event) => event.isoDate)
+      .sort(),
+    ["2026-07-25", "2026-07-26", "2026-08-01", "2026-08-02"],
+  );
   assert.deepEqual(
     new Set(
       [
