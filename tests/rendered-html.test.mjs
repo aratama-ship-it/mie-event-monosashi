@@ -39,9 +39,11 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(html, /子ども向け/);
   assert.match(html, /子ども参加可/);
   assert.match(html, /条件あり/);
+  assert.match(html, /子ども対象外/);
   assert.match(html, /公式で要確認/);
   assert.match(html, /<option[^>]*>展覧会<\/option>/);
   assert.match(html, /<option[^>]*>伊賀<\/option>/);
+  assert.match(html, /9月以降/);
   assert.doesNotMatch(html, /会場だけでは、拾いきれない。/);
   assert.doesNotMatch(html, /薄い地域ほど、先に見に行く。/);
   assert.doesNotMatch(html, /出店予定から、町の一日を逆引きする。/);
@@ -93,6 +95,17 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(html, /親子で楽しむはじめてのコンサート「おんがくことはじめ」/);
   assert.match(html, /初めてのお箏/);
   assert.match(html, /キッズお仕事広場「ボクの、ワタシの名刺をつくろう！」/);
+  assert.match(html, /ものづくりフェアー2026/);
+  assert.match(html, /フジさんのわくわく科学実験ショー/);
+  assert.match(html, /みえこどもの城 de お盆を満喫！！/);
+  assert.match(html, /イオンモール東員 キッズサマーラボ/);
+  assert.match(html, /鈴鹿サーキット HANABI祭/);
+  assert.match(html, /夏もベルファームであそぼう‼/);
+  assert.match(html, /志摩スペイン村 サマーフィエスタ2026/);
+  assert.match(html, /竹の水鉄砲作り【8\/16の部】/);
+  assert.match(html, /第61回 全国高等専門学校体育大会 バレーボール競技/);
+  assert.match(html, /恋旅in紀宝 vol.7/);
+  assert.match(html, /ジュラシックアクアリウム/);
   assert.match(html, /data-category="交流"/);
   assert.match(html, /2026 きほく燈籠祭/);
   assert.match(html, /ジュン先生がやってきた！/);
@@ -120,6 +133,7 @@ test("server-renders the Mie event finder and records without collection-method 
   );
   assert.match(cardFor("第71回 鳥羽みなとまつり"), /data-child-fit="allowed"/);
   assert.match(cardFor("Quubi Japan Tour 2026 三重公演"), /data-child-fit="conditional"/);
+  assert.match(cardFor("恋旅in紀宝 vol.7"), /data-child-fit="not-for-children"/);
   assert.match(cardFor("吉例マクサ夏祭り"), /data-child-fit="unknown"/);
 });
 
@@ -128,11 +142,11 @@ test("all published records keep primary-source and sports-freshness fields", as
   const payload = JSON.parse(raw);
   const sports = payload.events.filter((event) => event.category === "スポーツ");
 
-  assert.equal(payload.events.length, 73);
-  assert.equal(new Set(payload.events.map((event) => event.id)).size, 73);
-  assert.equal(payload.events.filter((event) => event.category === "展覧会").length, 6);
-  assert.equal(payload.events.filter((event) => event.category === "交流").length, 9);
-  assert.equal(sports.length, 3);
+  assert.equal(payload.events.length, 84);
+  assert.equal(new Set(payload.events.map((event) => event.id)).size, 84);
+  assert.equal(payload.events.filter((event) => event.category === "展覧会").length, 7);
+  assert.equal(payload.events.filter((event) => event.category === "交流").length, 11);
+  assert.equal(sports.length, 4);
   assert.deepEqual(
     new Set(
       [
@@ -203,7 +217,7 @@ test("small-event discovery sources stay separate from publishable event sources
   );
   const payload = JSON.parse(raw);
 
-  assert.equal(payload.sources.length, 6);
+  assert.equal(payload.sources.length, 16);
   assert.ok(payload.sources.some((source) => source.sourceType === "vendor_schedule"));
   assert.ok(payload.sources.some((source) => source.role === "signal"));
   assert.ok(payload.sources.some((source) => source.role === "confirmation"));

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23",
+  "updatedAt": "2026-07-24",
   "publishRule": "発見用情報だけでは公開せず、主催者・会場・自治体の一次資料で日時と場所を確認する",
   "sources": [
     {
@@ -61,6 +61,106 @@
       "url": "https://reserva.be/kabutonomorifarm/reserve?mode=service_staff&search_evt_no=f2eJwzNjU0NDMBAAQ4ATU",
       "checkCadence": "weekly",
       "note": "朝市に付随する体験の開催日、時間、参加条件を確認する。"
+    },
+    {
+      "id": "aeon-suzuka-events",
+      "label": "イオンモール鈴鹿 イベント",
+      "municipality": "鈴鹿市",
+      "sourceType": "venue_calendar",
+      "role": "confirmation",
+      "url": "https://suzuka.aeonmall.jp/event",
+      "checkCadence": "weekly",
+      "note": "親子体験、販売催事、地域団体の発表など、自治体カレンダーに載りにくい館内イベントを確認する。"
+    },
+    {
+      "id": "aeon-toin-events",
+      "label": "イオンモール東員 イベント",
+      "municipality": "東員町",
+      "sourceType": "venue_calendar",
+      "role": "confirmation",
+      "url": "https://toin.aeonmall.jp/event",
+      "checkCadence": "weekly",
+      "note": "子ども向け体験や小規模ステージを、参加条件・定員と一緒に確認する。"
+    },
+    {
+      "id": "mie-childrens-castle-events",
+      "label": "みえこどもの城 イベント",
+      "municipality": "松阪市",
+      "sourceType": "venue_calendar",
+      "role": "confirmation",
+      "url": "https://www.mie-cc.or.jp/map/",
+      "checkCadence": "weekly",
+      "note": "当日参加と事前申込を分けて確認できる、子ども向け体験の高頻度な一次資料。"
+    },
+    {
+      "id": "bellfarm-events",
+      "label": "松阪農業公園ベルファーム イベント",
+      "municipality": "松阪市",
+      "sourceType": "venue_calendar",
+      "role": "confirmation",
+      "url": "https://www.bellfarm.jp/event/",
+      "checkCadence": "weekly",
+      "note": "農・食・自然体験、季節の遊び、マルシェを確認する。雨天条件も個別ページで見る。"
+    },
+    {
+      "id": "sun-arena-kawaraban",
+      "label": "三重県営サンアリーナ かわら版",
+      "municipality": "伊勢市",
+      "sourceType": "venue_calendar",
+      "role": "confirmation",
+      "url": "https://sun-arena.or.jp/?page_id=904",
+      "checkCadence": "monthly",
+      "note": "大会、観覧可能な競技、講座を月次PDFから確認し、予約制かどうかを記録する。"
+    },
+    {
+      "id": "toba-aquarium-events",
+      "label": "鳥羽水族館 イベント情報",
+      "municipality": "鳥羽市",
+      "sourceType": "venue_calendar",
+      "role": "confirmation",
+      "url": "https://aquarium.co.jp/event/",
+      "checkCadence": "weekly",
+      "note": "季節企画展、レクチャー、体験プログラムを、入館料や募集状況と一緒に確認する。"
+    },
+    {
+      "id": "shima-spain-village-events",
+      "label": "志摩スペイン村 イベント",
+      "municipality": "志摩市",
+      "sourceType": "venue_calendar",
+      "role": "confirmation",
+      "url": "https://www.parque-net.com/",
+      "checkCadence": "weekly",
+      "note": "季節イベント、パレード、花火、期間限定体験を営業日・料金と一緒に確認する。"
+    },
+    {
+      "id": "suzuka-circuit-events",
+      "label": "鈴鹿サーキット イベントスケジュール",
+      "municipality": "鈴鹿市",
+      "sourceType": "venue_calendar",
+      "role": "confirmation",
+      "url": "https://www.suzukacircuit.jp/today/",
+      "checkCadence": "weekly",
+      "note": "レース以外の家族向け企画、季節イベント、花火を料金・観覧条件とともに確認する。"
+    },
+    {
+      "id": "mie-forest-events",
+      "label": "三重県民の森 イベント",
+      "municipality": "菰野町",
+      "sourceType": "venue_calendar",
+      "role": "confirmation",
+      "url": "https://mie-mori.jp/event/",
+      "checkCadence": "weekly",
+      "note": "自然観察、工作、水辺体験などの小規模な募集企画を、先着・抽選の別まで確認する。"
+    },
+    {
+      "id": "kiho-town-news",
+      "label": "紀宝町 新着情報・イベント",
+      "municipality": "紀宝町",
+      "sourceType": "municipal_news",
+      "role": "confirmation",
+      "url": "https://www.town.kiho.lg.jp/news/",
+      "checkCadence": "weekly",
+      "note": "募集型の交流、観光、地域行事を新着情報から拾い、締切と対象条件を確認する。"
     }
   ]
 }

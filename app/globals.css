@@ -353,7 +353,7 @@ main {
 .segmented {
   display: grid;
   gap: 1px;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .segmented button,
@@ -485,6 +485,10 @@ main {
 
 .child-fit-conditional {
   color: var(--rust);
+}
+
+.child-fit-not-for-children {
+  color: #834444;
 }
 
 .child-fit-unknown {
@@ -805,6 +809,10 @@ main {
 
 .event-kicker span.child-fit-badge.child-fit-conditional {
   background: #f0ddd4;
+}
+
+.event-kicker span.child-fit-badge.child-fit-not-for-children {
+  background: #ead6d2;
 }
 
 .event-kicker span.child-fit-badge.child-fit-unknown {

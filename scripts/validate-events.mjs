@@ -28,6 +28,7 @@ const required = [
 const ids = new Set();
 const errors = [];
 const categories = new Set(["祭り", "舞台", "音楽", "展覧会", "学び", "交流", "スポーツ"]);
+const periods = new Set(["weekend", "august", "september"]);
 
 if (!Array.isArray(payload.events) || payload.events.length === 0) {
   errors.push("events must be a non-empty array");
@@ -55,6 +56,10 @@ for (const [index, event] of (payload.events ?? []).entries()) {
 
   if (!categories.has(event.category)) {
     errors.push(`${where}.category is not an allowed category: ${event.category}`);
+  }
+
+  if (!periods.has(event.period)) {
+    errors.push(`${where}.period is not an allowed period: ${event.period}`);
   }
 
   if (event.category === "スポーツ" && !event.tags.includes("日程変更注意")) {
@@ -125,8 +130,10 @@ const allowedDiscoveryTypes = new Set([
   "vendor_schedule",
   "aggregator_schedule",
   "organizer_calendar",
+  "venue_calendar",
   "venue_recruitment",
   "municipal_newsletter",
+  "municipal_news",
   "organizer_booking",
 ]);
 

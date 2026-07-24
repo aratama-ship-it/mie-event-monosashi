@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import eventData from "@/data/events.json";
 import kitchenCarData from "@/data/kitchen-car-sources.json";
 
-type Period = "all" | "weekend" | "august";
+type Period = "all" | "weekend" | "august" | "september";
 type Category =
   | "すべて"
   | "祭り"
@@ -42,11 +42,16 @@ type EventItem = {
   };
 };
 
-type ChildFitId = "for-children" | "allowed" | "conditional" | "unknown";
+type ChildFitId =
+  | "for-children"
+  | "allowed"
+  | "conditional"
+  | "not-for-children"
+  | "unknown";
 
 type ChildFit = {
   id: ChildFitId;
-  symbol: "◎" | "○" | "△" | "？";
+  symbol: "◎" | "○" | "△" | "×" | "？";
   label: string;
   detail: string;
 };
@@ -93,6 +98,11 @@ const periods: { id: Period; label: string; note: string }[] = [
     label: "8月",
     note: `${events.filter((event) => event.period === "august").length}件`,
   },
+  {
+    id: "september",
+    label: "9月以降",
+    note: `${events.filter((event) => event.period === "september").length}件`,
+  },
 ];
 
 const needs = [
@@ -126,6 +136,12 @@ const childFitScale: ChildFit[] = [
     detail: "年齢制限、保護者同伴、託児などの条件を確認してください",
   },
   {
+    id: "not-for-children",
+    symbol: "×",
+    label: "子ども対象外",
+    detail: "公式の対象が成人または大人向けに限定されています",
+  },
+  {
     id: "unknown",
     symbol: "？",
     label: "公式で要確認",
@@ -140,12 +156,17 @@ function assessChildFit(event: EventItem): ChildFit {
     .replace(/3歳未満[^・／]*不可/g, "")
     .replace(/子どものみ[^・／]*不可/g, "");
   const text = `${positiveAudience} ${positiveTags}`;
+  const sourceText = `${event.audience} ${event.tags.join(" ")}`;
   const childTarget =
     /子ども|子供|親子|ファミリー|児童館|小学生|中学生|未就学児|赤ちゃん|0歳から/.test(
       text,
     );
 
   if (childTarget) return childFitScale[0];
+
+  if (/大人向け|成人限定|18歳以上|20歳以上|25歳以上|25〜39歳/.test(sourceText)) {
+    return childFitScale[3];
+  }
 
   if (
     /どなたでも|一般参加可|年齢制限なし|0歳から入場可|子ども連れ歓迎|赤ちゃんスペース/.test(
@@ -163,7 +184,7 @@ function assessChildFit(event: EventItem): ChildFit {
     return childFitScale[2];
   }
 
-  return childFitScale[3];
+  return childFitScale[4];
 }
 
 function matchesNeed(event: EventItem, need: string) {
