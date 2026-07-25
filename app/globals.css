@@ -1037,14 +1037,22 @@ main {
   padding: 3px 9px;
 }
 
-/* Anything else is a caveat, not a stamp, so it reads as a caption and wraps. */
+/* Anything else is a caveat, not a stamp. It gets an outlined label rather than a
+   filled one: "月曜休館" means you cannot go that day, so it has to be readable,
+   but a solid dark block next to the 62px numeral would shout. Borrowed from the
+   child-fit badge, which is outlined for the same reason. */
 .event-date em.date-note-note {
-  color: var(--ink-soft);
-  display: block;
-  font-size: 10px;
-  line-height: 1.45;
-  margin-top: 2px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--ink);
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
+  margin-top: 5px;
   overflow-wrap: anywhere;
+  padding: 3px 6px;
 }
 
 .event-main {
@@ -1726,10 +1734,9 @@ footer p {
   }
 
   .event-date em.date-note-note {
-    font-size: 11px;
     justify-self: end;
     margin-top: 0;
-    text-align: right;
+    white-space: nowrap;
   }
 
   .event-main {
