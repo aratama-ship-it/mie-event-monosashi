@@ -25,10 +25,6 @@ concurrency:
   group: github-pages
   cancel-in-progress: false
 
-env:
-  SITE_BASE_PATH: /mie-event-monosashi
-  SITE_URL: https://aratama-ship-it.github.io/mie-event-monosashi
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -44,10 +40,18 @@ jobs:
 
       # Keeps a broken build from reaching the site: the data rules and the
       # rendered-output tests both run before publishing.
+      #
+      # These deliberately run without SITE_BASE_PATH. They exercise the default
+      # root-served build, and setting the sub-path here would change the links in
+      # the rendered HTML the assertions check.
       - run: npm run lint
       - run: npm test
 
+      # The sub-path belongs to this step only.
       - run: npm run build:pages
+        env:
+          SITE_BASE_PATH: /mie-event-monosashi
+          SITE_URL: https://aratama-ship-it.github.io/mie-event-monosashi
 
       - uses: actions/upload-pages-artifact@v3
         with:

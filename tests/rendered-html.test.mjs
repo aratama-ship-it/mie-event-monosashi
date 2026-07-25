@@ -20,6 +20,16 @@ const todayIso = new Intl.DateTimeFormat("en-CA", {
 const liveEvents = payload.events.filter((event) => event.endDate >= todayIso);
 const endedEvents = payload.events.filter((event) => event.endDate < todayIso);
 
+/** The site's own base path, so link assertions work under either build. */
+function sitePath(path) {
+  const base = (process.env.SITE_BASE_PATH ?? "").replace(/\/$/, "");
+  return `${base}${path}`;
+}
+
+function escapeRegExp(value) {
+  return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 /** React escapes these when it serialises text, so assertions must too. */
 function escapeHtml(value) {
   return value
@@ -163,7 +173,12 @@ test("kitchen-car experiment lives on its own linked page", async () => {
   assert.match(html, /cafe＆crepe PECOCO/);
   assert.match(html, /Goofy BURGER/);
   assert.match(html, /現在表示 2台 \/ 調査候補 15台/);
-  assert.match(html, /href="\/"[^>]*>催し一覧へ戻る<\/a>/);
+  // Links carry SITE_BASE_PATH, which is empty here and "/<repo>" for the GitHub
+  // Pages build, so build the expected href rather than pinning the root.
+  assert.match(
+    html,
+    new RegExp(`href="${escapeRegExp(sitePath("/"))}"[^>]*>催し一覧へ戻る</a>`),
+  );
 });
 
 test("all published records keep primary-source and sports-freshness fields", async () => {
