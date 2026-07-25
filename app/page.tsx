@@ -2,9 +2,19 @@
 
 import { useEffect, useMemo, useState } from "react";
 import eventData from "@/data/events.json";
-import { eventOccursOn } from "@/lib/event-dates.mjs";
+import {
+  addDays,
+  datePresets,
+  eventOccursOn,
+  formatEventDate,
+  hasEnded,
+  isOngoing,
+  nextOccurrence,
+  occursInRange,
+  spanInDays,
+} from "@/lib/event-dates.mjs";
 
-type Period = "all" | "weekend" | "august" | "september";
+type PresetId = "all" | "weekend" | "this-month" | "next-month";
 type Category =
   | "すべて"
   | "祭り"
@@ -17,10 +27,16 @@ type Category =
 
 type EventItem = {
   id: string;
-  month: string;
-  day: string;
-  weekday: string;
-  isoDate: string;
+  /** First day. Structured dates are the source of truth; display is derived. */
+  startDate: string;
+  /** Last day. Equal to startDate for a single-day event. */
+  endDate: string;
+  /** Explicit occurrence list, present only for non-contiguous series. */
+  dates?: string[];
+  /** 0 = Sunday. From notes like "月曜休館". */
+  closedWeekdays?: number[];
+  /** A weekday for a single day, or editorial text such as "月曜休館". */
+  dateNote: string;
   time: string;
   region: string;
   municipality: string;
@@ -31,7 +47,13 @@ type EventItem = {
   audience: string;
   summary: string;
   tags: string[];
-  period: Exclude<Period, "all">;
+  /**
+   * Pins the child rating when reading it out of `audience` would be wrong.
+   * Leave unset to let the wording decide.
+   */
+  childFit?: ChildFitId;
+  /** Present when the event is held inside a commercial facility. */
+  facility?: { name: string; type: string };
   status: "published";
   source: {
     kind: "primary";
@@ -56,9 +78,7 @@ type ChildFit = {
   detail: string;
 };
 
-const events = (eventData.events as EventItem[])
-  .slice()
-  .sort((left, right) => left.isoDate.localeCompare(right.isoDate));
+const allEvents = eventData.events as EventItem[];
 
 const weekdayLabels = ["日", "月", "火", "水", "木", "金", "土"];
 
@@ -77,12 +97,6 @@ function isoDateInJapan(date = new Date()) {
   return `${value.year}-${value.month}-${value.day}`;
 }
 
-function addDays(isoDate: string, amount: number) {
-  const date = new Date(`${isoDate}T00:00:00Z`);
-  date.setUTCDate(date.getUTCDate() + amount);
-  return date.toISOString().slice(0, 10);
-}
-
 function dateDetails(isoDate: string) {
   const [, month, day] = isoDate.split("-").map(Number);
   const weekday = new Date(`${isoDate}T00:00:00Z`).getUTCDay();
@@ -95,24 +109,6 @@ function dateDetails(isoDate: string) {
   };
 }
 
-const periods: { id: Period; label: string; note: string }[] = [
-  {
-    id: "weekend",
-    label: "7月末まで",
-    note: `${events.filter((event) => event.period === "weekend").length}件`,
-  },
-  {
-    id: "august",
-    label: "8月",
-    note: `${events.filter((event) => event.period === "august").length}件`,
-  },
-  {
-    id: "september",
-    label: "9月以降",
-    note: `${events.filter((event) => event.period === "september").length}件`,
-  },
-];
-
 const needs = [
   "ライブ",
   "大型ライブ",
@@ -121,6 +117,7 @@ const needs = [
   "子ども向け",
   "子ども参加可",
   "屋内",
+  "商業施設",
   "託児あり",
 ];
 
@@ -157,7 +154,25 @@ const childFitScale: ChildFit[] = [
   },
 ];
 
+/**
+ * The child rating, from the record when it states one and from the wording of
+ * `audience` otherwise.
+ *
+ * Reading it out of free text is only ever an approximation, and it can invert
+ * the meaning: "18歳以上を1名以上含む" is a requirement on the group, but a
+ * substring match reads it as an adults-only restriction. Because a wrong ◎ or ×
+ * on a child-safety question is the most damaging error this site can make, any
+ * record may pin the rating with `childFit` and keep the evidence in `audience`.
+ */
 function assessChildFit(event: EventItem): ChildFit {
+  if (event.childFit) {
+    const pinned = childFitScale.find((item) => item.id === event.childFit);
+    if (pinned) return pinned;
+  }
+  return inferChildFit(event);
+}
+
+function inferChildFit(event: EventItem): ChildFit {
   const positiveTags = event.tags.filter((tag) => !/不可|確認/.test(tag)).join(" ");
   const positiveAudience = event.audience
     .replace(/未就学児[^・／]*不可/g, "")
@@ -165,8 +180,10 @@ function assessChildFit(event: EventItem): ChildFit {
     .replace(/子どものみ[^・／]*不可/g, "");
   const text = `${positiveAudience} ${positiveTags}`;
   const sourceText = `${event.audience} ${event.tags.join(" ")}`;
+  // "お子さま" and "家族" are how commercial facilities almost always word their
+  // target, so leaving them out silently downgraded mall events to 「公式で要確認」.
   const childTarget =
-    /子ども|子供|親子|ファミリー|児童館|小学生|中学生|未就学児|赤ちゃん|0歳から/.test(
+    /子ども|子供|お子さま|親子|家族|ファミリー|児童館|小学生|中学生|未就学児|赤ちゃん|0歳から/.test(
       text,
     );
 
@@ -203,11 +220,14 @@ function matchesNeed(event: EventItem, need: string) {
   if (need === "子ども参加可") {
     return new Set<ChildFitId>(["for-children", "allowed"]).has(assessChildFit(event).id);
   }
+  if (need === "商業施設") {
+    return Boolean(event.facility);
+  }
   return `${event.tags.join(" ")} ${event.cost} ${event.audience}`.includes(need);
 }
 
 export default function Home() {
-  const [period, setPeriod] = useState<Period>("all");
+  const [period, setPeriod] = useState<PresetId>("all");
   const [selectedDate, setSelectedDate] = useState("");
   const [region, setRegion] = useState("すべて");
   const [category, setCategory] = useState<Category>("すべて");
@@ -216,6 +236,27 @@ export default function Home() {
   const [saved, setSaved] = useState<string[]>([]);
   const [todayIso] = useState(() => isoDateInJapan());
   const tomorrowIso = addDays(todayIso, 1);
+
+  // An event that finished yesterday is not something anyone can go to, so it
+  // never reaches the listing. Multi-day events stay until their last day.
+  const events = useMemo(
+    () =>
+      allEvents
+        .filter((event) => !hasEnded(event, todayIso))
+        .slice()
+        .sort((left, right) => {
+          const leftNext = nextOccurrence(left, todayIso) ?? left.endDate;
+          const rightNext = nextOccurrence(right, todayIso) ?? right.endDate;
+          if (leftNext !== rightNext) return leftNext.localeCompare(rightNext);
+          // Among events available on the same day, the one with the narrowest
+          // window is the one you have to decide about now.
+          return spanInDays(left) - spanInDays(right) || left.startDate.localeCompare(right.startDate);
+        }),
+    [todayIso],
+  );
+
+  const presets = useMemo(() => datePresets(todayIso), [todayIso]);
+
   const calendarDays = useMemo(
     () =>
       Array.from({ length: 30 }, (_, index) => {
@@ -254,7 +295,7 @@ export default function Home() {
           .includes(normalized);
       return regionMatch && categoryMatch && needMatch && queryMatch;
     });
-  }, [category, need, query, region]);
+  }, [category, events, need, query, region]);
 
   const calendarCounts = useMemo(
     () =>
@@ -269,26 +310,28 @@ export default function Home() {
 
   const results = useMemo(() => {
     if (selectedDate) {
+      // On a chosen day, an event that begins that day outranks one already running.
       return resultsWithoutDate
         .filter((event) => eventOccursOn(event, selectedDate))
         .sort(
           (left, right) =>
-            Number(right.isoDate === selectedDate) - Number(left.isoDate === selectedDate) ||
-            left.isoDate.localeCompare(right.isoDate),
+            Number(right.startDate === selectedDate) - Number(left.startDate === selectedDate) ||
+            spanInDays(left) - spanInDays(right),
         );
     }
-    if (period !== "all") {
-      return resultsWithoutDate.filter((event) => event.period === period);
+    const preset = presets.find((item) => item.id === period);
+    if (preset) {
+      return resultsWithoutDate.filter((event) => occursInRange(event, preset.from, preset.to));
     }
     return resultsWithoutDate;
-  }, [period, resultsWithoutDate, selectedDate]);
+  }, [period, presets, resultsWithoutDate, selectedDate]);
 
   const chooseDate = (isoDate: string) => {
     setSelectedDate(isoDate);
     setPeriod("all");
   };
 
-  const choosePeriod = (nextPeriod: Period) => {
+  const choosePeriod = (nextPeriod: PresetId) => {
     setSelectedDate("");
     setPeriod(nextPeriod);
   };
@@ -436,61 +479,71 @@ export default function Home() {
               </label>
             </div>
 
-            <div className="date-calendar" aria-label="今日から30日間のイベント件数">
-              <div className="date-calendar-heading">
-                <strong>30日カレンダー</strong>
-                <small>数字は現在の条件での件数</small>
+            <details className="date-calendar">
+              <summary className="date-calendar-summary">
+                <span className="date-calendar-summary-copy">
+                  <strong>30日カレンダー</strong>
+                  <small>日ごとの件数を見る</small>
+                </span>
+                <span className="date-calendar-toggle" aria-hidden="true">
+                  <span className="calendar-label-open">開く</span>
+                  <span className="calendar-label-close">閉じる</span>
+                </span>
+              </summary>
+              <div className="date-calendar-panel" aria-label="今日から30日間のイベント件数">
+                <p className="date-calendar-note">数字は現在の条件での件数</p>
+                <div className="date-calendar-weekdays" aria-hidden="true">
+                  {weekdayLabels.map((weekday) => (
+                    <span key={weekday}>{weekday}</span>
+                  ))}
+                </div>
+                <div className="date-calendar-grid">
+                  {calendarDays.map((date, index) => {
+                    const count = calendarCounts[date.isoDate] ?? 0;
+                    return (
+                      <button
+                        aria-current={date.isoDate === todayIso ? "date" : undefined}
+                        aria-label={`${date.month}月${date.day}日（${date.weekdayLabel}）、${count}件`}
+                        aria-pressed={selectedDate === date.isoDate}
+                        className={[
+                          selectedDate === date.isoDate ? "active" : "",
+                          date.weekday === 0 ? "sunday" : "",
+                          date.weekday === 6 ? "saturday" : "",
+                        ]
+                          .filter(Boolean)
+                          .join(" ")}
+                        data-calendar-date={date.isoDate}
+                        key={date.isoDate}
+                        onClick={() => chooseDate(date.isoDate)}
+                        style={index === 0 ? { gridColumnStart: date.weekday + 1 } : undefined}
+                        type="button"
+                      >
+                        <span>{date.monthDay}</span>
+                        <small>{count}件</small>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
-              <div className="date-calendar-weekdays" aria-hidden="true">
-                {weekdayLabels.map((weekday) => (
-                  <span key={weekday}>{weekday}</span>
-                ))}
-              </div>
-              <div className="date-calendar-grid">
-                {calendarDays.map((date, index) => {
-                  const count = calendarCounts[date.isoDate] ?? 0;
-                  return (
-                    <button
-                      aria-current={date.isoDate === todayIso ? "date" : undefined}
-                      aria-label={`${date.month}月${date.day}日（${date.weekdayLabel}）、${count}件`}
-                      aria-pressed={selectedDate === date.isoDate}
-                      className={[
-                        selectedDate === date.isoDate ? "active" : "",
-                        date.weekday === 0 ? "sunday" : "",
-                        date.weekday === 6 ? "saturday" : "",
-                      ]
-                        .filter(Boolean)
-                        .join(" ")}
-                      data-calendar-date={date.isoDate}
-                      key={date.isoDate}
-                      onClick={() => chooseDate(date.isoDate)}
-                      style={index === 0 ? { gridColumnStart: date.weekday + 1 } : undefined}
-                      type="button"
-                    >
-                      <span>{date.monthDay}</span>
-                      <small>{count}件</small>
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
+            </details>
 
             <div className="period-presets">
               <span>期間で見る</span>
               <div className="segmented">
-                {periods.map((item) => (
+                {presets.map((item) => (
                   <button
                     aria-pressed={!selectedDate && period === item.id}
                     className={!selectedDate && period === item.id ? "active" : ""}
                     key={item.id}
-                    onClick={() => choosePeriod(item.id)}
+                    onClick={() => choosePeriod(item.id as PresetId)}
                     type="button"
                   >
                     <span>{item.label}</span>
                     <small>
                       {
-                        resultsWithoutDate.filter((event) => event.period === item.id)
-                          .length
+                        resultsWithoutDate.filter((event) =>
+                          occursInRange(event, item.from, item.to),
+                        ).length
                       }
                       件
                     </small>
@@ -587,12 +640,10 @@ export default function Home() {
           {results.map((event) => {
             const isSaved = saved.includes(event.id);
             const childFit = assessChildFit(event);
-            const daySize =
-              event.day.length >= 7
-                ? "is-long"
-                : event.day.length >= 4
-                  ? "is-range"
-                  : "";
+            const { month, day } = formatEventDate(event);
+            const daySize = day.length >= 7 ? "is-long" : day.length >= 4 ? "is-range" : "";
+            const ongoing = isOngoing(event, todayIso);
+            const startsToday = event.startDate === todayIso;
             return (
               <article
                 className="event-card"
@@ -600,16 +651,18 @@ export default function Home() {
                 data-region={event.region}
                 data-category={event.category}
                 data-child-fit={childFit.id}
+                data-ongoing={ongoing && !startsToday ? "true" : undefined}
               >
-                <time className="event-date" dateTime={event.isoDate}>
-                  <span>{event.month}月</span>
-                  <strong className={daySize}>{event.day}</strong>
-                  <em>{event.weekday}</em>
+                <time className="event-date" dateTime={event.startDate}>
+                  <span>{month}月</span>
+                  <strong className={daySize}>{day}</strong>
+                  <em>{event.dateNote}</em>
                 </time>
 
                 <div className="event-main">
                   <div className="event-kicker">
-                    <span>{event.category}</span>
+                    {ongoing && !startsToday && <span className="ongoing-flag">開催中</span>}
+                    <span className="event-category">{event.category}</span>
                     <span>{event.region}</span>
                     <span>{event.municipality}</span>
                     <span>{event.time}</span>

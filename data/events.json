@@ -1,12 +1,368 @@
 {
-  "updatedAt": "2026-07-24",
+  "updatedAt": "2026-07-25",
   "events": [
     {
+      "id": "mie-art-rockefeller-flower-bird-prints-2026",
+      "startDate": "2026-06-13",
+      "endDate": "2026-07-26",
+      "closedWeekdays": [
+        1
+      ],
+      "dateNote": "月曜休館",
+      "time": "9:30–17:00（入館16:30まで）",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "展覧会",
+      "title": "ロックフェラー・コレクション花鳥版画展 北斎、広重を中心に",
+      "venue": "三重県立美術館 1階企画展示室",
+      "cost": "一般1,200円／学生1,000円／高校生以下無料",
+      "audience": "どなたでも",
+      "summary": "ロードアイランド・スクール・オブ・デザイン美術館の花鳥版画コレクションから、葛飾北斎や歌川広重らの選りすぐり163点を公開します。",
+      "tags": [
+        "浮世絵",
+        "北斎",
+        "広重",
+        "高校生以下無料",
+        "屋内",
+        "7月26日まで"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県立美術館",
+        "url": "https://www.bunka.pref.mie.lg.jp/art-museum/000311671.htm",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-26"
+      }
+    },
+    {
+      "id": "saiku-court-literature-2026",
+      "startDate": "2026-06-27",
+      "endDate": "2026-08-23",
+      "closedWeekdays": [
+        1
+      ],
+      "dateNote": "月曜休館",
+      "time": "9:30–17:00（入館16:30まで）",
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "category": "展覧会",
+      "title": "夏季企画展「王朝文学と斎王」",
+      "venue": "斎宮歴史博物館 特別展示室",
+      "cost": "一般500円／大学生400円／高校生以下無料",
+      "audience": "どなたでも",
+      "summary": "『伊勢物語』『源氏物語』などの文章・絵画・工芸を通して、王朝文学に描かれた斎王・斎宮と、実在した斎王たちの文学との関わりを紹介します。",
+      "tags": [
+        "王朝文学",
+        "斎王",
+        "歴史",
+        "高校生以下無料",
+        "展示替えあり",
+        "屋内"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "斎宮歴史博物館・三重県",
+        "url": "https://www.pref.mie.lg.jp/EVENTS/evt0008500027.htm",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-27"
+      }
+    },
+    {
+      "id": "shima-spain-village-summer-fiesta-2026",
+      "startDate": "2026-07-04",
+      "endDate": "2026-09-17",
+      "dateNote": "期間中",
+      "time": "内容・日程により異なる",
+      "region": "伊勢志摩",
+      "municipality": "志摩市",
+      "category": "祭り",
+      "title": "志摩スペイン村 サマーフィエスタ2026",
+      "venue": "志摩スペイン村 パルケエスパーニャ",
+      "cost": "パスポートが必要／一部の体験は別料金",
+      "audience": "小さな子どもから大人まで（体験ごとの利用条件を確認）",
+      "summary": "夏限定の水遊びやスタンプラリーに加え、ナイター営業日にはナイトパレードと短時間の花火を実施します。",
+      "tags": [
+        "屋内外",
+        "テーマパーク",
+        "水遊び",
+        "パレード",
+        "花火",
+        "有料",
+        "子ども"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "志摩スペイン村",
+        "url": "https://www.parque-net.com/special/summer2026/",
+        "verifiedAt": "2026-07-24",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "id": "iga-night-landscape-exhibition-2026",
+      "startDate": "2026-07-10",
+      "endDate": "2026-08-30",
+      "closedWeekdays": [
+        2
+      ],
+      "dateNote": "火曜休館",
+      "time": "10:00–16:30（入場16:00まで）",
+      "region": "伊賀",
+      "municipality": "伊賀市",
+      "category": "学び",
+      "title": "夜道を行けば～穐月明の夜の景色Ⅲ～",
+      "venue": "伊賀市ミュージアム青山讃頌舎",
+      "cost": "一般300円／高校生以下無料",
+      "audience": "どなたでも",
+      "summary": "キャンドルの灯りで穐月明の夜景作品を鑑賞する夏の企画展。8月9日・23日には申込不要のギャラリートークもあります。",
+      "tags": [
+        "美術",
+        "屋内",
+        "高校生以下無料",
+        "申込不要",
+        "開催中"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊賀市",
+        "url": "https://www.city.iga.lg.jp/0000014166.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-08"
+      }
+    },
+    {
+      "id": "miemu-who-are-we-2026",
+      "startDate": "2026-07-11",
+      "endDate": "2026-09-27",
+      "closedWeekdays": [
+        1
+      ],
+      "dateNote": "月曜休館",
+      "time": "9:00–17:00（入場16:30まで）",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "展覧会",
+      "title": "WHO ARE WE 観察と発見の生物学 Vol.01 哺乳類",
+      "venue": "三重県総合博物館（MieMu）3階企画展示室",
+      "cost": "一般700円／学生400円／高校生以下無料",
+      "audience": "どなたでも",
+      "summary": "国立科学博物館のヨシモトコレクションを中心に、あえて説明を抑えた動物標本を観察し、自分なりの発見を楽しむ企画展です。",
+      "tags": [
+        "動物標本",
+        "哺乳類",
+        "自然史",
+        "高校生以下無料",
+        "屋内",
+        "月曜休館"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県総合博物館 MieMu",
+        "url": "https://www.bunka.pref.mie.lg.jp/MieMu/p0031300136.htm",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-08"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "桑名市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール桑名",
+        "type": "mall"
+      },
+      "id": "kuwana-banksy-print-2026",
+      "startDate": "2026-07-17",
+      "endDate": "2026-07-27",
+      "dateNote": "期間中",
+      "time": "11:00–19:00（最終日16:00閉場）",
+      "category": "展覧会",
+      "title": "バンクシーと人気アート作家版画展",
+      "venue": "イオンモール桑名 1番街2階 GILD前",
+      "cost": "入場料無料（展示販売）",
+      "audience": "公式に対象の記載なし",
+      "summary": "英国ウエスト・カントリー・プリンスが制作したバンクシーのリプロダクション版画を中心に約30点。ミスターブレインウォッシュなどの作品も並びます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "無料",
+        "版画",
+        "アート"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール桑名",
+        "url": "https://www.aeon.jp/sc/kuwana/event/event_e79967_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-26"
+      }
+    },
+    {
+      "id": "suzuka-kouko-summer-workshops-2026",
+      "startDate": "2026-07-18",
+      "endDate": "2026-08-30",
+      "dateNote": "休館日あり",
+      "time": "9:00–17:00（入館16:30まで）",
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "category": "学び",
+      "title": "夏休みこども体験博物館2026",
+      "venue": "鈴鹿市考古博物館",
+      "cost": "体験100円〜500円（講座別）",
+      "audience": "どなたでも参加できる当日受付講座あり／小中学生向け講座は条件を確認",
+      "summary": "勾玉作りを毎日実施し、土曜日には缶バッジ作りや火起こしなども行う夏休み企画。一度に3人ずつ参加する当日受付のミニ体験もあります。",
+      "tags": [
+        "考古学",
+        "工作",
+        "当日受付",
+        "定員3人の講座あり",
+        "子ども",
+        "屋内"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "鈴鹿市考古博物館",
+        "url": "https://www.city.suzuka.lg.jp/kouko/information/1016374/1017124.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-31"
+      }
+    },
+    {
+      "id": "toba-jurassic-aquarium-2026",
+      "startDate": "2026-07-18",
+      "endDate": "2026-09-27",
+      "dateNote": "期間中",
+      "time": "開館時間内",
+      "region": "伊勢志摩",
+      "municipality": "鳥羽市",
+      "category": "展覧会",
+      "title": "夏の企画展「ジュラシックアクアリウム ～鳥羽の古代生物たち～」",
+      "venue": "鳥羽水族館 企画展示室ほか",
+      "cost": "鳥羽水族館の入館料が必要",
+      "audience": "子どもを含む幅広い世代",
+      "summary": "鳥羽竜の実物化石、太古の生きものの標本・レプリカ、現生の大型トカゲや古代魚などを紹介する夏の企画展です。",
+      "tags": [
+        "屋内",
+        "恐竜",
+        "化石",
+        "生体展示",
+        "有料",
+        "子ども"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "鳥羽水族館",
+        "url": "https://aquarium.co.jp/event/jurassic-aqarium2026/",
+        "verifiedAt": "2026-07-24",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "id": "bellfarm-summer-play-2026",
+      "startDate": "2026-07-18",
+      "endDate": "2026-08-31",
+      "dateNote": "期間中",
+      "time": "9:00–16:00（雨天休止）",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "交流",
+      "title": "夏もベルファームであそぼう‼",
+      "venue": "松阪農業公園ベルファーム 蚤の市広場",
+      "cost": "水遊びは料金記載なし／特別イベントは1回200〜700円など",
+      "audience": "子どもと保護者（特別イベントは個別条件あり）",
+      "summary": "シャワーマット、竹の水鉄砲、ミスト休憩所を設け、お盆には植物ビンゴ、野菜・水風船つり、スイカ割りも行います。",
+      "tags": [
+        "屋外",
+        "水遊び",
+        "雨天休止",
+        "夏休み",
+        "一部有料",
+        "一部要申込",
+        "子ども"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "松阪農業公園ベルファーム",
+        "url": "https://www.bellfarm.jp/event/3636/",
+        "verifiedAt": "2026-07-24",
+        "nextCheckAt": "2026-08-12"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "四日市市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール四日市北",
+        "type": "mall"
+      },
+      "id": "yokkaichikita-dental-poster-2026",
+      "startDate": "2026-07-22",
+      "endDate": "2026-07-30",
+      "dateNote": "期間中",
+      "time": "10:00–21:00",
+      "category": "展覧会",
+      "title": "歯科医師会 図画・ポスターコンクール入賞作品展示",
+      "venue": "イオンモール四日市北 1階ペテモ前",
+      "cost": "料金は公式情報で確認",
+      "audience": "公式に対象の記載なし",
+      "summary": "歯科医師会の図画・ポスターコンクールの入賞作品を展示します。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "展示",
+        "こどもの作品"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール四日市北",
+        "url": "https://www.aeon.jp/sc/yokkaichikita/event/event_e86002_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-29"
+      }
+    },
+    {
+      "id": "mie-high-school-baseball-quarterfinals-2026",
+      "startDate": "2026-07-23",
+      "endDate": "2026-07-23",
+      "dateNote": "木",
+      "time": "9:00／15:30予定",
+      "region": "北勢・中勢",
+      "municipality": "四日市市・津市",
+      "category": "スポーツ",
+      "title": "第108回 全国高校野球選手権三重大会 準々決勝",
+      "venue": "四日市霞ヶ浦第一野球場・津球場公園内野球場",
+      "cost": "入場・当日変更は公式情報で確認",
+      "audience": "観戦者",
+      "summary": "2会場で準々決勝4試合。第2試合は15:30予定で、暑さ指数によりさらに遅れる場合があります。",
+      "tags": [
+        "高校野球",
+        "準々決勝",
+        "日程変更注意",
+        "暑さ対策"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県高等学校野球連盟",
+        "url": "https://mie-kouyaren.com/2026/07/21/%EF%BC%887-21%E6%9B%B4%E6%96%B0%EF%BC%89%E7%AC%AC108%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E4%B8%89%E9%87%8D%E5%A4%A7%E4%BC%9A/",
+        "verifiedAt": "2026-07-21",
+        "nextCheckAt": "2026-07-23"
+      }
+    },
+    {
       "id": "toba-minato-2026",
-      "month": "7",
-      "day": "24",
-      "weekday": "金",
-      "isoDate": "2026-07-24",
+      "startDate": "2026-07-24",
+      "endDate": "2026-07-24",
+      "dateNote": "金",
       "time": "花火 20:00–20:45",
       "region": "伊勢志摩",
       "municipality": "鳥羽市",
@@ -16,8 +372,12 @@
       "cost": "観覧方法は公式情報で確認",
       "audience": "どなたでも",
       "summary": "海上の花火と鳥羽湾の光景。定期船の臨時便や交通情報も一次資料で確認できます。",
-      "tags": ["屋外", "花火", "夜", "公共交通"],
-      "period": "weekend",
+      "tags": [
+        "屋外",
+        "花火",
+        "夜",
+        "公共交通"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -29,10 +389,9 @@
     },
     {
       "id": "tsu-hanabi-2026",
-      "month": "7",
-      "day": "25",
-      "weekday": "土",
-      "isoDate": "2026-07-25",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-25",
+      "dateNote": "土",
       "time": "20:00–21:00",
       "region": "中勢",
       "municipality": "津市",
@@ -42,8 +401,12 @@
       "cost": "一般観覧可／協賛席あり",
       "audience": "どなたでも",
       "summary": "阿漕浦海岸沖からの打ち上げ。荒天時は最長7月27日まで順延予定です。",
-      "tags": ["屋外", "花火", "夜", "荒天順延"],
-      "period": "weekend",
+      "tags": [
+        "屋外",
+        "花火",
+        "夜",
+        "荒天順延"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -55,10 +418,9 @@
     },
     {
       "id": "ise-okihiki-kawabiki-futami-2026",
-      "month": "7",
-      "day": "25",
-      "weekday": "土",
-      "isoDate": "2026-07-25",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-25",
+      "dateNote": "土",
       "time": "開始時刻は公式情報で確認",
       "region": "伊勢志摩",
       "municipality": "伊勢市",
@@ -68,8 +430,12 @@
       "cost": "観覧方法・奉仕参加は公式情報で確認",
       "audience": "観覧者（奉仕参加は各奉曳団の案内を確認）",
       "summary": "二見の6組の奉曳団が御用材を五十鈴川から内宮へ曳き入れます。川沿いの混雑と当日の案内に注意します。",
-      "tags": ["屋外", "伝統行事", "川沿い", "混雑注意"],
-      "period": "weekend",
+      "tags": [
+        "屋外",
+        "伝統行事",
+        "川沿い",
+        "混雑注意"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -77,586 +443,13 @@
         "url": "https://www.isesengu.jp/okihiki.html",
         "verifiedAt": "2026-07-24",
         "nextCheckAt": "2026-07-25"
-      }
-    },
-    {
-      "id": "ise-okihiki-kawabiki-uji-nikenchaya-2026",
-      "month": "7",
-      "day": "26",
-      "weekday": "日",
-      "isoDate": "2026-07-26",
-      "time": "開始時刻は公式情報で確認",
-      "region": "伊勢志摩",
-      "municipality": "伊勢市",
-      "category": "祭り",
-      "title": "第一次お木曳行事（川曳）— 宇治・二軒茶屋",
-      "venue": "五十鈴川・内宮周辺",
-      "cost": "観覧方法・奉仕参加は公式情報で確認",
-      "audience": "観覧者（奉仕参加は各奉曳団の案内を確認）",
-      "summary": "宇治奉曳団と二軒茶屋奉曳団が御用材を五十鈴川から内宮へ曳き入れます。川沿いの混雑と当日の案内に注意します。",
-      "tags": ["屋外", "伝統行事", "川沿い", "混雑注意"],
-      "period": "weekend",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊勢御遷宮委員会・奉曳日程",
-        "url": "https://www.isesengu.jp/okihiki.html",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-07-26"
-      }
-    },
-    {
-      "id": "ise-okihiki-kawabiki-shigo-2026",
-      "month": "8",
-      "day": "01",
-      "weekday": "土",
-      "isoDate": "2026-08-01",
-      "time": "開始時刻は公式情報で確認",
-      "region": "伊勢志摩",
-      "municipality": "伊勢市",
-      "category": "祭り",
-      "title": "第一次お木曳行事（川曳）— 四郷",
-      "venue": "五十鈴川・内宮周辺",
-      "cost": "観覧方法・奉仕参加は公式情報で確認",
-      "audience": "観覧者（奉仕参加は各奉曳団の案内を確認）",
-      "summary": "四郷の4組の奉曳団が御用材を五十鈴川から内宮へ曳き入れます。川沿いの混雑と当日の案内に注意します。",
-      "tags": ["屋外", "伝統行事", "川沿い", "混雑注意"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊勢御遷宮委員会・奉曳日程",
-        "url": "https://www.isesengu.jp/okihiki.html",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-08-01"
-      }
-    },
-    {
-      "id": "ise-okihiki-kawabiki-ominato-shudo-2026",
-      "month": "8",
-      "day": "02",
-      "weekday": "日",
-      "isoDate": "2026-08-02",
-      "time": "開始時刻は公式情報で確認",
-      "region": "伊勢志摩",
-      "municipality": "伊勢市",
-      "category": "祭り",
-      "title": "第一次お木曳行事（川曳）— 大湊・修道",
-      "venue": "五十鈴川・内宮周辺",
-      "cost": "観覧方法・奉仕参加は公式情報で確認",
-      "audience": "観覧者（奉仕参加は各奉曳団の案内を確認）",
-      "summary": "大湊・修道の6組の奉曳団が御用材を五十鈴川から内宮へ曳き入れます。当日は特に混雑が見込まれ、現地の誘導に従う必要があります。",
-      "tags": ["屋外", "伝統行事", "川沿い", "混雑注意"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊勢御遷宮委員会・奉曳日程",
-        "url": "https://www.isesengu.jp/okihiki.html",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-08-02"
-      }
-    },
-    {
-      "id": "swan-lake-2026",
-      "month": "7",
-      "day": "28",
-      "weekday": "火",
-      "isoDate": "2026-07-28",
-      "time": "15:00開演",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "舞台",
-      "title": "東京バレエ団 はじめてのバレエ「白鳥の湖」",
-      "venue": "三重県文化会館 大ホール",
-      "cost": "一般5,000円／4歳〜中学生2,500円",
-      "audience": "4歳以上・託児あり",
-      "summary": "初めてでも楽しめる約90分の公演。席種、託児、残席は公式ページで最終確認します。",
-      "tags": ["屋内", "託児あり", "有料", "舞台"],
-      "period": "weekend",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県文化会館",
-        "url": "https://www.center-mie.or.jp/bunka/event/detail/56941",
-        "verifiedAt": "2026-07-22",
-        "nextCheckAt": "2026-07-27"
-      }
-    },
-    {
-      "id": "hisai-hanabi-2026",
-      "month": "8",
-      "day": "01",
-      "weekday": "土",
-      "isoDate": "2026-08-01",
-      "time": "18:00–20:30",
-      "region": "中勢",
-      "municipality": "津市・久居",
-      "category": "祭り",
-      "title": "第65回 久居花火大会",
-      "venue": "陸上自衛隊久居駐屯地グラウンド",
-      "cost": "一般観覧ゾーンあり／協賛席あり",
-      "audience": "どなたでも",
-      "summary": "久居駅から徒歩圏の花火大会。荒天時は8月2日に順延予定です。",
-      "tags": ["屋外", "花火", "駅近", "荒天順延"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "津市・記者発表資料",
-        "url": "https://www.info.city.tsu.mie.jp/_res/projects/default_project/_page_/001/010/663/20260706.pdf#page=16",
-        "verifiedAt": "2026-07-22",
-        "nextCheckAt": "2026-07-31"
-      }
-    },
-    {
-      "id": "junior-orchestra-2026",
-      "month": "8",
-      "day": "02",
-      "weekday": "日",
-      "isoDate": "2026-08-02",
-      "time": "13:00開演",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "音楽",
-      "title": "三重ジュニア管弦楽団 こどもオーケストラ教室",
-      "venue": "三重県文化会館 中ホール",
-      "cost": "入場無料・全席自由",
-      "audience": "0歳から入場可",
-      "summary": "楽器紹介や指揮者体験を含む約60分の体験型コンサートです。",
-      "tags": ["屋内", "無料", "0歳から", "音楽"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県文化会館",
-        "url": "https://www.center-mie.or.jp/bunka/event/detail/58184",
-        "verifiedAt": "2026-07-22",
-        "nextCheckAt": "2026-08-01"
-      }
-    },
-    {
-      "id": "miemu-suzuka-guide-2026",
-      "month": "8",
-      "day": "08",
-      "weekday": "土",
-      "isoDate": "2026-08-08",
-      "time": "14:00から約30分",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "学び",
-      "title": "基本展示スポットガイド「鈴鹿山脈の自然」",
-      "venue": "三重県総合博物館 MieMu",
-      "cost": "基本展示の観覧券が必要",
-      "audience": "どなたでも",
-      "summary": "学芸員のおすすめ展示を短時間で聞ける、事前申込不要のスポットガイドです。",
-      "tags": ["屋内", "申込不要", "学び", "短時間"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県総合博物館",
-        "url": "https://www.bunka.pref.mie.lg.jp/MieMu/84927046739.htm",
-        "verifiedAt": "2026-07-22",
-        "nextCheckAt": "2026-08-07"
-      }
-    },
-    {
-      "id": "miemu-horn-workshop-2026",
-      "month": "8",
-      "day": "22",
-      "weekday": "土",
-      "isoDate": "2026-08-22",
-      "time": "13:30–14:30",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "学び",
-      "title": "ワークショップ「どんな形？角をくらべてみよう」",
-      "venue": "三重県総合博物館 MieMu",
-      "cost": "参加無料・企画展観覧券が必要",
-      "audience": "小学生以上",
-      "summary": "哺乳類の角を観察して違いを考える少人数ワークショップ。応募多数の場合は抽選です。",
-      "tags": ["屋内", "申込必要", "小学生以上", "学び"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県総合博物館",
-        "url": "https://www.bunka.pref.mie.lg.jp/MieMu/84927046739.htm",
-        "verifiedAt": "2026-07-22",
-        "nextCheckAt": "2026-08-01"
-      }
-    },
-    {
-      "id": "mie-high-school-baseball-quarterfinals-2026",
-      "month": "7",
-      "day": "23",
-      "weekday": "木",
-      "isoDate": "2026-07-23",
-      "time": "9:00／15:30予定",
-      "region": "北勢・中勢",
-      "municipality": "四日市市・津市",
-      "category": "スポーツ",
-      "title": "第108回 全国高校野球選手権三重大会 準々決勝",
-      "venue": "四日市霞ヶ浦第一野球場・津球場公園内野球場",
-      "cost": "入場・当日変更は公式情報で確認",
-      "audience": "観戦者",
-      "summary": "2会場で準々決勝4試合。第2試合は15:30予定で、暑さ指数によりさらに遅れる場合があります。",
-      "tags": ["高校野球", "準々決勝", "日程変更注意", "暑さ対策"],
-      "period": "weekend",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県高等学校野球連盟",
-        "url": "https://mie-kouyaren.com/2026/07/21/%EF%BC%887-21%E6%9B%B4%E6%96%B0%EF%BC%89%E7%AC%AC108%E5%9B%9E%E5%85%A8%E5%9B%BD%E9%AB%98%E7%AD%89%E5%AD%A6%E6%A0%A1%E9%87%8E%E7%90%83%E9%81%B8%E6%89%8B%E6%A8%A9%E4%B8%89%E9%87%8D%E5%A4%A7%E4%BC%9A/",
-        "verifiedAt": "2026-07-21",
-        "nextCheckAt": "2026-07-23"
-      }
-    },
-    {
-      "id": "jfl-veertien-mie-bonzu-ichihara-2026",
-      "month": "8",
-      "day": "29",
-      "weekday": "土",
-      "isoDate": "2026-08-29",
-      "time": "18:00開始",
-      "region": "北勢",
-      "municipality": "東員町",
-      "category": "スポーツ",
-      "title": "JFL第1節 ヴィアティン三重 vs ボンズ市原",
-      "venue": "BASICスタジアム東員",
-      "cost": "チケット情報は公式情報で確認",
-      "audience": "どなたでも",
-      "summary": "2026/27シーズンのホーム開幕戦。観戦方法や試合時刻の変更はクラブ公式情報で最終確認します。",
-      "tags": ["JFL", "サッカー", "ホームゲーム", "日程変更注意"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "ヴィアティン三重",
-        "url": "https://www.veertien.jp/fc/topteam_date2026_27",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-28"
-      }
-    },
-    {
-      "id": "tokai-league-fc-iseshima-fujieda-city-2026",
-      "month": "8",
-      "day": "29",
-      "weekday": "土",
-      "isoDate": "2026-08-29",
-      "time": "16:00開始",
-      "region": "伊勢志摩",
-      "municipality": "伊勢市",
-      "category": "スポーツ",
-      "title": "東海社会人サッカーリーグ1部 FC.ISE-SHIMA vs 藤枝市役所サッカー部",
-      "venue": "伊勢フットボールヴィレッジ Aピッチ",
-      "cost": "観戦方法は公式情報で確認",
-      "audience": "どなたでも",
-      "summary": "東海社会人リーグ1部第12節のホームゲーム。開催可否や時刻変更はクラブ公式日程で最終確認します。",
-      "tags": ["東海社会人リーグ", "サッカー", "ホームゲーム", "日程変更注意"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "FC.ISE-SHIMA",
-        "url": "https://fc-iseshima.co.jp/game/league/2026/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-28"
-      }
-    },
-    {
-      "id": "maxa-mie-matsuri-day2-2026",
-      "month": "8",
-      "day": "09",
-      "weekday": "日",
-      "isoDate": "2026-08-09",
-      "time": "時間は公式情報で確認",
-      "region": "中勢",
-      "municipality": "松阪市",
-      "category": "音楽",
-      "title": "吉例マクサ夏祭り DAY-2「三重祭2026」",
-      "venue": "M'AXA BAR&GRILL・LIVE MUSIC",
-      "cost": "料金・入場条件は公式情報で確認",
-      "audience": "入場条件は公式情報で確認",
-      "summary": "M'AXAの夏祭り2日目。at Anytime presents「TIME OF YOUR LIFE Vol.96」として開かれるライブイベントです。",
-      "tags": ["ライブ", "ライブハウス", "ローカル音楽", "入場条件確認"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "M'AXA",
-        "url": "https://www.maxa.jp/schedule/%E2%98%85%E5%90%89%E4%BE%8B%E3%83%9E%E3%82%AF%E3%82%B5%E5%A4%8F%E7%A5%AD%E3%82%8A%E2%98%85day-2-2/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-08"
-      }
-    },
-    {
-      "id": "quubi-japan-tour-mie-2026",
-      "month": "8",
-      "day": "11",
-      "weekday": "火",
-      "isoDate": "2026-08-11",
-      "time": "16:00開演（15:30開場）",
-      "region": "北勢",
-      "municipality": "四日市市",
-      "category": "音楽",
-      "title": "Quubi Japan Tour 2026 三重公演",
-      "venue": "CLUB CHAOS",
-      "cost": "前売2,500円／当日3,500円＋ドリンク600円",
-      "audience": "未就学児以下は入場不可",
-      "summary": "Quubiの全国ツアー四日市公演。一般発売、入場条件、当日の注意事項を会場公式ページで確認できます。",
-      "tags": ["ライブ", "ライブハウス", "アイドル", "未就学児不可"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "CLUB CHAOS",
-        "url": "https://www.clubchaos.jp/2026/08/quubi2026/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-10"
-      }
-    },
-    {
-      "id": "onecoin-contrabass-mizuno-2026",
-      "month": "8",
-      "day": "21",
-      "weekday": "金",
-      "isoDate": "2026-08-21",
-      "time": "11:30開演（10:45開場）",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "音楽",
-      "title": "ワンコインコンサート コントラバス 水野斗希",
-      "venue": "三重県文化会館 大ホール",
-      "cost": "当日現金500円・自由席・チケットレス",
-      "audience": "未就学児入場不可・託児あり",
-      "summary": "コントラバスとピアノを60分で楽しむ昼公演。前売券はなく、満席時は入場できません。",
-      "tags": ["コンサート", "クラシック", "500円", "託児あり"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県文化会館",
-        "url": "https://www.center-mie.or.jp/bunka/event/detail/56947",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-20"
-      }
-    },
-    {
-      "id": "gre4n-boyz-the-za-mie-2026",
-      "month": "8",
-      "day": "15",
-      "weekday": "土",
-      "isoDate": "2026-08-15",
-      "time": "17:00開演（16:00開場）",
-      "region": "伊勢志摩",
-      "municipality": "伊勢市",
-      "category": "音楽",
-      "title": "GRe4N BOYZ イマーシブライブシアター2026「The ZA」",
-      "venue": "シンフォニアテクノロジー響ホール伊勢",
-      "cost": "前売13,800円／当日14,800円（3Dメガネ付き）",
-      "audience": "年齢制限なし・6歳以上はチケット必要",
-      "summary": "3Dメガネで楽しむ全国ツアーの三重公演。会場カレンダーではなく、アーティスト公式日程から確認しました。",
-      "tags": ["ライブ", "大型ライブ", "ホール", "3D", "アーティスト公式"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "GRe4N BOYZ公式",
-        "url": "https://gre4n-boyz.com/news/218",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-14"
-      }
-    },
-    {
-      "id": "owase-port-festival-2026",
-      "month": "8",
-      "day": "01",
-      "weekday": "土",
-      "isoDate": "2026-08-01",
-      "time": "花火 19:30頃から",
-      "region": "東紀州",
-      "municipality": "尾鷲市",
-      "category": "祭り",
-      "title": "第73回 おわせ港まつり",
-      "venue": "尾鷲港",
-      "cost": "観覧方法は公式情報で確認",
-      "audience": "どなたでも",
-      "summary": "昼は特産品販売や尾鷲節太鼓など、夜は花火を予定。雨天時の順延情報も市の公式ページで確認します。",
-      "tags": ["屋外", "花火", "地域文化", "雨天順延"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "尾鷲市",
-        "url": "https://www.city.owase.lg.jp/owase_kurashi/0000022771.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-31"
-      }
-    },
-    {
-      "id": "kumano-fireworks-2026",
-      "month": "8",
-      "day": "17",
-      "weekday": "月",
-      "isoDate": "2026-08-17",
-      "time": "19:00頃開始",
-      "region": "東紀州",
-      "municipality": "熊野市",
-      "category": "祭り",
-      "title": "2026年 熊野大花火大会",
-      "venue": "七里御浜海岸",
-      "cost": "一般観覧可／協賛観覧席あり",
-      "audience": "どなたでも",
-      "summary": "七里御浜で開催予定。延期時の予備日は8月21日・24日・27日で、交通規制や観覧席は公式情報で確認します。",
-      "tags": ["屋外", "花火", "交通規制", "予備日あり"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "熊野市観光協会",
-        "url": "https://www.kumano-kankou.info/kumano-fireworks/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-16"
-      }
-    },
-    {
-      "id": "kabuto-no-mori-market-2026-07-26",
-      "month": "7",
-      "day": "26",
-      "weekday": "日",
-      "isoDate": "2026-07-26",
-      "time": "朝市の時間は公式確認／ピザ体験11:00–13:30",
-      "region": "北勢",
-      "municipality": "亀山市",
-      "category": "祭り",
-      "title": "かぶとの森の朝市（7月）",
-      "venue": "かぶとの森テラス",
-      "cost": "朝市は公式確認／ピザ体験2枚3,000円・要予約",
-      "audience": "一般参加可／ピザ体験は各回1組",
-      "summary": "亀山市加太のキャンプ場で開かれる朝市。7月は農園の野菜を使ったピザ作り体験もあり、朝市全体の時間は主催者情報で最終確認します。",
-      "tags": ["朝市", "地域の食", "屋外", "ピザ体験", "要予約"],
-      "period": "weekend",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "かぶとの森農園・予約ページ",
-        "url": "https://reserva.be/kabutonomorifarm/reserve?mode=service_staff&search_evt_no=f2eJwzNjU0NDMBAAQ4ATU",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-25"
-      }
-    },
-    {
-      "id": "noji-beer-garden-2026",
-      "month": "7",
-      "day": "31",
-      "weekday": "金",
-      "isoDate": "2026-07-31",
-      "time": "16:30–20:00",
-      "region": "東紀州",
-      "municipality": "尾鷲市",
-      "category": "祭り",
-      "title": "野地町ビアガーデン2026",
-      "venue": "野地町駅前児童公園",
-      "cost": "入場無料・飲食は有料",
-      "audience": "どなたでも・子ども連れ歓迎",
-      "summary": "おわせ港まつり前夜の一夜限定ビアガーデン。地域の食や飲み物を楽しめ、雨天時は中止です。",
-      "tags": ["ビアガーデン", "地域の食", "屋外", "入場無料", "雨天中止"],
-      "period": "weekend",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "尾鷲観光物産協会",
-        "url": "https://owasekankou.com/event/nojimachi/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-30"
-      }
-    },
-    {
-      "id": "kameyama-summer-festival-2026",
-      "month": "8",
-      "day": "08",
-      "weekday": "土",
-      "isoDate": "2026-08-08",
-      "time": "17:00–20:45",
-      "region": "北勢",
-      "municipality": "亀山市",
-      "category": "祭り",
-      "title": "亀山市納涼大会2026",
-      "venue": "亀山公園芝生広場一帯",
-      "cost": "入場無料・スカイランタンは有料申込制",
-      "audience": "どなたでも・赤ちゃんスペースあり",
-      "summary": "灯おどり、和太鼓、eスポーツ体験、竹あかり、露店を楽しむ夏の催し。荒天時は中止です。",
-      "tags": ["入場無料", "盆踊り", "和太鼓", "eスポーツ", "赤ちゃんスペース"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "亀山市",
-        "url": "https://www.city.kameyama.mie.jp/kosodate_yuyu/events/2026060100038/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-07"
-      }
-    },
-    {
-      "id": "kameyama-observatory-2026-08",
-      "month": "8",
-      "day": "12",
-      "weekday": "水",
-      "isoDate": "2026-08-12",
-      "time": "19:00–21:00",
-      "region": "北勢",
-      "municipality": "亀山市",
-      "category": "学び",
-      "title": "天文台「童夢」無料開放日・夏の星空観察会",
-      "venue": "鈴鹿峠自然の家 天文台「童夢」",
-      "cost": "参加無料",
-      "audience": "申込不要",
-      "summary": "天文台スタッフの望遠鏡操作と天体解説で夏の星空を観察。雨天・曇天時は中止です。",
-      "tags": ["星空", "望遠鏡", "無料", "申込不要", "雨天・曇天中止"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "亀山市",
-        "url": "https://www.city.kameyama.mie.jp/kosodate_yuyu/events/2026032300428/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-12"
-      }
-    },
-    {
-      "id": "suzuka-summer-festival-2026",
-      "month": "8",
-      "day": "15",
-      "weekday": "土",
-      "isoDate": "2026-08-15",
-      "time": "10:00–20:30",
-      "region": "北勢",
-      "municipality": "鈴鹿市",
-      "category": "祭り",
-      "title": "すずか夏祭り2026",
-      "venue": "西条中央公園ほか",
-      "cost": "料金は主催者情報で確認",
-      "audience": "どなたでも",
-      "summary": "西条中央公園を中心にシャボン玉イベントやダンスステージを開催。関連会場の催しも公式情報で確認します。",
-      "tags": ["シャボン玉", "ダンス", "屋外", "家族向け"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "鈴鹿市",
-        "url": "https://www.city.suzuka.lg.jp/shisei/shisetsu/1010134/1012424/1012881/1015564.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-14"
       }
     },
     {
       "id": "toba-nightly-fireworks-2026",
-      "month": "7",
-      "day": "25",
-      "weekday": "土",
-      "isoDate": "2026-07-25",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-25",
+      "dateNote": "土",
       "time": "毎夜20:30頃・約5分",
       "region": "伊勢志摩",
       "municipality": "鳥羽市",
@@ -666,8 +459,13 @@
       "cost": "観覧方法は公式情報で確認",
       "audience": "どなたでも",
       "summary": "7月25日から8月23日まで、鳥羽市内の打上場所を移しながら毎夜約5分間開催。天候により予告なく中止される場合があります。",
-      "tags": ["花火", "夜", "約5分", "開催場所変更", "天候中止注意"],
-      "period": "august",
+      "tags": [
+        "花火",
+        "夜",
+        "約5分",
+        "開催場所変更",
+        "天候中止注意"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -679,10 +477,9 @@
     },
     {
       "id": "nabari-river-fireworks-2026",
-      "month": "7",
-      "day": "25",
-      "weekday": "土",
-      "isoDate": "2026-07-25",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-25",
+      "dateNote": "土",
       "time": "20:00–21:00頃",
       "region": "伊賀",
       "municipality": "名張市",
@@ -692,8 +489,13 @@
       "cost": "一般観覧可／有料観覧席あり（一部完売）",
       "audience": "どなたでも",
       "summary": "仕掛花火やスターマインなど約4,000発を予定。荒天時は7月26日に順延し、会場周辺では交通規制があります。",
-      "tags": ["屋外", "花火", "夜", "荒天順延", "交通規制"],
-      "period": "weekend",
+      "tags": [
+        "屋外",
+        "花火",
+        "夜",
+        "荒天順延",
+        "交通規制"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -704,297 +506,10 @@
       }
     },
     {
-      "id": "iga-yofuta-gion-2026",
-      "month": "7",
-      "day": "31–01",
-      "weekday": "金・土",
-      "isoDate": "2026-07-31",
-      "time": "7/31 花火20:00〜／8/1 神事14:00〜",
-      "region": "伊賀",
-      "municipality": "伊賀市",
-      "category": "祭り",
-      "title": "陽夫多神社 祇園祭",
-      "venue": "陽夫多神社",
-      "cost": "参拝・観覧方法は公式情報で確認",
-      "audience": "どなたでも",
-      "summary": "宵宮奉納花火大会と、県指定無形民俗文化財の願之山行事。2026年の願之山踊りは小踊りのみ開催予定です。",
-      "tags": ["神社祭", "奉納花火", "地域文化", "屋外", "雨天中止注意"],
-      "period": "weekend",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊賀市公式観光サイト 伊賀イド",
-        "url": "https://www.iga-guide.com/recommend/event/august.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-30"
-      }
-    },
-    {
-      "id": "iga-night-landscape-exhibition-2026",
-      "month": "7–8",
-      "day": "10–30",
-      "weekday": "火曜休館",
-      "isoDate": "2026-07-10",
-      "time": "10:00–16:30（入場16:00まで）",
-      "region": "伊賀",
-      "municipality": "伊賀市",
-      "category": "学び",
-      "title": "夜道を行けば～穐月明の夜の景色Ⅲ～",
-      "venue": "伊賀市ミュージアム青山讃頌舎",
-      "cost": "一般300円／高校生以下無料",
-      "audience": "どなたでも",
-      "summary": "キャンドルの灯りで穐月明の夜景作品を鑑賞する夏の企画展。8月9日・23日には申込不要のギャラリートークもあります。",
-      "tags": ["美術", "屋内", "高校生以下無料", "申込不要", "開催中"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊賀市",
-        "url": "https://www.city.iga.lg.jp/0000014166.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-08"
-      }
-    },
-    {
-      "id": "oyamada-summer-festival-2026",
-      "month": "8",
-      "day": "15",
-      "weekday": "土",
-      "isoDate": "2026-08-15",
-      "time": "花火20:00〜",
-      "region": "伊賀",
-      "municipality": "伊賀市",
-      "category": "祭り",
-      "title": "大山田ふるさと夏祭り",
-      "venue": "せせらぎ運動公園",
-      "cost": "観覧方法は公式情報で確認",
-      "audience": "どなたでも",
-      "summary": "ステージや露店とともに、各地区のオリジナル仕掛け花火を間近で楽しむ地域の夏祭り。雨天時は翌日に花火のみ順延します。",
-      "tags": ["地域の祭り", "仕掛花火", "露店", "屋外", "雨天順延"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊賀市公式観光サイト 伊賀イド",
-        "url": "https://www.iga-guide.com/recommend/event/august.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-14"
-      }
-    },
-    {
-      "id": "misato-water-play-2026",
-      "month": "8",
-      "day": "22",
-      "weekday": "土",
-      "isoDate": "2026-08-22",
-      "time": "10:00–11:00",
-      "region": "中勢",
-      "municipality": "津市・美里",
-      "category": "学び",
-      "title": "おもいっきり水あそび！",
-      "venue": "みさとの丘 芝生広場",
-      "cost": "参加無料・要申込",
-      "audience": "未就学児～小学生・保護者同伴",
-      "summary": "水すべりやシャボン玉を楽しむ屋外イベント。着替えと暑さ対策が必要で、申込締切は8月21日です。",
-      "tags": ["水あそび", "シャボン玉", "無料", "要申込", "子ども", "屋外", "暑さ対策"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "津市",
-        "url": "https://www.info.city.tsu.mie.jp/shisei/gyouzaiseikaikaku/1009903/1005695/1002674/1013542.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-21"
-      }
-    },
-    {
-      "id": "hisai-human-rights-film-2026",
-      "month": "8",
-      "day": "16",
-      "weekday": "日",
-      "isoDate": "2026-08-16",
-      "time": "13:00–16:20（12:30開場）",
-      "region": "中勢",
-      "municipality": "津市・久居",
-      "category": "舞台",
-      "title": "人権啓発講演・映画「35年目のラブレター」上映会",
-      "venue": "津市久居アルスプラザ ときの風ホール",
-      "cost": "入場無料・申込不要",
-      "audience": "先着720人・車椅子席あり",
-      "summary": "同和問題を考える講演と、日本語字幕付き映画「35年目のラブレター」の上映。申込不要で参加できます。",
-      "tags": ["映画上映", "講演", "無料", "申込不要", "日本語字幕", "車椅子席"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "津市",
-        "url": "https://www.info.city.tsu.mie.jp/kurashi/1002199/1002200/1013257.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-15"
-      }
-    },
-    {
-      "id": "kawage-summer-storytime-special-2026",
-      "month": "8",
-      "day": "2・9・23・30",
-      "weekday": "日",
-      "isoDate": "2026-08-02",
-      "time": "各日11:00–11:30",
-      "region": "中勢",
-      "municipality": "津市・河芸",
-      "category": "学び",
-      "title": "河芸図書館 夏休みおはなし会スペシャル",
-      "venue": "河芸図書館 1階 絵本コーナー",
-      "cost": "参加条件は公式情報で確認",
-      "audience": "絵本の読み聞かせを楽しみたい人",
-      "summary": "ラッコの会による絵本などの読み聞かせ。8月2日・9日・23日・30日の各日曜に開催され、参加人数を制限する場合があります。",
-      "tags": ["読み聞かせ", "図書館", "子ども", "複数日", "屋内"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "津市図書館",
-        "url": "https://www.library.city.tsu.mie.jp/news/%E6%B2%B3%E8%8A%B8%E5%9B%B3%E6%9B%B8%E9%A4%A8%EF%BC%9A%E5%A4%8F%E4%BC%91%E3%81%BF%E3%81%8A%E3%81%AF%E3%81%AA%E3%81%97%E4%BC%9A%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-01"
-      }
-    },
-    {
-      "id": "mie-art-rockefeller-flower-bird-prints-2026",
-      "month": "6–7",
-      "day": "13–26",
-      "weekday": "月曜休館",
-      "isoDate": "2026-06-13",
-      "time": "9:30–17:00（入館16:30まで）",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "展覧会",
-      "title": "ロックフェラー・コレクション花鳥版画展 北斎、広重を中心に",
-      "venue": "三重県立美術館 1階企画展示室",
-      "cost": "一般1,200円／学生1,000円／高校生以下無料",
-      "audience": "どなたでも",
-      "summary": "ロードアイランド・スクール・オブ・デザイン美術館の花鳥版画コレクションから、葛飾北斎や歌川広重らの選りすぐり163点を公開します。",
-      "tags": ["浮世絵", "北斎", "広重", "高校生以下無料", "屋内", "7月26日まで"],
-      "period": "weekend",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県立美術館",
-        "url": "https://www.bunka.pref.mie.lg.jp/art-museum/000311671.htm",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-26"
-      }
-    },
-    {
-      "id": "miemu-who-are-we-2026",
-      "month": "7–9",
-      "day": "11–27",
-      "weekday": "月曜休館",
-      "isoDate": "2026-07-11",
-      "time": "9:00–17:00（入場16:30まで）",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "展覧会",
-      "title": "WHO ARE WE 観察と発見の生物学 Vol.01 哺乳類",
-      "venue": "三重県総合博物館（MieMu）3階企画展示室",
-      "cost": "一般700円／学生400円／高校生以下無料",
-      "audience": "どなたでも",
-      "summary": "国立科学博物館のヨシモトコレクションを中心に、あえて説明を抑えた動物標本を観察し、自分なりの発見を楽しむ企画展です。",
-      "tags": ["動物標本", "哺乳類", "自然史", "高校生以下無料", "屋内", "月曜休館"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県総合博物館 MieMu",
-        "url": "https://www.bunka.pref.mie.lg.jp/MieMu/p0031300136.htm",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-08"
-      }
-    },
-    {
-      "id": "saiku-court-literature-2026",
-      "month": "6–8",
-      "day": "27–23",
-      "weekday": "月曜休館",
-      "isoDate": "2026-06-27",
-      "time": "9:30–17:00（入館16:30まで）",
-      "region": "伊勢志摩",
-      "municipality": "明和町",
-      "category": "展覧会",
-      "title": "夏季企画展「王朝文学と斎王」",
-      "venue": "斎宮歴史博物館 特別展示室",
-      "cost": "一般500円／大学生400円／高校生以下無料",
-      "audience": "どなたでも",
-      "summary": "『伊勢物語』『源氏物語』などの文章・絵画・工芸を通して、王朝文学に描かれた斎王・斎宮と、実在した斎王たちの文学との関わりを紹介します。",
-      "tags": ["王朝文学", "斎王", "歴史", "高校生以下無料", "展示替えあり", "屋内"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "斎宮歴史博物館・三重県",
-        "url": "https://www.pref.mie.lg.jp/EVENTS/evt0008500027.htm",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-27"
-      }
-    },
-    {
-      "id": "paramita-miniature-dollhouse-2026",
-      "month": "7–9",
-      "day": "31–27",
-      "weekday": "会期中無休",
-      "isoDate": "2026-07-31",
-      "time": "9:30–17:30（入館17:00まで）",
-      "region": "北勢",
-      "municipality": "菰野町",
-      "category": "展覧会",
-      "title": "ミニチュアドールハウスの世界展",
-      "venue": "パラミタミュージアム",
-      "cost": "一般1,000円／大学生800円／高校生500円／中学生以下無料",
-      "audience": "どなたでも",
-      "summary": "アンティークの趣をもつ作品から現代作家の精巧な作品まで、ヨーロッパと日本のドールハウスを紹介。8月は毎週末に関連イベントもあります。",
-      "tags": ["ミニチュア", "ドールハウス", "中学生以下無料", "会期中無休", "関連イベント", "屋内"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "パラミタミュージアム",
-        "url": "https://paramitamuseum.com/plan/next_exhibition.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-30"
-      }
-    },
-    {
-      "id": "mie-art-albert-marquet-2026",
-      "month": "8–9",
-      "day": "8–13",
-      "weekday": "月曜休館",
-      "isoDate": "2026-08-08",
-      "time": "9:30–17:00（入館16:30まで）",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "展覧会",
-      "title": "生誕150周年 アルベール・マルケ展 水辺を愛した画家",
-      "venue": "三重県立美術館 企画展示室",
-      "cost": "一般1,200円／学生1,000円／高校生以下無料",
-      "audience": "どなたでも",
-      "summary": "フランス近代絵画の巨匠アルベール・マルケの日本では35年ぶりとなる回顧展。油彩画を中心に、素描・パステルを含む約100点を紹介します。",
-      "tags": ["近代絵画", "フランス美術", "水辺", "高校生以下無料", "屋内", "月曜休館"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県立美術館",
-        "url": "https://www.bunka.pref.mie.lg.jp/art-museum/54798037874.htm",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-07"
-      }
-    },
-    {
       "id": "kihoku-tourou-2026",
-      "month": "7",
-      "day": "25",
-      "weekday": "土",
-      "isoDate": "2026-07-25",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-25",
+      "dateNote": "土",
       "time": "時間は公式サイトで確認",
       "region": "東紀州",
       "municipality": "紀北町",
@@ -1004,8 +519,13 @@
       "cost": "観覧方法は公式情報で確認",
       "audience": "どなたでも",
       "summary": "紀北町の夏を彩る燈籠祭。開催直前の交通・観覧案内を、町から案内されている公式サイトで確認して出かけたい催しです。",
-      "tags": ["燈籠", "夏祭り", "港", "屋外", "公式情報で最終確認"],
-      "period": "weekend",
+      "tags": [
+        "燈籠",
+        "夏祭り",
+        "港",
+        "屋外",
+        "公式情報で最終確認"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1016,635 +536,10 @@
       }
     },
     {
-      "id": "mihama-jun-sensei-2026",
-      "month": "7",
-      "day": "28",
-      "weekday": "火",
-      "isoDate": "2026-07-28",
-      "time": "14:00開演（13:30開場）／上演約70分",
-      "region": "東紀州",
-      "municipality": "御浜町",
-      "category": "舞台",
-      "title": "ジュン先生がやってきた！～3年1組ものがたり～",
-      "venue": "御浜町中央公民館 大ホール",
-      "cost": "500円・自由席（一部指定）／4歳以上有料",
-      "audience": "ファミリー向け・4歳以上有料",
-      "summary": "御浜町の自主文化事業として上演される、家族で楽しめる舞台作品。町の公民館で、夏休みの午後に観られます。",
-      "tags": ["演劇", "ファミリー", "夏休み", "公民館", "屋内"],
-      "period": "weekend",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "御浜町",
-        "url": "https://www.town.mihama.mie.jp/soshikikarasagasu/kyoikuiinkai/gyoseijoho/1103.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-27"
-      }
-    },
-    {
-      "id": "kuwana-ishidori-2026",
-      "month": "7–8",
-      "day": "31–2",
-      "weekday": "金–日",
-      "isoDate": "2026-07-31",
-      "time": "7月31日叩き出し／8月1日試楽／8月2日本楽",
-      "region": "北勢",
-      "municipality": "桑名市",
-      "category": "祭り",
-      "title": "桑名石取祭 2026",
-      "venue": "桑名宗社（春日神社）周辺・旧東海道",
-      "cost": "観覧方法は公式情報で確認",
-      "audience": "どなたでも",
-      "summary": "鉦と太鼓を打ち鳴らす祭車が桑名の町を巡る石取祭。深夜から早朝にかかる行事もあるため、公式の時刻表と交通規制を確認して訪れたい催しです。",
-      "tags": ["祭車", "伝統行事", "旧東海道", "深夜行事", "屋外", "公式情報で最終確認"],
-      "period": "weekend",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "桑名石取祭保存会",
-        "url": "https://kuwana-ishidori.com/festival.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-31"
-      }
-    },
-    {
-      "id": "yokkaichi-matsuri-2026",
-      "month": "8",
-      "day": "1–2",
-      "weekday": "土・日",
-      "isoDate": "2026-08-01",
-      "time": "詳細は公式サイトで確認",
-      "region": "北勢",
-      "municipality": "四日市市",
-      "category": "祭り",
-      "title": "第63回 大四日市まつり",
-      "venue": "四日市市中心部（詳細は公式サイトで確認）",
-      "cost": "観覧方法は公式情報で確認",
-      "audience": "どなたでも",
-      "summary": "四日市の中心市街地で2日間開催される夏まつり。現時点では開催日が公式発表されており、詳しいプログラムは公式サイトの更新待ちです。",
-      "tags": ["夏祭り", "中心市街地", "2日間", "屋外", "詳細更新待ち"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "大四日市まつり実行委員会",
-        "url": "https://kankou43yokkaichi.com/matsuri/news/2040/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-31"
-      }
-    },
-    {
-      "id": "yokkaichi-port-matsuri-2026",
-      "month": "8",
-      "day": "2",
-      "weekday": "日",
-      "isoDate": "2026-08-02",
-      "time": "8:30–16:30（予定）",
-      "region": "北勢",
-      "municipality": "四日市市",
-      "category": "祭り",
-      "title": "令和8年度 四日市港まつり",
-      "venue": "四日市港四日市地区（千歳町）",
-      "cost": "入場方法は公式情報で確認／無料シャトルバスあり",
-      "audience": "どなたでも（事前申込企画は受付終了）",
-      "summary": "働く船の一般公開や船のパレード、放水実演、ステージ、マルシェ、キッチンカーを港で楽しむ一日。近鉄・JR四日市駅から無料シャトルバスが運行予定です。",
-      "tags": ["港", "船", "キッチンカー", "マルシェ", "無料シャトル", "屋外"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "四日市港管理組合",
-        "url": "https://www.yokkaichi-port.or.jp/matsuri2026.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-01"
-      }
-    },
-    {
-      "id": "matsusaka-chubu-phil-2026",
-      "month": "8",
-      "day": "2",
-      "weekday": "日",
-      "isoDate": "2026-08-02",
-      "time": "15:00–17:00（14:15開場）",
-      "region": "中勢",
-      "municipality": "松阪市",
-      "category": "音楽",
-      "title": "中部フィルハーモニー交響楽団 松阪特別演奏会",
-      "venue": "クラギ文化ホール",
-      "cost": "一般3,500円〜／U-18 2,000円〜／3歳〜小学生1,000円〜",
-      "audience": "3歳未満入場不可",
-      "summary": "ジブリ、ディズニー、ハリー・ポッターをテーマに、映画音楽をオーケストラで楽しむ松阪特別演奏会です。",
-      "tags": ["オーケストラ", "映画音楽", "ファミリー", "クラシック", "屋内"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "松阪市・クラギ文化ホール",
-        "url": "https://www.city.matsusaka.mie.jp/site/kuragi-hall/chubuphil.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-01"
-      }
-    },
-    {
-      "id": "taiki-nishiki-hanabi-2026",
-      "month": "8",
-      "day": "15",
-      "weekday": "土",
-      "isoDate": "2026-08-15",
-      "time": "時間は公式情報で確認",
-      "region": "中勢",
-      "municipality": "大紀町",
-      "category": "祭り",
-      "title": "錦花火大会",
-      "venue": "大紀町錦地区（詳細は公式情報で確認）",
-      "cost": "観覧方法は公式情報で確認",
-      "audience": "どなたでも",
-      "summary": "大紀町の年間イベント予定で8月15日の開催が案内されている花火大会。時間や観覧場所は、町からの続報を確認して出かけたい催しです。",
-      "tags": ["花火", "錦", "屋外", "詳細更新待ち", "公式情報で最終確認"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "大紀町",
-        "url": "https://www.town.taiki.mie.jp/soshiki/shokokanko/gyomu/280.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-14"
-      }
-    },
-    {
-      "id": "matsusaka-denjiro-2026",
-      "month": "8",
-      "day": "16",
-      "weekday": "日",
-      "isoDate": "2026-08-16",
-      "time": "13:15–14:45／16:00–17:30",
-      "region": "中勢",
-      "municipality": "松阪市",
-      "category": "学び",
-      "title": "でんじろう先生のドキドキわくわくサイエンスショー2026 松阪公演",
-      "venue": "クラギ文化ホール",
-      "cost": "前売3,600円／当日3,800円・全席指定",
-      "audience": "子どものみの入場不可",
-      "summary": "実験を目の前で楽しみながら科学に触れる、夏休みのサイエンスショー。午後に2回公演があります。",
-      "tags": ["科学", "実験", "夏休み", "ファミリー", "2回公演", "屋内"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "松阪市・クラギ文化ホール",
-        "url": "https://www.city.matsusaka.mie.jp/site/kuragi-hall/denjirou.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-15"
-      }
-    },
-    {
-      "id": "matsusaka-monomane-2026",
-      "month": "8",
-      "day": "22",
-      "weekday": "土",
-      "isoDate": "2026-08-22",
-      "time": "14:30–16:00（13:45開場）",
-      "region": "中勢",
-      "municipality": "松阪市",
-      "category": "舞台",
-      "title": "神無月＆ミラクルひかる 爆笑ものまねLIVE in三重",
-      "venue": "クラギ文化ホール",
-      "cost": "6,000円・全席指定",
-      "audience": "3歳未満入場不可",
-      "summary": "神無月とミラクルひかるによる、松阪でのものまねライブ。土曜の午後に約90分の公演が予定されています。",
-      "tags": ["ものまね", "ライブ", "お笑い", "全席指定", "屋内"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "松阪市・クラギ文化ホール",
-        "url": "https://www.city.matsusaka.mie.jp/site/kuragi-hall/bakushoumonomane.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-21"
-      }
-    },
-    {
-      "id": "minamiise-aisu-kenso-2026",
-      "month": "8",
-      "day": "23",
-      "weekday": "日",
-      "isoDate": "2026-08-23",
-      "time": "8:30〜",
-      "region": "伊勢志摩",
-      "municipality": "南伊勢町",
-      "category": "祭り",
-      "title": "愛洲氏顕彰祭・剣祖祭",
-      "venue": "五ヶ所城址",
-      "cost": "参加・見学条件は公式情報で確認",
-      "audience": "どなたでも（詳細は公式情報で確認）",
-      "summary": "愛洲移香斎をしのび、全国各地の流派による武術の奉納などが行われる南伊勢町の歴史行事です。",
-      "tags": ["歴史", "武術", "奉納", "城址", "屋外", "公式情報で最終確認"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "南伊勢町",
-        "url": "https://www.town.minamiise.lg.jp/admin/shoshiki/kankoushoukou/kankou/asobu/536.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-22"
-      }
-    },
-    {
-      "id": "kihoku-kodo-2026",
-      "month": "8",
-      "day": "30",
-      "weekday": "日",
-      "isoDate": "2026-08-30",
-      "time": "15:00〜",
-      "region": "東紀州",
-      "municipality": "紀北町",
-      "category": "祭り",
-      "title": "2026きほく夏祭り KODO",
-      "venue": "紀北町海山多目的広場",
-      "cost": "入場方法は公式情報で確認",
-      "audience": "どなたでも",
-      "summary": "ダンスやバンド、クッブ、ひのき工作、花火などを一つの会場で楽しむ紀北町の夏祭りです。",
-      "tags": ["ステージ", "工作", "クッブ", "花火", "ファミリー", "屋外"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "きほく夏祭りKODO実行委員会",
-        "url": "https://www.nkodo.com/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-29"
-      }
-    },
-    {
-      "id": "suzuka-kouko-summer-workshops-2026",
-      "month": "7–8",
-      "day": "18–30",
-      "weekday": "休館日あり",
-      "isoDate": "2026-07-18",
-      "time": "9:00–17:00（入館16:30まで）",
-      "region": "北勢",
-      "municipality": "鈴鹿市",
-      "category": "学び",
-      "title": "夏休みこども体験博物館2026",
-      "venue": "鈴鹿市考古博物館",
-      "cost": "体験100円〜500円（講座別）",
-      "audience": "どなたでも参加できる当日受付講座あり／小中学生向け講座は条件を確認",
-      "summary": "勾玉作りを毎日実施し、土曜日には缶バッジ作りや火起こしなども行う夏休み企画。一度に3人ずつ参加する当日受付のミニ体験もあります。",
-      "tags": ["考古学", "工作", "当日受付", "定員3人の講座あり", "子ども", "屋内"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "鈴鹿市考古博物館",
-        "url": "https://www.city.suzuka.lg.jp/kouko/information/1016374/1017124.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-31"
-      }
-    },
-    {
-      "id": "asahi-library-job-experience-2026",
-      "month": "7–8",
-      "day": "30・8・18",
-      "weekday": "木・土・火",
-      "isoDate": "2026-07-30",
-      "time": "10:00–11:00／13:30–14:30",
-      "region": "北勢",
-      "municipality": "朝日町",
-      "category": "学び",
-      "title": "図書館のお仕事体験",
-      "venue": "あさひライブラリー",
-      "cost": "無料",
-      "audience": "小学4〜6年生・各回2人（先着順、空き状況を要確認）",
-      "summary": "本を棚へ戻す作業など、図書館の仕事を少人数で体験します。7月30日、8月8日、8月18日の各日2回開催です。",
-      "tags": ["図書館", "仕事体験", "定員2人", "先着順", "小学生", "要申込", "無料"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "朝日町",
-        "url": "https://www2.town.asahi.mie.jp/www/contents/1781312137477/index.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-29"
-      }
-    },
-    {
-      "id": "kisosaki-kids-dining-summer-2026",
-      "month": "7–8",
-      "day": "27・3・17・24・31",
-      "weekday": "月",
-      "isoDate": "2026-07-27",
-      "time": "11:30–13:00",
-      "region": "北勢",
-      "municipality": "木曽岬町",
-      "category": "交流",
-      "title": "みんなで食堂（夏休み子ども食堂）",
-      "venue": "木曽岬町立ふれあいの里",
-      "cost": "料金は申込時に確認",
-      "audience": "木曽岬町在住の小学生・中学生、各回50食",
-      "summary": "夏休みの月曜日に開かれる町の子ども食堂。7月27日と8月3日・17日・24日・31日に、地域の子どもが一緒に昼食を囲みます。",
-      "tags": ["子ども食堂", "定員50食", "要申込", "小学生", "中学生", "地域の居場所"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "木曽岬町",
-        "url": "https://www.town.kisosaki.lg.jp/0000003139.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-24"
-      }
-    },
-    {
-      "id": "ise-farmers-market-august-2026",
-      "month": "8",
-      "day": "1",
-      "weekday": "土",
-      "isoDate": "2026-08-01",
-      "time": "18:00–21:00",
-      "region": "伊勢志摩",
-      "municipality": "伊勢市",
-      "category": "祭り",
-      "title": "伊勢ファーマーズマーケット（外宮参道）",
-      "venue": "外宮参道",
-      "cost": "入場方法・購入条件は主催者へ確認",
-      "audience": "どなたでも",
-      "summary": "月ごとに場所を変えながら、生産者と地域の人が出会う小さなマーケット。8月は夕方から外宮参道で開かれます。",
-      "tags": ["マルシェ", "農産物", "地元店", "夕方", "屋外", "小規模開催"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊勢市",
-        "url": "https://www.city.ise.mie.jp/shisei/koho_kocho/koho/2026/0501.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-31"
-      }
-    },
-    {
-      "id": "soubun-marche-mikke-2026",
-      "month": "8",
-      "day": "2",
-      "weekday": "日",
-      "isoDate": "2026-08-02",
-      "time": "11:00–15:00",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "祭り",
-      "title": "マルシェMikke",
-      "venue": "三重県文化会館 第2ギャラリー",
-      "cost": "入場方法は公式情報で確認／商品購入は各店で",
-      "audience": "どなたでも・先着順",
-      "summary": "小さな店や作り手が集まる屋内マルシェ。販売品は持ち帰りが基本ですが、会場内に飲食スペースも用意されます。",
-      "tags": ["マルシェ", "ハンドメイド", "飲食", "先着順", "屋内", "小規模開催"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県総合文化センター",
-        "url": "https://www.center-mie.or.jp/event/detail/58246",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-01"
-      }
-    },
-    {
-      "id": "soubun-hikari-no-mi-2026",
-      "month": "8",
-      "day": "2",
-      "weekday": "日",
-      "isoDate": "2026-08-02",
-      "time": "10:00–16:00",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "交流",
-      "title": "みんなでつくる「ひかりの実」",
-      "venue": "三重県文化会館 第1ギャラリー",
-      "cost": "参加費は公式情報で確認",
-      "audience": "どなたでも・当日先着順",
-      "summary": "笑顔を描いた果実袋にLEDを入れ、みんなの作品を秋の展示へつなぐ共同制作。当日に立ち寄って参加できます。",
-      "tags": ["共同制作", "アート", "当日受付", "先着順", "子ども", "屋内"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県総合文化センター",
-        "url": "https://www.center-mie.or.jp/soubun/child/asobo2026",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-01"
-      }
-    },
-    {
-      "id": "yokkaichi-knowledge-hub-workshop-2026",
-      "month": "8",
-      "day": "6",
-      "weekday": "木",
-      "isoDate": "2026-08-06",
-      "time": "14:00–16:00（受付13:30）",
-      "region": "北勢",
-      "municipality": "四日市市",
-      "category": "交流",
-      "title": "知と交流の拠点施設 市民ワークショップ",
-      "venue": "じばさん6階 展示室",
-      "cost": "無料",
-      "audience": "市内在住・在勤・在学者、定員30人（応募多数時抽選）",
-      "summary": "新しい『知と交流の拠点施設』の使い方を、市民同士で考えるワークショップ。小学生は保護者と参加できます。",
-      "tags": ["市民参加", "ワークショップ", "定員30人", "要申込", "締切7月28日", "無料"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "四日市市",
-        "url": "https://www.city.yokkaichi.lg.jp/www/contents/1782463906247/index.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-28"
-      }
-    },
-    {
-      "id": "watarai-nursery-open-yard-2026",
-      "month": "8",
-      "day": "7・20・21",
-      "weekday": "金・木・金",
-      "isoDate": "2026-08-07",
-      "time": "10:00–11:00",
-      "region": "伊勢志摩",
-      "municipality": "度会町",
-      "category": "交流",
-      "title": "園庭開放「保育所で遊びましょう」",
-      "venue": "中之郷・棚橋・長原の各保育所",
-      "cost": "申込不要（料金の案内なし）",
-      "audience": "保育所に通っていない未就学児と保護者",
-      "summary": "町内3か所の保育所が、日を分けて園庭を開放します。予約せずに親子で1時間遊べる、地域の小さな交流機会です。",
-      "tags": ["園庭開放", "未就学児", "親子", "申込不要", "雨天中止", "地域交流"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "度会町",
-        "url": "https://www.town.watarai.lg.jp/contents_detail.php?co=new&frmId=3735",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-06"
-      }
-    },
-    {
-      "id": "yokkaichi-museum-backyard-tour-2026",
-      "month": "8",
-      "day": "9",
-      "weekday": "日",
-      "isoDate": "2026-08-09",
-      "time": "14:00–16:00",
-      "region": "北勢",
-      "municipality": "四日市市",
-      "category": "学び",
-      "title": "バックヤードツアー（子ども向け）",
-      "venue": "そらんぽ四日市・四日市市立博物館",
-      "cost": "参加費は申込時に確認",
-      "audience": "子ども向け・定員20人（応募多数時抽選）",
-      "summary": "普段は入れない博物館の裏側を少人数で見学する子ども向けツアー。7月30日まで事前申込を受け付けます。",
-      "tags": ["博物館", "バックヤード", "定員20人", "要申込", "締切7月30日", "子ども"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "四日市市",
-        "url": "https://www.city.yokkaichi.lg.jp/www/contents/1781140437915/simple/202606gejunn.pdf",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-30"
-      }
-    },
-    {
-      "id": "kumano-handmade-picture-book-2026",
-      "month": "8",
-      "day": "9",
-      "weekday": "日",
-      "isoDate": "2026-08-09",
-      "time": "13:00–16:00",
-      "region": "東紀州",
-      "municipality": "熊野市",
-      "category": "学び",
-      "title": "手づくり絵本教室「オリジナル絵本を作ってみよう！」",
-      "venue": "熊野市文化交流センター 多目的ルーム",
-      "cost": "参加費は申込時に確認",
-      "audience": "小学生以下・定員10人（小学3年生以下は保護者同伴）",
-      "summary": "絵とことばを組み合わせて、自分だけの一冊を作る少人数教室。申込多数の場合は熊野市在住者が優先されます。",
-      "tags": ["絵本", "工作", "定員10人", "要申込", "小学生", "親子"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "熊野市",
-        "url": "https://www.city.kumano.lg.jp/news/detail.html?content=868",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-08"
-      }
-    },
-    {
-      "id": "iga-prenatal-classic-vol2-2026",
-      "month": "8",
-      "day": "9",
-      "weekday": "日",
-      "isoDate": "2026-08-09",
-      "time": "14:00開演（13:30開場）",
-      "region": "伊賀",
-      "municipality": "伊賀市",
-      "category": "音楽",
-      "title": "おなかのなかからクラシック Vol.2",
-      "venue": "青山ホール",
-      "cost": "無料・全席自由",
-      "audience": "妊娠中の人と家族・友人（大人の同伴は2人まで）",
-      "summary": "妊娠中の人を中心に、ヴァイオリンとピアノをゆったり聴く小さなクラシック公演。1〜6歳対象の無料託児は定員5人です。",
-      "tags": ["クラシック", "妊娠中", "要申込", "無料", "託児あり", "定員5人の託児"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊賀市文化都市協会",
-        "url": "https://www.bunto.com/classic/?author=0",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-29"
-      }
-    },
-    {
-      "id": "iga-orange-cafes-august-2026",
-      "month": "8",
-      "day": "18・19",
-      "weekday": "火・水",
-      "isoDate": "2026-08-18",
-      "time": "10:00–11:30（出入り自由）",
-      "region": "伊賀",
-      "municipality": "伊賀市",
-      "category": "交流",
-      "title": "いがオレンジカフェ／オレンジカフェあやま（8月）",
-      "venue": "ハイトピア伊賀4階／阿山保健福祉センター1階",
-      "cost": "無料",
-      "audience": "認知症の本人・家族、気になる人、地域住民、専門職など、どなたでも",
-      "summary": "体操や音楽、相談を交えながら自由に過ごす地域の認知症カフェ。伊賀と阿山の2会場で、出入り自由に参加できます。",
-      "tags": ["認知症カフェ", "相談", "体操", "出入り自由", "無料", "開催確認"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊賀市",
-        "url": "https://www.city.iga.lg.jp/0000004780.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-17"
-      }
-    },
-    {
-      "id": "iga-science-lab-2026",
-      "month": "8",
-      "day": "25",
-      "weekday": "火",
-      "isoDate": "2026-08-25",
-      "time": "10:00–12:00",
-      "region": "伊賀",
-      "municipality": "伊賀市",
-      "category": "学び",
-      "title": "第33回こども大学 Science Lab",
-      "venue": "ゆめテクノ伊賀3階 テクノホール",
-      "cost": "1,000円（材料費・保険料）",
-      "audience": "小学4〜6年生・定員20人（応募多数時抽選）",
-      "summary": "夏休みに科学の実験へ取り組む、小学生向けの少人数講座。7月31日17時15分が申込締切です。",
-      "tags": ["科学", "実験", "定員20人", "要申込", "締切7月31日", "小学生"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊賀市文化都市協会",
-        "url": "https://www.bunto.com/?p=28730",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-31"
-      }
-    },
-    {
-      "id": "kisosaki-balance-ball-2026",
-      "month": "8",
-      "day": "25",
-      "weekday": "火",
-      "isoDate": "2026-08-25",
-      "time": "13:30–14:00／14:10–14:40",
-      "region": "北勢",
-      "municipality": "木曽岬町",
-      "category": "交流",
-      "title": "みんなの居場所 バランスボール体験",
-      "venue": "木曽岬町立ふれあいの里",
-      "cost": "参加条件・料金は主催者へ確認",
-      "audience": "小学生・中学生、各回15人まで",
-      "summary": "夏休みの『みんなの居場所』で開かれる30分のバランスボール体験。2部制で、各回15人まで参加できます。",
-      "tags": ["バランスボール", "地域の居場所", "各回15人", "小学生", "中学生", "短時間"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "木曽岬町",
-        "url": "https://www.town.kisosaki.lg.jp/0000003146.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-24"
-      }
-    },
-    {
       "id": "inabe-daian-library-storytime-2026-07-25",
-      "month": "7",
-      "day": "25",
-      "weekday": "土",
-      "isoDate": "2026-07-25",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-25",
+      "dateNote": "土",
       "time": "14:00–14:30",
       "region": "北勢",
       "municipality": "いなべ市",
@@ -1654,8 +549,14 @@
       "cost": "参加費・申込の案内なし（公式情報で確認）",
       "audience": "子どもと保護者など（対象の案内は公式情報で確認）",
       "summary": "絵本や紙芝居の読み聞かせを楽しむ30分のおはなし会。参加条件は当日までに図書館の案内を確認してください。",
-      "tags": ["図書館", "読み聞かせ", "紙芝居", "短時間", "子ども", "参加条件確認"],
-      "period": "weekend",
+      "tags": [
+        "図書館",
+        "読み聞かせ",
+        "紙芝居",
+        "短時間",
+        "子ども",
+        "参加条件確認"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1667,10 +568,13 @@
     },
     {
       "id": "inabe-war-memory-exhibition-2026",
-      "month": "7–9",
-      "day": "25–27",
-      "weekday": "月・火休館",
-      "isoDate": "2026-07-25",
+      "startDate": "2026-07-25",
+      "endDate": "2026-09-27",
+      "closedWeekdays": [
+        1,
+        2
+      ],
+      "dateNote": "月・火休館",
       "time": "9:00–16:30",
       "region": "北勢",
       "municipality": "いなべ市",
@@ -1680,8 +584,14 @@
       "cost": "無料",
       "audience": "どなたでも",
       "summary": "戦争当時の教科書や生活用品を通して、地域の暮らしに戦争が及ぼした影響をたどる企画展。9月27日まで開催します。",
-      "tags": ["郷土資料館", "歴史", "屋内", "無料", "申込不要", "開催中"],
-      "period": "august",
+      "tags": [
+        "郷土資料館",
+        "歴史",
+        "屋内",
+        "無料",
+        "申込不要",
+        "開催中"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1692,11 +602,904 @@
       }
     },
     {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-bisshabisha-pool-2026",
+      "startDate": "2026-07-25",
+      "endDate": "2026-08-16",
+      "dates": [
+        "2026-07-25",
+        "2026-07-26",
+        "2026-08-01",
+        "2026-08-02",
+        "2026-08-08",
+        "2026-08-09",
+        "2026-08-10",
+        "2026-08-11",
+        "2026-08-12",
+        "2026-08-13",
+        "2026-08-14",
+        "2026-08-15",
+        "2026-08-16"
+      ],
+      "dateNote": "土日と8/8–16",
+      "time": "10:00–16:00",
+      "category": "交流",
+      "title": "ビッシャビシャ プールあそび！",
+      "venue": "イオンモール東員 ガーデンプレイス",
+      "cost": "無料",
+      "audience": "3歳から6歳のお子さま（2歳以下は芝生エリアで遊べます）",
+      "summary": "屋外のプールあそび。おむつが外れていないお子さまはプールに入れません。混雑時は入水を10分交代に区切って運用されます。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "無料",
+        "水あそび",
+        "熱中症注意",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/b485e1ad-6ecd-4eba-a044-6a8edaf9ba2b",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-31"
+      }
+    },
+    {
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール明和",
+        "type": "mall"
+      },
+      "id": "meiwa-manten-yoichi-2026",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-25",
+      "dateNote": "土",
+      "time": "16:00–21:30",
+      "category": "祭り",
+      "title": "満天夜市 〜屋上遊園地編〜",
+      "venue": "イオンモール明和 3F屋上駐車場（イオン明和店屋上）",
+      "cost": "料金は公式情報で確認",
+      "audience": "家族向け（ふわふわ遊具・お化け屋敷・縁日あり）",
+      "summary": "大淀祇園祭の花火大会に合わせて屋上駐車場を開放。夜市グルメ、ふわふわ遊具、お化け屋敷、縁日、ステージ、スポーツ体験教室があります。当日は屋上に駐車できません。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "花火",
+        "夜",
+        "縁日",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール明和",
+        "url": "https://www.aeon.jp/sc/meiwa/event/event_e86986_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-25"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "津市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール津南",
+        "type": "mall"
+      },
+      "id": "tsuminami-tsu-hanabi-rooftop-2026",
+      "startDate": "2026-07-25",
+      "endDate": "2026-07-25",
+      "dateNote": "土",
+      "time": "17:00–21:00",
+      "category": "祭り",
+      "title": "津の花火大会をイオンモール津南の屋上で見よう",
+      "venue": "イオンモール津南 屋上駐車場",
+      "cost": "料金は公式情報で確認",
+      "audience": "お子さまから大人まで",
+      "summary": "屋上駐車場を開放し、花火の観覧に加えて盆踊り、水鉄砲の対戦、縁日、フード出店があります。カルピスじゃぐちの体験は先着1000名です。天候により変更・中止となる場合があります。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "花火",
+        "夜",
+        "縁日",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール津南",
+        "url": "https://tsuminami.aeonmall.jp/event/f92e546d-bb89-477f-bece-34b958202ee7",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-25"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "津市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール津南",
+        "type": "mall"
+      },
+      "id": "tsuminami-world-insect-kingdom-2026",
+      "startDate": "2026-07-25",
+      "endDate": "2026-08-02",
+      "dateNote": "期間中",
+      "time": "10:00–18:00（最終入場17:30）",
+      "category": "展覧会",
+      "title": "世界の昆虫王国 〜生きた昆虫とわくわくキメラ体験〜",
+      "venue": "イオンモール津南 3F イオンホール",
+      "cost": "大人800円（税込）、子ども500円（税込）、3歳以下無料",
+      "audience": "親子向け（3歳以下は無料）",
+      "summary": "生きた昆虫の展示と体験コーナー。7月17日から始まっており、最終入場は17:30です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "昆虫",
+        "夏休み",
+        "親子",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール津南",
+        "url": "https://tsuminami.aeonmall.jp/event/6d2e0f9a-691d-486b-912d-baaa95ffdbad",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "id": "ise-okihiki-kawabiki-uji-nikenchaya-2026",
+      "startDate": "2026-07-26",
+      "endDate": "2026-07-26",
+      "dateNote": "日",
+      "time": "開始時刻は公式情報で確認",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "祭り",
+      "title": "第一次お木曳行事（川曳）— 宇治・二軒茶屋",
+      "venue": "五十鈴川・内宮周辺",
+      "cost": "観覧方法・奉仕参加は公式情報で確認",
+      "audience": "観覧者（奉仕参加は各奉曳団の案内を確認）",
+      "summary": "宇治奉曳団と二軒茶屋奉曳団が御用材を五十鈴川から内宮へ曳き入れます。川沿いの混雑と当日の案内に注意します。",
+      "tags": [
+        "屋外",
+        "伝統行事",
+        "川沿い",
+        "混雑注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢御遷宮委員会・奉曳日程",
+        "url": "https://www.isesengu.jp/okihiki.html",
+        "verifiedAt": "2026-07-24",
+        "nextCheckAt": "2026-07-26"
+      }
+    },
+    {
+      "id": "kabuto-no-mori-market-2026-07-26",
+      "startDate": "2026-07-26",
+      "endDate": "2026-07-26",
+      "dateNote": "日",
+      "time": "朝市の時間は公式確認／ピザ体験11:00–13:30",
+      "region": "北勢",
+      "municipality": "亀山市",
+      "category": "祭り",
+      "title": "かぶとの森の朝市（7月）",
+      "venue": "かぶとの森テラス",
+      "cost": "朝市は公式確認／ピザ体験2枚3,000円・要予約",
+      "audience": "一般参加可／ピザ体験は各回1組",
+      "summary": "亀山市加太のキャンプ場で開かれる朝市。7月は農園の野菜を使ったピザ作り体験もあり、朝市全体の時間は主催者情報で最終確認します。",
+      "tags": [
+        "朝市",
+        "地域の食",
+        "屋外",
+        "ピザ体験",
+        "要予約"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "かぶとの森農園・予約ページ",
+        "url": "https://reserva.be/kabutonomorifarm/reserve?mode=service_staff&search_evt_no=f2eJwzNjU0NDMBAAQ4ATU",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-25"
+      }
+    },
+    {
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール明和",
+        "type": "mall"
+      },
+      "id": "meiwa-poipoi-battler-2026",
+      "startDate": "2026-07-26",
+      "endDate": "2026-08-15",
+      "dates": [
+        "2026-07-26",
+        "2026-08-15"
+      ],
+      "dateNote": "日・土",
+      "time": "11:00–17:00",
+      "category": "交流",
+      "title": "夏の親子ウォーターバトル！ポイポイバトラー",
+      "venue": "イオンモール明和 シネマ棟屋上（雨天中止）",
+      "cost": "1名300円（税込・現金のみ）",
+      "audience": "小学生、または未就学児と保護者",
+      "summary": "ゴーグルに付けた金魚すくいの「ポイ」を水鉄砲でねらうチーム戦。スタッフがルール説明と練習時間を用意し、チーム分けも手伝います。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "水あそび",
+        "親子",
+        "雨天中止"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール明和",
+        "url": "https://www.aeon.jp/sc/meiwa/event/event_e83678_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-25"
+      }
+    },
+    {
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール明和",
+        "type": "mall"
+      },
+      "id": "meiwa-classic-live-2026",
+      "startDate": "2026-07-26",
+      "endDate": "2026-07-26",
+      "dateNote": "日",
+      "time": "(1)14:00–14:30 (2)16:00–16:30",
+      "category": "音楽",
+      "title": "100万人のクラシックライブ",
+      "venue": "イオンモール明和 1F ハナショウブの広場",
+      "cost": "料金は公式情報で確認",
+      "audience": "公式に対象の記載なし",
+      "summary": "ヴァイオリンとピアノによる30分のミニライブを2回。演奏家の話を交えて進みます。内容は予告なく変更となる場合があります。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "クラシック",
+        "ミニライブ"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール明和",
+        "url": "https://www.aeon.jp/sc/meiwa/event/event_e83515_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-25"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "四日市市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール四日市北",
+        "type": "mall"
+      },
+      "id": "yokkaichikita-dino-water-shooting-2026",
+      "startDate": "2026-07-26",
+      "endDate": "2026-07-26",
+      "dateNote": "日",
+      "time": "11:00–15:50（各回20分・全10回）",
+      "category": "交流",
+      "title": "恐竜ウォーターシューティング",
+      "venue": "イオンモール四日市北 ディオワールド側特設会場",
+      "cost": "参加費は公式情報で確認",
+      "audience": "公式に対象の記載なし",
+      "summary": "逃げ回って反撃してくる恐竜を水鉄砲でねらいます。各回20名限定で、当日10:00に全ての回の整理券を配布します。雨天時は8月2日に延期されます。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "水あそび",
+        "各回20名",
+        "雨天順延"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール四日市北",
+        "url": "https://www.aeon.jp/sc/yokkaichikita/event/event_e86004_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-25"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "桑名市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール桑名",
+        "type": "mall"
+      },
+      "id": "kuwana-gel-candle-2026",
+      "startDate": "2026-07-26",
+      "endDate": "2026-07-26",
+      "dateNote": "日",
+      "time": "10:30／12:00／13:30／15:00の4回",
+      "category": "学び",
+      "title": "サマージェルキャンドルをつくろう",
+      "venue": "イオンモール桑名 1番街2F 東出入口前 会場",
+      "cost": "イオンモールアプリ提示で税込200円",
+      "audience": "小学生以下のお子さま限定",
+      "summary": "キラキラストーンや貝殻で夏のジェルキャンドルをつくります。ジェルが固まるまでミニチュアドリンクカップのキーホルダーもつくれます。定員は合計50名で、当日10:00から会場で整理券を配布します。アプリからの事前予約はありません。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "整理券",
+        "定員50名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール桑名",
+        "url": "https://www.aeon.jp/sc/kuwana/event/event_e80750_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-25"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "桑名市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール桑名",
+        "type": "mall"
+      },
+      "id": "kuwana-studio-xiana-2026",
+      "startDate": "2026-07-26",
+      "endDate": "2026-07-26",
+      "dateNote": "日",
+      "time": "(1)13:15 (2)15:15",
+      "category": "舞台",
+      "title": "【ドキドキ発表会】スタジオXiANA",
+      "venue": "イオンモール桑名 1番街1階 噴水の広場",
+      "cost": "料金は公式情報で確認",
+      "audience": "公式に対象の記載なし",
+      "summary": "K-POPに合わせた足のステップ中心のダンス発表会を2回行います。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "ダンス",
+        "発表会"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール桑名",
+        "url": "https://www.aeon.jp/sc/kuwana/event/event_e84574_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-25"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-ikimono-chosatai-2026-07",
+      "startDate": "2026-07-26",
+      "endDate": "2026-07-26",
+      "dateNote": "日",
+      "time": "10:30–12:00／13:30–15:00",
+      "category": "学び",
+      "title": "【VISONの森】森のいきもの調査隊！",
+      "venue": "VISON 木育エリア kiond",
+      "cost": "1名1,500円（税込・大人こども共通）",
+      "audience": "公式に年齢制限の記載なし（親子向けの案内）",
+      "summary": "自然観察指導員の田川修氏と森の調査隊を結成し、仕掛けたトラップを見にいきます。定員15名で、kiondの予約サイトか店舗電話で受け付けます。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "自然観察",
+        "要予約",
+        "定員15名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1252",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-25"
+      }
+    },
+    {
+      "id": "kisosaki-kids-dining-summer-2026",
+      "startDate": "2026-07-27",
+      "endDate": "2026-08-31",
+      "dates": [
+        "2026-07-27",
+        "2026-08-03",
+        "2026-08-17",
+        "2026-08-24",
+        "2026-08-31"
+      ],
+      "dateNote": "月",
+      "time": "11:30–13:00",
+      "region": "北勢",
+      "municipality": "木曽岬町",
+      "category": "交流",
+      "title": "みんなで食堂（夏休み子ども食堂）",
+      "venue": "木曽岬町立ふれあいの里",
+      "cost": "料金は申込時に確認",
+      "audience": "木曽岬町在住の小学生・中学生、各回50食",
+      "summary": "夏休みの月曜日に開かれる町の子ども食堂。7月27日と8月3日・17日・24日・31日に、地域の子どもが一緒に昼食を囲みます。",
+      "tags": [
+        "子ども食堂",
+        "定員50食",
+        "要申込",
+        "小学生",
+        "中学生",
+        "地域の居場所"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "木曽岬町",
+        "url": "https://www.town.kisosaki.lg.jp/0000003139.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-24"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-hai-hai-contest-2026-07",
+      "startDate": "2026-07-27",
+      "endDate": "2026-07-27",
+      "dateNote": "月",
+      "time": "10:30／11:00／11:30の3回",
+      "category": "交流",
+      "title": "にこにこ笑顔溢れる ハイハイよちよちコンテスト【7月】",
+      "venue": "イオンモール東員 1階カブキコート",
+      "cost": "100円",
+      "audience": "はいはい・よちよち期のお子さまと保護者",
+      "summary": "はいはい・よちよち期の赤ちゃんが参加するコンテスト。各回10組で、イオンモールアプリのキッズクラブから予約でき、当日先着の枠もあります。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "赤ちゃん",
+        "要予約",
+        "各回10組",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/ecf798e6-5623-448c-93d3-f87a206fb43e",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-26"
+      }
+    },
+    {
+      "id": "swan-lake-2026",
+      "startDate": "2026-07-28",
+      "endDate": "2026-07-28",
+      "dateNote": "火",
+      "time": "15:00開演",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "舞台",
+      "title": "東京バレエ団 はじめてのバレエ「白鳥の湖」",
+      "venue": "三重県文化会館 大ホール",
+      "cost": "一般5,000円／4歳〜中学生2,500円",
+      "audience": "4歳以上・託児あり",
+      "summary": "初めてでも楽しめる約90分の公演。席種、託児、残席は公式ページで最終確認します。",
+      "tags": [
+        "屋内",
+        "託児あり",
+        "有料",
+        "舞台"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県文化会館",
+        "url": "https://www.center-mie.or.jp/bunka/event/detail/56941",
+        "verifiedAt": "2026-07-22",
+        "nextCheckAt": "2026-07-27"
+      }
+    },
+    {
+      "id": "mihama-jun-sensei-2026",
+      "startDate": "2026-07-28",
+      "endDate": "2026-07-28",
+      "dateNote": "火",
+      "time": "14:00開演（13:30開場）／上演約70分",
+      "region": "東紀州",
+      "municipality": "御浜町",
+      "category": "舞台",
+      "title": "ジュン先生がやってきた！～3年1組ものがたり～",
+      "venue": "御浜町中央公民館 大ホール",
+      "cost": "500円・自由席（一部指定）／4歳以上有料",
+      "audience": "ファミリー向け・4歳以上有料",
+      "summary": "御浜町の自主文化事業として上演される、家族で楽しめる舞台作品。町の公民館で、夏休みの午後に観られます。",
+      "tags": [
+        "演劇",
+        "ファミリー",
+        "夏休み",
+        "公民館",
+        "屋内"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "御浜町",
+        "url": "https://www.town.mihama.mie.jp/soshikikarasagasu/kyoikuiinkai/gyoseijoho/1103.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-27"
+      }
+    },
+    {
+      "id": "asahi-library-job-experience-2026",
+      "startDate": "2026-07-30",
+      "endDate": "2026-08-18",
+      "dates": [
+        "2026-07-30",
+        "2026-08-08",
+        "2026-08-18"
+      ],
+      "dateNote": "木・土・火",
+      "time": "10:00–11:00／13:30–14:30",
+      "region": "北勢",
+      "municipality": "朝日町",
+      "category": "学び",
+      "title": "図書館のお仕事体験",
+      "venue": "あさひライブラリー",
+      "cost": "無料",
+      "audience": "小学4〜6年生・各回2人（先着順、空き状況を要確認）",
+      "summary": "本を棚へ戻す作業など、図書館の仕事を少人数で体験します。7月30日、8月8日、8月18日の各日2回開催です。",
+      "tags": [
+        "図書館",
+        "仕事体験",
+        "定員2人",
+        "先着順",
+        "小学生",
+        "要申込",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "朝日町",
+        "url": "https://www2.town.asahi.mie.jp/www/contents/1781312137477/index.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-29"
+      }
+    },
+    {
+      "id": "noji-beer-garden-2026",
+      "startDate": "2026-07-31",
+      "endDate": "2026-07-31",
+      "dateNote": "金",
+      "time": "16:30–20:00",
+      "region": "東紀州",
+      "municipality": "尾鷲市",
+      "category": "祭り",
+      "title": "野地町ビアガーデン2026",
+      "venue": "野地町駅前児童公園",
+      "cost": "入場無料・飲食は有料",
+      "audience": "どなたでも・子ども連れ歓迎",
+      "summary": "おわせ港まつり前夜の一夜限定ビアガーデン。地域の食や飲み物を楽しめ、雨天時は中止です。",
+      "tags": [
+        "ビアガーデン",
+        "地域の食",
+        "屋外",
+        "入場無料",
+        "雨天中止"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "尾鷲観光物産協会",
+        "url": "https://owasekankou.com/event/nojimachi/",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-30"
+      }
+    },
+    {
+      "id": "iga-yofuta-gion-2026",
+      "startDate": "2026-07-31",
+      "endDate": "2026-08-01",
+      "dateNote": "金・土",
+      "time": "7/31 花火20:00〜／8/1 神事14:00〜",
+      "region": "伊賀",
+      "municipality": "伊賀市",
+      "category": "祭り",
+      "title": "陽夫多神社 祇園祭",
+      "venue": "陽夫多神社",
+      "cost": "参拝・観覧方法は公式情報で確認",
+      "audience": "どなたでも",
+      "summary": "宵宮奉納花火大会と、県指定無形民俗文化財の願之山行事。2026年の願之山踊りは小踊りのみ開催予定です。",
+      "tags": [
+        "神社祭",
+        "奉納花火",
+        "地域文化",
+        "屋外",
+        "雨天中止注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊賀市公式観光サイト 伊賀イド",
+        "url": "https://www.iga-guide.com/recommend/event/august.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-30"
+      }
+    },
+    {
+      "id": "paramita-miniature-dollhouse-2026",
+      "startDate": "2026-07-31",
+      "endDate": "2026-09-27",
+      "dateNote": "会期中無休",
+      "time": "9:30–17:30（入館17:00まで）",
+      "region": "北勢",
+      "municipality": "菰野町",
+      "category": "展覧会",
+      "title": "ミニチュアドールハウスの世界展",
+      "venue": "パラミタミュージアム",
+      "cost": "一般1,000円／大学生800円／高校生500円／中学生以下無料",
+      "audience": "どなたでも",
+      "summary": "アンティークの趣をもつ作品から現代作家の精巧な作品まで、ヨーロッパと日本のドールハウスを紹介。8月は毎週末に関連イベントもあります。",
+      "tags": [
+        "ミニチュア",
+        "ドールハウス",
+        "中学生以下無料",
+        "会期中無休",
+        "関連イベント",
+        "屋内"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "パラミタミュージアム",
+        "url": "https://paramitamuseum.com/plan/next_exhibition.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-30"
+      }
+    },
+    {
+      "id": "kuwana-ishidori-2026",
+      "startDate": "2026-07-31",
+      "endDate": "2026-08-02",
+      "dateNote": "金–日",
+      "time": "7月31日叩き出し／8月1日試楽／8月2日本楽",
+      "region": "北勢",
+      "municipality": "桑名市",
+      "category": "祭り",
+      "title": "桑名石取祭 2026",
+      "venue": "桑名宗社（春日神社）周辺・旧東海道",
+      "cost": "観覧方法は公式情報で確認",
+      "audience": "どなたでも",
+      "summary": "鉦と太鼓を打ち鳴らす祭車が桑名の町を巡る石取祭。深夜から早朝にかかる行事もあるため、公式の時刻表と交通規制を確認して訪れたい催しです。",
+      "tags": [
+        "祭車",
+        "伝統行事",
+        "旧東海道",
+        "深夜行事",
+        "屋外",
+        "公式情報で最終確認"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "桑名石取祭保存会",
+        "url": "https://kuwana-ishidori.com/festival.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-31"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "桑名市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール桑名",
+        "type": "mall"
+      },
+      "id": "kuwana-illustrators-fes-2026",
+      "startDate": "2026-07-31",
+      "endDate": "2026-08-03",
+      "dateNote": "期間中",
+      "time": "10:00–18:00（初日13:00〜）",
+      "category": "展覧会",
+      "title": "イラストレーターズフェスティバル",
+      "venue": "イオンモール桑名 1番街2階 GILD前特設会場",
+      "cost": "料金は公式情報で確認",
+      "audience": "公式に対象の記載なし",
+      "summary": "複数のアーティストによるイラスト版画の展示。最終日は17:00まで。混雑時は入場制限や入場整理券の配布があり、入場時にアンケートの協力を求められます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "イラスト",
+        "アート"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール桑名",
+        "url": "https://www.aeon.jp/sc/kuwana/event/event_e85687_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-30"
+      }
+    },
+    {
+      "id": "ise-okihiki-kawabiki-shigo-2026",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-01",
+      "dateNote": "土",
+      "time": "開始時刻は公式情報で確認",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "祭り",
+      "title": "第一次お木曳行事（川曳）— 四郷",
+      "venue": "五十鈴川・内宮周辺",
+      "cost": "観覧方法・奉仕参加は公式情報で確認",
+      "audience": "観覧者（奉仕参加は各奉曳団の案内を確認）",
+      "summary": "四郷の4組の奉曳団が御用材を五十鈴川から内宮へ曳き入れます。川沿いの混雑と当日の案内に注意します。",
+      "tags": [
+        "屋外",
+        "伝統行事",
+        "川沿い",
+        "混雑注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢御遷宮委員会・奉曳日程",
+        "url": "https://www.isesengu.jp/okihiki.html",
+        "verifiedAt": "2026-07-24",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "id": "hisai-hanabi-2026",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-01",
+      "dateNote": "土",
+      "time": "18:00–20:30",
+      "region": "中勢",
+      "municipality": "津市・久居",
+      "category": "祭り",
+      "title": "第65回 久居花火大会",
+      "venue": "陸上自衛隊久居駐屯地グラウンド",
+      "cost": "一般観覧ゾーンあり／協賛席あり",
+      "audience": "どなたでも",
+      "summary": "久居駅から徒歩圏の花火大会。荒天時は8月2日に順延予定です。",
+      "tags": [
+        "屋外",
+        "花火",
+        "駅近",
+        "荒天順延"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "津市・記者発表資料",
+        "url": "https://www.info.city.tsu.mie.jp/_res/projects/default_project/_page_/001/010/663/20260706.pdf#page=16",
+        "verifiedAt": "2026-07-22",
+        "nextCheckAt": "2026-07-31"
+      }
+    },
+    {
+      "id": "owase-port-festival-2026",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-01",
+      "dateNote": "土",
+      "time": "花火 19:30頃から",
+      "region": "東紀州",
+      "municipality": "尾鷲市",
+      "category": "祭り",
+      "title": "第73回 おわせ港まつり",
+      "venue": "尾鷲港",
+      "cost": "観覧方法は公式情報で確認",
+      "audience": "どなたでも",
+      "summary": "昼は特産品販売や尾鷲節太鼓など、夜は花火を予定。雨天時の順延情報も市の公式ページで確認します。",
+      "tags": [
+        "屋外",
+        "花火",
+        "地域文化",
+        "雨天順延"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "尾鷲市",
+        "url": "https://www.city.owase.lg.jp/owase_kurashi/0000022771.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-31"
+      }
+    },
+    {
+      "id": "yokkaichi-matsuri-2026",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-02",
+      "dateNote": "土・日",
+      "time": "詳細は公式サイトで確認",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "祭り",
+      "title": "第63回 大四日市まつり",
+      "venue": "四日市市中心部（詳細は公式サイトで確認）",
+      "cost": "観覧方法は公式情報で確認",
+      "audience": "どなたでも",
+      "summary": "四日市の中心市街地で2日間開催される夏まつり。現時点では開催日が公式発表されており、詳しいプログラムは公式サイトの更新待ちです。",
+      "tags": [
+        "夏祭り",
+        "中心市街地",
+        "2日間",
+        "屋外",
+        "詳細更新待ち"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "大四日市まつり実行委員会",
+        "url": "https://kankou43yokkaichi.com/matsuri/news/2040/",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-31"
+      }
+    },
+    {
+      "id": "ise-farmers-market-august-2026",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-01",
+      "dateNote": "土",
+      "time": "18:00–21:00",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "祭り",
+      "title": "伊勢ファーマーズマーケット（外宮参道）",
+      "venue": "外宮参道",
+      "cost": "入場方法・購入条件は主催者へ確認",
+      "audience": "どなたでも",
+      "summary": "月ごとに場所を変えながら、生産者と地域の人が出会う小さなマーケット。8月は夕方から外宮参道で開かれます。",
+      "tags": [
+        "マルシェ",
+        "農産物",
+        "地元店",
+        "夕方",
+        "屋外",
+        "小規模開催"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢市",
+        "url": "https://www.city.ise.mie.jp/shisei/koho_kocho/koho/2026/0501.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-31"
+      }
+    },
+    {
       "id": "inabe-library-bingo-2026",
-      "month": "8",
-      "day": "1–30",
-      "weekday": "開館日",
-      "isoDate": "2026-08-01",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-30",
+      "dateNote": "開館日",
       "time": "図書館の開館時間内",
       "region": "北勢",
       "municipality": "いなべ市",
@@ -1706,8 +1509,14 @@
       "cost": "参加費の記載なし（資料貸出の利用条件は公式情報で確認）",
       "audience": "どなたでも",
       "summary": "指定された資料を借りてマスを埋め、ビンゴを完成させる館内企画。そろえた列に応じて、しおりやガチャの特典があります。",
-      "tags": ["図書館", "本", "館内", "どなたでも", "長期開催", "参加条件確認"],
-      "period": "august",
+      "tags": [
+        "図書館",
+        "本",
+        "館内",
+        "どなたでも",
+        "長期開催",
+        "参加条件確認"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1719,10 +1528,14 @@
     },
     {
       "id": "inabe-indigo-dye-workshop-2026",
-      "month": "8",
-      "day": "1・2・30",
-      "weekday": "土・日",
-      "isoDate": "2026-08-01",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-30",
+      "dates": [
+        "2026-08-01",
+        "2026-08-02",
+        "2026-08-30"
+      ],
+      "dateNote": "土・日",
       "time": "13:00–15:00（一部10:00–11:30）",
       "region": "北勢",
       "municipality": "いなべ市",
@@ -1732,8 +1545,14 @@
       "cost": "1,000円（1人）",
       "audience": "どなたでも・各回15人（小学3年生以下は保護者同伴）",
       "summary": "資料館で育てた藍の葉を使い、布を染めてオリジナル作品を作る体験教室。実施回ごとの空き状況を公式ページで確認してください。",
-      "tags": ["藍染め", "ものづくり", "各回15人", "要申込", "予約状況確認", "子ども"],
-      "period": "august",
+      "tags": [
+        "藍染め",
+        "ものづくり",
+        "各回15人",
+        "要申込",
+        "予約状況確認",
+        "子ども"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1744,11 +1563,344 @@
       }
     },
     {
+      "id": "suzuka-monozukuri-fair-2026",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-02",
+      "dateNote": "土・日",
+      "time": "10:00–16:00（最終受付15:00）",
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "category": "学び",
+      "title": "ものづくりフェアー2026",
+      "venue": "イオンモール鈴鹿 専門店街2階 イオンホール",
+      "cost": "無料",
+      "audience": "ファミリー向け（小さい子は保護者と共同制作）",
+      "summary": "技能士に教わりながらものづくりを体験できます。各コーナーは当日先着30人を基本とする時間帯予約制です。",
+      "tags": [
+        "屋内",
+        "ものづくり",
+        "無料",
+        "当日予約",
+        "先着順",
+        "各コーナー30人",
+        "子ども",
+        "商業施設"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール鈴鹿",
+        "url": "https://suzuka.aeonmall.jp/event/f697859c-22fd-4b0a-9eb3-8e5694dee750",
+        "verifiedAt": "2026-07-24",
+        "nextCheckAt": "2026-07-31"
+      },
+      "facility": {
+        "name": "イオンモール鈴鹿",
+        "type": "mall"
+      }
+    },
+    {
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール明和",
+        "type": "mall"
+      },
+      "id": "meiwa-dino-water-shooting-2026",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-01",
+      "dateNote": "土",
+      "time": "11:00–15:00（各回20分・全8回）",
+      "category": "交流",
+      "title": "恐竜ウォーターシューティング",
+      "venue": "イオンモール明和 シネマ棟屋上（雨天中止）",
+      "cost": "参加費は公式情報で確認",
+      "audience": "4歳から小学生のみ",
+      "summary": "的を付けた恐竜を水鉄砲でねらいます。恐竜は逃げ回り、水で反撃してくることも。各回定員20名です。雨天の場合は8月22日に延期されます。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "水あそび",
+        "各回20名",
+        "雨天順延",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール明和",
+        "url": "https://www.aeon.jp/sc/meiwa/event/event_e82056_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-31"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-mini-smartball-2026",
+      "startDate": "2026-08-01",
+      "endDate": "2026-08-29",
+      "dates": [
+        "2026-08-01",
+        "2026-08-09",
+        "2026-08-13",
+        "2026-08-15",
+        "2026-08-21",
+        "2026-08-23",
+        "2026-08-29"
+      ],
+      "dateNote": "8月の指定日",
+      "time": "10:30–12:30／14:00–16:00",
+      "category": "学び",
+      "title": "【夏休み工作！】ミニスマートボール作り",
+      "venue": "VISON 木育エリア kiond",
+      "cost": "1作品3,000円（税込）",
+      "audience": "公式に年齢制限の記載なし（親子向けの案内）",
+      "summary": "本格的な工具も使って、親子でオリジナルのスマートボールを組み上げます。夏休みの自由研究にも向きます。定員12名で、kiondの予約サイトか店舗電話で受け付けます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "自由研究",
+        "要予約",
+        "定員12名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1245",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-07-31"
+      }
+    },
+    {
+      "id": "ise-okihiki-kawabiki-ominato-shudo-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-02",
+      "dateNote": "日",
+      "time": "開始時刻は公式情報で確認",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "祭り",
+      "title": "第一次お木曳行事（川曳）— 大湊・修道",
+      "venue": "五十鈴川・内宮周辺",
+      "cost": "観覧方法・奉仕参加は公式情報で確認",
+      "audience": "観覧者（奉仕参加は各奉曳団の案内を確認）",
+      "summary": "大湊・修道の6組の奉曳団が御用材を五十鈴川から内宮へ曳き入れます。当日は特に混雑が見込まれ、現地の誘導に従う必要があります。",
+      "tags": [
+        "屋外",
+        "伝統行事",
+        "川沿い",
+        "混雑注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢御遷宮委員会・奉曳日程",
+        "url": "https://www.isesengu.jp/okihiki.html",
+        "verifiedAt": "2026-07-24",
+        "nextCheckAt": "2026-08-02"
+      }
+    },
+    {
+      "id": "junior-orchestra-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-02",
+      "dateNote": "日",
+      "time": "13:00開演",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "音楽",
+      "title": "三重ジュニア管弦楽団 こどもオーケストラ教室",
+      "venue": "三重県文化会館 中ホール",
+      "cost": "入場無料・全席自由",
+      "audience": "0歳から入場可",
+      "summary": "楽器紹介や指揮者体験を含む約60分の体験型コンサートです。",
+      "tags": [
+        "屋内",
+        "無料",
+        "0歳から",
+        "音楽"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県文化会館",
+        "url": "https://www.center-mie.or.jp/bunka/event/detail/58184",
+        "verifiedAt": "2026-07-22",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "id": "kawage-summer-storytime-special-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-30",
+      "dates": [
+        "2026-08-02",
+        "2026-08-09",
+        "2026-08-23",
+        "2026-08-30"
+      ],
+      "dateNote": "日",
+      "time": "各日11:00–11:30",
+      "region": "中勢",
+      "municipality": "津市・河芸",
+      "category": "学び",
+      "title": "河芸図書館 夏休みおはなし会スペシャル",
+      "venue": "河芸図書館 1階 絵本コーナー",
+      "cost": "参加条件は公式情報で確認",
+      "audience": "絵本の読み聞かせを楽しみたい人",
+      "summary": "ラッコの会による絵本などの読み聞かせ。8月2日・9日・23日・30日の各日曜に開催され、参加人数を制限する場合があります。",
+      "tags": [
+        "読み聞かせ",
+        "図書館",
+        "子ども",
+        "複数日",
+        "屋内"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "津市図書館",
+        "url": "https://www.library.city.tsu.mie.jp/news/%E6%B2%B3%E8%8A%B8%E5%9B%B3%E6%9B%B8%E9%A4%A8%EF%BC%9A%E5%A4%8F%E4%BC%91%E3%81%BF%E3%81%8A%E3%81%AF%E3%81%AA%E3%81%97%E4%BC%9A%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB/",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "id": "yokkaichi-port-matsuri-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-02",
+      "dateNote": "日",
+      "time": "8:30–16:30（予定）",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "祭り",
+      "title": "令和8年度 四日市港まつり",
+      "venue": "四日市港四日市地区（千歳町）",
+      "cost": "入場方法は公式情報で確認／無料シャトルバスあり",
+      "audience": "どなたでも（事前申込企画は受付終了）",
+      "summary": "働く船の一般公開や船のパレード、放水実演、ステージ、マルシェ、キッチンカーを港で楽しむ一日。近鉄・JR四日市駅から無料シャトルバスが運行予定です。",
+      "tags": [
+        "港",
+        "船",
+        "キッチンカー",
+        "マルシェ",
+        "無料シャトル",
+        "屋外"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "四日市港管理組合",
+        "url": "https://www.yokkaichi-port.or.jp/matsuri2026.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "id": "matsusaka-chubu-phil-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-02",
+      "dateNote": "日",
+      "time": "15:00–17:00（14:15開場）",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "音楽",
+      "title": "中部フィルハーモニー交響楽団 松阪特別演奏会",
+      "venue": "クラギ文化ホール",
+      "cost": "一般3,500円〜／U-18 2,000円〜／3歳〜小学生1,000円〜",
+      "audience": "3歳未満入場不可",
+      "summary": "ジブリ、ディズニー、ハリー・ポッターをテーマに、映画音楽をオーケストラで楽しむ松阪特別演奏会です。",
+      "tags": [
+        "オーケストラ",
+        "映画音楽",
+        "ファミリー",
+        "クラシック",
+        "屋内"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "松阪市・クラギ文化ホール",
+        "url": "https://www.city.matsusaka.mie.jp/site/kuragi-hall/chubuphil.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "id": "soubun-marche-mikke-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-02",
+      "dateNote": "日",
+      "time": "11:00–15:00",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "祭り",
+      "title": "マルシェMikke",
+      "venue": "三重県文化会館 第2ギャラリー",
+      "cost": "入場方法は公式情報で確認／商品購入は各店で",
+      "audience": "どなたでも・先着順",
+      "summary": "小さな店や作り手が集まる屋内マルシェ。販売品は持ち帰りが基本ですが、会場内に飲食スペースも用意されます。",
+      "tags": [
+        "マルシェ",
+        "ハンドメイド",
+        "飲食",
+        "先着順",
+        "屋内",
+        "小規模開催"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県総合文化センター",
+        "url": "https://www.center-mie.or.jp/event/detail/58246",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "id": "soubun-hikari-no-mi-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-02",
+      "dateNote": "日",
+      "time": "10:00–16:00",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "交流",
+      "title": "みんなでつくる「ひかりの実」",
+      "venue": "三重県文化会館 第1ギャラリー",
+      "cost": "参加費は公式情報で確認",
+      "audience": "どなたでも・当日先着順",
+      "summary": "笑顔を描いた果実袋にLEDを入れ、みんなの作品を秋の展示へつなぐ共同制作。当日に立ち寄って参加できます。",
+      "tags": [
+        "共同制作",
+        "アート",
+        "当日受付",
+        "先着順",
+        "子ども",
+        "屋内"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県総合文化センター",
+        "url": "https://www.center-mie.or.jp/soubun/child/asobo2026",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
       "id": "owase-russia-cultural-exchange-2026",
-      "month": "8",
-      "day": "2",
-      "weekday": "日",
-      "isoDate": "2026-08-02",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-02",
+      "dateNote": "日",
       "time": "13:30–16:00",
       "region": "東紀州",
       "municipality": "尾鷲市",
@@ -1758,8 +1910,14 @@
       "cost": "国際交流協会会員無料／会員以外300円",
       "audience": "主に小学生・中学生、先着15人",
       "summary": "尾鷲を訪れるロシアの子どもや大人と話し、折り紙などの日本の遊びを一緒に体験する少人数交流会。7月29日が申込締切です。",
-      "tags": ["国際交流", "折り紙", "先着15人", "要申込", "締切7月29日", "子ども"],
-      "period": "august",
+      "tags": [
+        "国際交流",
+        "折り紙",
+        "先着15人",
+        "要申込",
+        "締切7月29日",
+        "子ども"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1770,11 +1928,125 @@
       }
     },
     {
+      "id": "mie-kodomo-science-show-air-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-02",
+      "dateNote": "日",
+      "time": "11:45／13:45／14:45（各約20分）",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "学び",
+      "title": "フジさんのわくわく科学実験ショー ～空気のひみつ～",
+      "venue": "三重県立みえこどもの城 2階舞台スペース",
+      "cost": "無料",
+      "audience": "幼児から・保護者の付添が必要（各回先着100人）",
+      "summary": "風船や空気砲を使って空気の不思議を体験する科学ショー。当日受付で、開場は各回の開始15分前です。",
+      "tags": [
+        "屋内",
+        "科学",
+        "実験ショー",
+        "無料",
+        "当日受付",
+        "各回100人",
+        "子ども"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "みえこどもの城",
+        "url": "https://www.mie-cc.or.jp/map/event/%E5%A4%8F%E4%BC%91%E3%81%BF%E7%89%B9%E5%88%A5%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88-%E3%83%95%E3%82%B8%E3%81%95%E3%82%93%E3%81%AE%E3%82%8F%E3%81%8F%E3%82%8F%E3%81%8F%E7%A7%91%E5%AD%A6%E5%AE%9F%E9%A8%93/",
+        "verifiedAt": "2026-07-24",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール明和",
+        "type": "mall"
+      },
+      "id": "meiwa-temochi-hanabi-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-09",
+      "dates": [
+        "2026-08-02",
+        "2026-08-09"
+      ],
+      "dateNote": "日",
+      "time": "16:00–20:00",
+      "category": "交流",
+      "title": "イオンモール明和の屋上で手持ち花火を楽しもう！",
+      "venue": "イオンモール明和 シネマ棟屋上（雨天中止）",
+      "cost": "期間中の専門店お買い上げレシート税込500円以上で手持ち花火をプレゼント",
+      "audience": "小学生以下のお子さまとその保護者",
+      "summary": "シネマ棟屋上で手持ち花火ができます。各日先着130名で、1人1回限りです。天候により早めに終了する場合があります。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "花火",
+        "夜",
+        "各日先着130名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール明和",
+        "url": "https://www.aeon.jp/sc/meiwa/event/event_e86017_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-mini-shateki-2026",
+      "startDate": "2026-08-02",
+      "endDate": "2026-08-30",
+      "dates": [
+        "2026-08-02",
+        "2026-08-08",
+        "2026-08-12",
+        "2026-08-14",
+        "2026-08-22",
+        "2026-08-24",
+        "2026-08-30"
+      ],
+      "dateNote": "8月の指定日",
+      "time": "10:30–12:30／14:00–16:00",
+      "category": "学び",
+      "title": "【夏休み工作！】ミニ射的屋台作り",
+      "venue": "VISON 木育エリア kiond",
+      "cost": "1作品3,000円（税込）",
+      "audience": "公式に年齢制限の記載なし（親子向けの案内）",
+      "summary": "kiond縁日の射的を卓上サイズにした工作。板から屋台を組み上げて、自分の射的ゲームをつくります。kiondの予約サイトか店舗電話で受け付けます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "自由研究",
+        "要予約",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1240",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
       "id": "ise-culture-festival-rhythmics-2026",
-      "month": "8",
-      "day": "4",
-      "weekday": "火",
-      "isoDate": "2026-08-04",
+      "startDate": "2026-08-04",
+      "endDate": "2026-08-04",
+      "dateNote": "火",
       "time": "10:30–11:30",
       "region": "伊勢志摩",
       "municipality": "伊勢市",
@@ -1784,8 +2056,15 @@
       "cost": "無料",
       "audience": "3歳〜小学3年生と保護者・10組",
       "summary": "音楽に合わせて親子で身体を動かす、伊勢市カルチャーフェスティバルの体験講座。定員到達時は受付終了となります。",
-      "tags": ["リトミック", "親子", "無料", "10組", "要申込", "予約状況確認", "子ども"],
-      "period": "august",
+      "tags": [
+        "リトミック",
+        "親子",
+        "無料",
+        "10組",
+        "要申込",
+        "予約状況確認",
+        "子ども"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1796,11 +2075,83 @@
       }
     },
     {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-seiha-english-play-2026-08",
+      "startDate": "2026-08-04",
+      "endDate": "2026-08-04",
+      "dateNote": "火",
+      "time": "10:30–11:00",
+      "category": "学び",
+      "title": "【セイハ英語学院】0歳から3歳の えいごあそび 8月",
+      "venue": "イオンモール東員 3階ジョイフルパーク2",
+      "cost": "無料",
+      "audience": "0歳から3歳までのお子さまと保護者",
+      "summary": "英語の絵本の読み聞かせと歌・ダンスで遊ぶ催し。8月は海の生き物がテーマです。予約は不要です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "無料",
+        "申込不要",
+        "英語",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/4a8ff7a3-ffd2-4ae9-9cc1-915e3812abcc",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-03"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-koke-terrarium-2026-08",
+      "startDate": "2026-08-04",
+      "endDate": "2026-08-17",
+      "dates": [
+        "2026-08-04",
+        "2026-08-17"
+      ],
+      "dateNote": "火・月",
+      "time": "13:00–14:00",
+      "category": "学び",
+      "title": "森の素材を使ってコケテラリウム",
+      "venue": "VISON 木育エリア kiond",
+      "cost": "1名3,000円（税込）",
+      "audience": "公式に年齢制限の記載なし",
+      "summary": "kiondの森で集めた素材を使い、小さなガラス容器の中に森をつくります。定員20名で、kiondの予約サイトか店舗電話で受け付けます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "要予約",
+        "定員20名"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1249",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-03"
+      }
+    },
+    {
       "id": "taki-prenatal-postpartum-chat-2026-08",
-      "month": "8",
-      "day": "5",
-      "weekday": "水",
-      "isoDate": "2026-08-05",
+      "startDate": "2026-08-05",
+      "endDate": "2026-08-05",
+      "dateNote": "水",
       "time": "10:00–11:30",
       "region": "中勢",
       "municipality": "多気町",
@@ -1810,8 +2161,14 @@
       "cost": "参加費の案内なし",
       "audience": "多気町に住民登録のある妊婦、産後6か月までの産婦と赤ちゃん",
       "summary": "妊娠中・産後の人同士で話し、赤ちゃんの身体計測や専門職のミニ講話にも参加できる地域の集まりです。",
-      "tags": ["妊娠", "産後", "赤ちゃん", "地域限定", "申込不要", "屋内"],
-      "period": "august",
+      "tags": [
+        "妊娠",
+        "産後",
+        "赤ちゃん",
+        "地域限定",
+        "申込不要",
+        "屋内"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1822,11 +2179,77 @@
       }
     },
     {
+      "id": "yokkaichi-knowledge-hub-workshop-2026",
+      "startDate": "2026-08-06",
+      "endDate": "2026-08-06",
+      "dateNote": "木",
+      "time": "14:00–16:00（受付13:30）",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "交流",
+      "title": "知と交流の拠点施設 市民ワークショップ",
+      "venue": "じばさん6階 展示室",
+      "cost": "無料",
+      "audience": "市内在住・在勤・在学者、定員30人（応募多数時抽選）",
+      "summary": "新しい『知と交流の拠点施設』の使い方を、市民同士で考えるワークショップ。小学生は保護者と参加できます。",
+      "tags": [
+        "市民参加",
+        "ワークショップ",
+        "定員30人",
+        "要申込",
+        "締切7月28日",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "四日市市",
+        "url": "https://www.city.yokkaichi.lg.jp/www/contents/1782463906247/index.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-28"
+      }
+    },
+    {
+      "id": "watarai-nursery-open-yard-2026",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-21",
+      "dates": [
+        "2026-08-07",
+        "2026-08-20",
+        "2026-08-21"
+      ],
+      "dateNote": "金・木・金",
+      "time": "10:00–11:00",
+      "region": "伊勢志摩",
+      "municipality": "度会町",
+      "category": "交流",
+      "title": "園庭開放「保育所で遊びましょう」",
+      "venue": "中之郷・棚橋・長原の各保育所",
+      "cost": "申込不要（料金の案内なし）",
+      "audience": "保育所に通っていない未就学児と保護者",
+      "summary": "町内3か所の保育所が、日を分けて園庭を開放します。予約せずに親子で1時間遊べる、地域の小さな交流機会です。",
+      "tags": [
+        "園庭開放",
+        "未就学児",
+        "親子",
+        "申込不要",
+        "雨天中止",
+        "地域交流"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "度会町",
+        "url": "https://www.town.watarai.lg.jp/contents_detail.php?co=new&frmId=3735",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-06"
+      }
+    },
+    {
       "id": "yokkaichi-bath-bomb-rocket-2026",
-      "month": "8",
-      "day": "7",
-      "weekday": "金",
-      "isoDate": "2026-08-07",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-07",
+      "dateNote": "金",
       "time": "10:00–11:30",
       "region": "北勢",
       "municipality": "四日市市",
@@ -1836,8 +2259,16 @@
       "cost": "100円",
       "audience": "中部地区在住または指定小学校の小学生・先着16組",
       "summary": "フィルムケースと入浴剤を使って飛ぶ仕組みを試す地区の科学教室。7月24日9時から先着順で受け付けます。",
-      "tags": ["科学", "実験", "ロケット", "100円", "先着16組", "要申込", "地域限定", "子ども"],
-      "period": "august",
+      "tags": [
+        "科学",
+        "実験",
+        "ロケット",
+        "100円",
+        "先着16組",
+        "要申込",
+        "地域限定",
+        "子ども"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1848,11 +2279,466 @@
       }
     },
     {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-kumiko-coaster-2026-08",
+      "startDate": "2026-08-07",
+      "endDate": "2026-08-11",
+      "dates": [
+        "2026-08-07",
+        "2026-08-11"
+      ],
+      "dateNote": "金・火",
+      "time": "8/7 13:00–14:00／8/11 11:00–12:00",
+      "category": "学び",
+      "title": "【伝統工芸体験】組子細工でコースター作り",
+      "venue": "VISON 木育エリア kiond",
+      "cost": "1作品3,500円（税込）",
+      "audience": "公式に年齢制限の記載なし",
+      "summary": "「ねじり組子」と「千鳥柄」の2種類から選び、伝統の技でコースターをつくります。kiondの予約サイトか店舗電話で受け付けます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "伝統工芸",
+        "要予約"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1250",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-06"
+      }
+    },
+    {
+      "id": "miemu-suzuka-guide-2026",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-08",
+      "dateNote": "土",
+      "time": "14:00から約30分",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "学び",
+      "title": "基本展示スポットガイド「鈴鹿山脈の自然」",
+      "venue": "三重県総合博物館 MieMu",
+      "cost": "基本展示の観覧券が必要",
+      "audience": "どなたでも",
+      "summary": "学芸員のおすすめ展示を短時間で聞ける、事前申込不要のスポットガイドです。",
+      "tags": [
+        "屋内",
+        "申込不要",
+        "学び",
+        "短時間"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県総合博物館",
+        "url": "https://www.bunka.pref.mie.lg.jp/MieMu/84927046739.htm",
+        "verifiedAt": "2026-07-22",
+        "nextCheckAt": "2026-08-07"
+      }
+    },
+    {
+      "id": "kameyama-summer-festival-2026",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-08",
+      "dateNote": "土",
+      "time": "17:00–20:45",
+      "region": "北勢",
+      "municipality": "亀山市",
+      "category": "祭り",
+      "title": "亀山市納涼大会2026",
+      "venue": "亀山公園芝生広場一帯",
+      "cost": "入場無料・スカイランタンは有料申込制",
+      "audience": "どなたでも・赤ちゃんスペースあり",
+      "summary": "灯おどり、和太鼓、eスポーツ体験、竹あかり、露店を楽しむ夏の催し。荒天時は中止です。",
+      "tags": [
+        "入場無料",
+        "盆踊り",
+        "和太鼓",
+        "eスポーツ",
+        "赤ちゃんスペース"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "亀山市",
+        "url": "https://www.city.kameyama.mie.jp/kosodate_yuyu/events/2026060100038/",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-07"
+      }
+    },
+    {
+      "id": "mie-art-albert-marquet-2026",
+      "startDate": "2026-08-08",
+      "endDate": "2026-09-13",
+      "closedWeekdays": [
+        1
+      ],
+      "dateNote": "月曜休館",
+      "time": "9:30–17:00（入館16:30まで）",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "展覧会",
+      "title": "生誕150周年 アルベール・マルケ展 水辺を愛した画家",
+      "venue": "三重県立美術館 企画展示室",
+      "cost": "一般1,200円／学生1,000円／高校生以下無料",
+      "audience": "どなたでも",
+      "summary": "フランス近代絵画の巨匠アルベール・マルケの日本では35年ぶりとなる回顧展。油彩画を中心に、素描・パステルを含む約100点を紹介します。",
+      "tags": [
+        "近代絵画",
+        "フランス美術",
+        "水辺",
+        "高校生以下無料",
+        "屋内",
+        "月曜休館"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県立美術館",
+        "url": "https://www.bunka.pref.mie.lg.jp/art-museum/54798037874.htm",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-07"
+      }
+    },
+    {
+      "id": "mie-kodomo-obon-festival-2026",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-16",
+      "dateNote": "土–日",
+      "time": "企画ごとに異なる",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "祭り",
+      "title": "みえこどもの城 de お盆を満喫！！",
+      "venue": "三重県立みえこどもの城",
+      "cost": "企画ごとに異なる",
+      "audience": "子どもと保護者（各企画の対象・定員を公式ページで確認）",
+      "summary": "お面や提灯づくり、人形劇、星空観察、縁日、シャーベット作りなどを9日間にわたり日替わりで実施します。",
+      "tags": [
+        "屋内外",
+        "日替わり",
+        "工作",
+        "人形劇",
+        "当日受付",
+        "一部要申込",
+        "予約状況確認",
+        "子ども"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "みえこどもの城",
+        "url": "https://www.mie-cc.or.jp/map/event/siro_obonfestival_2026/",
+        "verifiedAt": "2026-07-24",
+        "nextCheckAt": "2026-08-07"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-obakenu-2026",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-09",
+      "dateNote": "土・日",
+      "time": "やしき10:00–17:00／登場は3回",
+      "category": "交流",
+      "title": "＼どろどろ～ん／オバケーヌやしき！＆オバケーヌがやってくる！",
+      "venue": "イオンモール東員 1階カブキコート・2階ジョイフルコート",
+      "cost": "やしき 1人200円（税込／キッズクラブ会員は100円引）、グリーティングは無料",
+      "audience": "お子さま向け（保護者の同伴可）",
+      "summary": "1階のおばけやしきと、2階のキャラクターグリーティングの二本立て。やしきの最終入場は16:50です。グリーティングは11:00・13:00・15:00の各回30分で、整理券の配布はありません。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "キャラクター",
+        "申込不要",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/66460229-0ced-48bb-acbf-17ea1ae49ed7",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-07"
+      }
+    },
+    {
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール明和",
+        "type": "mall"
+      },
+      "id": "meiwa-obon-odori-2026",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-08",
+      "dateNote": "土",
+      "time": "17:00–21:30",
+      "category": "祭り",
+      "title": "第3回 めいわ大盆踊りまつり",
+      "venue": "イオンモール明和 1F 平面北側駐車場",
+      "cost": "料金は公式情報で確認",
+      "audience": "家族向け（防災コーナー・縁日・お菓子まきあり）",
+      "summary": "明和音頭保存会のレクチャーのあと20:00まで盆踊り。太鼓演奏、防災コーナー、縁日、キッチンカー、お菓子まき、大抽選会があります。主催はめいわ大盆踊りまつり実行委員会です。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "盆踊り",
+        "夜",
+        "縁日",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール明和",
+        "url": "https://www.aeon.jp/sc/meiwa/event/event_e86987_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-07"
+      }
+    },
+    {
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール明和",
+        "type": "mall"
+      },
+      "id": "meiwa-ikimono-dojo-2026",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-09",
+      "dateNote": "土・日",
+      "time": "10:00–16:00（各回定員制・全5回）",
+      "category": "学び",
+      "title": "いきもの道場 ウーパールーパー道場",
+      "venue": "イオンモール明和 1F ハナショウブの広場",
+      "cost": "お子さま500円（税込／2歳以下無料）、大人200円（税込・高校生以上）",
+      "audience": "お子さま向け（未就学児は高校生以上の保護者同伴が必要）",
+      "summary": "ウーパールーパーの「えら」などの特徴と生態を、親子で学べる40分の体験。付き添いの人も参加料金が必要です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "いきもの",
+        "定員制",
+        "親子",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール明和",
+        "url": "https://www.aeon.jp/sc/meiwa/event/event_e83650_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-07"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "四日市市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール四日市北",
+        "type": "mall"
+      },
+      "id": "yokkaichikita-furima-2026-08",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-09",
+      "dateNote": "土・日",
+      "time": "10:00–15:00",
+      "category": "交流",
+      "title": "イオンモール四日市北フリマ",
+      "venue": "イオンモール四日市北 ディオワールド前屋外会場",
+      "cost": "料金は公式情報で確認",
+      "audience": "公式に対象の記載なし",
+      "summary": "屋外会場でのフリーマーケット。主催は三重県フリマ倶楽部です。雨天中止で、状況により早めに終了する場合があります。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "フリーマーケット",
+        "雨天中止"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール四日市北",
+        "url": "https://www.aeon.jp/sc/yokkaichikita/event/event_e77723_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-07"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-tsunaichi-2026",
+      "startDate": "2026-08-08",
+      "endDate": "2026-08-09",
+      "dateNote": "土・日",
+      "time": "時間は公式情報で確認",
+      "category": "交流",
+      "title": "陶器市と暮らしの道具「綱市」",
+      "venue": "VISON 和ヴィソン",
+      "cost": "料金は公式情報で確認",
+      "audience": "公式に対象の記載なし",
+      "summary": "ショップ『綱具屋』が主催するマルシェの2回目。信楽焼窯元丸十製陶のブランド「CONTENTS」や、ガラスアート「ELTTE」などが並びます。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "マルシェ",
+        "陶器",
+        "クラフト"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1257",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-07"
+      }
+    },
+    {
+      "id": "maxa-mie-matsuri-day2-2026",
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-09",
+      "dateNote": "日",
+      "time": "時間は公式情報で確認",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "音楽",
+      "title": "吉例マクサ夏祭り DAY-2「三重祭2026」",
+      "venue": "M'AXA BAR&GRILL・LIVE MUSIC",
+      "cost": "料金・入場条件は公式情報で確認",
+      "audience": "入場条件は公式情報で確認",
+      "summary": "M'AXAの夏祭り2日目。at Anytime presents「TIME OF YOUR LIFE Vol.96」として開かれるライブイベントです。",
+      "tags": [
+        "ライブ",
+        "ライブハウス",
+        "ローカル音楽",
+        "入場条件確認"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "M'AXA",
+        "url": "https://www.maxa.jp/schedule/%E2%98%85%E5%90%89%E4%BE%8B%E3%83%9E%E3%82%AF%E3%82%B5%E5%A4%8F%E7%A5%AD%E3%82%8A%E2%98%85day-2-2/",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-08"
+      }
+    },
+    {
+      "id": "yokkaichi-museum-backyard-tour-2026",
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-09",
+      "dateNote": "日",
+      "time": "14:00–16:00",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "学び",
+      "title": "バックヤードツアー（子ども向け）",
+      "venue": "そらんぽ四日市・四日市市立博物館",
+      "cost": "参加費は申込時に確認",
+      "audience": "子ども向け・定員20人（応募多数時抽選）",
+      "summary": "普段は入れない博物館の裏側を少人数で見学する子ども向けツアー。7月30日まで事前申込を受け付けます。",
+      "tags": [
+        "博物館",
+        "バックヤード",
+        "定員20人",
+        "要申込",
+        "締切7月30日",
+        "子ども"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "四日市市",
+        "url": "https://www.city.yokkaichi.lg.jp/www/contents/1781140437915/simple/202606gejunn.pdf",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-30"
+      }
+    },
+    {
+      "id": "kumano-handmade-picture-book-2026",
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-09",
+      "dateNote": "日",
+      "time": "13:00–16:00",
+      "region": "東紀州",
+      "municipality": "熊野市",
+      "category": "学び",
+      "title": "手づくり絵本教室「オリジナル絵本を作ってみよう！」",
+      "venue": "熊野市文化交流センター 多目的ルーム",
+      "cost": "参加費は申込時に確認",
+      "audience": "小学生以下・定員10人（小学3年生以下は保護者同伴）",
+      "summary": "絵とことばを組み合わせて、自分だけの一冊を作る少人数教室。申込多数の場合は熊野市在住者が優先されます。",
+      "tags": [
+        "絵本",
+        "工作",
+        "定員10人",
+        "要申込",
+        "小学生",
+        "親子"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "熊野市",
+        "url": "https://www.city.kumano.lg.jp/news/detail.html?content=868",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-08"
+      }
+    },
+    {
+      "id": "iga-prenatal-classic-vol2-2026",
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-09",
+      "dateNote": "日",
+      "time": "14:00開演（13:30開場）",
+      "region": "伊賀",
+      "municipality": "伊賀市",
+      "category": "音楽",
+      "title": "おなかのなかからクラシック Vol.2",
+      "venue": "青山ホール",
+      "cost": "無料・全席自由",
+      "audience": "妊娠中の人と家族・友人（大人の同伴は2人まで）",
+      "summary": "妊娠中の人を中心に、ヴァイオリンとピアノをゆったり聴く小さなクラシック公演。1〜6歳対象の無料託児は定員5人です。",
+      "tags": [
+        "クラシック",
+        "妊娠中",
+        "要申込",
+        "無料",
+        "託児あり",
+        "定員5人の託児"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊賀市文化都市協会",
+        "url": "https://www.bunto.com/classic/?author=0",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-29"
+      }
+    },
+    {
       "id": "taki-library-pottery-2026",
-      "month": "8",
-      "day": "9",
-      "weekday": "日",
-      "isoDate": "2026-08-09",
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-09",
+      "dateNote": "日",
       "time": "10:00–12:00",
       "region": "中勢",
       "municipality": "多気町",
@@ -1862,8 +2748,14 @@
       "cost": "3,500円（材料費）",
       "audience": "小学生〜大人・10組程度",
       "summary": "図書館で自分の小皿を作る少人数の陶芸教室。先着順で、8月6日18時が申込締切です。",
-      "tags": ["陶芸", "ものづくり", "10組程度", "要申込", "締切8月6日", "子ども"],
-      "period": "august",
+      "tags": [
+        "陶芸",
+        "ものづくり",
+        "10組程度",
+        "要申込",
+        "締切8月6日",
+        "子ども"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1875,10 +2767,9 @@
     },
     {
       "id": "taki-seiwa-story-cafe-2026",
-      "month": "8",
-      "day": "9",
-      "weekday": "日",
-      "isoDate": "2026-08-09",
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-09",
+      "dateNote": "日",
       "time": "11:00–16:00",
       "region": "中勢",
       "municipality": "多気町",
@@ -1888,8 +2779,14 @@
       "cost": "入場・飲食・体験条件は公式情報で確認",
       "audience": "どなたでも（ワークショップは予約状況を確認）",
       "summary": "夏のおはなし会にカフェ出店とワークショップを組み合わせた、図書館で過ごす一日。企画ごとの参加条件を確認してください。",
-      "tags": ["図書館", "おはなし会", "カフェ", "ワークショップ", "屋内", "参加条件確認"],
-      "period": "august",
+      "tags": [
+        "図書館",
+        "おはなし会",
+        "カフェ",
+        "ワークショップ",
+        "屋内",
+        "参加条件確認"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1900,245 +2797,253 @@
       }
     },
     {
-      "id": "ise-culture-festival-pvc-shakuhachi-2026",
-      "month": "8",
-      "day": "12",
-      "weekday": "水",
-      "isoDate": "2026-08-12",
-      "time": "14:00–16:00",
-      "region": "伊勢志摩",
-      "municipality": "伊勢市",
-      "category": "学び",
-      "title": "音は本物？塩ビ尺八を作ろう！",
-      "venue": "いせトピア 工芸室",
-      "cost": "無料",
-      "audience": "小学4年生以上・10人（中学生以下は保護者同伴）",
-      "summary": "塩ビ管を使って尺八を作り、音の出る仕組みを体験する少人数講座。定員到達時は受付終了となります。",
-      "tags": ["尺八", "楽器作り", "無料", "10人", "要申込", "予約状況確認", "子ども"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊勢市",
-        "url": "https://www.city.ise.mie.jp/cul_spo_edu/culture/gyouji/isecole/geijutsusai/1002093.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-05"
-      }
-    },
-    {
-      "id": "yokkaichi-ongaku-kotohajime-2026-08",
-      "month": "8",
-      "day": "13",
-      "weekday": "木",
-      "isoDate": "2026-08-13",
-      "time": "10:30／13:30",
       "region": "北勢",
       "municipality": "四日市市",
-      "category": "音楽",
-      "title": "親子で楽しむはじめてのコンサート「おんがくことはじめ」",
-      "venue": "四日市市総合会館 8階視聴覚室",
-      "cost": "参加費は公式申込ページで確認",
-      "audience": "0〜3歳の乳幼児と保護者（きょうだい参加可）",
-      "summary": "フルート、ヴァイオリン、ピアノの生演奏を、身体を動かしたり歌ったりしながら親子で楽しむコンサート。8月9日まで先着順で受け付けます。",
-      "tags": ["親子コンサート", "0歳から", "生演奏", "先着順", "要申込", "締切8月9日", "子ども"],
-      "period": "august",
       "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "四日市市",
-        "url": "https://www.city.yokkaichi.lg.jp/www/contents/1772776008264/index.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-09"
-      }
-    },
-    {
-      "id": "ise-culture-festival-koto-2026",
-      "month": "8",
-      "day": "22",
-      "weekday": "土",
-      "isoDate": "2026-08-22",
-      "time": "10:30–12:00",
-      "region": "伊勢志摩",
-      "municipality": "伊勢市",
-      "category": "学び",
-      "title": "初めてのお箏",
-      "venue": "二見老人福祉センター",
+      "facility": {
+        "name": "イオンモール四日市北",
+        "type": "mall"
+      },
+      "id": "yokkaichikita-kenketsu-2026-08",
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-09",
+      "dateNote": "日",
+      "time": "10:00–11:30／13:00–16:00",
+      "category": "交流",
+      "title": "献血のお知らせ",
+      "venue": "イオンモール四日市北 1階ペテモ前",
       "cost": "無料",
-      "audience": "小学生・中学生、15人",
-      "summary": "箏に初めて触れる子ども向けの文化体験講座。参加枠は15人で、定員到達時は受付終了となります。",
-      "tags": ["箏", "和楽器", "無料", "15人", "要申込", "予約状況確認", "子ども"],
-      "period": "august",
-      "status": "published",
+      "audience": "男性17歳・女性18歳から、体重50kg以上の方",
+      "summary": "館内での献血。午前と午後の2枠で受け付けます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "献血",
+        "無料"
+      ],
       "source": {
         "kind": "primary",
-        "label": "伊勢市",
-        "url": "https://www.city.ise.mie.jp/cul_spo_edu/culture/gyouji/isecole/geijutsusai/1002093.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-15"
+        "label": "イオンモール四日市北",
+        "url": "https://www.aeon.jp/sc/yokkaichikita/event/event_e49024_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-08"
       }
     },
     {
-      "id": "kawagoe-kids-business-card-2026",
-      "month": "8",
-      "day": "28",
-      "weekday": "金",
-      "isoDate": "2026-08-28",
-      "time": "11:00–11:45／13:30–14:15",
-      "region": "北勢",
-      "municipality": "川越町",
-      "category": "学び",
-      "title": "キッズお仕事広場「ボクの、ワタシの名刺をつくろう！」",
-      "venue": "おひさま児童館",
-      "cost": "参加費の記載なし（公式情報で確認）",
-      "audience": "小学生・事前申込制",
-      "summary": "みえこどもの城の出張企画で、自分の名刺作りに挑戦します。公式ページでは午後枠に若干の空きと案内されていますが、最新の残数を確認してください。",
-      "tags": ["児童館", "仕事体験", "名刺作り", "小学生", "要申込", "予約状況確認"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "川越町",
-        "url": "https://www.town.kawagoe.mie.jp/bunka_sports_event/1002592/1004260.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-24"
-      }
-    },
-    {
-      "id": "toba-jurassic-aquarium-2026",
-      "month": "7–9",
-      "day": "18–27",
-      "weekday": "期間中",
-      "isoDate": "2026-07-18",
-      "time": "開館時間内",
-      "region": "伊勢志摩",
-      "municipality": "鳥羽市",
-      "category": "展覧会",
-      "title": "夏の企画展「ジュラシックアクアリウム ～鳥羽の古代生物たち～」",
-      "venue": "鳥羽水族館 企画展示室ほか",
-      "cost": "鳥羽水族館の入館料が必要",
-      "audience": "子どもを含む幅広い世代",
-      "summary": "鳥羽竜の実物化石、太古の生きものの標本・レプリカ、現生の大型トカゲや古代魚などを紹介する夏の企画展です。",
-      "tags": ["屋内", "恐竜", "化石", "生体展示", "有料", "子ども"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "鳥羽水族館",
-        "url": "https://aquarium.co.jp/event/jurassic-aqarium2026/",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-08-01"
-      }
-    },
-    {
-      "id": "suzuka-monozukuri-fair-2026",
-      "month": "8",
-      "day": "1–2",
-      "weekday": "土・日",
-      "isoDate": "2026-08-01",
-      "time": "10:00–16:00（最終受付15:00）",
-      "region": "北勢",
-      "municipality": "鈴鹿市",
-      "category": "学び",
-      "title": "ものづくりフェアー2026",
-      "venue": "イオンモール鈴鹿 専門店街2階 イオンホール",
-      "cost": "無料",
-      "audience": "ファミリー向け（小さい子は保護者と共同制作）",
-      "summary": "技能士に教わりながらものづくりを体験できます。各コーナーは当日先着30人を基本とする時間帯予約制です。",
-      "tags": ["屋内", "ものづくり", "無料", "当日予約", "先着順", "各コーナー30人", "子ども"],
-      "period": "august",
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "イオンモール鈴鹿",
-        "url": "https://suzuka.aeonmall.jp/event/f697859c-22fd-4b0a-9eb3-8e5694dee750",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-07-31"
-      }
-    },
-    {
-      "id": "mie-kodomo-science-show-air-2026",
-      "month": "8",
-      "day": "2",
-      "weekday": "日",
-      "isoDate": "2026-08-02",
-      "time": "11:45／13:45／14:45（各約20分）",
       "region": "中勢",
-      "municipality": "松阪市",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-okuda-yuderon-2026",
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-09",
+      "dateNote": "日",
+      "time": "12:00〜",
       "category": "学び",
-      "title": "フジさんのわくわく科学実験ショー ～空気のひみつ～",
-      "venue": "三重県立みえこどもの城 2階舞台スペース",
-      "cost": "無料",
-      "audience": "幼児から・保護者の付添が必要（各回先着100人）",
-      "summary": "風船や空気砲を使って空気の不思議を体験する科学ショー。当日受付で、開場は各回の開始15分前です。",
-      "tags": ["屋内", "科学", "実験ショー", "無料", "当日受付", "各回100人", "子ども"],
-      "period": "august",
-      "status": "published",
+      "title": "奥田政行シェフ ゆで論講演会",
+      "venue": "VISON 農園エリア",
+      "cost": "8,000円（税込）",
+      "audience": "公式に対象の記載なし",
+      "summary": "「世界の料理人1000人」に選ばれた奥田政行シェフによる「ゆで論」の講演会。ゆで論を取り入れたスペシャルランチが付きます。要予約です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "食",
+        "講演",
+        "要予約",
+        "ランチ付"
+      ],
       "source": {
         "kind": "primary",
-        "label": "みえこどもの城",
-        "url": "https://www.mie-cc.or.jp/map/event/%E5%A4%8F%E4%BC%91%E3%81%BF%E7%89%B9%E5%88%A5%E3%82%A4%E3%83%99%E3%83%B3%E3%83%88-%E3%83%95%E3%82%B8%E3%81%95%E3%82%93%E3%81%AE%E3%82%8F%E3%81%8F%E3%82%8F%E3%81%8F%E7%A7%91%E5%AD%A6%E5%AE%9F%E9%A8%93/",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-08-01"
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1270",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-08"
       }
     },
     {
-      "id": "mie-kodomo-obon-festival-2026",
-      "month": "8",
-      "day": "8–16",
-      "weekday": "土–日",
-      "isoDate": "2026-08-08",
-      "time": "企画ごとに異なる",
       "region": "中勢",
-      "municipality": "松阪市",
-      "category": "祭り",
-      "title": "みえこどもの城 de お盆を満喫！！",
-      "venue": "三重県立みえこどもの城",
-      "cost": "企画ごとに異なる",
-      "audience": "子どもと保護者（各企画の対象・定員を公式ページで確認）",
-      "summary": "お面や提灯づくり、人形劇、星空観察、縁日、シャーベット作りなどを9日間にわたり日替わりで実施します。",
-      "tags": ["屋内外", "日替わり", "工作", "人形劇", "当日受付", "一部要申込", "予約状況確認", "子ども"],
-      "period": "august",
+      "municipality": "多気町",
       "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-musasabi-2026",
+      "startDate": "2026-08-09",
+      "endDate": "2026-08-31",
+      "dates": [
+        "2026-08-09",
+        "2026-08-31"
+      ],
+      "dateNote": "日・月",
+      "time": "10:30–11:30／13:00–14:00 ほか",
+      "category": "学び",
+      "title": "森のぬくもりを手のひらに「ころんとかわいいムササビ」",
+      "venue": "VISON 木育エリア kiond",
+      "cost": "1作品3,600円（税込）",
+      "audience": "公式に年齢制限の記載なし",
+      "summary": "木を磨いて表情を育てていくクラフト体験。本格的な彫刻ではないので、シンプルな作業を重ねてつくれます。定員15作品で、kiondの予約サイトか店舗電話で受け付けます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "要予約",
+        "定員15作品"
+      ],
       "source": {
         "kind": "primary",
-        "label": "みえこどもの城",
-        "url": "https://www.mie-cc.or.jp/map/event/siro_obonfestival_2026/",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-08-07"
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1247",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-08"
       }
     },
     {
-      "id": "toin-kids-summer-lab-2026",
-      "month": "8",
-      "day": "10–14",
-      "weekday": "月–金",
-      "isoDate": "2026-08-10",
-      "time": "企画ごとに異なる",
       "region": "北勢",
       "municipality": "東員町",
-      "category": "学び",
-      "title": "イオンモール東員 キッズサマーラボ",
-      "venue": "イオンモール東員 1階カブキコート",
-      "cost": "企画ごとに異なる",
-      "audience": "子ども向け（参加条件・定員は各日の公式情報で確認）",
-      "summary": "スライム、流しそうめん台づくり、プラネタリウム、サバイバル、お天気実験を日替わりで体験できます。",
-      "tags": ["屋内", "夏休み", "自由研究", "日替わり", "定員あり", "参加条件確認", "子ども"],
-      "period": "august",
       "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-slime-park-2026",
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-10",
+      "dateNote": "月",
+      "time": "11:00–17:00（整理券は10:00から配布）",
+      "category": "学び",
+      "title": "スライムパーク！",
+      "venue": "イオンモール東員 1階カブキコート",
+      "cost": "500円（税込・現金のみ）",
+      "audience": "小学生以下のお子さま",
+      "summary": "キッズサマーラボの初日。スライムづくりを体験できます。定員100人で、定員に達し次第終了します。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "夏休み",
+        "自由研究",
+        "定員100人",
+        "子ども"
+      ],
       "source": {
         "kind": "primary",
         "label": "イオンモール東員",
-        "url": "https://toin.aeonmall.jp/event/1e74f4ef-ab2a-4d05-9cd2-52c5390b4f9d",
-        "verifiedAt": "2026-07-24",
+        "url": "https://toin.aeonmall.jp/event/54c9d5c1-0834-4024-ad5b-da0b58a31994",
+        "verifiedAt": "2026-07-25",
         "nextCheckAt": "2026-08-09"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-hinoki-chopsticks-2026-08",
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-15",
+      "dates": [
+        "2026-08-10",
+        "2026-08-15"
+      ],
+      "dateNote": "月・土",
+      "time": "10:30–12:30／14:00–16:00",
+      "category": "学び",
+      "title": "贅沢ヒノキの手作り箸体験",
+      "venue": "VISON 木育エリア kiond",
+      "cost": "1名3,000円（税込）",
+      "audience": "大人から子どもまで参加できます",
+      "summary": "治具に材を乗せ、鉋で削ってマイ箸をつくります。だんだん箸の形になっていく過程を楽しめます。定員20名で、kiondの予約サイトか店舗電話で受け付けます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "要予約",
+        "定員20名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1253",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-09"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-uv-gel-2026",
+      "startDate": "2026-08-10",
+      "endDate": "2026-08-10",
+      "dateNote": "月",
+      "time": "11:00–13:00",
+      "category": "学び",
+      "title": "アッシュ夏の身体 〜碧の紫外線対策ジェル作り〜",
+      "venue": "VISON 本草エリア 本草研究所RINNE",
+      "cost": "8,800円",
+      "audience": "公式に対象の記載なし",
+      "summary": "植物で夏の身体とセルフケアを考えながら、乳化剤不使用・天然素材の紫外線対策ジェルをつくります。美容液や化粧下地にも使えます。電話または予約フォームから申し込みます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "ワークショップ",
+        "要予約",
+        "植物"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1276",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-09"
+      }
+    },
+    {
+      "id": "quubi-japan-tour-mie-2026",
+      "startDate": "2026-08-11",
+      "endDate": "2026-08-11",
+      "dateNote": "火",
+      "time": "16:00開演（15:30開場）",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "音楽",
+      "title": "Quubi Japan Tour 2026 三重公演",
+      "venue": "CLUB CHAOS",
+      "cost": "前売2,500円／当日3,500円＋ドリンク600円",
+      "audience": "未就学児以下は入場不可",
+      "summary": "Quubiの全国ツアー四日市公演。一般発売、入場条件、当日の注意事項を会場公式ページで確認できます。",
+      "tags": [
+        "ライブ",
+        "ライブハウス",
+        "アイドル",
+        "未就学児不可"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "CLUB CHAOS",
+        "url": "https://www.clubchaos.jp/2026/08/quubi2026/",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-10"
       }
     },
     {
       "id": "suzuka-circuit-hanabi-2026",
-      "month": "8",
-      "day": "11–14",
-      "weekday": "火–金",
-      "isoDate": "2026-08-11",
+      "startDate": "2026-08-11",
+      "endDate": "2026-08-14",
+      "dateNote": "火–金",
       "time": "19:00–20:20",
       "region": "北勢",
       "municipality": "鈴鹿市",
@@ -2148,8 +3053,15 @@
       "cost": "入園券が必要／観覧席は1,000円（パークパスポート提示で無料）",
       "audience": "家族で参加可（有料席は3歳以上が対象）",
       "summary": "バイクエキシビション、音楽と連動する約4,000発の花火、コース上を歩くストレートウォークを行います。",
-      "tags": ["屋外", "花火", "夜", "ファミリー", "有料", "荒天変更・中止", "子ども"],
-      "period": "august",
+      "tags": [
+        "屋外",
+        "花火",
+        "夜",
+        "ファミリー",
+        "有料",
+        "荒天変更・中止",
+        "子ども"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -2160,63 +3072,810 @@
       }
     },
     {
-      "id": "bellfarm-summer-play-2026",
-      "month": "7–8",
-      "day": "18–31",
-      "weekday": "期間中",
-      "isoDate": "2026-07-18",
-      "time": "9:00–16:00（雨天休止）",
-      "region": "中勢",
-      "municipality": "松阪市",
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-nagashi-somen-stand-2026",
+      "startDate": "2026-08-11",
+      "endDate": "2026-08-11",
+      "dateNote": "火",
+      "time": "11:00–17:00（整理券は10:00から配布）",
+      "category": "学び",
+      "title": "流しそうめん台づくり",
+      "venue": "イオンモール東員 1階カブキコート",
+      "cost": "500円（税込・現金のみ）",
+      "audience": "小学生以下のお子さま",
+      "summary": "キッズサマーラボの2日目。流しそうめんの台を工作します。定員100人で、定員に達し次第終了します。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "夏休み",
+        "工作",
+        "定員100人",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/80c02d0e-77a4-4f99-94b5-b28e9b52ce10",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-10"
+      }
+    },
+    {
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール明和",
+        "type": "mall"
+      },
+      "id": "meiwa-sweets-deco-parfait-2026",
+      "startDate": "2026-08-11",
+      "endDate": "2026-08-11",
+      "dateNote": "火",
+      "time": "10:30／12:00／13:30／15:00の4回",
+      "category": "学び",
+      "title": "スイーツデコ リアルサイズのアイスパフェをつくろう!!",
+      "venue": "イオンモール明和 1F ハナショウブの広場",
+      "cost": "一般300円（税込・材料費込）、イオンモールアプリ キッズクラブ会員200円（税込）",
+      "audience": "お子さま向け（公式に年齢の下限記載なし）",
+      "summary": "スイーツデコのパーツでリアルサイズのアイスパフェをつくります。各回先着25名・合計100名。事前予約はアプリのキッズクラブから8月1日10:00に開始します。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "要予約",
+        "各回25名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール明和",
+        "url": "https://www.aeon.jp/sc/meiwa/event/event_e79243_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-10"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "四日市市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール四日市北",
+        "type": "mall"
+      },
+      "id": "yokkaichikita-hoshi-2026",
+      "startDate": "2026-08-11",
+      "endDate": "2026-08-11",
+      "dateNote": "火",
+      "time": "10:00–15:00／18:30–20:00",
+      "category": "学び",
+      "title": "親子で星を楽しもう",
+      "venue": "イオンモール四日市北 1階エスカレーター前・レンガ棟前",
+      "cost": "星のストラップ工作は税込500円、移動式プラネタリウムは無料",
+      "audience": "親子向け（小学生以下は保護者同伴）",
+      "summary": "3つの企画。星のストラップ工作は先着100名。移動式プラネタリウムは1回約30分で10:00〜15:00に全6回、各回約25名で無料。夜は移動天文車「きらら号」の観望会が18:30から外のレンガ棟前であります。",
+      "tags": [
+        "屋内外",
+        "商業施設",
+        "天体",
+        "工作",
+        "先着順",
+        "親子",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール四日市北",
+        "url": "https://www.aeon.jp/sc/yokkaichikita/event/event_e87090_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-10"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "桑名市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール桑名",
+        "type": "mall"
+      },
+      "id": "kuwana-calbee-oyatsu-2026",
+      "startDate": "2026-08-11",
+      "endDate": "2026-08-11",
+      "dateNote": "火",
+      "time": "10:30／12:30／14:30（各30分）",
+      "category": "学び",
+      "title": "イオンモール × カルビー おやつの食べ方教室",
+      "venue": "イオンモール桑名 1番街2F GILD前特設会場",
+      "cost": "参加費は公式情報で確認（参加賞あり）",
+      "audience": "推奨の参加年齢は4歳以上（親子向け）",
+      "summary": "1日のおやつの量や食べる時間を学び、ポテトチップスができるまでの映像を見ます。カルビーのキャラクターも来場します。各回30名（事前予約15名・当日先着15名）で、事前予約はキッズクラブから8月4日10:00開始です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "食育",
+        "要予約",
+        "各回30名",
+        "親子",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール桑名",
+        "url": "https://www.aeon.jp/sc/kuwana/event/event_e85685_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-10"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール鈴鹿",
+        "type": "mall"
+      },
+      "id": "suzuka-honda-baseball-fan-2026",
+      "startDate": "2026-08-11",
+      "endDate": "2026-08-11",
+      "dateNote": "火",
+      "time": "10:30–13:00／14:00–16:00",
       "category": "交流",
-      "title": "夏もベルファームであそぼう‼",
-      "venue": "松阪農業公園ベルファーム 蚤の市広場",
-      "cost": "水遊びは料金記載なし／特別イベントは1回200〜700円など",
-      "audience": "子どもと保護者（特別イベントは個別条件あり）",
-      "summary": "シャワーマット、竹の水鉄砲、ミスト休憩所を設け、お盆には植物ビンゴ、野菜・水風船つり、スイカ割りも行います。",
-      "tags": ["屋外", "水遊び", "雨天休止", "夏休み", "一部有料", "一部要申込", "子ども"],
-      "period": "august",
+      "title": "【Honda鈴鹿硬式野球部】ファン感謝交流会",
+      "venue": "イオンモール鈴鹿 専門店街1階 セントラルコート",
+      "cost": "料金は公式情報で確認",
+      "audience": "公式に対象の記載なし",
+      "summary": "午前はアトラクション体験、午後は選手との交流。ミニゲームやキャッチボールがあります。8月26日から東京ドームで開かれる第97回都市対抗野球に出場する選手が参加します。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "野球",
+        "選手交流"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール鈴鹿",
+        "url": "https://suzuka.aeonmall.jp/event/bb7ed6b5-466d-4a92-8909-27eaf541049d",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-10"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-meiro-board-2026-08",
+      "startDate": "2026-08-11",
+      "endDate": "2026-08-11",
+      "dateNote": "火",
+      "time": "10:30–12:30／14:00–16:00",
+      "category": "学び",
+      "title": "【夏休み工作】木でつくる！オリジナル迷路ボード",
+      "venue": "VISON 木育エリア kiond",
+      "cost": "1作品2,800円（税込）",
+      "audience": "公式に年齢制限の記載なし（親子向けの案内）",
+      "summary": "木の板を自由に組み合わせて、自分だけの迷路ボードをつくります。定員12作品で、kiondの予約サイトか店舗電話で受け付けます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "自由研究",
+        "要予約",
+        "定員12作品",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1244",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-10"
+      }
+    },
+    {
+      "id": "kameyama-observatory-2026-08",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-12",
+      "dateNote": "水",
+      "time": "19:00–21:00",
+      "region": "北勢",
+      "municipality": "亀山市",
+      "category": "学び",
+      "title": "天文台「童夢」無料開放日・夏の星空観察会",
+      "venue": "鈴鹿峠自然の家 天文台「童夢」",
+      "cost": "参加無料",
+      "audience": "申込不要",
+      "summary": "天文台スタッフの望遠鏡操作と天体解説で夏の星空を観察。雨天・曇天時は中止です。",
+      "tags": [
+        "星空",
+        "望遠鏡",
+        "無料",
+        "申込不要",
+        "雨天・曇天中止"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
-        "label": "松阪農業公園ベルファーム",
-        "url": "https://www.bellfarm.jp/event/3636/",
-        "verifiedAt": "2026-07-24",
+        "label": "亀山市",
+        "url": "https://www.city.kameyama.mie.jp/kosodate_yuyu/events/2026032300428/",
+        "verifiedAt": "2026-07-23",
         "nextCheckAt": "2026-08-12"
       }
     },
     {
-      "id": "shima-spain-village-summer-fiesta-2026",
-      "month": "7–9",
-      "day": "4–17",
-      "weekday": "期間中",
-      "isoDate": "2026-07-04",
-      "time": "内容・日程により異なる",
+      "id": "ise-culture-festival-pvc-shakuhachi-2026",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-12",
+      "dateNote": "水",
+      "time": "14:00–16:00",
       "region": "伊勢志摩",
-      "municipality": "志摩市",
-      "category": "祭り",
-      "title": "志摩スペイン村 サマーフィエスタ2026",
-      "venue": "志摩スペイン村 パルケエスパーニャ",
-      "cost": "パスポートが必要／一部の体験は別料金",
-      "audience": "小さな子どもから大人まで（体験ごとの利用条件を確認）",
-      "summary": "夏限定の水遊びやスタンプラリーに加え、ナイター営業日にはナイトパレードと短時間の花火を実施します。",
-      "tags": ["屋内外", "テーマパーク", "水遊び", "パレード", "花火", "有料", "子ども"],
-      "period": "august",
+      "municipality": "伊勢市",
+      "category": "学び",
+      "title": "音は本物？塩ビ尺八を作ろう！",
+      "venue": "いせトピア 工芸室",
+      "cost": "無料",
+      "audience": "小学4年生以上・10人（中学生以下は保護者同伴）",
+      "summary": "塩ビ管を使って尺八を作り、音の出る仕組みを体験する少人数講座。定員到達時は受付終了となります。",
+      "tags": [
+        "尺八",
+        "楽器作り",
+        "無料",
+        "10人",
+        "要申込",
+        "予約状況確認",
+        "子ども"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
-        "label": "志摩スペイン村",
-        "url": "https://www.parque-net.com/special/summer2026/",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-08-01"
+        "label": "伊勢市",
+        "url": "https://www.city.ise.mie.jp/cul_spo_edu/culture/gyouji/isecole/geijutsusai/1002093.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-05"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-planetarium-3d-2026",
+      "startDate": "2026-08-12",
+      "endDate": "2026-08-12",
+      "dateNote": "水",
+      "time": "11:00–17:00",
+      "category": "学び",
+      "title": "プラネタリウムとびっくり3D体験！",
+      "venue": "イオンモール東員 1階カブキコート",
+      "cost": "無料",
+      "audience": "どなたでも参加できます",
+      "summary": "キッズサマーラボの3日目。プラネタリウムと3D映像を体験できます。定員は約200人で、先着順です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "無料",
+        "夏休み",
+        "先着順",
+        "定員約200人"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/4e414a6b-13d6-4b1f-8c67-f57f5905b110",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-11"
+      }
+    },
+    {
+      "id": "yokkaichi-ongaku-kotohajime-2026-08",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-13",
+      "dateNote": "木",
+      "time": "10:30／13:30",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "音楽",
+      "title": "親子で楽しむはじめてのコンサート「おんがくことはじめ」",
+      "venue": "四日市市総合会館 8階視聴覚室",
+      "cost": "参加費は公式申込ページで確認",
+      "audience": "0〜3歳の乳幼児と保護者（きょうだい参加可）",
+      "summary": "フルート、ヴァイオリン、ピアノの生演奏を、身体を動かしたり歌ったりしながら親子で楽しむコンサート。8月9日まで先着順で受け付けます。",
+      "tags": [
+        "親子コンサート",
+        "0歳から",
+        "生演奏",
+        "先着順",
+        "要申込",
+        "締切8月9日",
+        "子ども"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "四日市市",
+        "url": "https://www.city.yokkaichi.lg.jp/www/contents/1772776008264/index.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-09"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-kids-survival-2026",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-13",
+      "dateNote": "木",
+      "time": "11:00–17:00（整理券は10:00から配布）",
+      "category": "学び",
+      "title": "キッズサバイバル教室",
+      "venue": "イオンモール東員 1階カブキコート",
+      "cost": "無料",
+      "audience": "小学生以下のお子さま",
+      "summary": "キッズサマーラボの4日目。防犯ブザーの音量や使い方を確かめながら、身を守る方法を体験して学びます。定員100人・先着順です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "無料",
+        "夏休み",
+        "防災",
+        "定員100人",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/e896d730-a865-4a72-8a4b-464d50bcada1",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-12"
+      }
+    },
+    {
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール明和",
+        "type": "mall"
+      },
+      "id": "meiwa-rilakkuma-photo-2026",
+      "startDate": "2026-08-13",
+      "endDate": "2026-08-14",
+      "dateNote": "木・金",
+      "time": "11:00／13:00／15:00の3回",
+      "category": "交流",
+      "title": "リラックマがやってくる！ 撮影会",
+      "venue": "イオンモール明和 1F ハナショウブの広場",
+      "cost": "参加無料",
+      "audience": "どなたでも参加できます",
+      "summary": "各回先着40組の撮影会。当日10:00からモール北入口外で全ての回の整理券を配布し、残っていれば10:15からハナショウブの広場でも配布します。整理券は1組1枚です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "無料",
+        "キャラクター",
+        "整理券",
+        "各回40組"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール明和",
+        "url": "https://www.aeon.jp/sc/meiwa/event/event_e87133_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-12"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-weather-doctor-2026",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-14",
+      "dateNote": "金",
+      "time": "11:00–17:00（整理券は10:00から配布）",
+      "category": "学び",
+      "title": "お天気博士になろう！",
+      "venue": "イオンモール東員 1階カブキコート",
+      "cost": "500円（税込・現金のみ）",
+      "audience": "小学生以下のお子さま",
+      "summary": "キッズサマーラボの最終日。ペットボトルの中に雲をつくる実験で天気のしくみを学びます。定員100人で、自由研究にも使えます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "夏休み",
+        "自由研究",
+        "定員100人",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/7c9915cc-7523-4ba5-9f9c-406ac8bfc3ce",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-13"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "四日市市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール四日市北",
+        "type": "mall"
+      },
+      "id": "yokkaichikita-mini4wd-2026",
+      "startDate": "2026-08-14",
+      "endDate": "2026-08-14",
+      "dateNote": "金",
+      "time": "工作 10:30／13:00／15:00",
+      "category": "学び",
+      "title": "ミニ四駆 工作・走行体験",
+      "venue": "イオンモール四日市北 1階エスカレーター前",
+      "cost": "工作は1人1,000円（税込／キッズクラブクーポン使用で800円）",
+      "audience": "工作は小学生以下のお子さま（保護者同伴）、走行体験はすべてのお客さま",
+      "summary": "工作体験は各回定員10名で、8月8日10:00からイオンモールアプリのキッズクラブで予約を受け付けます。10分遅れるとキャンセルになります。走行体験は各回50名で、小学生以下が優先される場合があります。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "要予約",
+        "各回10名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール四日市北",
+        "url": "https://www.aeon.jp/sc/yokkaichikita/event/event_e87154_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-13"
+      }
+    },
+    {
+      "id": "gre4n-boyz-the-za-mie-2026",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-15",
+      "dateNote": "土",
+      "time": "17:00開演（16:00開場）",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "音楽",
+      "title": "GRe4N BOYZ イマーシブライブシアター2026「The ZA」",
+      "venue": "シンフォニアテクノロジー響ホール伊勢",
+      "cost": "前売13,800円／当日14,800円（3Dメガネ付き）",
+      "audience": "年齢制限なし・6歳以上はチケット必要",
+      "summary": "3Dメガネで楽しむ全国ツアーの三重公演。会場カレンダーではなく、アーティスト公式日程から確認しました。",
+      "tags": [
+        "ライブ",
+        "大型ライブ",
+        "ホール",
+        "3D",
+        "アーティスト公式"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "GRe4N BOYZ公式",
+        "url": "https://gre4n-boyz.com/news/218",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-14"
+      }
+    },
+    {
+      "id": "suzuka-summer-festival-2026",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-15",
+      "dateNote": "土",
+      "time": "10:00–20:30",
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "category": "祭り",
+      "title": "すずか夏祭り2026",
+      "venue": "西条中央公園ほか",
+      "cost": "料金は主催者情報で確認",
+      "audience": "どなたでも",
+      "summary": "西条中央公園を中心にシャボン玉イベントやダンスステージを開催。関連会場の催しも公式情報で確認します。",
+      "tags": [
+        "シャボン玉",
+        "ダンス",
+        "屋外",
+        "家族向け"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "鈴鹿市",
+        "url": "https://www.city.suzuka.lg.jp/shisei/shisetsu/1010134/1012424/1012881/1015564.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-14"
+      }
+    },
+    {
+      "id": "oyamada-summer-festival-2026",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-15",
+      "dateNote": "土",
+      "time": "花火20:00〜",
+      "region": "伊賀",
+      "municipality": "伊賀市",
+      "category": "祭り",
+      "title": "大山田ふるさと夏祭り",
+      "venue": "せせらぎ運動公園",
+      "cost": "観覧方法は公式情報で確認",
+      "audience": "どなたでも",
+      "summary": "ステージや露店とともに、各地区のオリジナル仕掛け花火を間近で楽しむ地域の夏祭り。雨天時は翌日に花火のみ順延します。",
+      "tags": [
+        "地域の祭り",
+        "仕掛花火",
+        "露店",
+        "屋外",
+        "雨天順延"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊賀市公式観光サイト 伊賀イド",
+        "url": "https://www.iga-guide.com/recommend/event/august.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-14"
+      }
+    },
+    {
+      "id": "taiki-nishiki-hanabi-2026",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-15",
+      "dateNote": "土",
+      "time": "時間は公式情報で確認",
+      "region": "中勢",
+      "municipality": "大紀町",
+      "category": "祭り",
+      "title": "錦花火大会",
+      "venue": "大紀町錦地区（詳細は公式情報で確認）",
+      "cost": "観覧方法は公式情報で確認",
+      "audience": "どなたでも",
+      "summary": "大紀町の年間イベント予定で8月15日の開催が案内されている花火大会。時間や観覧場所は、町からの続報を確認して出かけたい催しです。",
+      "tags": [
+        "花火",
+        "錦",
+        "屋外",
+        "詳細更新待ち",
+        "公式情報で最終確認"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "大紀町",
+        "url": "https://www.town.taiki.mie.jp/soshiki/shokokanko/gyomu/280.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-14"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-perupins-live-2026",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-15",
+      "dateNote": "土",
+      "time": "11:00／13:30／16:00の3回",
+      "category": "音楽",
+      "title": "ペルピンズSPライブ＆特典会",
+      "venue": "イオンモール東員 1階カブキコート",
+      "cost": "観覧無料（特典会は対象商品の購入などが必要）",
+      "audience": "どなたでも観覧できます（着席は整理券制）",
+      "summary": "3回入れ替えのライブ。着席エリアは各回30枚の整理券制で、当日9:30から会場で配布されます。立ち見での観覧は自由です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "ライブ",
+        "観覧無料",
+        "整理券",
+        "各回30枚"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/79fcf7a5-a0f5-4b8d-82b7-8e5524f89153",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-14"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "桑名市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール桑名",
+        "type": "mall"
+      },
+      "id": "kuwana-sweets-deco-house-2026",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-15",
+      "dateNote": "土",
+      "time": "10:30／12:00／13:30／15:00の4回",
+      "category": "学び",
+      "title": "スイーツデコ お菓子のお家の貯金箱をつくろう",
+      "venue": "イオンモール桑名 1番街2F 東出入口前 会場",
+      "cost": "イオンモールアプリ提示で税込200円",
+      "audience": "小学生以下のお子さま限定",
+      "summary": "お家型の貯金箱にスイーツデコのパーツを貼り付けます。定員は合計50名で、当日10:00から会場で整理券を配布します。アプリからの事前予約はありません。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "整理券",
+        "定員50名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール桑名",
+        "url": "https://www.aeon.jp/sc/kuwana/event/event_e84139_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-14"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "桑名市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール桑名",
+        "type": "mall"
+      },
+      "id": "kuwana-human-crane-2026",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-16",
+      "dateNote": "土・日",
+      "time": "11:00–17:00",
+      "category": "交流",
+      "title": "人間クレーンゲーム＆バルーン抽選会",
+      "venue": "イオンモール桑名 3番街2階 ブックオフスーパーバザー奥特設会場",
+      "cost": "人間クレーンゲームは税込500円（バルーン抽選会は当日レシート税込2,500円以上で参加）",
+      "audience": "公式に対象の記載なし",
+      "summary": "自分がクレーンになって景品をねらう人間クレーンゲーム。併設のバルーン抽選会は当日のお買い上げレシートが必要で、当たりは各日50名にお買物券500円です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "ゲーム",
+        "有料"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール桑名",
+        "url": "https://www.aeon.jp/sc/kuwana/event/event_e84960_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-14"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "津市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール津南",
+        "type": "mall"
+      },
+      "id": "tsuminami-genki-labo-2026",
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-15",
+      "dateNote": "土",
+      "time": "①11:00–11:30 ②14:00–14:30",
+      "category": "学び",
+      "title": "ドキドキ大爆発！GENKI LABOサイエンスライブ",
+      "venue": "イオンモール津南 1F つどいの広場",
+      "cost": "観覧無料",
+      "audience": "お子さま向け（立ち見は自由）",
+      "summary": "30分のサイエンスショーを2回。イス席の整理券は当日9:30から配布し、各回50枚です。立ち見は先着順で観覧できます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "観覧無料",
+        "科学",
+        "整理券",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール津南",
+        "url": "https://tsuminami.aeonmall.jp/event/f932615c-f4d2-473d-be17-3468b44ccbb2",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-14"
+      }
+    },
+    {
+      "id": "hisai-human-rights-film-2026",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "dateNote": "日",
+      "time": "13:00–16:20（12:30開場）",
+      "region": "中勢",
+      "municipality": "津市・久居",
+      "category": "舞台",
+      "title": "人権啓発講演・映画「35年目のラブレター」上映会",
+      "venue": "津市久居アルスプラザ ときの風ホール",
+      "cost": "入場無料・申込不要",
+      "audience": "先着720人・車椅子席あり",
+      "summary": "同和問題を考える講演と、日本語字幕付き映画「35年目のラブレター」の上映。申込不要で参加できます。",
+      "tags": [
+        "映画上映",
+        "講演",
+        "無料",
+        "申込不要",
+        "日本語字幕",
+        "車椅子席"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "津市",
+        "url": "https://www.info.city.tsu.mie.jp/kurashi/1002199/1002200/1013257.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "matsusaka-denjiro-2026",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "dateNote": "日",
+      "time": "13:15–14:45／16:00–17:30",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "学び",
+      "title": "でんじろう先生のドキドキわくわくサイエンスショー2026 松阪公演",
+      "venue": "クラギ文化ホール",
+      "cost": "前売3,600円／当日3,800円・全席指定",
+      "audience": "子どものみの入場不可",
+      "summary": "実験を目の前で楽しみながら科学に触れる、夏休みのサイエンスショー。午後に2回公演があります。",
+      "tags": [
+        "科学",
+        "実験",
+        "夏休み",
+        "ファミリー",
+        "2回公演",
+        "屋内"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "松阪市・クラギ文化ホール",
+        "url": "https://www.city.matsusaka.mie.jp/site/kuragi-hall/denjirou.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-15"
       }
     },
     {
       "id": "mie-forest-bamboo-water-gun-2026",
-      "month": "8",
-      "day": "16",
-      "weekday": "日",
-      "isoDate": "2026-08-16",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "dateNote": "日",
       "time": "公式ページで確認",
       "region": "北勢",
       "municipality": "菰野町",
@@ -2226,8 +3885,15 @@
       "cost": "公式ページで確認",
       "audience": "子どもと保護者（年齢・定員は公式ページで確認）",
       "summary": "竹を使って昔ながらの水鉄砲を作り、水遊びを楽しむ抽選受付の体験です。8月15日との重複当選はありません。",
-      "tags": ["屋外", "ものづくり", "水遊び", "抽選受付", "要申込", "参加条件確認", "子ども"],
-      "period": "august",
+      "tags": [
+        "屋外",
+        "ものづくり",
+        "水遊び",
+        "抽選受付",
+        "要申込",
+        "参加条件確認",
+        "子ども"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -2238,11 +3904,792 @@
       }
     },
     {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-kuromi-stage-2026",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "dateNote": "日",
+      "time": "ショー 11:00・15:00／撮影会 13:00",
+      "category": "舞台",
+      "title": "クロミ・ザ・ステージ",
+      "venue": "イオンモール東員 1階カブキコート",
+      "cost": "観覧無料",
+      "audience": "どなたでも観覧できます（3歳未満は保護者の膝上で観覧可）",
+      "summary": "ショー2回と撮影会1回。各回40組（1組5人まで）の整理券制で、当日8:45から1階ガーデンプレイスで配布されます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "観覧無料",
+        "キャラクター",
+        "整理券",
+        "各回40組"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/2b32faf4-1707-44d1-9456-0816ac93f147",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-15"
+      }
+    },
+    {
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール明和",
+        "type": "mall"
+      },
+      "id": "meiwa-opanchu-usagi-2026",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "dateNote": "日",
+      "time": "10:00–17:00",
+      "category": "交流",
+      "title": "おぱんちゅうさぎ「はい！ち〜ぢゅ！」",
+      "venue": "イオンモール明和 1F ハナショウブの広場",
+      "cost": "参加無料",
+      "audience": "どなたでも参加できます",
+      "summary": "撮影会と、館内をまわるARラリー。整理券は朝9:30からモール北入口で配布し、撮影会参加券は各回先着50組×3回（1組4名まで）、ARラリー景品引換券は先着300名です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "無料",
+        "キャラクター",
+        "整理券",
+        "ARラリー"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール明和",
+        "url": "https://www.aeon.jp/sc/meiwa/event/event_e84059_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-15"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "四日市市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール四日市北",
+        "type": "mall"
+      },
+      "id": "yokkaichikita-yasai-shukaku-2026",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "dateNote": "日",
+      "time": "時間は公式情報で確認",
+      "category": "学び",
+      "title": "大きな畑に入って！〜 野菜の収穫体験 〜",
+      "venue": "イオンモール四日市北 1階エスカレーター前",
+      "cost": "参加費は公式情報で確認",
+      "audience": "お子さま向け（長靴と軍手を着用します）",
+      "summary": "擬似畑にじゃがいも・にんじん・玉ねぎが埋まっていて、土に触りながら宝探しのように収穫します。収穫した野菜は一定量を持ち帰れます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "収穫体験",
+        "食育",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール四日市北",
+        "url": "https://www.aeon.jp/sc/yokkaichikita/event/event_e83791_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-15"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "桑名市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール桑名",
+        "type": "mall"
+      },
+      "id": "kuwana-diorama-box-2026",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "dateNote": "日",
+      "time": "10:30／12:00／13:30／15:00の4回",
+      "category": "学び",
+      "title": "夏のジオラマボックスをつくろう",
+      "venue": "イオンモール桑名 1番街2F 東出入口前 会場",
+      "cost": "イオンモールアプリ提示で税込200円",
+      "audience": "小学生以下のお子さま限定",
+      "summary": "ウッドボックスの上に砂やモス、フィギュアで夏のジオラマをつくります。定員は合計50名で、当日10:00から会場で整理券を配布します。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "工作",
+        "整理券",
+        "定員50名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール桑名",
+        "url": "https://www.aeon.jp/sc/kuwana/event/event_e84140_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-15"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-mushitori-adventure-2026",
+      "startDate": "2026-08-16",
+      "endDate": "2026-08-16",
+      "dateNote": "日",
+      "time": "10:30–12:00／13:30–15:00",
+      "category": "学び",
+      "title": "夏だ！ワクワク虫取りアドベンチャー",
+      "venue": "VISON 木育エリア kiond",
+      "cost": "1名1,500円（税込・大人こども共通）",
+      "audience": "公式に年齢制限の記載なし（親子向けの案内）",
+      "summary": "自然観察指導員の田川修氏と調査隊を結成し、森に仕掛けたトラップを見にいきます。定員15名で、kiondの予約サイトか店舗電話で受け付けます。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "自然観察",
+        "要予約",
+        "定員15名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1251",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-15"
+      }
+    },
+    {
+      "id": "kumano-fireworks-2026",
+      "startDate": "2026-08-17",
+      "endDate": "2026-08-17",
+      "dateNote": "月",
+      "time": "19:00頃開始",
+      "region": "東紀州",
+      "municipality": "熊野市",
+      "category": "祭り",
+      "title": "2026年 熊野大花火大会",
+      "venue": "七里御浜海岸",
+      "cost": "一般観覧可／協賛観覧席あり",
+      "audience": "どなたでも",
+      "summary": "七里御浜で開催予定。延期時の予備日は8月21日・24日・27日で、交通規制や観覧席は公式情報で確認します。",
+      "tags": [
+        "屋外",
+        "花火",
+        "交通規制",
+        "予備日あり"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "熊野市観光協会",
+        "url": "https://www.kumano-kankou.info/kumano-fireworks/",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-16"
+      }
+    },
+    {
+      "id": "iga-orange-cafes-august-2026",
+      "startDate": "2026-08-18",
+      "endDate": "2026-08-19",
+      "dateNote": "火・水",
+      "time": "10:00–11:30（出入り自由）",
+      "region": "伊賀",
+      "municipality": "伊賀市",
+      "category": "交流",
+      "title": "いがオレンジカフェ／オレンジカフェあやま（8月）",
+      "venue": "ハイトピア伊賀4階／阿山保健福祉センター1階",
+      "cost": "無料",
+      "audience": "認知症の本人・家族、気になる人、地域住民、専門職など、どなたでも",
+      "summary": "体操や音楽、相談を交えながら自由に過ごす地域の認知症カフェ。伊賀と阿山の2会場で、出入り自由に参加できます。",
+      "tags": [
+        "認知症カフェ",
+        "相談",
+        "体操",
+        "出入り自由",
+        "無料",
+        "開催確認"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊賀市",
+        "url": "https://www.city.iga.lg.jp/0000004780.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-17"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-bonbon-bon-matsuri-2026",
+      "startDate": "2026-08-18",
+      "endDate": "2026-08-18",
+      "dateNote": "火",
+      "time": "17:00〜20:30終了予定",
+      "category": "祭り",
+      "title": "BonBon盆祭",
+      "venue": "VISON 和ヴィソン 食祭広場（雨天時はVISON DOME）",
+      "cost": "料金は公式情報で確認",
+      "audience": "公式に対象の記載なし",
+      "summary": "17:00からBonBon縁日、18:00から極楽座、19:00頃から丹生音頭、19:30からイマジン盆踊り部。生うたと生バンドの盆踊りです。射的などのゲームやフード・ドリンクも出ます。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "盆踊り",
+        "夜",
+        "縁日",
+        "雨天時会場変更"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1259",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-17"
+      }
+    },
+    {
+      "id": "onecoin-contrabass-mizuno-2026",
+      "startDate": "2026-08-21",
+      "endDate": "2026-08-21",
+      "dateNote": "金",
+      "time": "11:30開演（10:45開場）",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "音楽",
+      "title": "ワンコインコンサート コントラバス 水野斗希",
+      "venue": "三重県文化会館 大ホール",
+      "cost": "当日現金500円・自由席・チケットレス",
+      "audience": "未就学児入場不可・託児あり",
+      "summary": "コントラバスとピアノを60分で楽しむ昼公演。前売券はなく、満席時は入場できません。",
+      "tags": [
+        "コンサート",
+        "クラシック",
+        "500円",
+        "託児あり"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県文化会館",
+        "url": "https://www.center-mie.or.jp/bunka/event/detail/56947",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-20"
+      }
+    },
+    {
+      "id": "miemu-horn-workshop-2026",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
+      "dateNote": "土",
+      "time": "13:30–14:30",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "学び",
+      "title": "ワークショップ「どんな形？角をくらべてみよう」",
+      "venue": "三重県総合博物館 MieMu",
+      "cost": "参加無料・企画展観覧券が必要",
+      "audience": "小学生以上",
+      "summary": "哺乳類の角を観察して違いを考える少人数ワークショップ。応募多数の場合は抽選です。",
+      "tags": [
+        "屋内",
+        "申込必要",
+        "小学生以上",
+        "学び"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県総合博物館",
+        "url": "https://www.bunka.pref.mie.lg.jp/MieMu/84927046739.htm",
+        "verifiedAt": "2026-07-22",
+        "nextCheckAt": "2026-08-01"
+      }
+    },
+    {
+      "id": "misato-water-play-2026",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
+      "dateNote": "土",
+      "time": "10:00–11:00",
+      "region": "中勢",
+      "municipality": "津市・美里",
+      "category": "学び",
+      "title": "おもいっきり水あそび！",
+      "venue": "みさとの丘 芝生広場",
+      "cost": "参加無料・要申込",
+      "audience": "未就学児～小学生・保護者同伴",
+      "summary": "水すべりやシャボン玉を楽しむ屋外イベント。着替えと暑さ対策が必要で、申込締切は8月21日です。",
+      "tags": [
+        "水あそび",
+        "シャボン玉",
+        "無料",
+        "要申込",
+        "子ども",
+        "屋外",
+        "暑さ対策"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "津市",
+        "url": "https://www.info.city.tsu.mie.jp/shisei/gyouzaiseikaikaku/1009903/1005695/1002674/1013542.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-21"
+      }
+    },
+    {
+      "id": "matsusaka-monomane-2026",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
+      "dateNote": "土",
+      "time": "14:30–16:00（13:45開場）",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "舞台",
+      "title": "神無月＆ミラクルひかる 爆笑ものまねLIVE in三重",
+      "venue": "クラギ文化ホール",
+      "cost": "6,000円・全席指定",
+      "audience": "3歳未満入場不可",
+      "summary": "神無月とミラクルひかるによる、松阪でのものまねライブ。土曜の午後に約90分の公演が予定されています。",
+      "tags": [
+        "ものまね",
+        "ライブ",
+        "お笑い",
+        "全席指定",
+        "屋内"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "松阪市・クラギ文化ホール",
+        "url": "https://www.city.matsusaka.mie.jp/site/kuragi-hall/bakushoumonomane.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-21"
+      }
+    },
+    {
+      "id": "ise-culture-festival-koto-2026",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
+      "dateNote": "土",
+      "time": "10:30–12:00",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "学び",
+      "title": "初めてのお箏",
+      "venue": "二見老人福祉センター",
+      "cost": "無料",
+      "audience": "小学生・中学生、15人",
+      "summary": "箏に初めて触れる子ども向けの文化体験講座。参加枠は15人で、定員到達時は受付終了となります。",
+      "tags": [
+        "箏",
+        "和楽器",
+        "無料",
+        "15人",
+        "要申込",
+        "予約状況確認",
+        "子ども"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢市",
+        "url": "https://www.city.ise.mie.jp/cul_spo_edu/culture/gyouji/isecole/geijutsusai/1002093.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-15"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-water-sabage-2026",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-23",
+      "dateNote": "土・日",
+      "time": "10:30–15:15の8回（受付10:00）",
+      "category": "交流",
+      "title": "ウォーターサバゲー in イオンモール東員",
+      "venue": "イオンモール東員 ガーデンプレイス",
+      "cost": "無料",
+      "audience": "個人・家族で参加可（小学生以下は肘・膝プロテクターの着用が必要）",
+      "summary": "水鉄砲を使ったチーム戦。10:30・11:00・11:30・12:15・12:45・14:15・14:45・15:15の8回で、1回約15分です。受付でチーム分けをし、1チーム15人。各回の定員に達し次第受付を終了します。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "無料",
+        "水あそび",
+        "定員あり",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/82323dca-b756-4a9a-b7f9-f4dc70551f0e",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-21"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-mini-pool-2026",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-30",
+      "dates": [
+        "2026-08-22",
+        "2026-08-23",
+        "2026-08-29",
+        "2026-08-30"
+      ],
+      "dateNote": "土・日",
+      "time": "10:00–16:00",
+      "category": "交流",
+      "title": "ミニプール遊び！",
+      "venue": "イオンモール東員 ガーデンプレイス",
+      "cost": "無料",
+      "audience": "6歳以下のお子さま",
+      "summary": "ミニプールと魚のおもちゃすくいで遊べます。プールの中には入れません。暑さ対策として水分補給と休憩の案内があります。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "無料",
+        "水あそび",
+        "熱中症注意",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/57165786-8a24-4787-ae74-18f2189b1eff",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-21"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "桑名市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール桑名",
+        "type": "mall"
+      },
+      "id": "kuwana-miso-kyoshitsu-2026",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
+      "dateNote": "土",
+      "time": "時間は公式情報で確認",
+      "category": "学び",
+      "title": "お味噌屋さんが教える手作り味噌教室",
+      "venue": "イオンモール桑名 1番街2F 東出入口",
+      "cost": "1セット1,000円（税込・材料費込／現金のみ）",
+      "audience": "小さなお子さまも参加できます",
+      "summary": "天然醸造の味噌を守る桝塚味噌の蔵元が講師。発酵から学びながら自分の味噌を仕込みます。各回定員20名。アプリのクーポンで100円引、キッズクラブ会員の子どもは200円引で、併用はできません。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "食育",
+        "各回20名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール桑名",
+        "url": "https://www.aeon.jp/sc/kuwana/event/event_e85681_as.html",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-21"
+      }
+    },
+    {
+      "id": "minamiise-aisu-kenso-2026",
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-23",
+      "dateNote": "日",
+      "time": "8:30〜",
+      "region": "伊勢志摩",
+      "municipality": "南伊勢町",
+      "category": "祭り",
+      "title": "愛洲氏顕彰祭・剣祖祭",
+      "venue": "五ヶ所城址",
+      "cost": "参加・見学条件は公式情報で確認",
+      "audience": "どなたでも（詳細は公式情報で確認）",
+      "summary": "愛洲移香斎をしのび、全国各地の流派による武術の奉納などが行われる南伊勢町の歴史行事です。",
+      "tags": [
+        "歴史",
+        "武術",
+        "奉納",
+        "城址",
+        "屋外",
+        "公式情報で最終確認"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "南伊勢町",
+        "url": "https://www.town.minamiise.lg.jp/admin/shoshiki/kankoushoukou/kankou/asobu/536.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-22"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-taiko-fishing-2026",
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-23",
+      "dateNote": "日",
+      "time": "11:00–17:00",
+      "category": "交流",
+      "title": "太鼓の達人＆釣りスピリッツを体験してみよう！",
+      "venue": "イオンモール東員 1階カブキコート",
+      "cost": "無料",
+      "audience": "公式に対象の記載なし",
+      "summary": "アーケードゲームの体験コーナー。プラ板キーホルダーづくりも併催されます。対象年齢は公式に記載がありません。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "無料",
+        "ゲーム"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/4eabfc78-312b-4fc0-8050-2d41f7851416",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-22"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール鈴鹿",
+        "type": "mall"
+      },
+      "id": "suzuka-spogomi-2026",
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-23",
+      "dateNote": "日",
+      "time": "9:30–12:00（受付9:00〜）",
+      "category": "スポーツ",
+      "title": "スポGOMIワールドカップ2027 三重ステージ",
+      "venue": "イオンモール鈴鹿 専門店街中央入口前",
+      "cost": "参加費は公式情報で確認",
+      "audience": "3名1組のチーム（12歳未満が参加する場合は18歳以上を1名以上含む）",
+      "summary": "制限時間内のごみ拾いを競う大会。2名以上が日本国籍である必要があります。申込はGoogleフォームで8月22日まで、応募多数の場合は抽選です。雨天時は9月13日に順延します。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "日程変更注意",
+        "要申込",
+        "3人1組",
+        "環境"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール鈴鹿",
+        "url": "https://suzuka.aeonmall.jp/event/867d31c0-d865-4404-8388-77bc03682f83",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-22"
+      },
+      "childFit": "conditional"
+    },
+    {
+      "id": "iga-science-lab-2026",
+      "startDate": "2026-08-25",
+      "endDate": "2026-08-25",
+      "dateNote": "火",
+      "time": "10:00–12:00",
+      "region": "伊賀",
+      "municipality": "伊賀市",
+      "category": "学び",
+      "title": "第33回こども大学 Science Lab",
+      "venue": "ゆめテクノ伊賀3階 テクノホール",
+      "cost": "1,000円（材料費・保険料）",
+      "audience": "小学4〜6年生・定員20人（応募多数時抽選）",
+      "summary": "夏休みに科学の実験へ取り組む、小学生向けの少人数講座。7月31日17時15分が申込締切です。",
+      "tags": [
+        "科学",
+        "実験",
+        "定員20人",
+        "要申込",
+        "締切7月31日",
+        "小学生"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊賀市文化都市協会",
+        "url": "https://www.bunto.com/?p=28730",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-31"
+      }
+    },
+    {
+      "id": "kisosaki-balance-ball-2026",
+      "startDate": "2026-08-25",
+      "endDate": "2026-08-25",
+      "dateNote": "火",
+      "time": "13:30–14:00／14:10–14:40",
+      "region": "北勢",
+      "municipality": "木曽岬町",
+      "category": "交流",
+      "title": "みんなの居場所 バランスボール体験",
+      "venue": "木曽岬町立ふれあいの里",
+      "cost": "参加条件・料金は主催者へ確認",
+      "audience": "小学生・中学生、各回15人まで",
+      "summary": "夏休みの『みんなの居場所』で開かれる30分のバランスボール体験。2部制で、各回15人まで参加できます。",
+      "tags": [
+        "バランスボール",
+        "地域の居場所",
+        "各回15人",
+        "小学生",
+        "中学生",
+        "短時間"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "木曽岬町",
+        "url": "https://www.town.kisosaki.lg.jp/0000003146.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-24"
+      }
+    },
+    {
+      "id": "kawagoe-kids-business-card-2026",
+      "startDate": "2026-08-28",
+      "endDate": "2026-08-28",
+      "dateNote": "金",
+      "time": "11:00–11:45／13:30–14:15",
+      "region": "北勢",
+      "municipality": "川越町",
+      "category": "学び",
+      "title": "キッズお仕事広場「ボクの、ワタシの名刺をつくろう！」",
+      "venue": "おひさま児童館",
+      "cost": "参加費の記載なし（公式情報で確認）",
+      "audience": "小学生・事前申込制",
+      "summary": "みえこどもの城の出張企画で、自分の名刺作りに挑戦します。公式ページでは午後枠に若干の空きと案内されていますが、最新の残数を確認してください。",
+      "tags": [
+        "児童館",
+        "仕事体験",
+        "名刺作り",
+        "小学生",
+        "要申込",
+        "予約状況確認"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "川越町",
+        "url": "https://www.town.kawagoe.mie.jp/bunka_sports_event/1002592/1004260.html",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-07-24"
+      }
+    },
+    {
+      "id": "jfl-veertien-mie-bonzu-ichihara-2026",
+      "startDate": "2026-08-29",
+      "endDate": "2026-08-29",
+      "dateNote": "土",
+      "time": "18:00開始",
+      "region": "北勢",
+      "municipality": "東員町",
+      "category": "スポーツ",
+      "title": "JFL第1節 ヴィアティン三重 vs ボンズ市原",
+      "venue": "BASICスタジアム東員",
+      "cost": "チケット情報は公式情報で確認",
+      "audience": "どなたでも",
+      "summary": "2026/27シーズンのホーム開幕戦。観戦方法や試合時刻の変更はクラブ公式情報で最終確認します。",
+      "tags": [
+        "JFL",
+        "サッカー",
+        "ホームゲーム",
+        "日程変更注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "ヴィアティン三重",
+        "url": "https://www.veertien.jp/fc/topteam_date2026_27",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-28"
+      }
+    },
+    {
+      "id": "tokai-league-fc-iseshima-fujieda-city-2026",
+      "startDate": "2026-08-29",
+      "endDate": "2026-08-29",
+      "dateNote": "土",
+      "time": "16:00開始",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "スポーツ",
+      "title": "東海社会人サッカーリーグ1部 FC.ISE-SHIMA vs 藤枝市役所サッカー部",
+      "venue": "伊勢フットボールヴィレッジ Aピッチ",
+      "cost": "観戦方法は公式情報で確認",
+      "audience": "どなたでも",
+      "summary": "東海社会人リーグ1部第12節のホームゲーム。開催可否や時刻変更はクラブ公式日程で最終確認します。",
+      "tags": [
+        "東海社会人リーグ",
+        "サッカー",
+        "ホームゲーム",
+        "日程変更注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "FC.ISE-SHIMA",
+        "url": "https://fc-iseshima.co.jp/game/league/2026/",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-28"
+      }
+    },
+    {
       "id": "national-kosen-volleyball-2026",
-      "month": "8",
-      "day": "29–30",
-      "weekday": "土・日",
-      "isoDate": "2026-08-29",
+      "startDate": "2026-08-29",
+      "endDate": "2026-08-30",
+      "dateNote": "土・日",
       "time": "29日 9:00–17:00／30日 9:00–14:00",
       "region": "伊勢志摩",
       "municipality": "伊勢市",
@@ -2252,8 +4699,15 @@
       "cost": "無料",
       "audience": "一般観覧・予約制（各日60人）",
       "summary": "全国の高等専門学校によるバレーボール競技。観覧は各日60人の予約制で、主催者への事前確認が必要です。",
-      "tags": ["屋内", "全国大会", "バレーボール", "無料", "予約制", "各日60人", "日程変更注意"],
-      "period": "august",
+      "tags": [
+        "屋内",
+        "全国大会",
+        "バレーボール",
+        "無料",
+        "予約制",
+        "各日60人",
+        "日程変更注意"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -2264,11 +4718,75 @@
       }
     },
     {
+      "id": "kihoku-kodo-2026",
+      "startDate": "2026-08-30",
+      "endDate": "2026-08-30",
+      "dateNote": "日",
+      "time": "15:00〜",
+      "region": "東紀州",
+      "municipality": "紀北町",
+      "category": "祭り",
+      "title": "2026きほく夏祭り KODO",
+      "venue": "紀北町海山多目的広場",
+      "cost": "入場方法は公式情報で確認",
+      "audience": "どなたでも",
+      "summary": "ダンスやバンド、クッブ、ひのき工作、花火などを一つの会場で楽しむ紀北町の夏祭りです。",
+      "tags": [
+        "ステージ",
+        "工作",
+        "クッブ",
+        "花火",
+        "ファミリー",
+        "屋外"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "きほく夏祭りKODO実行委員会",
+        "url": "https://www.nkodo.com/",
+        "verifiedAt": "2026-07-23",
+        "nextCheckAt": "2026-08-29"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "東員町",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "id": "toin-tekken8-battle-2026",
+      "startDate": "2026-08-30",
+      "endDate": "2026-08-30",
+      "dateNote": "日",
+      "time": "10:00–15:00",
+      "category": "交流",
+      "title": "鉄拳8 サマーバトル体験会",
+      "venue": "イオンモール東員 1階カブキコート",
+      "cost": "無料",
+      "audience": "どなたでも参加できます（初心者も可）",
+      "summary": "対戦格闘ゲームの体験会。プロ選手が来場予定で、初めての人にはスタッフが操作を案内します。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "無料",
+        "ゲーム",
+        "初心者可"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/329aa14b-9042-46db-978a-fa0b0f5cceac",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-08-29"
+      }
+    },
+    {
       "id": "kiho-koitabi-vol7-2026",
-      "month": "9",
-      "day": "5–6",
-      "weekday": "土・日",
-      "isoDate": "2026-09-05",
+      "startDate": "2026-09-05",
+      "endDate": "2026-09-06",
+      "dateNote": "土・日",
       "time": "5日15:00–6日12:00（1泊2日）",
       "region": "東紀州",
       "municipality": "紀宝町",
@@ -2278,8 +4796,15 @@
       "cost": "7,000円（宿泊・一部食事・体験・交通費を含む）",
       "audience": "25〜39歳の独身男女・町外参加可（男女各15人程度）",
       "summary": "1対1トーク、交流、BBQ、希望者向けテントサウナなどを組み合わせた1泊の婚活イベント。申込期限は7月31日です。",
-      "tags": ["大人向け", "1泊2日", "婚活", "抽選", "要申込", "締切7月31日", "町外参加可"],
-      "period": "september",
+      "tags": [
+        "大人向け",
+        "1泊2日",
+        "婚活",
+        "抽選",
+        "要申込",
+        "締切7月31日",
+        "町外参加可"
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -2287,6 +4812,144 @@
         "url": "https://www.town.kiho.lg.jp/news/51199/",
         "verifiedAt": "2026-07-24",
         "nextCheckAt": "2026-07-30"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール鈴鹿",
+        "type": "mall"
+      },
+      "id": "suzuka-pokemon-zukan-panel-2026",
+      "startDate": "2026-09-05",
+      "endDate": "2026-09-06",
+      "dateNote": "土・日",
+      "time": "10:00–17:00",
+      "category": "交流",
+      "title": "めくって みっけ！ ポケモンずかんパネル1025 inイオンモール",
+      "venue": "イオンモール鈴鹿 専門店街1階 北コート",
+      "cost": "無料",
+      "audience": "パネルをめくる体験は小学6年生まで（観覧はどなたでも）",
+      "summary": "初日はパネルをめくってポケモンを出し、2日目は完成したパネルと写真を撮れます。パネルピースには数に限りがあり、ポスターも数量限定で配られます。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "無料",
+        "申込不要",
+        "キャラクター",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール鈴鹿",
+        "url": "https://suzuka.aeonmall.jp/event/55c3c5cd-2e22-4944-a3c8-46d696324c36",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-09-04"
+      }
+    },
+    {
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール鈴鹿",
+        "type": "mall"
+      },
+      "id": "suzuka-bicycle-trial-motocross-2026",
+      "startDate": "2026-09-06",
+      "endDate": "2026-09-06",
+      "dateNote": "日",
+      "time": "10:00–12:00",
+      "category": "交流",
+      "title": "自転車deトライアル・モトクロス体験",
+      "venue": "イオンモール鈴鹿 平面第3駐車場",
+      "cost": "参加費は公式情報で確認",
+      "audience": "初めての人、大人も子どもも参加できます",
+      "summary": "駐車場を使った自転車トライアルとモトクロスの体験会。体験定員は60名で、事前エントリーが必要です。申込時に自転車持参かレンタル希望かを選びます。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "自転車",
+        "要申込",
+        "定員60名",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール鈴鹿",
+        "url": "https://suzuka.aeonmall.jp/event/6e82eae1-400b-4f0e-a5c3-13f86e87ad8e",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-09-05"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "津市",
+      "status": "published",
+      "facility": {
+        "name": "イオンモール津南",
+        "type": "mall"
+      },
+      "id": "tsuminami-conan-escape-2026",
+      "startDate": "2026-09-26",
+      "endDate": "2026-09-27",
+      "dateNote": "土・日",
+      "time": "10:30／14:00／17:30",
+      "category": "交流",
+      "title": "リアル脱出ゲーム×名探偵コナン 疾風の追走からの脱出",
+      "venue": "イオンモール津南 3F イオンホール",
+      "cost": "前売 一般3,700円・forkids 2,700円／当日 一般4,000円・forkids 3,000円（税込）",
+      "audience": "forkidsチケットは小学生以下（保護者は別途一般チケットが必要）",
+      "summary": "各日3回公演の体験型脱出ゲーム。受付は開始20分前からです。前売の方が安く設定されています。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "謎解き",
+        "前売あり",
+        "子ども"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール津南",
+        "url": "https://tsuminami.aeonmall.jp/event/c5c14afb-489b-42c3-9710-815c35d9805e",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-09-25"
+      }
+    },
+    {
+      "region": "中勢",
+      "municipality": "多気町",
+      "status": "published",
+      "facility": {
+        "name": "VISON",
+        "type": "commercial_resort"
+      },
+      "id": "vison-sansanichi-2026-10",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "dateNote": "日",
+      "time": "時間は公式情報で確認",
+      "category": "交流",
+      "title": "燦燦市",
+      "venue": "VISON 和ヴィソン",
+      "cost": "料金は公式情報で確認",
+      "audience": "公式に対象の記載なし",
+      "summary": "三重で育った海の幸・山の幸・魚・野菜・果物・肉・加工品が集まる日曜朝の市。鮭かま詰め放題や鳥羽答志島産かちりちりめんの枡売りなど、数量限定の品が並びます。",
+      "tags": [
+        "屋外",
+        "商業施設",
+        "朝市",
+        "マルシェ",
+        "食"
+      ],
+      "source": {
+        "kind": "primary",
+        "label": "VISON",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1065",
+        "verifiedAt": "2026-07-25",
+        "nextCheckAt": "2026-10-11"
       }
     }
   ]

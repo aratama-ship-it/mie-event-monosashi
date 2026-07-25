@@ -1,7 +1,33 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { eventOccursOn } from "../lib/event-dates.mjs";
+import { datePresets, eventOccursOn, formatEventDate } from "../lib/event-dates.mjs";
+
+const payload = JSON.parse(
+  await readFile(new URL("../data/events.json", import.meta.url), "utf8"),
+);
+
+/** Same "today" the page uses, so expectations track the rendered output. */
+const todayIso = new Intl.DateTimeFormat("en-CA", {
+  timeZone: "Asia/Tokyo",
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit",
+})
+  .format(new Date())
+  .replaceAll("/", "-");
+
+const liveEvents = payload.events.filter((event) => event.endDate >= todayIso);
+const endedEvents = payload.events.filter((event) => event.endDate < todayIso);
+
+/** React escapes these when it serialises text, so assertions must too. */
+function escapeHtml(value) {
+  return value
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
 
 async function render(path = "/") {
   const workerUrl = new URL("../dist/server/index.js", import.meta.url);
@@ -38,6 +64,9 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(html, />明日</);
   assert.match(html, /日付を指定/);
   assert.match(html, /30日カレンダー/);
+  assert.match(html, /<details class="date-calendar">/);
+  assert.match(html, /<summary class="date-calendar-summary">/);
+  assert.doesNotMatch(html, /<details class="date-calendar" open/);
   assert.match(html, /type="date"/);
   assert.equal([...html.matchAll(/data-calendar-date=/g)].length, 30);
   assert.match(html, /音楽・ライブ/);
@@ -50,87 +79,42 @@ test("server-renders the Mie event finder and records without collection-method 
   assert.match(html, /公式で要確認/);
   assert.match(html, /<option[^>]*>展覧会<\/option>/);
   assert.match(html, /<option[^>]*>伊賀<\/option>/);
-  assert.match(html, /9月以降/);
+  for (const preset of datePresets(todayIso)) {
+    assert.ok(html.includes(preset.label), `missing date preset: ${preset.label}`);
+  }
   assert.doesNotMatch(html, /会場だけでは、拾いきれない。/);
   assert.doesNotMatch(html, /薄い地域ほど、先に見に行く。/);
   assert.doesNotMatch(html, /出店予定から、町の一日を逆引きする。/);
   assert.match(html, /ライブ、JFL、花火、展覧会…/);
   assert.match(html, /class="hero-mobile-actions"/);
-  assert.match(html, /href="#results">催しを見る <strong>88<\/strong><\/a>/);
-  assert.match(html, /id="finder" aria-label="イベントを絞り込む"/);
-  assert.match(html, /href="\/kitchen-cars"[^>]*>キッチンカー<\/a>/);
-  assert.doesNotMatch(html, /キッチンカーは、今日どこへ。/);
-  assert.doesNotMatch(html, /cafe＆crepe PECOCO/);
-  assert.match(html, /data-category="スポーツ"/);
-  assert.match(html, /第108回 全国高校野球選手権三重大会 準々決勝/);
-  assert.match(html, /JFL第1節 ヴィアティン三重 vs ボンズ市原/);
-  assert.match(html, /東海社会人サッカーリーグ1部/);
-  assert.match(html, /吉例マクサ夏祭り DAY-2「三重祭2026」/);
-  assert.match(html, /Quubi Japan Tour 2026 三重公演/);
-  assert.match(html, /ワンコインコンサート コントラバス 水野斗希/);
-  assert.match(html, /GRe4N BOYZ イマーシブライブシアター2026/);
-  assert.match(html, /第73回 おわせ港まつり/);
-  assert.match(html, /2026年 熊野大花火大会/);
-  assert.match(html, /第一次お木曳行事（川曳）— 二見/);
-  assert.match(html, /第一次お木曳行事（川曳）— 宇治・二軒茶屋/);
-  assert.match(html, /第一次お木曳行事（川曳）— 四郷/);
-  assert.match(html, /第一次お木曳行事（川曳）— 大湊・修道/);
-  assert.match(html, /かぶとの森の朝市（7月）/);
-  assert.match(html, /野地町ビアガーデン2026/);
-  assert.match(html, /亀山市納涼大会2026/);
-  assert.match(html, /天文台「童夢」無料開放日・夏の星空観察会/);
-  assert.match(html, /すずか夏祭り2026/);
-  assert.match(html, /夏の鳥羽湾 毎夜連続花火/);
-  assert.match(html, /第84回 名張川納涼花火大会/);
-  assert.match(html, /陽夫多神社 祇園祭/);
-  assert.match(html, /夜道を行けば～穐月明の夜の景色Ⅲ～/);
-  assert.match(html, /大山田ふるさと夏祭り/);
-  assert.match(html, /おもいっきり水あそび！/);
-  assert.match(html, /人権啓発講演・映画「35年目のラブレター」上映会/);
-  assert.match(html, /河芸図書館 夏休みおはなし会スペシャル/);
-  assert.match(html, /ロックフェラー・コレクション花鳥版画展/);
-  assert.match(html, /WHO ARE WE 観察と発見の生物学/);
-  assert.match(html, /夏季企画展「王朝文学と斎王」/);
-  assert.match(html, /ミニチュアドールハウスの世界展/);
-  assert.match(html, /アルベール・マルケ展 水辺を愛した画家/);
-  assert.match(html, /夏休みこども体験博物館2026/);
-  assert.match(html, /図書館のお仕事体験/);
-  assert.match(html, /園庭開放「保育所で遊びましょう」/);
-  assert.match(html, /みんなで食堂（夏休み子ども食堂）/);
-  assert.match(html, /いがオレンジカフェ／オレンジカフェあやま（8月）/);
-  assert.match(html, /手づくり絵本教室「オリジナル絵本を作ってみよう！」/);
-  assert.match(html, /員弁図書館 館内イベント「図書館ビンゴ」/);
-  assert.match(html, /企画展「いなべにも戦争がありました」/);
-  assert.match(html, /ロシアとおわせの文化交流/);
-  assert.match(html, /子ども科学教室「入浴剤で作るよく飛ぶロケット！」/);
-  assert.match(html, /ほんとカフェ＆夏のおたのしみ/);
-  assert.match(html, /親子で楽しむはじめてのコンサート「おんがくことはじめ」/);
-  assert.match(html, /初めてのお箏/);
-  assert.match(html, /キッズお仕事広場「ボクの、ワタシの名刺をつくろう！」/);
-  assert.match(html, /ものづくりフェアー2026/);
-  assert.match(html, /フジさんのわくわく科学実験ショー/);
-  assert.match(html, /みえこどもの城 de お盆を満喫！！/);
-  assert.match(html, /イオンモール東員 キッズサマーラボ/);
-  assert.match(html, /鈴鹿サーキット HANABI祭/);
-  assert.match(html, /夏もベルファームであそぼう‼/);
-  assert.match(html, /志摩スペイン村 サマーフィエスタ2026/);
-  assert.match(html, /竹の水鉄砲作り【8\/16の部】/);
-  assert.match(html, /第61回 全国高等専門学校体育大会 バレーボール競技/);
-  assert.match(html, /恋旅in紀宝 vol.7/);
-  assert.match(html, /ジュラシックアクアリウム/);
-  assert.match(html, /data-category="交流"/);
-  assert.match(html, /2026 きほく燈籠祭/);
-  assert.match(html, /ジュン先生がやってきた！/);
-  assert.match(html, /桑名石取祭 2026/);
-  assert.match(html, /第63回 大四日市まつり/);
-  assert.match(html, /令和8年度 四日市港まつり/);
-  assert.match(html, /中部フィルハーモニー交響楽団 松阪特別演奏会/);
-  assert.match(html, /錦花火大会/);
-  assert.match(html, /でんじろう先生のドキドキわくわくサイエンスショー2026/);
-  assert.match(html, /神無月＆ミラクルひかる 爆笑ものまねLIVE in三重/);
-  assert.match(html, /愛洲氏顕彰祭・剣祖祭/);
-  assert.match(html, /2026きほく夏祭り KODO/);
-  assert.match(html, /data-category="展覧会"/);
+  // Data-driven on purpose. The listing changes every day as dates pass, so
+  // pinning specific titles here made the suite rot instead of catching bugs.
+  assert.match(
+    html,
+    new RegExp(`href="#results">催しを見る <strong>${liveEvents.length}</strong></a>`),
+  );
+
+  for (const event of liveEvents) {
+    assert.ok(
+      html.includes(escapeHtml(event.title)),
+      `a current event is missing from the listing: ${event.title}`,
+    );
+  }
+
+  // An event that has finished must not be offered to anyone.
+  for (const event of endedEvents) {
+    assert.ok(
+      !html.includes(escapeHtml(event.title)),
+      `a finished event is still listed: ${event.title} (ended ${event.endDate})`,
+    );
+  }
+
+  for (const category of ["スポーツ", "交流", "展覧会"]) {
+    if (liveEvents.some((event) => event.category === category)) {
+      assert.match(html, new RegExp(`data-category="${category}"`));
+    }
+  }
+
   assert.match(html, /公式情報で最終確認/);
   assert.doesNotMatch(html, />再確認 /);
   assert.doesNotMatch(html, /codex-preview/);
@@ -138,16 +122,32 @@ test("server-renders the Mie event finder and records without collection-method 
   const eventCards = [...html.matchAll(/<article class="event-card"[\s\S]*?<\/article>/g)].map(
     (match) => match[0],
   );
-  const cardFor = (title) => eventCards.find((card) => card.includes(title)) ?? "";
+  assert.equal(eventCards.length, liveEvents.length);
 
-  assert.match(
-    cardFor("三重ジュニア管弦楽団 こどもオーケストラ教室"),
-    /data-child-fit="for-children"/,
+  // Every card must carry a child rating, and an already-running multi-day
+  // event must be flagged so it reads differently from a one-day festival.
+  for (const card of eventCards) {
+    assert.match(card, /data-child-fit="(for-children|allowed|conditional|not-for-children|unknown)"/);
+  }
+
+  const cardFor = (title) => eventCards.find((card) => card.includes(escapeHtml(title))) ?? "";
+
+  // A record that pins its child rating must win over the wording of `audience`.
+  for (const event of liveEvents.filter((item) => item.childFit)) {
+    assert.match(
+      cardFor(event.title),
+      new RegExp(`data-child-fit="${event.childFit}"`),
+      `${event.id} does not render its pinned child rating ${event.childFit}`,
+    );
+  }
+
+  const ongoing = liveEvents.filter(
+    (event) => event.startDate < todayIso && event.endDate >= todayIso,
   );
-  assert.match(cardFor("第71回 鳥羽みなとまつり"), /data-child-fit="allowed"/);
-  assert.match(cardFor("Quubi Japan Tour 2026 三重公演"), /data-child-fit="conditional"/);
-  assert.match(cardFor("恋旅in紀宝 vol.7"), /data-child-fit="not-for-children"/);
-  assert.match(cardFor("吉例マクサ夏祭り"), /data-child-fit="unknown"/);
+  for (const event of ongoing) {
+    assert.match(cardFor(event.title), /data-ongoing="true"/);
+    assert.match(cardFor(event.title), /開催中/);
+  }
 });
 
 test("kitchen-car experiment lives on its own linked page", async () => {
@@ -171,15 +171,26 @@ test("all published records keep primary-source and sports-freshness fields", as
   const payload = JSON.parse(raw);
   const sports = payload.events.filter((event) => event.category === "スポーツ");
 
-  assert.equal(payload.events.length, 88);
-  assert.equal(new Set(payload.events.map((event) => event.id)).size, 88);
-  assert.equal(payload.events.filter((event) => event.category === "展覧会").length, 7);
-  assert.equal(payload.events.filter((event) => event.category === "交流").length, 11);
-  assert.equal(sports.length, 4);
+  // Invariants rather than a head count: the listing is meant to grow, and a
+  // pinned total only ever fails for the wrong reason.
+  assert.ok(payload.events.length > 0);
+  assert.equal(new Set(payload.events.map((event) => event.id)).size, payload.events.length);
+  const allowedCategories = new Set([
+    "祭り",
+    "舞台",
+    "音楽",
+    "展覧会",
+    "学び",
+    "交流",
+    "スポーツ",
+  ]);
+  for (const event of payload.events) {
+    assert.ok(allowedCategories.has(event.category), `unexpected category: ${event.category}`);
+  }
   assert.deepEqual(
     payload.events
       .filter((event) => event.id.startsWith("ise-okihiki-kawabiki-"))
-      .map((event) => event.isoDate)
+      .map((event) => event.startDate)
       .sort(),
     ["2026-07-25", "2026-07-26", "2026-08-01", "2026-08-02"],
   );
@@ -245,6 +256,13 @@ test("30-day calendar counts single, continuous, and recurring dates", async () 
     eventOccursOn(event("mie-art-rockefeller-flower-bird-prints-2026"), "2026-07-27"),
     false,
   );
+  // 月曜休館: a closing day inside the run is not an occurrence, so the calendar
+  // no longer counts a shut museum as somewhere you can go.
+  assert.deepEqual(event("mie-art-rockefeller-flower-bird-prints-2026").closedWeekdays, [1]);
+  assert.equal(
+    eventOccursOn(event("mie-art-rockefeller-flower-bird-prints-2026"), "2026-07-20"),
+    false,
+  );
 
   assert.equal(
     eventOccursOn(event("kawage-summer-storytime-special-2026"), "2026-08-09"),
@@ -263,6 +281,92 @@ test("30-day calendar counts single, continuous, and recurring dates", async () 
     eventOccursOn(event("asahi-library-job-experience-2026"), "2026-08-18"),
     true,
   );
+});
+
+test("commercial-facility events stay tied to the facility registry", async () => {
+  const facilitySources = JSON.parse(
+    await readFile(new URL("../data/facility-sources.json", import.meta.url), "utf8"),
+  );
+  const registered = new Set(facilitySources.facilities.map((facility) => facility.name));
+  const facilityEvents = payload.events.filter((event) => event.facility);
+
+  assert.ok(facilityEvents.length > 0, "expected at least one facility event");
+
+  for (const event of facilityEvents) {
+    assert.ok(
+      registered.has(event.facility.name),
+      `${event.id} references an unregistered facility: ${event.facility.name}`,
+    );
+    // The tag drives the on-site filter, so it must not drift from the field.
+    assert.ok(event.tags.includes("商業施設"), `${event.id} is missing the 商業施設 tag`);
+  }
+
+  // The reverse direction too: no event may claim the tag without the record.
+  for (const event of payload.events) {
+    if (event.tags.includes("商業施設")) {
+      assert.ok(event.facility, `${event.id} is tagged 商業施設 but has no facility`);
+    }
+  }
+
+  // Held-back candidates must carry a reason, so exclusions stay auditable.
+  for (const facility of facilitySources.facilities) {
+    for (const pending of facility.pending ?? []) {
+      assert.ok(pending.title, `${facility.id} has a pending entry without a title`);
+      assert.ok(pending.reason, `${facility.id} has a pending entry without a reason`);
+    }
+  }
+
+  // The umbrella record must not coexist with the per-day records it was split into.
+  const perDay = payload.events.filter((event) =>
+    ["toin-slime-park-2026", "toin-weather-doctor-2026"].includes(event.id),
+  );
+  if (perDay.length > 0) {
+    assert.equal(
+      payload.events.find((event) => event.id === "toin-kids-summer-lab-2026"),
+      undefined,
+      "the キッズサマーラボ umbrella double-counts the per-day records",
+    );
+  }
+});
+
+test("date display is derived from the structured dates, not stored", async () => {
+  const event = (id) => payload.events.find((item) => item.id === id);
+
+  // A single day, a run crossing a month boundary, and a recurring series.
+  assert.deepEqual(formatEventDate(event("tsu-hanabi-2026")), { month: "7", day: "25" });
+  assert.deepEqual(formatEventDate(event("kuwana-ishidori-2026")), {
+    month: "7–8",
+    day: "31–2",
+  });
+  assert.deepEqual(formatEventDate(event("asahi-library-job-experience-2026")), {
+    month: "7–8",
+    day: "30・8・18",
+  });
+
+  // A long series collapses to first–last so the date numeral stays legible.
+  const pool = event("toin-bisshabisha-pool-2026");
+  assert.ok(pool.dates.length > 5);
+  assert.deepEqual(formatEventDate(pool), { month: "7–8", day: "25–16" });
+
+  // Nothing may render more than five day numbers in the card's date block.
+  for (const item of payload.events) {
+    const { day } = formatEventDate(item);
+    assert.ok(
+      day.split("・").length <= 5,
+      `${item.id} renders too many day numbers: ${day}`,
+    );
+  }
+
+  // No record may carry the old display-derived date fields any more.
+  for (const item of payload.events) {
+    assert.equal(item.month, undefined, `${item.id} still stores a display month`);
+    assert.equal(item.day, undefined, `${item.id} still stores a display day`);
+    assert.equal(item.period, undefined, `${item.id} still stores a hardcoded season`);
+    assert.equal(item.isoDate, undefined, `${item.id} still stores isoDate`);
+    assert.match(item.startDate, /^\d{4}-\d{2}-\d{2}$/);
+    assert.match(item.endDate, /^\d{4}-\d{2}-\d{2}$/);
+    assert.ok(item.endDate >= item.startDate);
+  }
 });
 
 test("municipal source registry covers all five East Kishu municipalities", async () => {

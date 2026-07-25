@@ -49,7 +49,8 @@ input {
 button:focus-visible,
 a:focus-visible,
 select:focus-visible,
-input:focus-visible {
+input:focus-visible,
+summary:focus-visible {
   outline: 3px solid var(--sun);
   outline-offset: 3px;
 }
@@ -405,26 +406,84 @@ main {
 }
 
 .date-calendar {
-  border-top: 1px solid var(--line);
-  margin-top: 18px;
-  padding-top: 14px;
+  border: 1px solid var(--line);
+  margin: 14px 0 0 auto;
+  max-width: 520px;
+  width: 100%;
 }
 
-.date-calendar-heading {
-  align-items: baseline;
+.date-calendar-summary {
+  align-items: center;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  list-style: none;
+  min-height: 44px;
+  padding: 7px 10px 7px 12px;
 }
 
-.date-calendar-heading strong {
+.date-calendar-summary::-webkit-details-marker {
+  display: none;
+}
+
+.date-calendar-summary-copy {
+  align-items: baseline;
+  display: flex;
+  gap: 9px;
+}
+
+.date-calendar-summary-copy strong {
   font-family: "YuMincho", "Hiragino Mincho ProN", serif;
-  font-size: 18px;
+  font-size: 15px;
 }
 
-.date-calendar-heading small {
+.date-calendar-summary-copy small,
+.date-calendar-note {
   color: var(--ink-soft);
   font-size: 9px;
+}
+
+.date-calendar-toggle {
+  align-items: center;
+  display: inline-flex;
+  font-size: 10px;
+  font-weight: 700;
+  gap: 7px;
+  letter-spacing: 0.05em;
+}
+
+.date-calendar-toggle::before {
+  content: "＋";
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.date-calendar[open] .date-calendar-toggle::before {
+  content: "−";
+}
+
+.calendar-label-close {
+  display: none;
+}
+
+.date-calendar[open] .calendar-label-open {
+  display: none;
+}
+
+.date-calendar[open] .calendar-label-close {
+  display: inline;
+}
+
+.date-calendar-panel {
+  border-top: 1px solid var(--line);
+  padding: 7px 8px 8px;
+}
+
+.date-calendar-note {
+  margin: 0 0 5px;
+  text-align: right;
 }
 
 .date-calendar-weekdays,
@@ -463,8 +522,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 56px;
-  padding: 6px 4px;
+  font-size: 11px;
+  min-height: 42px;
+  padding: 4px 2px;
 }
 
 .date-calendar-grid button[aria-current="date"] {
@@ -886,7 +946,7 @@ main {
   background: var(--rust);
 }
 
-.event-card[data-category="スポーツ"] .event-kicker span:first-child {
+.event-card[data-category="スポーツ"] .event-kicker .event-category {
   color: var(--rust);
 }
 
@@ -898,7 +958,7 @@ main {
   background: #665f7e;
 }
 
-.event-card[data-category="展覧会"] .event-kicker span:first-child {
+.event-card[data-category="展覧会"] .event-kicker .event-category {
   color: #665f7e;
 }
 
@@ -973,6 +1033,16 @@ main {
 
 .event-kicker span:last-child {
   border: 0;
+}
+
+/* Marks an event that started before today and is still running, so a long
+   exhibition reads differently from something opening this weekend. */
+.event-kicker span.ongoing-flag {
+  background: var(--sea);
+  border-right: 0;
+  color: var(--white);
+  margin-right: 10px;
+  padding: 4px 8px;
 }
 
 .event-kicker span.child-fit-badge {
@@ -1423,24 +1493,18 @@ footer p {
   }
 
   .date-calendar {
-    margin-top: 16px;
-    padding-top: 12px;
+    margin-top: 12px;
+    max-width: none;
   }
 
-  .date-calendar-heading {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 2px;
-  }
-
-  .date-calendar-heading strong {
-    font-size: 17px;
+  .date-calendar-summary {
+    padding-left: 10px;
   }
 
   .date-calendar-grid button {
     font-size: 10px;
-    min-height: 49px;
-    padding: 5px 1px;
+    min-height: 40px;
+    padding: 3px 1px;
   }
 
   .date-calendar-grid button small {

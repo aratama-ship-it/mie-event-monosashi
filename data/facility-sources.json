@@ -1,0 +1,387 @@
+{
+  "updatedAt": "2026-07-25",
+  "coverageArea": "三重県内の大型商業施設",
+  "publishRule": "施設の公式イベントページを発見・確認の一次資料として使う。ただし公式カレンダーに載っているだけでは掲載しない。日付が限定され、その日に行く理由がある催しだけをevents.jsonへ移し、セール・ポイント・長期キャンペーン・常設サービス・テナント単独の店頭販促は掲載しない。判断に迷うものはpendingに残す。",
+  "siteSystems": {
+    "note": "イオンモールの公式サイトは2系統ある。新規施設を追加するときは、まずどちらの系統かを確認すること。推測でURLを書かない。",
+    "aeonmall_jp": {
+      "pattern": "https://<施設名>.aeonmall.jp/event",
+      "facilities": ["イオンモール東員", "イオンモール鈴鹿", "イオンモール津南"],
+      "detailPages": "JSでレンダリングされ、静的HTMLには本文が入らない。1件ずつレンダリング可能な手段で読む必要がある。",
+      "legacyDomain": "旧 <施設名>-aeonmall.com は301で移動する。リンクは移動後のURLで保存する。"
+    },
+    "aeon_jp_sc": {
+      "pattern": "https://www.aeon.jp/sc/<施設名>/event/",
+      "facilities": ["イオンモール四日市北", "イオンモール桑名", "イオンモール明和"],
+      "dataEndpoint": "同ディレクトリの index.json に全件が入っている（Vue+axiosが読む）。display_event_date / display_event_time / display_event_place / body を含むため、1件ずつ詳細ページを開かずに確認できる。",
+      "caution": "structured_start_date / structured_end_date は当てにならない。display_event_date と食い違う例が複数あるので、開催日は必ず display_event_date を正とする。桑名は structured 日付が全件空。"
+    },
+    "vison": {
+      "pattern": "https://vison.jp/eventcalendar/",
+      "dataEndpoint": "POST https://vison.jp/api/eventcalendar.php （option=0 で全件）。一覧は name / displayDate / area / link / description を返す。",
+      "detailPages": "detail.php?id=<N> は静的HTMLで、開催時間・参加料金・定員を含む。"
+    }
+  },
+  "inclusion": {
+    "publish": [
+      "日付が限定された体験・ワークショップ・教室",
+      "ステージ、ライブ、キャラクターショー、グリーティング",
+      "縁日、盆踊り、マルシェ、地域物産フェア",
+      "子どもが遊べる単日〜数日の催し（販促目的でも可）",
+      "献血、健康チェックなど日付限定で公共性のある催し"
+    ],
+    "exclude": [
+      "セール、値引き、ポイント倍率、福引、レシート抽選",
+      "クールシェアや館内の乗り物など常設サービス",
+      "1か月以上続くスタンプ・アプリ・ラリー系キャンペーン",
+      "テナント単独の店頭販促、実演販売、期間限定ショップ",
+      "営業時間の変更やシャトルバスなどの運行告知",
+      "「毎日開催」「毎週土日開催」など日付が限定されない常設プログラム"
+    ],
+    "note": "この基準はSOURCE_POLICY.mdのキッチンカー条項（商業施設での通常出店をイベントに混ぜない）と同じ考え方を、施設側の告知に適用したものです。"
+  },
+  "facilities": [
+    {
+      "id": "aeonmall-toin",
+      "name": "イオンモール東員",
+      "type": "mall",
+      "municipality": "東員町",
+      "region": "北勢",
+      "eventPageUrl": "https://toin.aeonmall.jp/event",
+      "checkCadence": "weekly",
+      "lastCheckedAt": "2026-07-25",
+      "coverageStatus": "published",
+      "note": "aeonmall.jp系。一覧には日付とタイトルしか出ないため、時刻・料金・対象は各イベントの詳細ページで確認する。",
+      "pending": [
+        {
+          "title": "【ソフトバンク】射的＆スーパーボールすくい",
+          "dates": "2026-07-23–2026-07-27",
+          "reason": "販促だが子どもが遊べる単日催しに該当しうる。詳細ページで料金・対象を未確認。"
+        },
+        {
+          "title": "ポケモンしんかラリー",
+          "dates": "2026-07-31–2026-08-23",
+          "reason": "24日間続くラリー型キャンペーン。長期キャンペーンとして除外する方針だが、子ども向けの実体があるため保留。"
+        },
+        {
+          "title": "アートクラフトこはくの森",
+          "dates": "2026-07-22–2026-07-28",
+          "reason": "期間限定ショップか体験型ワークショップかを未確認。"
+        },
+        {
+          "title": "Toin ひばり教室2026",
+          "dates": "2026-08-12–2026-08-14",
+          "reason": "主催と参加条件を未確認。"
+        },
+        {
+          "title": "TOIN 超！COOOOOOL作戦",
+          "dates": "2026-08-01–2026-08-09",
+          "reason": "館の暑さ対策キャンペーンか、催しの束かを未確認。"
+        }
+      ]
+    },
+    {
+      "id": "aeonmall-suzuka",
+      "name": "イオンモール鈴鹿",
+      "type": "mall",
+      "municipality": "鈴鹿市",
+      "region": "北勢",
+      "eventPageUrl": "https://suzuka.aeonmall.jp/event",
+      "checkCadence": "weekly",
+      "lastCheckedAt": "2026-07-25",
+      "coverageStatus": "published",
+      "note": "aeonmall.jp系。県内最大級。詳細ページがJSレンダリングのため、1件ずつの確認コストが高い。8月分の一部は未確認のままpendingに置いている。",
+      "pending": [
+        {
+          "title": "鈴カレー2026出発式＆三重テレビ放送番組タイアップ公開収録イベント",
+          "dates": "2026-07-26",
+          "reason": "掲載対象だが詳細ページで時刻・観覧条件を未確認。"
+        },
+        {
+          "title": "鎌倉パスタのワークショップ パン手作り体験",
+          "dates": "2026-07-27",
+          "reason": "テナント主催の体験型。掲載対象と判断したが料金・定員を未確認。"
+        },
+        {
+          "title": "Cool-X インストアLIVE",
+          "dates": "2026-07-28",
+          "reason": "掲載対象だが観覧条件を未確認。"
+        },
+        {
+          "title": "＼赤ちゃん／ハイハイ＆チャレンジ レース♪",
+          "dates": "2026-07-30",
+          "reason": "掲載対象だが料金・予約条件を未確認。"
+        },
+        {
+          "title": "劇場版「TOKYO MER」全国キャラバンinイオンモール鈴鹿",
+          "dates": "2026-08-08–2026-08-09",
+          "reason": "掲載対象だが時刻・参加条件を未確認。"
+        },
+        {
+          "title": "NTTドコモpresents ～よしもとお笑いライブ～",
+          "dates": "2026-08-15",
+          "reason": "掲載対象だが観覧条件・整理券の有無を未確認。"
+        },
+        {
+          "title": "セイハ英語学院 えいごあそび",
+          "dates": "2026-08-21",
+          "reason": "掲載対象だが時刻・対象年齢を未確認。"
+        },
+        {
+          "title": "Asobeats♪THE GALAXY",
+          "dates": "2026-08-08–2026-08-16",
+          "reason": "催しの実体（有料アトラクションか）を未確認。"
+        },
+        {
+          "title": "【8月度】献血実施のお知らせ",
+          "dates": "2026-08-02–2026-08-30",
+          "reason": "献血は掲載対象だが、期間内の実施日が特定できていない。"
+        },
+        {
+          "title": "ディズニー英語システム 抽選会イベント",
+          "dates": "2026-08-01–2026-08-11",
+          "reason": "抽選会・プレゼント主体の販促と判断。子ども向けの実体があるため保留。"
+        },
+        {
+          "title": "館内スタンプラリー：世界一周お宝ハンター",
+          "dates": "2026-08-01–2026-08-31",
+          "reason": "1か月続くスタンプラリー。除外方針に該当するが子ども向けのため保留。"
+        }
+      ]
+    },
+    {
+      "id": "aeonmall-tsuminami",
+      "name": "イオンモール津南",
+      "type": "mall",
+      "municipality": "津市",
+      "region": "中勢",
+      "eventPageUrl": "https://tsuminami.aeonmall.jp/event",
+      "checkCadence": "weekly",
+      "lastCheckedAt": "2026-07-25",
+      "coverageStatus": "published",
+      "note": "aeonmall.jp系。中勢の商業施設枠。詳細ページがJSレンダリングのため、8月分の多くはpendingに置いている。",
+      "pending": [
+        {
+          "title": "カルピスじゃぐちがイオンモール津南にやってくる！",
+          "dates": "2026-07-25",
+          "reason": "屋上イベントの一部。単独の催しとして扱うか、屋上イベントに含めるかを未整理。"
+        },
+        {
+          "title": "太鼓の達人＆釣りスピリッツ体験会",
+          "dates": "2026-07-25–2026-07-26",
+          "reason": "掲載対象だが時刻・対象を未確認。"
+        },
+        {
+          "title": "おぱんちゅうさぎ「はい！ち～ぢゅ！」",
+          "dates": "2026-08-02",
+          "reason": "掲載対象だが整理券・回数を未確認。"
+        },
+        {
+          "title": "赤ちゃんハイハイカタカタれぇす",
+          "dates": "2026-08-04",
+          "reason": "掲載対象だが料金・予約枠を未確認。"
+        },
+        {
+          "title": "三重のシャボン玉おじさんによるバブルショー",
+          "dates": "2026-08-08",
+          "reason": "掲載対象だが時刻を未確認。"
+        },
+        {
+          "title": "NTTドコモpresents ～よしもとお笑いライブ～",
+          "dates": "2026-08-08",
+          "reason": "掲載対象だが観覧条件を未確認。同館の8/11「よしもと全国お笑いツアー」との関係も未整理。"
+        },
+        {
+          "title": "泡パーティー",
+          "dates": "2026-08-11–2026-08-13",
+          "reason": "掲載対象だが時刻・対象年齢を未確認。"
+        },
+        {
+          "title": "ポムポムプリン アニバーサリースペシャルステージ",
+          "dates": "2026-08-14",
+          "reason": "掲載対象だが整理券・回数を未確認。"
+        },
+        {
+          "title": "LaQであそぼう！ LaQハカセブルーがやってくる！",
+          "dates": "2026-08-22–2026-08-23",
+          "reason": "掲載対象だが時刻・参加条件を未確認。"
+        },
+        {
+          "title": "LEGACY展",
+          "dates": "2026-08-07–2026-08-16",
+          "reason": "展覧会か物販催事かを未確認。"
+        },
+        {
+          "title": "じゃぶじゃぶ遊んで、お買い物券GET！",
+          "dates": "2026-07-25–2026-07-26",
+          "reason": "水あそびだがお買物券付与が主目的。中間基準での扱いを保留。"
+        }
+      ]
+    },
+    {
+      "id": "aeonmall-yokkaichikita",
+      "name": "イオンモール四日市北",
+      "type": "mall",
+      "municipality": "四日市市",
+      "region": "北勢",
+      "eventPageUrl": "https://www.aeon.jp/sc/yokkaichikita/event/",
+      "checkCadence": "weekly",
+      "lastCheckedAt": "2026-07-25",
+      "coverageStatus": "published",
+      "note": "aeon.jp/sc系。index.json に全件と本文が入るため確認が速い。",
+      "pending": [
+        {
+          "title": "ことのわ日和",
+          "dates": "2026-08-01–2026-08-09",
+          "reason": "第3回とあるが、クラフトマルシェか物販催事かを未確認。"
+        },
+        {
+          "title": "買って、歩いて、ちょいチェック in イオンモール四日市北 参加者募集",
+          "dates": "未確認",
+          "reason": "健康系の参加企画に見えるが、日程と主催を未確認。"
+        }
+      ]
+    },
+    {
+      "id": "aeonmall-kuwana",
+      "name": "イオンモール桑名",
+      "type": "mall",
+      "municipality": "桑名市",
+      "region": "北勢",
+      "eventPageUrl": "https://www.aeon.jp/sc/kuwana/event/",
+      "checkCadence": "weekly",
+      "lastCheckedAt": "2026-07-25",
+      "coverageStatus": "published",
+      "note": "aeon.jp/sc系。index.json は structured 日付が全件空なので、開催日は display_event_date だけが手がかり。専門店街ANQは別サイト（https://www.anq.jp/news_events/event/）があり未調査。",
+      "pending": [
+        {
+          "title": "ヴィアティン三重スポーツ教室 in イオンモール桑名",
+          "dates": "2026-08-22 または 2026-08-15",
+          "reason": "同一ページ内で日付が矛盾している（開催日欄は8/22、本文は8/15）。source_conflict として当年告知の訂正を待つ。"
+        },
+        {
+          "title": "ヴィアティン三重 運動不足解消教室＋イオンモールウォーキング",
+          "dates": "未確認",
+          "reason": "開催日を未確認。"
+        },
+        {
+          "title": "赤ちゃん足形アート／あかちゃん はいはいレース",
+          "dates": "未確認",
+          "reason": "いずれも掲載対象だが、当年の開催日が記載から特定できない。"
+        },
+        {
+          "title": "自習スペース 開放中",
+          "dates": "2026-07-19–2026-08-20",
+          "reason": "夏休み期間の常設サービスとして除外。"
+        }
+      ]
+    },
+    {
+      "id": "aeonmall-meiwa",
+      "name": "イオンモール明和",
+      "type": "mall",
+      "municipality": "明和町",
+      "region": "伊勢志摩",
+      "eventPageUrl": "https://www.aeon.jp/sc/meiwa/event/",
+      "checkCadence": "weekly",
+      "lastCheckedAt": "2026-07-25",
+      "coverageStatus": "published",
+      "note": "aeon.jp/sc系。伊勢志摩の商業施設枠。屋上（シネマ棟屋上・3F屋上駐車場）を使う催しが多く、雨天中止が前提のものが多い。",
+      "pending": [
+        {
+          "title": "『仮面ライダーゼッツ＆超宇宙刑事ギャバン インフィニティ Ｗヒーロー夏映画2026』クイズラリー",
+          "dates": "未確認",
+          "reason": "映画タイアップのクイズラリー。開催日と参加条件を未確認。"
+        },
+        {
+          "title": "屋上にウォーターパークが登場！",
+          "dates": "2026-04-29–2026-09-30",
+          "reason": "5か月続く季節設備のため常設サービスとして除外。"
+        }
+      ]
+    },
+    {
+      "id": "vison-taki",
+      "name": "VISON",
+      "type": "commercial_resort",
+      "municipality": "多気町",
+      "region": "中勢",
+      "eventPageUrl": "https://vison.jp/eventcalendar/",
+      "checkCadence": "weekly",
+      "lastCheckedAt": "2026-07-25",
+      "coverageStatus": "published",
+      "note": "多気町は既存データに合わせて中勢として扱う。木育エリアkiondの日付限定ワークショップが厚く、10月の燦燦市など秋以降の催しも取れる。「毎日開催」「毎週土日開催」のプログラムは常設として除外。",
+      "pending": [
+        {
+          "title": "プリン飾りつけ体験／ロールケーキをつくろう！こどもお菓子教室／こどもパン教室",
+          "dates": "8月は毎週土日開催 ほか",
+          "reason": "日付が限定されない常設プログラムとして除外。ただし子ども向け体験の実体があるため保留。"
+        },
+        {
+          "title": "大道芸 in VISON",
+          "dates": "神出鬼没",
+          "reason": "開催日が公表されないため掲載できない。"
+        },
+        {
+          "title": "植物でお手当の日 ~アロマハンドセラピー~／植物飾りの展示販売会",
+          "dates": "毎月第一日曜日／毎月第三土日月曜日",
+          "reason": "恒例日の記載のみで当年の具体日が未確認。SOURCE_POLICYの「恒例日だけでは確定にしない」に該当。"
+        },
+        {
+          "title": "伊勢「ひみつビール」出張ビアスタンド／ISEKADO出張ビアスタンド",
+          "dates": "2026-08-01／2026-07-25",
+          "reason": "単日の出店だが、テナントの物販催事に近い。中間基準での扱いを保留。"
+        },
+        {
+          "title": "涼VISON 2026 各企画／VISON 5th anniversary 抽選会／kiond フォト投稿キャンペーン",
+          "dates": "2026-06-20–2026-08-31 ほか",
+          "reason": "長期キャンペーン・レシート抽選として除外。"
+        }
+      ]
+    }
+  ],
+  "candidateFacilities": [
+    {
+      "name": "ミタス伊勢",
+      "municipality": "伊勢市",
+      "region": "伊勢志摩",
+      "note": "公式イベントページURLを未確認。"
+    },
+    {
+      "name": "ララスクエア四日市",
+      "municipality": "四日市市",
+      "region": "北勢",
+      "note": "公式イベントページURLを未確認。"
+    },
+    {
+      "name": "近鉄百貨店四日市店",
+      "municipality": "四日市市",
+      "region": "北勢",
+      "note": "催事場の企画展・物産展が中心。公式ページを未確認。"
+    },
+    {
+      "name": "鈴鹿ハンター",
+      "municipality": "鈴鹿市",
+      "region": "北勢",
+      "note": "公式イベントページURLを未確認。"
+    },
+    {
+      "name": "三井アウトレットパーク ジャズドリーム長島",
+      "municipality": "桑名市",
+      "region": "北勢",
+      "note": "セール告知が中心になる見込み。掲載基準の適用可否を要判断。"
+    },
+    {
+      "name": "ANQ専門店街（イオンモール桑名）",
+      "municipality": "桑名市",
+      "region": "北勢",
+      "note": "https://www.anq.jp/news_events/event/ が別に存在する。イオンモール桑名の本体サイトと重複するか未確認。"
+    },
+    {
+      "name": "イオンタウン・そよら（県内12施設）",
+      "municipality": "複数",
+      "region": "複数",
+      "note": "イオンモールより小規模。件数が多いため、6施設の運用が安定してから着手する。"
+    }
+  ]
+}
