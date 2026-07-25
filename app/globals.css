@@ -943,7 +943,9 @@ main {
   background: var(--sun);
 }
 
-.event-card[data-category="スポーツ"] .event-date em {
+/* Only the stamped variants have a background to recolour. */
+.event-card[data-category="スポーツ"] .event-date em.date-note-weekday,
+.event-card[data-category="スポーツ"] .event-date em.date-note-weekdays {
   background: var(--rust);
 }
 
@@ -1000,17 +1002,49 @@ main {
   overflow-wrap: anywhere;
 }
 
+/* `dateNote` is a weekday for a single day, but also carries editorial text such
+   as "月曜休館" or "期間中". The date column is only 118px wide, so the shape has
+   to follow the content instead of forcing everything into one circle. */
 .event-date em {
+  font-style: normal;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* One weekday: the round stamp the card was designed around. */
+.event-date em.date-note-weekday {
   align-items: center;
   background: var(--ink);
   border-radius: 50%;
   color: var(--paper);
   display: inline-flex;
   font-size: 12px;
-  font-style: normal;
   height: 28px;
   justify-content: center;
   width: 28px;
+}
+
+/* Weekday pairs and ranges ("土・日", "金–日") grow sideways. */
+.event-date em.date-note-weekdays {
+  align-items: center;
+  background: var(--ink);
+  border-radius: 999px;
+  color: var(--paper);
+  display: inline-flex;
+  font-size: 11px;
+  justify-content: center;
+  min-height: 24px;
+  padding: 3px 9px;
+}
+
+/* Anything else is a caveat, not a stamp, so it reads as a caption and wraps. */
+.event-date em.date-note-note {
+  color: var(--ink-soft);
+  display: block;
+  font-size: 10px;
+  line-height: 1.45;
+  margin-top: 2px;
+  overflow-wrap: anywhere;
 }
 
 .event-main {
@@ -1680,13 +1714,22 @@ footer p {
     line-height: 1;
   }
 
-  .event-date em {
+  /* The mobile row is wide, so the stamps can stay on one line. */
+  .event-date em.date-note-weekday,
+  .event-date em.date-note-weekdays {
     border-radius: 999px;
     height: 28px;
     justify-self: end;
     padding: 0 10px;
     white-space: nowrap;
     width: auto;
+  }
+
+  .event-date em.date-note-note {
+    font-size: 11px;
+    justify-self: end;
+    margin-top: 0;
+    text-align: right;
   }
 
   .event-main {

@@ -140,6 +140,26 @@ test("server-renders the Mie event finder and records without collection-method 
     assert.match(card, /data-child-fit="(for-children|allowed|conditional|not-for-children|unknown)"/);
   }
 
+  // The date note is drawn as a fixed 28px circle, which only fits one
+  // character. `dateNote` also carries editorial text like "月曜休館", so anything
+  // longer has to opt out of the circle or it spills over the card.
+  for (const card of eventCards) {
+    const note = card.match(/<em class="date-note-([a-z]+)">([\s\S]*?)<\/em>/);
+    assert.ok(note, `a card renders a date note without a kind class: ${card.slice(0, 120)}`);
+    const [, kind, text] = note;
+    assert.ok(
+      ["weekday", "weekdays", "note"].includes(kind),
+      `unexpected date-note kind: ${kind}`,
+    );
+    if (kind === "weekday") {
+      assert.equal(
+        [...text.trim()].length,
+        1,
+        `"${text.trim()}" is drawn as the single-character circle but is longer`,
+      );
+    }
+  }
+
   const cardFor = (title) => eventCards.find((card) => card.includes(escapeHtml(title))) ?? "";
 
   // A record that pins its child rating must win over the wording of `audience`.

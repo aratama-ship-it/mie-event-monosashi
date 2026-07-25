@@ -213,6 +213,19 @@ function inferChildFit(event: EventItem): ChildFit {
   return childFitScale[4];
 }
 
+/**
+ * How the note beside the date should be drawn.
+ *
+ * `dateNote` holds a weekday for a single-day event but also editorial text like
+ * "月曜休館" or "期間中". The round stamp the card was designed around only fits
+ * one character, so anything longer needs a different shape.
+ */
+function dateNoteKind(dateNote: string) {
+  if (/^[日月火水木金土]$/.test(dateNote)) return "weekday";
+  if (/^[日月火水木金土・–]+$/.test(dateNote)) return "weekdays";
+  return "note";
+}
+
 function matchesNeed(event: EventItem, need: string) {
   if (!need) return true;
   if (need === "子ども向け") {
@@ -657,7 +670,9 @@ export default function EventFinder() {
                 <time className="event-date" dateTime={event.startDate}>
                   <span>{month}月</span>
                   <strong className={daySize}>{day}</strong>
-                  <em>{event.dateNote}</em>
+                  <em className={`date-note-${dateNoteKind(event.dateNote)}`}>
+                    {event.dateNote}
+                  </em>
                 </time>
 
                 <div className="event-main">
