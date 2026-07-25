@@ -40,6 +40,19 @@ export default defineConfig(async () => {
   process.env.WRANGLER_LOG_PATH ??= ".wrangler/logs";
   process.env.MINIFLARE_REGISTRY_PATH ??= ".wrangler/registry";
 
+  // The GitHub Pages build emits plain files, so there is no Worker to configure
+  // and no Cloudflare bindings to attach.
+  //
+  // `base` is deliberately left at the root. vinext 0.0.50 prerenders by fetching
+  // "/" from a temporary server, and any sub-path — Next's `basePath` or Vite's
+  // `base` — makes those fetches 404 ("RSC handler returned 404"), which drops
+  // both real routes from the export. Asset URLs are therefore rewritten after
+  // the build by scripts/apply-base-path.mjs; links in our own markup go through
+  // app/site-path.ts.
+  if (process.env.STATIC_EXPORT === "1") {
+    return { plugins: [vinext()] };
+  }
+
   // Wrangler snapshots its log path while the Cloudflare plugin is imported.
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 

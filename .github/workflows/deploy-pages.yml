@@ -1,0 +1,64 @@
+name: Deploy to GitHub Pages
+
+# Publishes the static export to https://aratama-ship-it.github.io/mie-event-monosashi/
+#
+# The site is a Next.js app running on vinext. The default build targets Cloudflare
+# Workers and renders HTML per request, which GitHub Pages cannot do, so this uses
+# `npm run build:pages` — a static export plus a sub-path fixup. See
+# scripts/apply-base-path.mjs for why the sub-path is applied after the build.
+#
+# Before the first run, set Settings → Pages → Build and deployment → Source to
+# "GitHub Actions".
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a running deploy finish rather than cancelling it half-published.
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+env:
+  SITE_BASE_PATH: /mie-event-monosashi
+  SITE_URL: https://aratama-ship-it.github.io/mie-event-monosashi
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.13.0
+          cache: npm
+
+      - run: npm ci
+
+      # Keeps a broken build from reaching the site: the data rules and the
+      # rendered-output tests both run before publishing.
+      - run: npm run lint
+      - run: npm test
+
+      - run: npm run build:pages
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/client
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

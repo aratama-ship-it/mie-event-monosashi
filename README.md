@@ -49,11 +49,51 @@ npm test
 npm run lint
 ```
 
+## 公開（GitHub Pages）
+
+`main` へ push すると `.github/workflows/deploy-pages.yml` が動き、
+https://aratama-ship-it.github.io/mie-event-monosashi/ へ公開されます。
+lint・テスト・データ検証を通ってからデプロイされます。
+
+**初回だけ手動設定が必要です**: GitHubのSettings → Pages → Build and deployment → Source を
+「GitHub Actions」に変更してください。これをしないとワークフローが失敗します。
+
+手元で公開版を確認する:
+
+```bash
+npm run preview:pages
+```
+
+`http://localhost:4181/mie-event-monosashi/` で開きます。GitHub Pagesと同じ**サブパス配信**を
+再現しているので、`dist/client` を直接ルートで開くより実態に近い確認ができます。
+
+### 静的エクスポートの注意点
+
+- **`basePath` を設定してはいけません。** vinext 0.0.50 はprerender時に一時サーバーの `/` を
+  取得する実装で、Nextの `basePath` かViteの `base` を設定すると404になり、
+  実ページ2本がエクスポートから落ちて404.htmlだけが出力されます。
+  サブパスは `app/site-path.ts`（自前のリンク）と `scripts/apply-base-path.mjs`（アセットURL）で当てています。
+- ページには `export const dynamic = "force-static"` が必要です。無いとvinextがルートを
+  未分類と判定し、prerenderをスキップします。ルートセグメント設定は `"use client"` のファイルに
+  置けないため、`app/page.tsx` は薄いサーバーコンポーネントで、UI本体は `app/event-finder.tsx` にあります。
+- `headers()` を使うとルートが動的判定になり同じくスキップされます。サイトURLは
+  `SITE_URL`（ビルド時）で固定しています。
+- `.nojekyll` が必要です。GitHub PagesのJekyllはアンダースコア始まりのディレクトリを削除するため、
+  無いと `assets/_vinext_fonts` が消えてフォントが失われます。
+
+環境変数（既定値あり、通常は変更不要）:
+
+| 変数 | 既定値 | 用途 |
+|---|---|---|
+| `SITE_BASE_PATH` | `/mie-event-monosashi` | サブパス。独自ドメインでルート配信するなら空文字 |
+| `SITE_URL` | `https://aratama-ship-it.github.io/mie-event-monosashi` | `metadataBase`・OG画像の絶対URL |
+
 ## 技術構成
 
 - Next.js / React
-- vinext / Cloudflare Workers互換ビルド
-- ChatGPT Sitesで公開
+- vinext
+- 公開ビルド: 静的エクスポート（`npm run build:pages`）→ GitHub Pages
+- 既定ビルド（`npm run build`）: Cloudflare Workers互換のSSR。ChatGPT Sites用に残しています
 
 ## ライセンス
 

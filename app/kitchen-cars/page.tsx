@@ -1,7 +1,6 @@
-/* eslint-disable @next/next/no-html-link-for-pages -- vinext client navigation is more reliable with plain anchors */
-
 import type { Metadata } from "next";
 import kitchenCarData from "@/data/kitchen-car-sources.json";
+import { sitePath } from "../site-path";
 
 type KitchenCarSource = {
   id: string;
@@ -27,6 +26,9 @@ function displayDate(value: string) {
   return value.replaceAll("-", ".");
 }
 
+// Prerendered into static HTML; see app/page.tsx.
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   title: "キッチンカーは、今日どこへ。｜みえのものさし",
   description:
@@ -37,7 +39,7 @@ export default function KitchenCarsPage() {
   return (
     <main>
       <header className="site-header">
-        <a className="wordmark" href="/" aria-label="みえのものさし ホーム">
+        <a className="wordmark" href={sitePath("/")} aria-label="みえのものさし ホーム">
           <span className="mie-silhouette" aria-hidden="true" />
           <span className="wordmark-copy">
             <span className="wordmark-main">みえのものさし</span>
@@ -45,10 +47,10 @@ export default function KitchenCarsPage() {
           </span>
         </a>
         <nav className="header-actions" aria-label="ページ">
-          <a className="header-nav-link" href="/">
+          <a className="header-nav-link" href={sitePath("/")}>
             催し一覧
           </a>
-          <a className="header-nav-link is-current" href="/kitchen-cars" aria-current="page">
+          <a className="header-nav-link is-current" href={sitePath("/kitchen-cars")} aria-current="page">
             キッチンカー
           </a>
         </nav>
@@ -107,7 +109,7 @@ export default function KitchenCarsPage() {
           <strong>みえのものさし</strong>
           <p>イベント一覧へ戻り、日付や地域から催しを探せます。</p>
         </div>
-        <a className="footer-back-link" href="/">
+        <a className="footer-back-link" href={sitePath("/")}>
           催し一覧へ戻る
         </a>
       </footer>
