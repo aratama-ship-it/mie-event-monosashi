@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-24",
+  "updatedAt": "2026-07-26",
   "publishRule": "発見用情報だけでは公開せず、主催者・会場・自治体の一次資料で日時と場所を確認する",
   "sources": [
     {
@@ -281,6 +281,26 @@
       "url": "https://www.kankomie.or.jp/season/festival",
       "checkCadence": "weekly",
       "note": "県内の祭りを横断発見する入口。掲載時は必ず自治体、主催者、寺社、実行委員会の一次資料へ移る。"
+    },
+    {
+      "id": "okadaya-honten-hinami-asaichi",
+      "label": "岡田屋本店・桂樹庵（日並の朝市）",
+      "municipality": "亀山市",
+      "sourceType": "organizer_calendar",
+      "role": "confirmation",
+      "url": "https://tukinoniwa.jimdofree.com/",
+      "checkCadence": "monthly",
+      "note": "毎月第3日曜8:00–11:00開催とされる小さな朝市。会場は岡田屋本店（亀山市西町438「月の庭」・旧東海道沿い）と料理教室 桂樹庵。公式サイトに開催予定の掲載はなく、告知はInstagram @okadayahonten が実質の窓口。当年の開催日を確認できるまで掲載しない。"
+    },
+    {
+      "id": "the-day-mie-magazine",
+      "label": "the day（三重県のwebマガジン）",
+      "municipality": "三重県内",
+      "sourceType": "community_news",
+      "role": "signal",
+      "url": "https://the-day-mie.com/",
+      "checkCadence": "monthly",
+      "note": "県内の小さな市・店・催しを取り上げる媒体。記事が数年前のものでも残るため（日並の朝市の記事は2024-07-21）、発見用に限定し、開催の確認には使わない。"
     }
   ]
 }
