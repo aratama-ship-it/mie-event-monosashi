@@ -5,6 +5,7 @@ import eventData from "@/data/events.json";
 import {
   addDays,
   datePresets,
+  describeEventDate,
   eventOccursOn,
   formatEventDate,
   hasEnded,
@@ -654,7 +655,7 @@ export default function EventFinder() {
           {results.map((event) => {
             const isSaved = saved.includes(event.id);
             const childFit = assessChildFit(event);
-            const { month, day } = formatEventDate(event);
+            const { month, day, span } = formatEventDate(event);
             const daySize = day.length >= 7 ? "is-long" : day.length >= 4 ? "is-range" : "";
             const ongoing = isOngoing(event, todayIso);
             const startsToday = event.startDate === todayIso;
@@ -667,9 +668,24 @@ export default function EventFinder() {
                 data-child-fit={childFit.id}
                 data-ongoing={ongoing && !startsToday ? "true" : undefined}
               >
-                <time className="event-date" dateTime={event.startDate}>
-                  <span>{month}月</span>
-                  <strong className={daySize}>{day}</strong>
+                <time
+                  className="event-date"
+                  dateTime={event.startDate}
+                  aria-label={describeEventDate(event)}
+                >
+                  {span ? (
+                    // A range across months carries the month on both ends and
+                    // stacks them, so it cannot be read as "the 4th to the 17th".
+                    <strong className="is-span">
+                      <span className="span-from">{span.from}</span>
+                      <span className="span-to">{span.to}</span>
+                    </strong>
+                  ) : (
+                    <>
+                      <span>{month}月</span>
+                      <strong className={daySize}>{day}</strong>
+                    </>
+                  )}
                   <em className={`date-note-${dateNoteKind(event.dateNote)}`}>
                     {event.dateNote}
                   </em>

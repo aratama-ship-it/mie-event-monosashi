@@ -1,7 +1,12 @@
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
-import { datePresets, eventOccursOn, formatEventDate } from "../lib/event-dates.mjs";
+import {
+  datePresets,
+  describeEventDate,
+  eventOccursOn,
+  formatEventDate,
+} from "../lib/event-dates.mjs";
 
 const payload = JSON.parse(
   await readFile(new URL("../data/events.json", import.meta.url), "utf8"),
@@ -367,21 +372,46 @@ test("commercial-facility events stay tied to the facility registry", async () =
 test("date display is derived from the structured dates, not stored", async () => {
   const event = (id) => payload.events.find((item) => item.id === id);
 
-  // A single day, a run crossing a month boundary, and a recurring series.
   assert.deepEqual(formatEventDate(event("tsu-hanabi-2026")), { month: "7", day: "25" });
+
+  // A run crossing a month boundary has to say so on both ends. "7–9月" over
+  // "4–17" reads as the 4th to the 17th of one month.
   assert.deepEqual(formatEventDate(event("kuwana-ishidori-2026")), {
     month: "7–8",
-    day: "31–2",
+    day: "7/31–8/2",
+    span: { from: "7/31", to: "8/2" },
   });
+
+  // Same for a recurring series: in "30・8・18" nothing says which month a day
+  // belongs to, so the month is repeated whenever it changes.
   assert.deepEqual(formatEventDate(event("asahi-library-job-experience-2026")), {
     month: "7–8",
-    day: "30・8・18",
+    day: "7/30・8/8・18",
+  });
+
+  // A series inside one month needs no repetition.
+  assert.deepEqual(formatEventDate(event("kawage-summer-storytime-special-2026")), {
+    month: "8",
+    day: "2・9・23・30",
   });
 
   // A long series collapses to first–last so the date numeral stays legible.
   const pool = event("toin-bisshabisha-pool-2026");
   assert.ok(pool.dates.length > 5);
-  assert.deepEqual(formatEventDate(pool), { month: "7–8", day: "25–16" });
+  assert.deepEqual(formatEventDate(pool), {
+    month: "7–8",
+    day: "7/25–8/16",
+    span: { from: "7/25", to: "8/16" },
+  });
+
+  // The accessible name spells the dates out, since the visual block drops the
+  // 月/日 markers and splits the range across elements.
+  assert.equal(describeEventDate(event("tsu-hanabi-2026")), "7月25日");
+  assert.equal(describeEventDate(event("kuwana-ishidori-2026")), "7月31日から8月2日まで");
+  assert.equal(
+    describeEventDate(event("asahi-library-job-experience-2026")),
+    "7月30日・8月8日・8月18日",
+  );
 
   // Nothing may render more than five day numbers in the card's date block.
   for (const item of payload.events) {
