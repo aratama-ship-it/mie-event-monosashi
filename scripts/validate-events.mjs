@@ -125,22 +125,38 @@ for (const [index, event] of (payload.events ?? []).entries()) {
   }
 
   // A commercial-facility event must say so in both places, because the site
-  // filters on the tag while the facility name drives grouping.
+  // filters on the tag while the facility names drive grouping. An event can run
+  // at several facilities at once — a chain-wide mall campaign is one record with
+  // several venues rather than one card per mall.
   if (event.facility !== undefined) {
-    if (!event.facility.name) errors.push(`${where}.facility.name is required`);
-    if (!allowedFacilityTypes.has(event.facility.type)) {
-      errors.push(`${where}.facility.type is not allowed: ${event.facility.type}`);
+    errors.push(`${where}.facility is obsolete; use the facilities array`);
+  }
+
+  if (event.facilities !== undefined) {
+    if (!Array.isArray(event.facilities) || event.facilities.length === 0) {
+      errors.push(`${where}.facilities must be a non-empty array when present`);
+    } else {
+      const seen = new Set();
+      for (const [facilityIndex, facility] of event.facilities.entries()) {
+        const at = `${where}.facilities[${facilityIndex}]`;
+        if (!facility?.name) errors.push(`${at}.name is required`);
+        if (!allowedFacilityTypes.has(facility?.type)) {
+          errors.push(`${at}.type is not allowed: ${facility?.type}`);
+        }
+        if (!facilityNames.has(facility?.name)) {
+          errors.push(
+            `${at}.name is not registered in facility-sources.json: ${facility?.name}`,
+          );
+        }
+        if (seen.has(facility?.name)) errors.push(`${at}.name is duplicated`);
+        seen.add(facility?.name);
+      }
     }
     if (!event.tags?.includes("商業施設")) {
-      errors.push(`${where} has a facility but is missing the 商業施設 tag`);
-    }
-    if (!facilityNames.has(event.facility.name)) {
-      errors.push(
-        `${where}.facility.name is not registered in facility-sources.json: ${event.facility.name}`,
-      );
+      errors.push(`${where} has facilities but is missing the 商業施設 tag`);
     }
   } else if (event.tags?.includes("商業施設")) {
-    errors.push(`${where} is tagged 商業施設 but has no facility record`);
+    errors.push(`${where} is tagged 商業施設 but has no facilities record`);
   }
 
   if (!categories.has(event.category)) {
@@ -417,7 +433,7 @@ if (errors.length) {
 console.log(
   `Event data OK: ${events.length} primary-source records, ${ids.size} unique IDs; municipal routes OK: ${municipalityNames.size} East Kishu municipalities; discovery routes OK: ${discoverySourceIds.size} sources; festival watchlist OK: ${festivalCandidateIds.size} unpublished candidates`,
 );
-const facilityEvents = events.filter((event) => event.facility);
+const facilityEvents = events.filter((event) => event.facilities);
 const publishedFacilities = (facilitySources.facilities ?? []).filter(
   (facility) => facility.coverageStatus === "published",
 );

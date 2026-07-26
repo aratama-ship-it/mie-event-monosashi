@@ -339,15 +339,18 @@ test("commercial-facility events stay tied to the facility registry", async () =
     await readFile(new URL("../data/facility-sources.json", import.meta.url), "utf8"),
   );
   const registered = new Set(facilitySources.facilities.map((facility) => facility.name));
-  const facilityEvents = payload.events.filter((event) => event.facility);
+  const facilityEvents = payload.events.filter((event) => event.facilities);
 
   assert.ok(facilityEvents.length > 0, "expected at least one facility event");
 
   for (const event of facilityEvents) {
-    assert.ok(
-      registered.has(event.facility.name),
-      `${event.id} references an unregistered facility: ${event.facility.name}`,
-    );
+    assert.ok(event.facilities.length > 0, `${event.id} has an empty facilities array`);
+    for (const facility of event.facilities) {
+      assert.ok(
+        registered.has(facility.name),
+        `${event.id} references an unregistered facility: ${facility.name}`,
+      );
+    }
     // The tag drives the on-site filter, so it must not drift from the field.
     assert.ok(event.tags.includes("商業施設"), `${event.id} is missing the 商業施設 tag`);
   }
@@ -355,8 +358,9 @@ test("commercial-facility events stay tied to the facility registry", async () =
   // The reverse direction too: no event may claim the tag without the record.
   for (const event of payload.events) {
     if (event.tags.includes("商業施設")) {
-      assert.ok(event.facility, `${event.id} is tagged 商業施設 but has no facility`);
+      assert.ok(event.facilities, `${event.id} is tagged 商業施設 but has no facilities`);
     }
+    assert.equal(event.facility, undefined, `${event.id} still uses the old facility field`);
   }
 
   // Held-back candidates must carry a reason, so exclusions stay auditable.

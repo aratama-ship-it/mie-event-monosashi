@@ -54,8 +54,11 @@ type EventItem = {
    * Leave unset to let the wording decide.
    */
   childFit?: ChildFitId;
-  /** Present when the event is held inside a commercial facility. */
-  facility?: { name: string; type: string };
+  /**
+   * Present when the event is held inside commercial facilities. An array because
+   * a chain-wide campaign runs at several malls at once and is one record.
+   */
+  facilities?: { name: string; type: string }[];
   status: "published";
   source: {
     kind: "primary";
@@ -241,7 +244,7 @@ function matchesNeed(event: EventItem, need: string) {
     return new Set<ChildFitId>(["for-children", "allowed"]).has(assessChildFit(event).id);
   }
   if (need === "商業施設") {
-    return Boolean(event.facility);
+    return Boolean(event.facilities?.length);
   }
   return `${event.tags.join(" ")} ${event.cost} ${event.audience}`.includes(need);
 }

@@ -171,11 +171,13 @@
     {
       "region": "北勢",
       "municipality": "桑名市",
+      "facilities": [
+        {
+          "name": "イオンモール桑名",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール桑名",
-        "type": "mall"
-      },
       "id": "kuwana-banksy-print-2026",
       "startDate": "2026-07-17",
       "endDate": "2026-07-27",
@@ -299,11 +301,13 @@
     {
       "region": "北勢",
       "municipality": "四日市市",
+      "facilities": [
+        {
+          "name": "イオンモール四日市北",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール四日市北",
-        "type": "mall"
-      },
       "id": "yokkaichikita-dental-poster-2026",
       "startDate": "2026-07-22",
       "endDate": "2026-07-30",
@@ -605,11 +609,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-bisshabisha-pool-2026",
       "startDate": "2026-07-25",
       "endDate": "2026-08-16",
@@ -655,11 +661,13 @@
     {
       "region": "伊勢志摩",
       "municipality": "明和町",
+      "facilities": [
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール明和",
-        "type": "mall"
-      },
       "id": "meiwa-manten-yoichi-2026",
       "startDate": "2026-07-25",
       "endDate": "2026-07-25",
@@ -690,11 +698,13 @@
     {
       "region": "中勢",
       "municipality": "津市",
+      "facilities": [
+        {
+          "name": "イオンモール津南",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール津南",
-        "type": "mall"
-      },
       "id": "tsuminami-tsu-hanabi-rooftop-2026",
       "startDate": "2026-07-25",
       "endDate": "2026-07-25",
@@ -725,11 +735,13 @@
     {
       "region": "中勢",
       "municipality": "津市",
+      "facilities": [
+        {
+          "name": "イオンモール津南",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール津南",
-        "type": "mall"
-      },
       "id": "tsuminami-world-insect-kingdom-2026",
       "startDate": "2026-07-25",
       "endDate": "2026-08-02",
@@ -820,11 +832,13 @@
     {
       "region": "伊勢志摩",
       "municipality": "明和町",
+      "facilities": [
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール明和",
-        "type": "mall"
-      },
       "id": "meiwa-poipoi-battler-2026",
       "startDate": "2026-07-26",
       "endDate": "2026-08-15",
@@ -858,11 +872,13 @@
     {
       "region": "伊勢志摩",
       "municipality": "明和町",
+      "facilities": [
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール明和",
-        "type": "mall"
-      },
       "id": "meiwa-classic-live-2026",
       "startDate": "2026-07-26",
       "endDate": "2026-07-26",
@@ -891,11 +907,13 @@
     {
       "region": "北勢",
       "municipality": "四日市市",
+      "facilities": [
+        {
+          "name": "イオンモール四日市北",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール四日市北",
-        "type": "mall"
-      },
       "id": "yokkaichikita-dino-water-shooting-2026",
       "startDate": "2026-07-26",
       "endDate": "2026-07-26",
@@ -925,11 +943,13 @@
     {
       "region": "北勢",
       "municipality": "桑名市",
+      "facilities": [
+        {
+          "name": "イオンモール桑名",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール桑名",
-        "type": "mall"
-      },
       "id": "kuwana-gel-candle-2026",
       "startDate": "2026-07-26",
       "endDate": "2026-07-26",
@@ -960,11 +980,13 @@
     {
       "region": "北勢",
       "municipality": "桑名市",
+      "facilities": [
+        {
+          "name": "イオンモール桑名",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール桑名",
-        "type": "mall"
-      },
       "id": "kuwana-studio-xiana-2026",
       "startDate": "2026-07-26",
       "endDate": "2026-07-26",
@@ -993,11 +1015,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-ikimono-chosatai-2026-07",
       "startDate": "2026-07-26",
       "endDate": "2026-07-26",
@@ -1066,11 +1090,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-hai-hai-contest-2026-07",
       "startDate": "2026-07-27",
       "endDate": "2026-07-27",
@@ -1319,11 +1345,13 @@
     {
       "region": "北勢",
       "municipality": "桑名市",
+      "facilities": [
+        {
+          "name": "イオンモール桑名",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール桑名",
-        "type": "mall"
-      },
       "id": "kuwana-illustrators-fes-2026",
       "startDate": "2026-07-31",
       "endDate": "2026-08-03",
@@ -1350,31 +1378,54 @@
       }
     },
     {
-      "id": "toin-pokemon-shinka-rally-2026",
+      "id": "aeonmall-pokemon-shinka-rally-2026",
       "startDate": "2026-07-31",
       "endDate": "2026-08-23",
       "dateNote": "期間中",
       "time": "時間は公式情報で確認",
-      "region": "北勢",
-      "municipality": "東員町",
+      "region": "北勢・中勢・伊勢志摩",
+      "municipality": "県内6施設",
       "category": "交流",
       "title": "ポケモンしんかラリー",
-      "venue": "イオンモール東員 2階インフォメーション（スタート地点）",
+      "venue": "イオンモール東員・鈴鹿・津南・四日市北・桑名・明和（スタート地点は施設ごと）",
       "cost": "参加費の記載なし（参加にスマートフォンが必要）",
       "audience": "公式に対象の記載なし",
-      "summary": "相棒のポケモンを選び、館内6か所をまわってデジタルスタンプを集める企画。最後まで進化させるとイオンモール限定の壁紙がもらえます。参加にはスマートフォンが必要です。",
+      "summary": "県内のイオンモール6施設で同時開催。相棒のポケモンを選び、館内6か所をまわってデジタルスタンプを集めます。最後まで進化させるとイオンモール限定の壁紙がもらえます。参加にはスマートフォンが必要です。スタート地点は施設ごとに異なります。",
       "tags": [
         "屋内",
         "商業施設",
         "ラリー",
         "スマホ必要",
-        "申込不要"
+        "申込不要",
+        "複数施設"
+      ],
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        },
+        {
+          "name": "イオンモール鈴鹿",
+          "type": "mall"
+        },
+        {
+          "name": "イオンモール津南",
+          "type": "mall"
+        },
+        {
+          "name": "イオンモール四日市北",
+          "type": "mall"
+        },
+        {
+          "name": "イオンモール桑名",
+          "type": "mall"
+        },
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
       ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "source": {
         "kind": "primary",
         "label": "イオンモール東員",
@@ -1623,6 +1674,12 @@
         "子ども",
         "商業施設"
       ],
+      "facilities": [
+        {
+          "name": "イオンモール鈴鹿",
+          "type": "mall"
+        }
+      ],
       "status": "published",
       "source": {
         "kind": "primary",
@@ -1630,20 +1687,18 @@
         "url": "https://suzuka.aeonmall.jp/event/f697859c-22fd-4b0a-9eb3-8e5694dee750",
         "verifiedAt": "2026-07-24",
         "nextCheckAt": "2026-07-31"
-      },
-      "facility": {
-        "name": "イオンモール鈴鹿",
-        "type": "mall"
       }
     },
     {
       "region": "伊勢志摩",
       "municipality": "明和町",
+      "facilities": [
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール明和",
-        "type": "mall"
-      },
       "id": "meiwa-dino-water-shooting-2026",
       "startDate": "2026-08-01",
       "endDate": "2026-08-01",
@@ -1674,11 +1729,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-mini-smartball-2026",
       "startDate": "2026-08-01",
       "endDate": "2026-08-29",
@@ -2001,11 +2058,13 @@
     {
       "region": "伊勢志摩",
       "municipality": "明和町",
+      "facilities": [
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール明和",
-        "type": "mall"
-      },
       "id": "meiwa-temochi-hanabi-2026",
       "startDate": "2026-08-02",
       "endDate": "2026-08-09",
@@ -2040,11 +2099,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-mini-shateki-2026",
       "startDate": "2026-08-02",
       "endDate": "2026-08-30",
@@ -2116,11 +2177,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-seiha-english-play-2026-08",
       "startDate": "2026-08-04",
       "endDate": "2026-08-04",
@@ -2151,11 +2214,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-koke-terrarium-2026-08",
       "startDate": "2026-08-04",
       "endDate": "2026-08-17",
@@ -2321,11 +2386,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-kumiko-coaster-2026-08",
       "startDate": "2026-08-07",
       "endDate": "2026-08-11",
@@ -2484,11 +2551,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-obakenu-2026",
       "startDate": "2026-08-08",
       "endDate": "2026-08-09",
@@ -2518,11 +2587,13 @@
     {
       "region": "伊勢志摩",
       "municipality": "明和町",
+      "facilities": [
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール明和",
-        "type": "mall"
-      },
       "id": "meiwa-obon-odori-2026",
       "startDate": "2026-08-08",
       "endDate": "2026-08-08",
@@ -2553,11 +2624,13 @@
     {
       "region": "伊勢志摩",
       "municipality": "明和町",
+      "facilities": [
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール明和",
-        "type": "mall"
-      },
       "id": "meiwa-ikimono-dojo-2026",
       "startDate": "2026-08-08",
       "endDate": "2026-08-09",
@@ -2588,11 +2661,13 @@
     {
       "region": "北勢",
       "municipality": "四日市市",
+      "facilities": [
+        {
+          "name": "イオンモール四日市北",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール四日市北",
-        "type": "mall"
-      },
       "id": "yokkaichikita-furima-2026-08",
       "startDate": "2026-08-08",
       "endDate": "2026-08-09",
@@ -2621,11 +2696,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-tsunaichi-2026",
       "startDate": "2026-08-08",
       "endDate": "2026-08-09",
@@ -2840,11 +2917,13 @@
     {
       "region": "北勢",
       "municipality": "四日市市",
+      "facilities": [
+        {
+          "name": "イオンモール四日市北",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール四日市北",
-        "type": "mall"
-      },
       "id": "yokkaichikita-kenketsu-2026-08",
       "startDate": "2026-08-09",
       "endDate": "2026-08-09",
@@ -2874,11 +2953,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-okuda-yuderon-2026",
       "startDate": "2026-08-09",
       "endDate": "2026-08-09",
@@ -2909,11 +2990,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-musasabi-2026",
       "startDate": "2026-08-09",
       "endDate": "2026-08-31",
@@ -2947,11 +3030,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-slime-park-2026",
       "startDate": "2026-08-10",
       "endDate": "2026-08-10",
@@ -2982,11 +3067,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-hinoki-chopsticks-2026-08",
       "startDate": "2026-08-10",
       "endDate": "2026-08-15",
@@ -3021,11 +3108,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-uv-gel-2026",
       "startDate": "2026-08-10",
       "endDate": "2026-08-10",
@@ -3116,11 +3205,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-nagashi-somen-stand-2026",
       "startDate": "2026-08-11",
       "endDate": "2026-08-11",
@@ -3151,11 +3242,13 @@
     {
       "region": "伊勢志摩",
       "municipality": "明和町",
+      "facilities": [
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール明和",
-        "type": "mall"
-      },
       "id": "meiwa-sweets-deco-parfait-2026",
       "startDate": "2026-08-11",
       "endDate": "2026-08-11",
@@ -3186,11 +3279,13 @@
     {
       "region": "北勢",
       "municipality": "四日市市",
+      "facilities": [
+        {
+          "name": "イオンモール四日市北",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール四日市北",
-        "type": "mall"
-      },
       "id": "yokkaichikita-hoshi-2026",
       "startDate": "2026-08-11",
       "endDate": "2026-08-11",
@@ -3222,11 +3317,13 @@
     {
       "region": "北勢",
       "municipality": "桑名市",
+      "facilities": [
+        {
+          "name": "イオンモール桑名",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール桑名",
-        "type": "mall"
-      },
       "id": "kuwana-calbee-oyatsu-2026",
       "startDate": "2026-08-11",
       "endDate": "2026-08-11",
@@ -3258,11 +3355,13 @@
     {
       "region": "北勢",
       "municipality": "鈴鹿市",
+      "facilities": [
+        {
+          "name": "イオンモール鈴鹿",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール鈴鹿",
-        "type": "mall"
-      },
       "id": "suzuka-honda-baseball-fan-2026",
       "startDate": "2026-08-11",
       "endDate": "2026-08-11",
@@ -3291,11 +3390,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-meiro-board-2026-08",
       "startDate": "2026-08-11",
       "endDate": "2026-08-11",
@@ -3390,11 +3491,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-planetarium-3d-2026",
       "startDate": "2026-08-12",
       "endDate": "2026-08-12",
@@ -3457,11 +3560,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-kids-survival-2026",
       "startDate": "2026-08-13",
       "endDate": "2026-08-13",
@@ -3493,11 +3598,13 @@
     {
       "region": "伊勢志摩",
       "municipality": "明和町",
+      "facilities": [
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール明和",
-        "type": "mall"
-      },
       "id": "meiwa-rilakkuma-photo-2026",
       "startDate": "2026-08-13",
       "endDate": "2026-08-14",
@@ -3528,11 +3635,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-weather-doctor-2026",
       "startDate": "2026-08-14",
       "endDate": "2026-08-14",
@@ -3563,11 +3672,13 @@
     {
       "region": "北勢",
       "municipality": "四日市市",
+      "facilities": [
+        {
+          "name": "イオンモール四日市北",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール四日市北",
-        "type": "mall"
-      },
       "id": "yokkaichikita-mini4wd-2026",
       "startDate": "2026-08-14",
       "endDate": "2026-08-14",
@@ -3717,11 +3828,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-perupins-live-2026",
       "startDate": "2026-08-15",
       "endDate": "2026-08-15",
@@ -3752,11 +3865,13 @@
     {
       "region": "北勢",
       "municipality": "桑名市",
+      "facilities": [
+        {
+          "name": "イオンモール桑名",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール桑名",
-        "type": "mall"
-      },
       "id": "kuwana-sweets-deco-house-2026",
       "startDate": "2026-08-15",
       "endDate": "2026-08-15",
@@ -3787,11 +3902,13 @@
     {
       "region": "北勢",
       "municipality": "桑名市",
+      "facilities": [
+        {
+          "name": "イオンモール桑名",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール桑名",
-        "type": "mall"
-      },
       "id": "kuwana-human-crane-2026",
       "startDate": "2026-08-15",
       "endDate": "2026-08-16",
@@ -3820,11 +3937,13 @@
     {
       "region": "中勢",
       "municipality": "津市",
+      "facilities": [
+        {
+          "name": "イオンモール津南",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール津南",
-        "type": "mall"
-      },
       "id": "tsuminami-genki-labo-2026",
       "startDate": "2026-08-15",
       "endDate": "2026-08-15",
@@ -3950,11 +4069,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-kuromi-stage-2026",
       "startDate": "2026-08-16",
       "endDate": "2026-08-16",
@@ -3985,11 +4106,13 @@
     {
       "region": "伊勢志摩",
       "municipality": "明和町",
+      "facilities": [
+        {
+          "name": "イオンモール明和",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール明和",
-        "type": "mall"
-      },
       "id": "meiwa-opanchu-usagi-2026",
       "startDate": "2026-08-16",
       "endDate": "2026-08-16",
@@ -4020,11 +4143,13 @@
     {
       "region": "北勢",
       "municipality": "四日市市",
+      "facilities": [
+        {
+          "name": "イオンモール四日市北",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール四日市北",
-        "type": "mall"
-      },
       "id": "yokkaichikita-yasai-shukaku-2026",
       "startDate": "2026-08-16",
       "endDate": "2026-08-16",
@@ -4054,11 +4179,13 @@
     {
       "region": "北勢",
       "municipality": "桑名市",
+      "facilities": [
+        {
+          "name": "イオンモール桑名",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール桑名",
-        "type": "mall"
-      },
       "id": "kuwana-diorama-box-2026",
       "startDate": "2026-08-16",
       "endDate": "2026-08-16",
@@ -4089,11 +4216,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-mushitori-adventure-2026",
       "startDate": "2026-08-16",
       "endDate": "2026-08-16",
@@ -4184,11 +4313,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-bonbon-bon-matsuri-2026",
       "startDate": "2026-08-18",
       "endDate": "2026-08-18",
@@ -4371,11 +4502,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-water-sabage-2026",
       "startDate": "2026-08-22",
       "endDate": "2026-08-23",
@@ -4406,11 +4539,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-mini-pool-2026",
       "startDate": "2026-08-22",
       "endDate": "2026-08-30",
@@ -4447,11 +4582,13 @@
     {
       "region": "北勢",
       "municipality": "桑名市",
+      "facilities": [
+        {
+          "name": "イオンモール桑名",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール桑名",
-        "type": "mall"
-      },
       "id": "kuwana-miso-kyoshitsu-2026",
       "startDate": "2026-08-22",
       "endDate": "2026-08-22",
@@ -4512,11 +4649,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-taiko-fishing-2026",
       "startDate": "2026-08-23",
       "endDate": "2026-08-23",
@@ -4545,11 +4684,13 @@
     {
       "region": "北勢",
       "municipality": "鈴鹿市",
+      "facilities": [
+        {
+          "name": "イオンモール鈴鹿",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール鈴鹿",
-        "type": "mall"
-      },
       "id": "suzuka-spogomi-2026",
       "startDate": "2026-08-23",
       "endDate": "2026-08-23",
@@ -4796,11 +4937,13 @@
     {
       "region": "北勢",
       "municipality": "東員町",
+      "facilities": [
+        {
+          "name": "イオンモール東員",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール東員",
-        "type": "mall"
-      },
       "id": "toin-tekken8-battle-2026",
       "startDate": "2026-08-30",
       "endDate": "2026-08-30",
@@ -4862,11 +5005,13 @@
     {
       "region": "北勢",
       "municipality": "鈴鹿市",
+      "facilities": [
+        {
+          "name": "イオンモール鈴鹿",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール鈴鹿",
-        "type": "mall"
-      },
       "id": "suzuka-pokemon-zukan-panel-2026",
       "startDate": "2026-09-05",
       "endDate": "2026-09-06",
@@ -4897,11 +5042,13 @@
     {
       "region": "北勢",
       "municipality": "鈴鹿市",
+      "facilities": [
+        {
+          "name": "イオンモール鈴鹿",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール鈴鹿",
-        "type": "mall"
-      },
       "id": "suzuka-bicycle-trial-motocross-2026",
       "startDate": "2026-09-06",
       "endDate": "2026-09-06",
@@ -4932,11 +5079,13 @@
     {
       "region": "中勢",
       "municipality": "津市",
+      "facilities": [
+        {
+          "name": "イオンモール津南",
+          "type": "mall"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "イオンモール津南",
-        "type": "mall"
-      },
       "id": "tsuminami-conan-escape-2026",
       "startDate": "2026-09-26",
       "endDate": "2026-09-27",
@@ -4966,11 +5115,13 @@
     {
       "region": "中勢",
       "municipality": "多気町",
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
       "status": "published",
-      "facility": {
-        "name": "VISON",
-        "type": "commercial_resort"
-      },
       "id": "vison-sansanichi-2026-10",
       "startDate": "2026-10-18",
       "endDate": "2026-10-18",
