@@ -1,18 +1,26 @@
 {
-  "updatedAt": "2026-07-25",
+  "updatedAt": "2026-07-26",
   "coverageArea": "三重県内の大型商業施設",
   "publishRule": "施設の公式イベントページを発見・確認の一次資料として使う。ただし公式カレンダーに載っているだけでは掲載しない。日付が限定され、その日に行く理由がある催しだけをevents.jsonへ移し、セール・ポイント・長期キャンペーン・常設サービス・テナント単独の店頭販促は掲載しない。判断に迷うものはpendingに残す。",
   "siteSystems": {
     "note": "イオンモールの公式サイトは2系統ある。新規施設を追加するときは、まずどちらの系統かを確認すること。推測でURLを書かない。",
     "aeonmall_jp": {
       "pattern": "https://<施設名>.aeonmall.jp/event",
-      "facilities": ["イオンモール東員", "イオンモール鈴鹿", "イオンモール津南"],
+      "facilities": [
+        "イオンモール東員",
+        "イオンモール鈴鹿",
+        "イオンモール津南"
+      ],
       "detailPages": "JSでレンダリングされ、静的HTMLには本文が入らない。1件ずつレンダリング可能な手段で読む必要がある。",
       "legacyDomain": "旧 <施設名>-aeonmall.com は301で移動する。リンクは移動後のURLで保存する。"
     },
     "aeon_jp_sc": {
       "pattern": "https://www.aeon.jp/sc/<施設名>/event/",
-      "facilities": ["イオンモール四日市北", "イオンモール桑名", "イオンモール明和"],
+      "facilities": [
+        "イオンモール四日市北",
+        "イオンモール桑名",
+        "イオンモール明和"
+      ],
       "dataEndpoint": "同ディレクトリの index.json に全件が入っている（Vue+axiosが読む）。display_event_date / display_event_time / display_event_place / body を含むため、1件ずつ詳細ページを開かずに確認できる。",
       "caution": "structured_start_date / structured_end_date は当てにならない。display_event_date と食い違う例が複数あるので、開催日は必ず display_event_date を正とする。桑名は structured 日付が全件空。"
     },
@@ -57,11 +65,6 @@
           "title": "【ソフトバンク】射的＆スーパーボールすくい",
           "dates": "2026-07-23–2026-07-27",
           "reason": "販促だが子どもが遊べる単日催しに該当しうる。詳細ページで料金・対象を未確認。"
-        },
-        {
-          "title": "ポケモンしんかラリー",
-          "dates": "2026-07-31–2026-08-23",
-          "reason": "24日間続くラリー型キャンペーン。長期キャンペーンとして除外する方針だが、子ども向けの実体があるため保留。"
         },
         {
           "title": "アートクラフトこはくの森",

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-25",
+  "updatedAt": "2026-07-26",
   "events": [
     {
       "id": "mie-art-rockefeller-flower-bird-prints-2026",
@@ -443,7 +443,8 @@
         "url": "https://www.isesengu.jp/okihiki.html",
         "verifiedAt": "2026-07-24",
         "nextCheckAt": "2026-07-25"
-      }
+      },
+      "childFit": "allowed"
     },
     {
       "id": "toba-nightly-fireworks-2026",
@@ -783,7 +784,8 @@
         "url": "https://www.isesengu.jp/okihiki.html",
         "verifiedAt": "2026-07-24",
         "nextCheckAt": "2026-07-26"
-      }
+      },
+      "childFit": "allowed"
     },
     {
       "id": "kabuto-no-mori-market-2026-07-26",
@@ -1348,6 +1350,40 @@
       }
     },
     {
+      "id": "toin-pokemon-shinka-rally-2026",
+      "startDate": "2026-07-31",
+      "endDate": "2026-08-23",
+      "dateNote": "期間中",
+      "time": "時間は公式情報で確認",
+      "region": "北勢",
+      "municipality": "東員町",
+      "category": "交流",
+      "title": "ポケモンしんかラリー",
+      "venue": "イオンモール東員 2階インフォメーション（スタート地点）",
+      "cost": "参加費の記載なし（参加にスマートフォンが必要）",
+      "audience": "公式に対象の記載なし",
+      "summary": "相棒のポケモンを選び、館内6か所をまわってデジタルスタンプを集める企画。最後まで進化させるとイオンモール限定の壁紙がもらえます。参加にはスマートフォンが必要です。",
+      "tags": [
+        "屋内",
+        "商業施設",
+        "ラリー",
+        "スマホ必要",
+        "申込不要"
+      ],
+      "status": "published",
+      "facility": {
+        "name": "イオンモール東員",
+        "type": "mall"
+      },
+      "source": {
+        "kind": "primary",
+        "label": "イオンモール東員",
+        "url": "https://toin.aeonmall.jp/event/99b5dd8b-39ab-40e2-bc42-09fa3ab96b7c",
+        "verifiedAt": "2026-07-26",
+        "nextCheckAt": "2026-08-09"
+      }
+    },
+    {
       "id": "ise-okihiki-kawabiki-shigo-2026",
       "startDate": "2026-08-01",
       "endDate": "2026-08-01",
@@ -1374,7 +1410,8 @@
         "url": "https://www.isesengu.jp/okihiki.html",
         "verifiedAt": "2026-07-24",
         "nextCheckAt": "2026-08-01"
-      }
+      },
+      "childFit": "allowed"
     },
     {
       "id": "hisai-hanabi-2026",
@@ -1558,8 +1595,8 @@
         "kind": "primary",
         "label": "いなべ市",
         "url": "https://www.city.inabe.mie.jp/shisetsu/bunkashisetsu/bunkashisetsu/1016090.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-24"
+        "verifiedAt": "2026-07-26",
+        "nextCheckAt": "2026-07-31"
       }
     },
     {
@@ -1706,7 +1743,8 @@
         "url": "https://www.isesengu.jp/okihiki.html",
         "verifiedAt": "2026-07-24",
         "nextCheckAt": "2026-08-02"
-      }
+      },
+      "childFit": "allowed"
     },
     {
       "id": "junior-orchestra-2026",
@@ -1771,7 +1809,8 @@
         "url": "https://www.library.city.tsu.mie.jp/news/%E6%B2%B3%E8%8A%B8%E5%9B%B3%E6%9B%B8%E9%A4%A8%EF%BC%9A%E5%A4%8F%E4%BC%91%E3%81%BF%E3%81%8A%E3%81%AF%E3%81%AA%E3%81%97%E4%BC%9A%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB/",
         "verifiedAt": "2026-07-23",
         "nextCheckAt": "2026-08-01"
-      }
+      },
+      "childFit": "for-children"
     },
     {
       "id": "yokkaichi-port-matsuri-2026",
@@ -2207,7 +2246,8 @@
         "url": "https://www.city.yokkaichi.lg.jp/www/contents/1782463906247/index.html",
         "verifiedAt": "2026-07-23",
         "nextCheckAt": "2026-07-28"
-      }
+      },
+      "childFit": "conditional"
     },
     {
       "id": "watarai-nursery-open-yard-2026",
@@ -2274,8 +2314,8 @@
         "kind": "primary",
         "label": "四日市市",
         "url": "https://www.city.yokkaichi.lg.jp/www/contents/1690163885588/index.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-24"
+        "verifiedAt": "2026-07-26",
+        "nextCheckAt": "2026-08-06"
       }
     },
     {
@@ -2639,7 +2679,8 @@
         "url": "https://www.maxa.jp/schedule/%E2%98%85%E5%90%89%E4%BE%8B%E3%83%9E%E3%82%AF%E3%82%B5%E5%A4%8F%E7%A5%AD%E3%82%8A%E2%98%85day-2-2/",
         "verifiedAt": "2026-07-23",
         "nextCheckAt": "2026-08-08"
-      }
+      },
+      "childFit": "allowed"
     },
     {
       "id": "yokkaichi-museum-backyard-tour-2026",
@@ -2827,7 +2868,8 @@
         "url": "https://www.aeon.jp/sc/yokkaichikita/event/event_e49024_as.html",
         "verifiedAt": "2026-07-25",
         "nextCheckAt": "2026-08-08"
-      }
+      },
+      "childFit": "not-for-children"
     },
     {
       "region": "中勢",
@@ -3310,7 +3352,8 @@
         "url": "https://www.city.kameyama.mie.jp/kosodate_yuyu/events/2026032300428/",
         "verifiedAt": "2026-07-23",
         "nextCheckAt": "2026-08-12"
-      }
+      },
+      "childFit": "allowed"
     },
     {
       "id": "ise-culture-festival-pvc-shakuhachi-2026",
@@ -3838,7 +3881,8 @@
         "url": "https://www.info.city.tsu.mie.jp/kurashi/1002199/1002200/1013257.html",
         "verifiedAt": "2026-07-23",
         "nextCheckAt": "2026-08-15"
-      }
+      },
+      "childFit": "allowed"
     },
     {
       "id": "matsusaka-denjiro-2026",
@@ -4623,8 +4667,8 @@
         "kind": "primary",
         "label": "川越町",
         "url": "https://www.town.kawagoe.mie.jp/bunka_sports_event/1002592/1004260.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-24"
+        "verifiedAt": "2026-07-26",
+        "nextCheckAt": "2026-08-27"
       }
     },
     {
@@ -4715,7 +4759,8 @@
         "url": "https://sun-arena.or.jp/wp/wp-content/uploads/202608_omote_v4.pdf",
         "verifiedAt": "2026-07-24",
         "nextCheckAt": "2026-08-28"
-      }
+      },
+      "childFit": "allowed"
     },
     {
       "id": "kihoku-kodo-2026",
