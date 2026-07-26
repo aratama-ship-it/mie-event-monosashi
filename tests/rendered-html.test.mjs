@@ -167,6 +167,17 @@ test("server-renders the Mie event finder and records without collection-method 
 
   const cardFor = (title) => eventCards.find((card) => card.includes(escapeHtml(title))) ?? "";
 
+  // A restriction in the official 対象 must never come out as 子ども向け. Both of
+  // these did, because an editorial tag on the record outvoted the 対象 text.
+  for (const event of liveEvents) {
+    if (!/入場不可|参加不可/.test(event.audience)) continue;
+    assert.doesNotMatch(
+      cardFor(event.title),
+      /data-child-fit="for-children"/,
+      `${event.id} restricts children in 対象 ("${event.audience}") but is labelled 子ども向け`,
+    );
+  }
+
   // A record that pins its child rating must win over the wording of `audience`.
   for (const event of liveEvents.filter((item) => item.childFit)) {
     assert.match(

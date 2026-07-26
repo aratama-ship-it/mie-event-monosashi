@@ -175,18 +175,23 @@ function assessChildFit(event: EventItem): ChildFit {
 }
 
 function inferChildFit(event: EventItem): ChildFit {
-  const positiveTags = event.tags.filter((tag) => !/不可|確認/.test(tag)).join(" ");
   const positiveAudience = event.audience
     .replace(/未就学児[^・／]*不可/g, "")
     .replace(/3歳未満[^・／]*不可/g, "")
     .replace(/子どものみ[^・／]*不可/g, "");
-  const text = `${positiveAudience} ${positiveTags}`;
   const sourceText = `${event.audience} ${event.tags.join(" ")}`;
-  // "お子さま" and "家族" are how commercial facilities almost always word their
-  // target, so leaving them out silently downgraded mall events to 「公式で要確認」.
+
+  // Only the official 対象 decides this, which is what the badge tells the reader
+  // it does. Our own tags used to count too, and they inverted the meaning twice:
+  // an orchestra whose 対象 is "3歳未満入場不可" was labelled 子ども向け because it
+  // carried a ファミリー tag, and a show whose 対象 is "子どものみの入場不可" was
+  // labelled the same way.
+  //
+  // Matched on stems rather than whole words — the official wording is "小学4〜6年生"
+  // and "0〜3歳の乳幼児" far more often than "小学生" or "子ども".
   const childTarget =
-    /子ども|子供|お子さま|親子|家族|ファミリー|児童館|小学生|中学生|未就学児|赤ちゃん|0歳から/.test(
-      text,
+    /子ども|子供|こども|お子さま|親子|家族|ファミリー|児童|小学|中学|幼児|乳児|赤ちゃん|未就学|0歳から/.test(
+      positiveAudience,
     );
 
   if (childTarget) return childFitScale[0];
