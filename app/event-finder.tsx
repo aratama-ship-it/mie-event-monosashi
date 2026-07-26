@@ -16,7 +16,7 @@ import {
 } from "@/lib/event-dates.mjs";
 import { sitePath } from "./site-path";
 
-type PresetId = "all" | "weekend" | "this-month" | "next-month";
+type PresetId = "all" | "weekend" | "this-month" | "next-month" | "later";
 type Category =
   | "すべて"
   | "祭り"
@@ -662,6 +662,7 @@ export default function EventFinder() {
             return (
               <article
                 className="event-card"
+                id={event.id}
                 key={event.id}
                 data-region={event.region}
                 data-category={event.category}
@@ -769,7 +770,10 @@ export default function EventFinder() {
       <footer>
         <div>
           <strong>みえのものさし</strong>
-          <p>これは企画検討用のモックです。掲載件数・機能・名称は未確定です。</p>
+          <p>
+            β版です。おかしな点や、事実と違う掲載を見つけたら教えてください。
+            各イベントのカードはURL末尾に <code>#イベントID</code> を付けて共有できます。
+          </p>
         </div>
         <p className="footer-policy">
           説明文や写真を転載せず、一次資料から確認した事実を独自に整理する設計です。

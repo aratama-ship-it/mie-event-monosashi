@@ -913,6 +913,9 @@ main {
 }
 
 .event-card {
+  /* Cards are linkable by id so a tester can point at an exact listing; keep the
+     heading clear of the top edge when one is jumped to. */
+  scroll-margin-top: 24px;
   background: rgba(255, 253, 247, 0.58);
   border-bottom: 1px solid var(--ink);
   display: grid;
@@ -1996,4 +1999,12 @@ footer p {
   html {
     scroll-behavior: auto;
   }
+}
+
+footer code {
+  background: var(--paper-deep);
+  border-radius: 3px;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.9em;
+  padding: 1px 5px;
 }

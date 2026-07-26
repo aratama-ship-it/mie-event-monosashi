@@ -24,7 +24,7 @@ export function generateMetadata(): Metadata {
     metadataBase: new URL(siteUrl),
     title: "みえのものさし｜三重県のイベントを参加条件で探す",
     description:
-      "日付、地域、料金、年齢、予約条件から、三重県のイベントを比べる企画検討用モック。",
+      "日付、地域、料金、年齢、予約条件から、三重県のイベントを比べる。掲載はすべて主催者・自治体などの一次資料で確認しています。",
     openGraph: {
       title: "みえのものさし",
       description: "今度の休み、どこまで行こう。三重県のイベントを参加条件で比べる。",
