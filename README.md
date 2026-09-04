@@ -19,7 +19,8 @@
 
 ## データ
 
-- `data/events.json`: 公開するイベント
+- `data/events.json`: 公開するイベント（終了日を過ぎたら `data/archive/` へ退避し、ここには残さない）
+- `data/archive/events-2026.json`: 終了したイベントの退避先。削除はせず記録として保持する
 - `data/discovery-sources.json`: 小規模イベントを発見・確認する巡回先
 - `data/municipal-sources.json`: 東紀州5市町の公式情報源
 - `data/facility-sources.json`: 大型商業施設の公式イベントページと、掲載判断を保留した候補

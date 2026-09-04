@@ -12,6 +12,19 @@ const payload = JSON.parse(
   await readFile(new URL("../data/events.json", import.meta.url), "utf8"),
 );
 
+/**
+ * Finished events move from data/events.json to data/archive/ so the live
+ * site never lists them (see README "データ"). Tests that exercise date-math
+ * helpers (recurring dates, closedWeekdays, display formatting) use known
+ * historical examples for that, not "what happens to be live today", so they
+ * read from the combined pool instead of the current-only payload.
+ */
+const archivePayload = JSON.parse(
+  await readFile(new URL("../data/archive/events-2026.json", import.meta.url), "utf8"),
+);
+const historicalEvents = [...payload.events, ...archivePayload.events];
+const historicalEvent = (id) => historicalEvents.find((item) => item.id === id);
+
 /** Same "today" the page uses, so expectations track the rendered output. */
 const todayIso = new Intl.DateTimeFormat("en-CA", {
   timeZone: "Asia/Tokyo",
@@ -239,7 +252,7 @@ test("all published records keep primary-source and sports-freshness fields", as
     assert.ok(allowedCategories.has(event.category), `unexpected category: ${event.category}`);
   }
   assert.deepEqual(
-    payload.events
+    historicalEvents
       .filter((event) => event.id.startsWith("ise-okihiki-kawabiki-"))
       .map((event) => event.startDate)
       .sort(),
@@ -260,7 +273,7 @@ test("all published records keep primary-source and sports-freshness fields", as
         "多気町",
         "川越町",
       ].filter((name) =>
-        payload.events.some((event) => event.municipality === name),
+        historicalEvents.some((event) => event.municipality === name),
       ),
     ),
     new Set([
@@ -292,9 +305,7 @@ test("all published records keep primary-source and sports-freshness fields", as
 });
 
 test("30-day calendar counts single, continuous, and recurring dates", async () => {
-  const raw = await readFile(new URL("../data/events.json", import.meta.url), "utf8");
-  const payload = JSON.parse(raw);
-  const event = (id) => payload.events.find((item) => item.id === id);
+  const event = historicalEvent;
 
   assert.equal(eventOccursOn(event("tsu-hanabi-2026"), "2026-07-25"), true);
   assert.equal(eventOccursOn(event("tsu-hanabi-2026"), "2026-07-26"), false);
@@ -385,7 +396,7 @@ test("commercial-facility events stay tied to the facility registry", async () =
 });
 
 test("date display is derived from the structured dates, not stored", async () => {
-  const event = (id) => payload.events.find((item) => item.id === id);
+  const event = historicalEvent;
 
   assert.deepEqual(formatEventDate(event("tsu-hanabi-2026")), { month: "7", day: "25" });
 
