@@ -121,6 +121,11 @@ main {
   margin-top: 2px;
 }
 
+.wordmark-sub .site-version {
+  margin-left: 6px;
+  opacity: 0.7;
+}
+
 .header-actions {
   align-items: center;
   display: flex;
@@ -1171,9 +1176,9 @@ main {
 
 .event-facts dt {
   color: var(--rust);
-  font-size: 9px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.1em;
   margin-bottom: 4px;
 }
 
@@ -1785,7 +1790,7 @@ footer p {
   }
 
   .event-kicker {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.5;
   }
 

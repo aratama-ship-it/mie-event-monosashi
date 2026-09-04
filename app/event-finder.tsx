@@ -258,6 +258,7 @@ export default function EventFinder() {
   const [query, setQuery] = useState("");
   const [saved, setSaved] = useState<string[]>([]);
   const [todayIso] = useState(() => isoDateInJapan());
+  const [siteVersion] = useState(() => `v${isoDateInJapan()}`);
   const tomorrowIso = addDays(todayIso, 1);
 
   // An event that finished yesterday is not something anyone can go to, so it
@@ -396,7 +397,7 @@ export default function EventFinder() {
           <span className="mie-silhouette" aria-hidden="true" />
           <span className="wordmark-copy">
             <span className="wordmark-main">みえのものさし</span>
-            <span className="wordmark-sub">EVENT FINDER / BETA</span>
+            <span className="wordmark-sub">EVENT FINDER / BETA <span className="site-version" aria-hidden="true">{siteVersion}</span></span>
           </span>
         </a>
         <div className="header-actions">
