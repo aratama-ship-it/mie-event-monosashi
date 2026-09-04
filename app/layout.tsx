@@ -23,6 +23,10 @@ export function generateMetadata(): Metadata {
   return {
     metadataBase: new URL(siteUrl),
     title: "みえのものさし｜三重県のイベントを参加条件で探す",
+    icons: {
+      icon: sitePath("/favicon.svg"),
+      apple: sitePath("/apple-touch-icon.png"),
+    },
     description:
       "日付、地域、料金、年齢、予約条件から、三重県のイベントを比べる。掲載はすべて主催者・自治体などの一次資料で確認しています。",
     openGraph: {
