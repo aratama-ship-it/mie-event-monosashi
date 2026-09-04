@@ -111,7 +111,7 @@ test("server-renders the Mie event finder and records without collection-method 
 
   for (const event of liveEvents) {
     assert.ok(
-      html.includes(escapeHtml(event.title)),
+      html.includes(`id="${event.id}"`),
       `a current event is missing from the listing: ${event.title}`,
     );
   }
@@ -119,7 +119,7 @@ test("server-renders the Mie event finder and records without collection-method 
   // An event that has finished must not be offered to anyone.
   for (const event of endedEvents) {
     assert.ok(
-      !html.includes(escapeHtml(event.title)),
+      !html.includes(`id="${event.id}"`),
       `a finished event is still listed: ${event.title} (ended ${event.endDate})`,
     );
   }

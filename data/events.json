@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-02",
- "events": [
+  "updatedAt": "2026-08-20",
+  "events": [
     {
       "id": "ise-garden-living-restaurant-sep-2026",
       "startDate": "2026-09-13",
@@ -1666,8 +1666,8 @@
         "kind": "primary",
         "label": "斎宮歴史博物館・三重県",
         "url": "https://www.pref.mie.lg.jp/EVENTS/evt0008500027.htm",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-27"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-22"
       }
     },
     {
@@ -1698,8 +1698,8 @@
         "kind": "primary",
         "label": "志摩スペイン村",
         "url": "https://www.parque-net.com/special/summer2026/",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-08-01"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
       }
     },
     {
@@ -1731,8 +1731,8 @@
         "kind": "primary",
         "label": "伊賀市",
         "url": "https://www.city.iga.lg.jp/0000014166.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-08"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
       }
     },
     {
@@ -1765,8 +1765,8 @@
         "kind": "primary",
         "label": "三重県総合博物館 MieMu",
         "url": "https://www.bunka.pref.mie.lg.jp/MieMu/p0031300136.htm",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-08"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
       }
     },
     {
@@ -1832,8 +1832,8 @@
         "kind": "primary",
         "label": "鈴鹿市考古博物館",
         "url": "https://www.city.suzuka.lg.jp/kouko/information/1016374/1017124.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-31"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-22"
       }
     },
     {
@@ -1863,8 +1863,8 @@
         "kind": "primary",
         "label": "鳥羽水族館",
         "url": "https://aquarium.co.jp/event/jurassic-aqarium2026/",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-08-01"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
       }
     },
     {
@@ -1894,9 +1894,9 @@
       "source": {
         "kind": "primary",
         "label": "松阪農業公園ベルファーム",
-        "url": "https://www.bellfarm.jp/event/3636/",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-08-12"
+        "url": "https://www.bellfarm.jp/event/10393/",
+        "verifiedAt": "2026-08-20",
+        "nextCheckAt": "2026-08-27"
       }
     },
     {
@@ -2203,8 +2203,8 @@
         "kind": "primary",
         "label": "いなべ市",
         "url": "https://www.city.inabe.mie.jp/shisetsu/bunkashisetsu/bunkashisetsu/1013091.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-09-26"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
       }
     },
     {
@@ -2668,7 +2668,7 @@
       "category": "交流",
       "title": "みんなで食堂（夏休み子ども食堂）",
       "venue": "木曽岬町立ふれあいの里",
-      "cost": "料金は申込時に確認",
+      "cost": "参加費無料",
       "audience": "木曽岬町在住の小学生・中学生、各回50食",
       "summary": "夏休みの月曜日に開かれる町の子ども食堂。7月27日と8月3日・17日・24日・31日に、地域の子どもが一緒に昼食を囲みます。",
       "tags": [
@@ -2684,8 +2684,8 @@
         "kind": "primary",
         "label": "木曽岬町",
         "url": "https://www.town.kisosaki.lg.jp/0000003139.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-24"
+        "verifiedAt": "2026-08-20",
+        "nextCheckAt": "2026-08-24"
       }
     },
     {
@@ -2906,10 +2906,10 @@
       "status": "published",
       "source": {
         "kind": "primary",
-        "label": "パラミタミュージアム",
-        "url": "https://paramitamuseum.com/plan/next_exhibition.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-30"
+        "label": "パラミタミュージアム 公式展覧会スケジュール",
+        "url": "https://paramitamuseum.com/plan/schedule.html",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
       }
     },
     {
@@ -3031,8 +3031,8 @@
         "kind": "primary",
         "label": "イオンモール東員",
         "url": "https://toin.aeonmall.jp/event/99b5dd8b-39ab-40e2-bc42-09fa3ab96b7c",
-        "verifiedAt": "2026-07-26",
-        "nextCheckAt": "2026-08-09"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-22"
       }
     },
     {
@@ -3216,42 +3216,6 @@
       }
     },
     {
-      "id": "inabe-indigo-dye-workshop-2026",
-      "startDate": "2026-08-01",
-      "endDate": "2026-08-30",
-      "dates": [
-        "2026-08-01",
-        "2026-08-02",
-        "2026-08-30"
-      ],
-      "dateNote": "土・日",
-      "time": "13:00–15:00（一部10:00–11:30）",
-      "region": "北勢",
-      "municipality": "いなべ市",
-      "category": "学び",
-      "title": "夏の体験教室「藍の生葉で染めよう」",
-      "venue": "いなべ市郷土資料館",
-      "cost": "1,000円（1人）",
-      "audience": "どなたでも・各回15人（小学3年生以下は保護者同伴）",
-      "summary": "資料館で育てた藍の葉を使い、布を染めてオリジナル作品を作る体験教室。実施回ごとの空き状況を公式ページで確認してください。",
-      "tags": [
-        "藍染め",
-        "ものづくり",
-        "各回15人",
-        "要申込",
-        "予約状況確認",
-        "子ども"
-      ],
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "いなべ市",
-        "url": "https://www.city.inabe.mie.jp/shisetsu/bunkashisetsu/bunkashisetsu/1016090.html",
-        "verifiedAt": "2026-07-26",
-        "nextCheckAt": "2026-07-31"
-      }
-    },
-    {
       "id": "suzuka-monozukuri-fair-2026",
       "startDate": "2026-08-01",
       "endDate": "2026-08-02",
@@ -3370,8 +3334,8 @@
         "kind": "primary",
         "label": "VISON",
         "url": "https://vison.jp/eventcalendar/detail.php?id=1245",
-        "verifiedAt": "2026-07-25",
-        "nextCheckAt": "2026-07-31"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-20"
       }
     },
     {
@@ -3465,8 +3429,8 @@
         "kind": "primary",
         "label": "津市図書館",
         "url": "https://www.library.city.tsu.mie.jp/news/%E6%B2%B3%E8%8A%B8%E5%9B%B3%E6%9B%B8%E9%A4%A8%EF%BC%9A%E5%A4%8F%E4%BC%91%E3%81%BF%E3%81%8A%E3%81%AF%E3%81%AA%E3%81%97%E4%BC%9A%E3%82%B9%E3%83%9A%E3%82%B7%E3%83%A3%E3%83%AB/",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-01"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-22"
       },
       "childFit": "for-children"
     },
@@ -3739,8 +3703,8 @@
         "kind": "primary",
         "label": "VISON",
         "url": "https://vison.jp/eventcalendar/detail.php?id=1240",
-        "verifiedAt": "2026-07-25",
-        "nextCheckAt": "2026-08-01"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-20"
       }
     },
     {
@@ -3947,8 +3911,8 @@
         "kind": "primary",
         "label": "度会町",
         "url": "https://www.town.watarai.lg.jp/contents_detail.php?co=new&frmId=3735",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-06"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-20"
       }
     },
     {
@@ -4112,8 +4076,8 @@
         "kind": "primary",
         "label": "三重県立美術館",
         "url": "https://www.bunka.pref.mie.lg.jp/art-museum/54798037874.htm",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-07"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
       }
     },
     {
@@ -4624,8 +4588,8 @@
         "kind": "primary",
         "label": "VISON",
         "url": "https://vison.jp/eventcalendar/detail.php?id=1247",
-        "verifiedAt": "2026-07-25",
-        "nextCheckAt": "2026-08-08"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
       }
     },
     {
@@ -5978,35 +5942,6 @@
       }
     },
     {
-      "id": "miemu-horn-workshop-2026",
-      "startDate": "2026-08-22",
-      "endDate": "2026-08-22",
-      "dateNote": "土",
-      "time": "13:30–14:30",
-      "region": "中勢",
-      "municipality": "津市",
-      "category": "学び",
-      "title": "ワークショップ「どんな形？角をくらべてみよう」",
-      "venue": "三重県総合博物館 MieMu",
-      "cost": "参加無料・企画展観覧券が必要",
-      "audience": "小学生以上",
-      "summary": "哺乳類の角を観察して違いを考える少人数ワークショップ。応募多数の場合は抽選です。",
-      "tags": [
-        "屋内",
-        "申込必要",
-        "小学生以上",
-        "学び"
-      ],
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "三重県総合博物館",
-        "url": "https://www.bunka.pref.mie.lg.jp/MieMu/84927046739.htm",
-        "verifiedAt": "2026-07-22",
-        "nextCheckAt": "2026-08-01"
-      }
-    },
-    {
       "id": "misato-water-play-2026",
       "startDate": "2026-08-22",
       "endDate": "2026-08-22",
@@ -6096,8 +6031,8 @@
         "kind": "primary",
         "label": "伊勢市",
         "url": "https://www.city.ise.mie.jp/cul_spo_edu/culture/gyouji/isecole/geijutsusai/1002093.html",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-08-15"
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-21"
       }
     },
     {
@@ -6321,37 +6256,6 @@
       "childFit": "conditional"
     },
     {
-      "id": "iga-science-lab-2026",
-      "startDate": "2026-08-25",
-      "endDate": "2026-08-25",
-      "dateNote": "火",
-      "time": "10:00–12:00",
-      "region": "伊賀",
-      "municipality": "伊賀市",
-      "category": "学び",
-      "title": "第33回こども大学 Science Lab",
-      "venue": "ゆめテクノ伊賀3階 テクノホール",
-      "cost": "1,000円（材料費・保険料）",
-      "audience": "小学4〜6年生・定員20人（応募多数時抽選）",
-      "summary": "夏休みに科学の実験へ取り組む、小学生向けの少人数講座。7月31日17時15分が申込締切です。",
-      "tags": [
-        "科学",
-        "実験",
-        "定員20人",
-        "要申込",
-        "締切7月31日",
-        "小学生"
-      ],
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "伊賀市文化都市協会",
-        "url": "https://www.bunto.com/?p=28730",
-        "verifiedAt": "2026-07-23",
-        "nextCheckAt": "2026-07-31"
-      }
-    },
-    {
       "id": "kisosaki-balance-ball-2026",
       "startDate": "2026-08-25",
       "endDate": "2026-08-25",
@@ -6572,38 +6476,6 @@
       }
     },
     {
-      "id": "kiho-koitabi-vol7-2026",
-      "startDate": "2026-09-05",
-      "endDate": "2026-09-06",
-      "dateNote": "土・日",
-      "time": "5日15:00–6日12:00（1泊2日）",
-      "region": "東紀州",
-      "municipality": "紀宝町",
-      "category": "交流",
-      "title": "恋旅in紀宝 vol.7",
-      "venue": "飛雪の滝キャンプ場",
-      "cost": "7,000円（宿泊・一部食事・体験・交通費を含む）",
-      "audience": "25〜39歳の独身男女・町外参加可（男女各15人程度）",
-      "summary": "1対1トーク、交流、BBQ、希望者向けテントサウナなどを組み合わせた1泊の婚活イベント。申込期限は7月31日です。",
-      "tags": [
-        "大人向け",
-        "1泊2日",
-        "婚活",
-        "抽選",
-        "要申込",
-        "締切7月31日",
-        "町外参加可"
-      ],
-      "status": "published",
-      "source": {
-        "kind": "primary",
-        "label": "紀宝町",
-        "url": "https://www.town.kiho.lg.jp/news/51199/",
-        "verifiedAt": "2026-07-24",
-        "nextCheckAt": "2026-07-30"
-      }
-    },
-    {
       "region": "北勢",
       "municipality": "鈴鹿市",
       "facilities": [
@@ -6747,6 +6619,371 @@
         "url": "https://vison.jp/eventcalendar/detail.php?id=1065",
         "verifiedAt": "2026-07-25",
         "nextCheckAt": "2026-10-11"
+      }
+    },
+    {
+      "id": "inabe-meshele-haru-movie-2026",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
+      "dateNote": "土",
+      "time": "13:30上映（13:00開場、16:00まで）",
+      "region": "北勢",
+      "municipality": "いなべ市",
+      "category": "舞台",
+      "title": "「愛、そして絆」のメシェレ映画館2026 第2幕「春との旅」",
+      "venue": "北勢市民会館",
+      "cost": "無料、入場券不要",
+      "audience": "一般。全作品字幕付き",
+      "summary": "満席時は入場不可。暴風警報発令時は中止。",
+      "tags": [
+        "映画・特別上映"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "いなべ市",
+        "url": "https://www.city.inabe.mie.jp/kurashi/jinken/jinken/1014911.html",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-21"
+      }
+    },
+    {
+      "id": "saiku-museum-lecture-world-heritage-aug-2026",
+      "startDate": "2026-08-22",
+      "endDate": "2026-08-22",
+      "dateNote": "土",
+      "time": "13:30～14:30",
+      "region": "伊勢志摩",
+      "municipality": "明和町",
+      "category": "学び",
+      "title": "さいくうミュージアム講座「斎宮跡と世界遺産」",
+      "venue": "斎宮歴史博物館 講堂",
+      "cost": "無料",
+      "audience": "一般・歴史に関心のある人",
+      "summary": "世界遺産制度の考え方を通して斎宮跡の価値を考える学芸員講座。事前申込不要。",
+      "tags": [
+        "講演・歴史",
+        "講座"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "斎宮歴史博物館",
+        "url": "https://www.bunka.pref.mie.lg.jp/saiku/50305036131.htm",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-21"
+      }
+    },
+    {
+      "id": "kuwana-new-sports-festival-2026",
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-23",
+      "dateNote": "日",
+      "time": "9:30～12:30（終了予定）",
+      "region": "北勢",
+      "municipality": "桑名市",
+      "category": "スポーツ",
+      "title": "ニュースポーツフェスティバル",
+      "venue": "ヤマモリ体育館",
+      "cost": "無料",
+      "audience": "どなたでも",
+      "summary": "モルック、リズムジャンプなどを体験。事前申込・定員なし。体育館シューズと飲み物を持参。",
+      "tags": [
+        "スポーツ",
+        "体験",
+        "日程変更注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "桑名市",
+        "url": "https://www.city.kuwana.lg.jp/sports/fesu.html",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-22"
+      }
+    },
+    {
+      "id": "miemu-specimen-identification-day-2026",
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-23",
+      "dateNote": "日",
+      "time": "10:00～12:00、13:00～15:00",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "学び",
+      "title": "標本の名前を調べてみよう（令和8年度同定会）",
+      "venue": "三重県総合博物館 2階交流展示室",
+      "cost": "無料",
+      "audience": "年齢・人数制限なし",
+      "summary": "化石、岩石・鉱物、昆虫、貝類、脊椎動物、植物の実物標本を専門家と同定。申込不要。写真ではなく実物を持参。最終受付14:45。",
+      "tags": [
+        "博物館",
+        "化石",
+        "動物標本",
+        "子ども"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "三重県総合博物館",
+        "url": "https://www.bunka.pref.mie.lg.jp/MieMu/m0062500495.htm",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-22"
+      }
+    },
+    {
+      "id": "miemu-war-and-mie-exhibit-2026",
+      "startDate": "2026-07-18",
+      "endDate": "2026-08-23",
+      "closedWeekdays": [
+        1
+      ],
+      "dateNote": "月曜休館",
+      "time": "9:00～17:00（入館16:30まで）",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "展覧会",
+      "title": "三重の実物図鑑 特集展示「戦争と三重」",
+      "venue": "三重県総合博物館 3階 三重の実物図鑑人文コーナー",
+      "cost": "無料",
+      "audience": "どなたでも",
+      "summary": "戦時下のスローガンや軍隊を意識したデザインが使われた生活資料約25件から、当時の暮らしと平和について考える特集展示です。",
+      "tags": [
+        "博物館",
+        "戦争資料",
+        "歴史",
+        "無料",
+        "屋内"
+      ],
+      "status": "published",
+      "childFit": "allowed",
+      "source": {
+        "kind": "primary",
+        "label": "三重県総合博物館 MieMu",
+        "url": "https://www.bunka.pref.mie.lg.jp/MieMu/m0062500493.htm",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-22"
+      }
+    },
+    {
+      "id": "tsu-ars-kids-workshop-festival-2026",
+      "startDate": "2026-08-23",
+      "endDate": "2026-08-23",
+      "dateNote": "日",
+      "time": "10:00～15:00",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "学び",
+      "title": "アルスワークショップフェスティバル「夏休み！こども広場2026」",
+      "venue": "津市久居アルスプラザ",
+      "cost": "入場無料／一部体験・販売は有料",
+      "audience": "子どもと家族。小学2年生以下は保護者同伴（体験ごとに条件あり）",
+      "summary": "謎解き、読み聞かせ、ボードゲーム、工作、海の生き物体験などを館内で実施。予約不要の無料体験と当日整理券の企画があります。",
+      "tags": [
+        "子ども",
+        "ワークショップ",
+        "入場無料",
+        "当日参加",
+        "屋内"
+      ],
+      "status": "published",
+      "childFit": "for-children",
+      "source": {
+        "kind": "primary",
+        "label": "津市久居アルスプラザ",
+        "url": "https://www.tsuhisai-ars.jp/event/42978/",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-22"
+      }
+    },
+    {
+      "id": "tsu-tech-school-tour-aug-2026",
+      "startDate": "2026-08-26",
+      "endDate": "2026-08-26",
+      "dateNote": "水",
+      "time": "13:30～15:30（受付13:00～）",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "学び",
+      "title": "三重県立津高等技術学校 学校見学会",
+      "venue": "三重県立津高等技術学校",
+      "cost": "無料",
+      "audience": "高校生、卒業者、保護者、学校関係者ほか、ものづくり職に興味のある人",
+      "summary": "訓練内容の説明と実習設備・デモンストレーションを見学し、終了後は希望者が個別相談できます。事前申込は不要です。",
+      "tags": [
+        "学校見学",
+        "進路",
+        "ものづくり",
+        "無料",
+        "申込不要",
+        "荒天中止"
+      ],
+      "status": "published",
+      "childFit": "conditional",
+      "source": {
+        "kind": "primary",
+        "label": "三重県立津高等技術学校",
+        "url": "https://www.tsukougi.ac.jp/event/",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-25"
+      }
+    },
+    {
+      "id": "mie-pref-library-mie-150-mini-exhibition-2026",
+      "startDate": "2026-07-01",
+      "endDate": "2026-10-29",
+      "dateNote": "休館日あり",
+      "time": "図書館開館時間内",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "展覧会",
+      "title": "地域ミニ展示「三重県誕生150周年」",
+      "venue": "三重県立図書館",
+      "cost": "無料",
+      "audience": "どなたでも",
+      "summary": "三重県誕生150周年に合わせ、県の歴史上の出来事に関係する図書館資料を紹介する地域ミニ展示です。会期中に資料を入れ替える場合があります。",
+      "tags": [
+        "図書館",
+        "三重県150周年",
+        "郷土資料",
+        "無料",
+        "屋内"
+      ],
+      "status": "published",
+      "childFit": "allowed",
+      "source": {
+        "kind": "primary",
+        "label": "三重県立図書館",
+        "url": "https://www.library.pref.mie.lg.jp/new-info/2026/07/841815081501501-150-82288628.html",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
+      }
+    },
+    {
+      "id": "matsusaka-ozu-western-japan-exhibition-2026",
+      "startDate": "2026-07-01",
+      "endDate": "2026-09-13",
+      "dateNote": "休館日あり",
+      "time": "9:00～16:30",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "展覧会",
+      "title": "企画展「小津安二郎 西日本へのまなざし」",
+      "venue": "松阪市立歴史民俗資料館（2階 小津安二郎松阪記念館）",
+      "cost": "一般150円／6歳以上18歳以下70円",
+      "audience": "公式に対象の記載なし",
+      "summary": "小津安二郎が西日本を舞台に撮った作品に注目し、関係資料から映画に込められた視線や情感を紹介します。8月24日・31日、9月7日などは休館です。",
+      "tags": [
+        "映画",
+        "小津安二郎",
+        "歴史資料",
+        "屋内",
+        "休館日注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "松阪市立歴史民俗資料館",
+        "url": "https://www.city.matsusaka.mie.jp/site/rekisiminzoku/rekimin-kikakuten.html",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
+      }
+    },
+    {
+      "id": "toba-sea-museum-marine-litter-exhibition-2026",
+      "startDate": "2026-07-18",
+      "endDate": "2026-11-01",
+      "dateNote": "期間中",
+      "time": "9:00～17:00（入館16:30まで）",
+      "region": "伊勢志摩",
+      "municipality": "鳥羽市",
+      "category": "展覧会",
+      "title": "企画展「伊勢湾・鳥羽の海洋ごみ ～未来へ向けてできるコト～」",
+      "venue": "鳥羽市立海の博物館 特別展示室",
+      "cost": "大人800円／学生400円",
+      "audience": "どなたでも",
+      "summary": "伊勢湾から志摩半島周辺の海洋ごみ、マイクロプラスチック、資源循環と問題解決の取り組みを実物や資料で紹介します。",
+      "tags": [
+        "海洋ごみ",
+        "環境",
+        "博物館",
+        "屋内",
+        "開催中"
+      ],
+      "status": "published",
+      "childFit": "allowed",
+      "source": {
+        "kind": "primary",
+        "label": "鳥羽市立海の博物館",
+        "url": "https://www.umihaku.com/tenji/tokubetsu_detail.php?no=272",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
+      }
+    },
+    {
+      "id": "suzuka-ancient-paintings-exhibition-2026",
+      "startDate": "2026-07-11",
+      "endDate": "2026-09-23",
+      "dateNote": "休館日あり",
+      "time": "9:00～17:00（入館16:30まで）",
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "category": "展覧会",
+      "title": "特別展「いにしえの絵画展―なにが描かれているのかな？」",
+      "venue": "鈴鹿市考古博物館 特別展示室",
+      "cost": "一般・学生200円／小中学生無料",
+      "audience": "どなたでも（未就学児無料）",
+      "summary": "鈴鹿市内を中心に出土した遺物に描かれた絵画と、鈴鹿墨にちなむ墨画を紹介します。月曜・第3火曜などの休館日に注意してください。",
+      "tags": [
+        "考古学",
+        "絵画",
+        "墨画",
+        "小中学生無料",
+        "屋内",
+        "休館日注意"
+      ],
+      "status": "published",
+      "childFit": "allowed",
+      "source": {
+        "kind": "primary",
+        "label": "鈴鹿市考古博物館",
+        "url": "https://www.city.suzuka.lg.jp/kouko/information/1016374/1017105.html",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
+      }
+    },
+    {
+      "id": "miemu-moni226-half-scale-model-2026",
+      "startDate": "2026-07-18",
+      "endDate": "2026-09-06",
+      "closedWeekdays": [
+        1
+      ],
+      "dateNote": "月曜休館",
+      "time": "9:00～17:00",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "展覧会",
+      "title": "夏休みミニ展示「モニ226 2分の1模型がやってきた」",
+      "venue": "三重県総合博物館 2階エントランスほか",
+      "cost": "無料",
+      "audience": "どなたでも",
+      "summary": "北勢線などを走った木造電車モニ226の先頭部2分の1模型と、軽便鉄道博物館などのミニ電車活動を写真・動画で紹介します。",
+      "tags": [
+        "鉄道",
+        "模型",
+        "博物館",
+        "無料",
+        "屋内"
+      ],
+      "status": "published",
+      "childFit": "allowed",
+      "source": {
+        "kind": "primary",
+        "label": "三重県総合博物館 MieMu",
+        "url": "https://www.bunka.pref.mie.lg.jp/MieMu/m0062500494.htm",
+        "verifiedAt": "2026-08-19",
+        "nextCheckAt": "2026-08-26"
       }
     }
   ]
