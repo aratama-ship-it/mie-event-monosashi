@@ -1,7 +1,7 @@
 # Current state
 
-- Status: OBSERVATION_WEEK_BASELINE_UPDATED_NOT_RESUMED
-- Last updated: 2026-10-01
+- Status: OBSERVATION_WEEK_BLOCKED
+- Last updated: 2026-09-05
 - Scope: 三重県29市町の公式情報源入口
 - Municipalities: 29 / 29
 - Candidate sources: 97 unique URLs
@@ -28,19 +28,19 @@
 - 残り4回の毎日観察を07:00 JSTに設定
 - 2026-09-05の事前確認で保護基準の不一致を検出し、観察を実行せず停止
 - 自動実行が空振りにならないようautomation 29を一時停止
-- 2026-10-01 本人承認により、現在の `data/events.json` と `tests/rendered-html.test.mjs` を新しい保護基準へ更新（BASELINE.md／validate-registry.mjs。更新前の版は `*.before-2026-10-01.*`）
 
 ## Holds
 
 - 多気町観光協会の旧ドメインは無関係な外部サイトへ転送されるため取得停止
 - 大台町公式トップは調査時タイムアウト
 - 部分取得9入口は安定した取得方法を未確定
-- （解消済み 2026-10-01）保護基準の不一致は新基準への更新で解消。基準の Git HEAD は `7d7a509fabed68d0d8e501ae9b7bef583db3ac4b`
-- 観察の再開（automation 29 の再設定）は未実施。残り4回の観察は未着手のまま
+- `data/events.json` と `tests/rendered-html.test.mjs` が調査開始時の保護ハッシュと不一致
+- 現在の Git HEADは `7d7a509fabed68d0d8e501ae9b7bef583db3ac4b`（基準は `381df77ffcdb4cf7d29188e3cddcf3a8740a327d`）
+- 1週間の差分観察は新しい保護基準の本人確認待ち
 - `data/municipal-sources.json` への移行は未承認
 - `data/events.json` への候補追加は未承認
 
 ## Next decision
 
-新しい保護基準は採用済み（2026-10-01）。次は automation 29 を再設定して残り4回を再開する（再設定は本人側の操作で未実施）。
-再設定後は、7回の観察完了後に変更候補、取得不能、重複リスク、手動確認量を集計する。
+現在の `data/events.json` と `tests/rendered-html.test.mjs` を新しい保護基準として採用するか確認する。
+承認後は残り4回を再設定し、7回の観察完了後に変更候補、取得不能、重複リスク、手動確認量を集計する。

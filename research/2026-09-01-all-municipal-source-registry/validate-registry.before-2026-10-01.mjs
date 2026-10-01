@@ -57,8 +57,8 @@ if (municipalityNames.size !== expectedMunicipalities.size) {
 }
 
 const protectedFiles = [
-  ["../../data/events.json", "e65c985fb4542593e69984fa68b564bfdc6e4557bc00e7aa22b70768ce6018ca"],
-  ["../../tests/rendered-html.test.mjs", "adb6515f722738f40aac24744b39ecd7ae898115bcb50033d50642c69a27cffc"],
+  ["../../data/events.json", "e798f71dba84b968023d9534f46884fc11176024005ec153d7d0cf1b88191284"],
+  ["../../tests/rendered-html.test.mjs", "2011274afa202cc094c1a913f0168b85f3ba2ed90f517de2f428bdcf0f03d121"],
   ["../../data/municipal-sources.json", "a147f53779e1cb7667a0b2582ccc72902d37096cc2c93f8330e2e7b98597a82e"],
   ["../../scripts/validate-events.mjs", "4cfb6a9348db224e8fc2f0c40223d4dec4706c33846cc20a9059f50759ad1fe4"],
 ];
