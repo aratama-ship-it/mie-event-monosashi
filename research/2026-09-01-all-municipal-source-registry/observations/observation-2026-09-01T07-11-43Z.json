@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "observationDate": "2026-09-01",
+  "createdAt": "2026-09-01T07:11:43.472Z",
+  "sourceRegistryObservedAt": "2026-09-01",
+  "scope": "limited-test",
+  "requestedSources": 3,
+  "summary": {
+    "first-seen": 0,
+    "unchanged": 0,
+    "changed": 0,
+    "redirect": 0,
+    "error": 3
+  },
+  "observations": [
+    {
+      "municipality": "桑名市",
+      "region": "北勢",
+      "id": "kuwana-public-relations",
+      "label": "広報くわな",
+      "kind": "municipality",
+      "role": "signal",
+      "url": "https://www.city.kuwana.lg.jp/shiseijouhou/kouchoukouhou/kouhou/kouhoukuwana/index.html",
+      "format": "HTML+PDF",
+      "retrievalStatus": "available",
+      "suggestedFrequency": "monthly",
+      "evidenceNote": "月刊広報とバックナンバーの入口。",
+      "checkedAt": "2026-09-01T07:11:43.463Z",
+      "outcome": "error",
+      "error": "fetch failed",
+      "durationMs": 2
+    },
+    {
+      "municipality": "桑名市",
+      "region": "北勢",
+      "id": "kuwana-tourism-events",
+      "label": "まつり・イベント情報",
+      "kind": "tourism",
+      "role": "both",
+      "url": "https://www.city.kuwana.lg.jp/kanko/news/202210event.html",
+      "format": "HTML+JS",
+      "retrievalStatus": "available",
+      "suggestedFrequency": "twice-weekly",
+      "evidenceNote": "市公式観光サイトの催事入口。外部主催リンクは個票確認が必要。",
+      "checkedAt": "2026-09-01T07:11:43.462Z",
+      "outcome": "error",
+      "error": "fetch failed",
+      "durationMs": 32
+    },
+    {
+      "municipality": "桑名市",
+      "region": "北勢",
+      "id": "kuwana-tourism-news",
+      "label": "観光サイト新着情報",
+      "kind": "tourism",
+      "role": "signal",
+      "url": "https://www.city.kuwana.lg.jp/kanko/news/index.html",
+      "format": "HTML",
+      "retrievalStatus": "available",
+      "suggestedFrequency": "twice-weekly",
+      "evidenceNote": "イベント以外の観光情報も混在する時系列新着。",
+      "checkedAt": "2026-09-01T07:11:43.463Z",
+      "outcome": "error",
+      "error": "fetch failed",
+      "durationMs": 3
+    }
+  ]
+}
