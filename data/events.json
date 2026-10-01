@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20",
+  "updatedAt": "2026-10-01",
   "events": [
     {
       "id": "ise-garden-living-restaurant-sep-2026",
@@ -2049,6 +2049,1260 @@
         "verifiedAt": "2026-08-19",
         "nextCheckAt": "2026-08-26"
       }
+    },
+    {
+      "id": "kuwana-museum-autumn-castle-town",
+      "startDate": "2026-10-01",
+      "endDate": "2026-10-12",
+      "dateNote": "期間中",
+      "time": "要確認（出典ページに記載なし）",
+      "region": "北勢",
+      "municipality": "桑名市",
+      "category": "展覧会",
+      "title": "桑名市博物館 秋季企画展「桑名城と城下町」",
+      "venue": "桑名市博物館",
+      "cost": "高校生以上150円、中学生以下無料",
+      "audience": "中学生以下無料",
+      "summary": "桑名市博物館の秋季企画展と特集陳列。10/1時点で残り12日。期間は予定で変更される場合あり。",
+      "tags": [
+        "展覧会",
+        "歴史資料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "桑名市",
+        "url": "https://www.city.kuwana.lg.jp/hakubutukan/bunka/bunkashisetsu/2026calendar.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-02"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "kuwana-museum-masuyama-sessai-2026",
+      "startDate": "2026-10-24",
+      "endDate": "2026-11-29",
+      "dateNote": "期間中",
+      "time": "要確認（出典ページに記載なし）",
+      "region": "北勢",
+      "municipality": "桑名市",
+      "category": "展覧会",
+      "title": "特別企画展「増山雪斎と伊勢長島藩のお殿様」",
+      "venue": "桑名市博物館",
+      "cost": "高校生以上500円、中学生以下無料",
+      "audience": "中学生以下無料",
+      "summary": "三重県誕生150周年・藩主就任250年記念の特別企画展。期間は予定で変更される場合あり。",
+      "tags": [
+        "展覧会",
+        "歴史資料",
+        "三重県150周年"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "桑名市",
+        "url": "https://www.city.kuwana.lg.jp/hakubutukan/bunka/bunkashisetsu/2026calendar.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-17"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "kameyama-sekisuikei-matsuri-16",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "dateNote": "土",
+      "time": "9:30〜15:00（小雨決行／荒天中止）",
+      "region": "北勢",
+      "municipality": "亀山市",
+      "category": "祭り",
+      "title": "第16回 石水渓まつり",
+      "venue": "石水渓キャンプ場施設",
+      "cost": "公式に記載なし（飲食物の出店あり）",
+      "audience": "宝探し・マスつかみは小学生以下",
+      "summary": "キャンプ場での地域のまつり。小雨決行・荒天中止。一部体験は当日申込・整理券。",
+      "tags": [
+        "祭り・地域",
+        "屋外",
+        "荒天中止"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "亀山市",
+        "url": "https://www.city.kameyama.mie.jp/kosodate_yuyu/events/2026081200014/",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-02"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "kameyama-sekijuku-kaido-matsuri-39",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "dateNote": "日",
+      "time": "10:00〜15:00（小雨決行）",
+      "region": "北勢",
+      "municipality": "亀山市",
+      "category": "祭り",
+      "title": "第39回 東海道関宿街道まつり",
+      "venue": "旧東海道関宿一帯（JR関駅より徒歩約5分）",
+      "cost": "公式に記載なし",
+      "audience": "公式に対象の記載なし",
+      "summary": "ステージ（演歌ショー・忍者ショー）、山車展示、お囃子体験、バザー等を予定。小雨決行。",
+      "tags": [
+        "祭り・地域",
+        "伝統行事",
+        "屋外"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "亀山市",
+        "url": "https://www.city.kameyama.mie.jp/kosodate_yuyu/events/2026072800339/",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-25"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "kameyama-oneccoin-otonai-9",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "dateNote": "土",
+      "time": "13:30開場／14:00開演",
+      "region": "北勢",
+      "municipality": "亀山市",
+      "category": "音楽",
+      "title": "ワンコインコンサート 音綯（おとない）Vol.9 〜風の綾〜",
+      "venue": "亀山市文化会館 大ホール",
+      "cost": "入場料500円（全席自由、前売券あり）",
+      "audience": "公式に対象年齢の記載なし",
+      "summary": "ワンコイン（500円）のホールコンサート。全席自由、前売券あり。",
+      "tags": [
+        "音楽・ライブ",
+        "前売あり"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "亀山市",
+        "url": "https://www.city.kameyama.mie.jp/kosodate_yuyu/events/2026082600332/",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-24"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "suzuka-flowerpark-festa-2026",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "dateNote": "日",
+      "time": "10:00〜14:00（早まる場合あり）",
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "category": "祭り",
+      "title": "鈴鹿フラワーパークフェスタ2026",
+      "venue": "鈴鹿フラワーパーク 西エントランス広場",
+      "cost": "入場無料",
+      "audience": "どなたでも（対象年齢の明記なし）",
+      "summary": "ふわふわドーム・射的・わなげ等。雨天決行・荒天中止（延期なし）。駐車場に制限があり公共交通を推奨。",
+      "tags": [
+        "屋外",
+        "子ども",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "鈴鹿市",
+        "url": "https://www.city.suzuka.lg.jp/shisei/shisetsu/1010134/1012424/1012881/1015619.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-08"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "suzuka-kouko-rekishi-no-michi-5",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "dateNote": "土",
+      "time": "9:00〜11:00頃（小雨決行）",
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "category": "学び",
+      "title": "第5回 歴史の道を歩く（国分町編）",
+      "venue": "鈴鹿市考古博物館駐車場に集合",
+      "cost": "100円（保険料・資料費）",
+      "audience": "どなたでも",
+      "summary": "考古博物館サポート会が主催する、国分町を歩く回。小雨決行。",
+      "tags": [
+        "ウォーキング・歴史",
+        "申込不要"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "鈴鹿市",
+        "url": "https://www.city.suzuka.lg.jp/kouko/information/1016374/1017630.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-17"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "inabe-coordination-training-2026",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-15",
+      "dateNote": "期間中",
+      "time": "10:00-10:50／11:00-11:50（2部制）",
+      "region": "北勢",
+      "municipality": "いなべ市",
+      "category": "スポーツ",
+      "title": "親子で楽しくコーディネーショントレーニング",
+      "venue": "員弁運動公園柔剣道場（いなべ市員弁町楚原936）",
+      "cost": "無料",
+      "audience": "4〜6歳の未就学児と保護者（第1部4〜5歳・第2部5〜6歳）",
+      "summary": "親子で体を動かすコーディネーショントレーニング。要申込・先着、各回30組。託児は無料・定員3人（6か月以上の未就学児）。",
+      "tags": [
+        "親子",
+        "子ども",
+        "要申込",
+        "日程変更注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "いなべ市",
+        "url": "https://www.city.inabe.mie.jp/kyoiku/sports/1005451.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-25"
+      },
+      "childFit": "for-children"
+    },
+    {
+      "id": "inabe-yane-konchu-2026-10-24",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "dateNote": "土",
+      "time": "13:30〜15:30",
+      "region": "北勢",
+      "municipality": "いなべ市",
+      "category": "学び",
+      "title": "親子で楽しむ昆虫観察会（屋根のない学校・10/24）",
+      "venue": "屋根のない学校（藤原町・簡易パーキングふじわら隣り奥、研修館）",
+      "cost": "無料",
+      "audience": "小学生（保護者の同伴が必要）",
+      "summary": "親子で昆虫を観察する会。要申込（Webフォームのみ）、12組。",
+      "tags": [
+        "自然・観察",
+        "親子",
+        "要申込"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "いなべ市",
+        "url": "https://www.city.inabe.mie.jp/kyoiku/shizen/yane/1015191/1015199.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-17"
+      },
+      "childFit": "for-children"
+    },
+    {
+      "id": "inabe-itotsumugi-2026-11-08",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-08",
+      "dateNote": "日",
+      "time": "9:30〜11:30",
+      "region": "北勢",
+      "municipality": "いなべ市",
+      "category": "学び",
+      "title": "令和8年度糸紬ぎ体験教室「綿から糸へ 糸から布へ」",
+      "venue": "いなべ市郷土資料館（藤原町上相場838）",
+      "cost": "参加費500円（1人）",
+      "audience": "どなたでも（小学校3年生以下は保護者同伴）",
+      "summary": "綿から糸、糸から布までの体験教室。要申込（10/8 9:00受付開始）、定員15人。",
+      "tags": [
+        "体験",
+        "郷土資料",
+        "要申込"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "いなべ市",
+        "url": "https://www.city.inabe.mie.jp/shisetsu/bunkashisetsu/bunkashisetsu/1016090.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-01"
+      },
+      "childFit": "conditional"
+    },
+    {
+      "id": "inabe-meshere-cinema-4-2026-10-31",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "dateNote": "土",
+      "time": "13:00〜16:00（上映13:30〜）",
+      "region": "北勢",
+      "municipality": "いなべ市",
+      "category": "舞台",
+      "title": "「愛、そして絆」のメシェレ映画館2026 第4幕「夜明けのすべて」",
+      "venue": "北勢市民会館",
+      "cost": "入場無料（入場券不要）",
+      "audience": "公式に対象の記載なし（字幕あり）",
+      "summary": "人権啓発の映画上映（作品「夜明けのすべて」）。台風接近で暴風警報が出た場合は中止。",
+      "tags": [
+        "映画・上映",
+        "人権啓発",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "いなべ市",
+        "url": "https://www.city.inabe.mie.jp/kurashi/jinken/jinken/1014911.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-24"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "kawagoe-kausu-manzai-2026-10-03",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "dateNote": "土",
+      "time": "14:30開演（14:00開場）",
+      "region": "北勢",
+      "municipality": "川越町",
+      "category": "舞台",
+      "title": "中田カウス漫才のDENDO 全国ツアーin川越町",
+      "venue": "川越町あいあいホール",
+      "cost": "全席指定5,000円（税込）",
+      "audience": "未就学児入場不可",
+      "summary": "全国ツアーの川越町公演。全席指定。",
+      "tags": [
+        "演芸・漫才",
+        "有料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "川越町",
+        "url": "https://www.town.kawagoe.mie.jp/bunka_sports_event/bunka/1002057/1002061/1004238.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-02"
+      },
+      "childFit": "not-for-children"
+    },
+    {
+      "id": "kawagoe-mukashiasobi-2026-11-07",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "dateNote": "土",
+      "time": "10:00〜11:50",
+      "region": "北勢",
+      "municipality": "川越町",
+      "category": "交流",
+      "title": "川越町FAGクラブ・おひさま児童館共催「昔遊びを楽しもう」",
+      "venue": "おひさま児童館",
+      "cost": "100円（当日講師に直接支払い）",
+      "audience": "年少〜小学生（小学生未満は保護者同伴）",
+      "summary": "児童館で昔遊びを楽しむ会。要申込（10/30 17時まで）、20名程度。",
+      "tags": [
+        "子ども",
+        "児童館",
+        "要申込"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "川越町",
+        "url": "https://www.town.kawagoe.mie.jp/bunka_sports_event/1002592/1004367.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-31"
+      },
+      "childFit": "for-children"
+    },
+    {
+      "id": "kawagoe-shinnihon-phil-concert-2026-11-28",
+      "startDate": "2026-11-28",
+      "endDate": "2026-11-28",
+      "dateNote": "土",
+      "time": "14:00開場／14:30開演",
+      "region": "北勢",
+      "municipality": "川越町",
+      "category": "音楽",
+      "title": "新日本フィル29市町巡回事業 ふれあいコンサート（川越町）",
+      "venue": "おひさま児童館",
+      "cost": "入場無料",
+      "audience": "0〜18歳の児童と保護者（未就学児は要保護者同伴）",
+      "summary": "新日本フィルによるふれあいコンサート。要申込（10/21〜町フォーム、先着70名程度）。",
+      "tags": [
+        "親子・音楽",
+        "クラシック",
+        "要申込"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "川越町",
+        "url": "https://www.town.kawagoe.mie.jp/bunka_sports_event/1002592/1004369.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-21"
+      },
+      "childFit": "for-children"
+    },
+    {
+      "id": "tsu-forest-therapy-yatemata-2026-12-05",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-05",
+      "dateNote": "土",
+      "time": "9:30〜15:00",
+      "region": "中勢",
+      "municipality": "津市",
+      "category": "交流",
+      "title": "森林セラピー「八手俣川さんぽ」冬の森で宝探しと焚火",
+      "venue": "美杉町丹生俣地内",
+      "cost": "一般5,000円／小学生3,000円／未就学児500円",
+      "audience": "小学生・未就学児の料金設定あり",
+      "summary": "森林セラピー基地の冬の森歩き。要申込（11/16〜11/26）、24人。",
+      "tags": [
+        "自然体験",
+        "要申込",
+        "有料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "津市",
+        "url": "https://www.info.city.tsu.mie.jp/kankou_bunka_sports/kankou_citypromotion/1004518/1012295.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-28"
+      },
+      "childFit": "conditional"
+    },
+    {
+      "id": "ise-shimin-geinousai-69",
+      "startDate": "2026-10-04",
+      "endDate": "2026-11-23",
+      "dateNote": "期間中",
+      "time": "部門別（出典ページ参照）",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "舞台",
+      "title": "第69回伊勢市民芸能祭",
+      "venue": "いせトピア／響ホール伊勢（部門別）",
+      "cost": "全部門入場無料",
+      "audience": "公式に対象年齢の記載なし",
+      "summary": "邦楽・吟詠剣詩舞・能楽・合唱・器楽などの部門別・全8日の市民芸能祭。",
+      "tags": [
+        "伝統芸能",
+        "音楽",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢市",
+        "url": "https://www.city.ise.mie.jp/cul_spo_edu/culture/gyouji/isecole/geijutsusai/geinousai/1014722.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-02"
+      },
+      "dates": [
+        "2026-10-04",
+        "2026-10-18",
+        "2026-10-25",
+        "2026-10-31",
+        "2026-11-01",
+        "2026-11-08",
+        "2026-11-15",
+        "2026-11-23"
+      ],
+      "childFit": "unknown"
+    },
+    {
+      "id": "matsusaka-kuragi-fanta-ne-2026-12-12",
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-12",
+      "dateNote": "土",
+      "time": "①13:00開演 ②15:30開演",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "音楽",
+      "title": "おかあさんといっしょ ファンターネ！とあそぼ",
+      "venue": "クラギ文化ホール",
+      "cost": "全席指定 一般3,000円／中学生以下2,000円",
+      "audience": "1歳以上有料・1歳未満は膝上（公式記載による）",
+      "summary": "「おかあさんといっしょ」のファミリーコンサート。全席指定。先行9/26-10/2（会員）、一般発売10/9。",
+      "tags": [
+        "親子・音楽",
+        "有料",
+        "前売あり"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "松阪市",
+        "url": "https://www.city.matsusaka.mie.jp/site/kuragi-hall/fanta-ne.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-12-05"
+      },
+      "childFit": "for-children"
+    },
+    {
+      "id": "matsusaka-e-co-to-festa-2026",
+      "startDate": "2026-10-24",
+      "endDate": "2026-10-24",
+      "dateNote": "土",
+      "time": "10:00-15:00",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "交流",
+      "title": "まつさかええことフェスタ2026",
+      "venue": "松阪農業公園ベルファーム（蚤の市広場・レクチャールーム）",
+      "cost": "無料（参加費）",
+      "audience": "家族みんなで（公式記載）",
+      "summary": "農業公園での環境イベント。木育ブースやトークショー（10:30）あり。小雨決行・荒天中止。",
+      "tags": [
+        "環境",
+        "木育",
+        "屋外"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "松阪市",
+        "url": "https://www.city.matsusaka.mie.jp/site/matsusaka-zerocarbon-site/e-co-tofes2026.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-17"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "matsusaka-rekimin-okochijo-2026",
+      "startDate": "2026-09-19",
+      "endDate": "2026-12-06",
+      "dateNote": "期間中",
+      "time": "9:00-16:30（10月からは16:00まで）",
+      "region": "中勢",
+      "municipality": "松阪市",
+      "category": "展覧会",
+      "title": "企画展「大河内城の戦いと蒲生氏郷 ～織田軍の南勢侵攻～」",
+      "venue": "松阪市立歴史民俗資料館",
+      "cost": "入館料 一般150円／6歳以上18歳以下70円",
+      "audience": "一般・6歳以上18歳以下は割引",
+      "summary": "大河内城の戦いと蒲生氏郷をたどる企画展。休館日あり（12/7-11臨時休館）。",
+      "tags": [
+        "展覧会",
+        "歴史",
+        "郷土資料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "松阪市",
+        "url": "https://www.city.matsusaka.mie.jp/site/rekisiminzoku/rekimin-kikakuten.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-02"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "yokkaichi-museum-nyannyan-2026",
+      "startDate": "2026-09-19",
+      "endDate": "2026-11-23",
+      "dateNote": "期間中",
+      "time": "9:30-17:00（入場16:30まで）",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "展覧会",
+      "title": "特別展「猫猫はくぶつかん」",
+      "venue": "そらんぽ四日市（四日市市立博物館）4階 特別展示室",
+      "cost": "一般1,000円／高・大学生600円／中学生以下無料",
+      "audience": "中学生以下無料",
+      "summary": "猫をテーマにした博物館の特別展。月曜休館（祝日は開館）、9/24・10/13休。",
+      "tags": [
+        "展覧会",
+        "自然史",
+        "子ども",
+        "有料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "四日市市",
+        "url": "https://www.city.yokkaichi.mie.jp/museum/museum01/index.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-02"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "yokkaichi-eki-piano-6-2026-11-01",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "dateNote": "日",
+      "time": "10:00-17:00",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "音楽",
+      "title": "音楽の街よっかいちに駅ピアノがやって来た！第6弾",
+      "venue": "あすなろう四日市駅 改札内",
+      "cost": "演奏者以外の改札内入場は200円（演奏の参加費は記載なし）",
+      "audience": "公式に対象・申込条件の記載なし",
+      "summary": "改札内に置かれた駅ピアノの演奏会。",
+      "tags": [
+        "ピアノ・ライブ",
+        "駅"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "四日市市",
+        "url": "https://www.city.yokkaichi.lg.jp/www/contents/1789637044409/index.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-25"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "yokkaichi-sogo-bijutsuten-2026-11-13",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-15",
+      "dateNote": "期間中",
+      "time": "13日12:00-17:00ほか（本文参照）",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "展覧会",
+      "title": "総合美術展（四日市市文化協会）",
+      "venue": "四日市市文化会館 第1・3・4展示室",
+      "cost": "無料",
+      "audience": "公式に対象年齢の記載なし",
+      "summary": "四日市市文化協会の総合美術展。",
+      "tags": [
+        "展示",
+        "市民文化",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "四日市市文化協会",
+        "url": "https://www.yokkaichishibunkakyoukai.com/sche36685/sche36.cgi?cm=&mode=&year=2026&mon=11",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-06"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "yokkaichi-aichi-chamber-reopen-2026-10-04",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "dateNote": "日",
+      "time": "14:00開演（13:15開場）",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "音楽",
+      "title": "愛知室内オーケストラ 文化会館再開記念演奏会",
+      "venue": "四日市市文化会館 第1ホール",
+      "cost": "S席4,000円／A席3,000円／U-22席2,000円／親子ペア（一般1+18歳以下1）5,000円。未就学児入場不可。託児あり（お子様1人1,100円）",
+      "audience": "未就学児入場不可",
+      "summary": "文化会館の再開記念演奏会。託児は申込受付終了（9/24締切）。当日券・残席は会館に要確認。",
+      "tags": [
+        "音楽・クラシック",
+        "有料",
+        "前売あり"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "四日市市文化会館",
+        "url": "https://yonbun.com/info/4263/",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-02"
+      },
+      "childFit": "conditional"
+    },
+    {
+      "id": "yokkaichi-konnyakuza-an-2026-11-01",
+      "startDate": "2026-11-01",
+      "endDate": "2026-11-01",
+      "dateNote": "日",
+      "time": "15:00開演（14:30開場）",
+      "region": "北勢",
+      "municipality": "四日市市",
+      "category": "舞台",
+      "title": "オペラシアターこんにゃく座 オペラ「あん」",
+      "venue": "四日市市文化会館 第2ホール",
+      "cost": "S席3,500円（当日4,000円）／A席2,500円（当日3,000円）。未就学児入場不可",
+      "audience": "未就学児入場不可",
+      "summary": "オペラシアターこんにゃく座の公演「あん」。託児サービスあり（お子様1人1,100円）。",
+      "tags": [
+        "オペラ",
+        "有料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "四日市市文化会館",
+        "url": "https://yonbun.com/event/5109/",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-25"
+      },
+      "childFit": "conditional"
+    },
+    {
+      "id": "asahi-library-kikiyaya-2026-11-14",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "dateNote": "土",
+      "time": "10:00-11:20",
+      "region": "北勢",
+      "municipality": "朝日町",
+      "category": "学び",
+      "title": "絵本作家 聞かせ屋。けいたろう＆石井聖岳 絵本ライブ＆ワークショップ",
+      "venue": "朝日町教育文化施設 2階（視聴覚室＆ワークショップギャラリー）",
+      "cost": "無料（申込制・先着60名）",
+      "audience": "公式に年齢条件の記載なし",
+      "summary": "絵本作家による絵本ライブとワークショップ。申込制・先着60名（8/29から受付）。",
+      "tags": [
+        "絵本",
+        "ワークショップ",
+        "要申込"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "朝日町",
+        "url": "https://www2.town.asahi.mie.jp/www/contents/1787381793351/index.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-07"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "asahi-library-storytelling-2026-11-22",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-22",
+      "dateNote": "日",
+      "time": "11:00-11:30",
+      "region": "北勢",
+      "municipality": "朝日町",
+      "category": "学び",
+      "title": "ストーリーテリング（あさひライブラリー）",
+      "venue": "朝日町教育文化施設 2階視聴覚室",
+      "cost": "入場無料（申込不要）",
+      "audience": "公式に対象年齢の記載なし",
+      "summary": "あさひライブラリーのストーリーテリング。",
+      "tags": [
+        "ストーリーテリング",
+        "申込不要"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "朝日町",
+        "url": "https://www2.town.asahi.mie.jp/www/contents/1789776715431/index.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-15"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "asahi-library-recycle-2026-11-03",
+      "startDate": "2026-11-03",
+      "endDate": "2026-11-03",
+      "dateNote": "火",
+      "time": "9:00-15:00",
+      "region": "北勢",
+      "municipality": "朝日町",
+      "category": "交流",
+      "title": "図書・雑誌リサイクル会（あさひライブラリー）",
+      "venue": "朝日町教育文化施設 2階視聴覚室",
+      "cost": "入場無料（予約不要・先着順）",
+      "audience": "公式に対象の記載なし",
+      "summary": "除籍本・雑誌の無料配布会。予約不要・先着順。",
+      "tags": [
+        "図書",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "朝日町",
+        "url": "https://www2.town.asahi.mie.jp/www/contents/1789091390217/index.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-27"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "taki-hayashi-masayuki-2026-10-31",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "dateNote": "土",
+      "time": "観察会10:00-11:30／講演14:00-15:30",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "林将之さん講演会と自然観察会（勢和図書館）",
+      "venue": "勢和図書館（観察会はゆとりの丘周辺・勢和図書館集合）",
+      "cost": "講演無料（先着50名）／観察会 保険代50円（先着30名）",
+      "audience": "講演は中学生以上／観察会は小学生以上（小学生は保護者同伴）",
+      "summary": "樹木に詳しい講師の講演と自然観察会。申込 9/12-10/24。雨天時は樹木図鑑ワークショップ。",
+      "tags": [
+        "講演",
+        "自然・観察",
+        "要申込"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "多気町",
+        "url": "https://www.town.taki.mie.jp/life/soshiki/kyoiku/bunka_sport/2/3/3706.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-24"
+      },
+      "childFit": "conditional"
+    },
+    {
+      "id": "iga-shimin-bunkasai-2026",
+      "startDate": "2026-11-08",
+      "endDate": "2026-11-28",
+      "dateNote": "期間中",
+      "time": "日程別（11/8は13:00開演ほか）",
+      "region": "伊賀",
+      "municipality": "伊賀市",
+      "category": "祭り",
+      "title": "2026伊賀市民文化祭",
+      "venue": "ハイトピア伊賀5階 多目的大研修室（11/8）／伊賀市文化会館（11/21-22・28）",
+      "cost": "入場無料",
+      "audience": "公式に対象の記載なし",
+      "summary": "ステージ・展示・総合フェスティバル・ダンスなど。入場無料。",
+      "tags": [
+        "市民文化",
+        "展示",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊賀市",
+        "url": "https://www.city.iga.lg.jp/0000001927.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-01"
+      },
+      "dates": [
+        "2026-11-08",
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-28"
+      ],
+      "childFit": "unknown"
+    },
+    {
+      "id": "iga-basho-special-exhibit-2026",
+      "startDate": "2026-09-05",
+      "endDate": "2026-12-23",
+      "dateNote": "期間中",
+      "time": "8:30-17:00(入館16:30まで)",
+      "region": "伊賀",
+      "municipality": "伊賀市",
+      "category": "展覧会",
+      "title": "芭蕉祭特別展「芭蕉顕彰の歩み」(芭蕉翁記念館)",
+      "venue": "芭蕉翁記念館",
+      "cost": "一般300円/小学生〜高校生100円/未就学児無料",
+      "audience": "一般・小学生〜高校生は割引・未就学児無料",
+      "summary": "芭蕉祭にあわせた特別展。会期中に特別展示・展示説明会・ワークショップあり。",
+      "tags": [
+        "展覧会",
+        "歴史",
+        "俳句"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊賀市",
+        "url": "https://www.city.iga.lg.jp/0000014242.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-02"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "nabari-nogaku-kyogen-2026",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "dateNote": "日",
+      "time": "13:30開演(12:30開場)",
+      "region": "伊賀",
+      "municipality": "名張市",
+      "category": "舞台",
+      "title": "名張能楽祭～狂言を楽しむ～",
+      "venue": "エナジーウィズホール",
+      "cost": "無料(入場整理券必要、1人4枚まで)",
+      "audience": "公式に対象の記載なし",
+      "summary": "狂言を楽しむ能楽祭。入場整理券が必要（9/1から配布、配布終了の可能性あり）。",
+      "tags": [
+        "伝統芸能",
+        "狂言",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "名張市",
+        "url": "https://www.city.nabari.lg.jp/s061/010/020/222/20210510161312.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-08"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "nabari-okitsumo-tour-2026-12-07",
+      "startDate": "2026-12-07",
+      "endDate": "2026-12-07",
+      "dateNote": "月",
+      "time": "9:00受付開始〜12:00頃解散",
+      "region": "伊賀",
+      "municipality": "名張市",
+      "category": "交流",
+      "title": "ボランティアガイド「おきつも」と歩くなばり散策ツアー 第5回「大人の社会見学」",
+      "venue": "集合 近鉄桔梗が丘駅西口、開催場所 八幡工業団地(約6kmのコース)",
+      "cost": "300円(当日払い)",
+      "audience": "公式に対象年齢の記載なし",
+      "summary": "ボランティアガイドと約6kmを歩く社会見学ツアー。歩ける靴・服装との記載あり。",
+      "tags": [
+        "ウォーキング・歴史",
+        "ガイド"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "名張市観光協会",
+        "url": "https://kankou-nabari.jp/news/arukou2026-5",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-30"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "shima-kanko-nouen-autumn-festa-2026",
+      "startDate": "2026-10-04",
+      "endDate": "2026-10-04",
+      "dateNote": "日",
+      "time": "10:00-15:00",
+      "region": "伊勢志摩",
+      "municipality": "志摩市",
+      "category": "祭り",
+      "title": "志摩市観光農園オータムフェスタ",
+      "venue": "志摩市観光農園",
+      "cost": "入園料無料・駐車場無料",
+      "audience": "公式の子ども向け記載あり（巨大エア遊具など）",
+      "summary": "観光農園のオータムフェスタ。巨大エア遊具2台などの記載あり。",
+      "tags": [
+        "屋外",
+        "子ども",
+        "農園"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "志摩市",
+        "url": "https://www.city.shima.mie.jp/kakuka/suisannourin/norinka/9694.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-02"
+      },
+      "childFit": "for-children"
+    },
+    {
+      "id": "shima-go-action-fes-2026",
+      "startDate": "2026-11-07",
+      "endDate": "2026-11-07",
+      "dateNote": "土",
+      "time": "11:00-16:00",
+      "region": "伊勢志摩",
+      "municipality": "志摩市",
+      "category": "スポーツ",
+      "title": "GO ACTION FES.(家族で楽しむ体験型スポーツフェス)",
+      "venue": "阿児アリーナ",
+      "cost": "入場無料",
+      "audience": "子どもから大人まで（一部は小中学生・中学生以下対象で申込必要）",
+      "summary": "家族で楽しむ体験型スポーツフェス。ビーチクリーン・スポーツレクリエーションは事前申込・定員あり（市内在住の子ども優先）。",
+      "tags": [
+        "体験",
+        "家族",
+        "日程変更注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "志摩市",
+        "url": "https://www.city.shima.mie.jp/kakuka/kyouiku/syogaigakusyusportska/sports/sportsevent/9592.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-31"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "kiho-minato-festival-20-2026-10-18",
+      "startDate": "2026-10-18",
+      "endDate": "2026-10-18",
+      "dateNote": "日",
+      "time": "9:30-15:00",
+      "region": "東紀州",
+      "municipality": "紀宝町",
+      "category": "祭り",
+      "title": "第20回紀宝みなとフェスティバル",
+      "venue": "鵜殿港(荒天の場合は生涯学習センター「まなびの郷」)",
+      "cost": "入場料・出店料金は公式に記載なし（ステージショーは観覧無料）",
+      "audience": "公式に対象の記載なし",
+      "summary": "港のまつり。ゲスト出演あり（変更・中止の可能性の注記あり）。荒天時はまなびの郷で開催。",
+      "tags": [
+        "祭り・地域",
+        "屋外",
+        "港"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "紀宝町",
+        "url": "https://www.town.kiho.lg.jp/news/53184/",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-11"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "ise-art-exhibition-72-2026-10",
+      "startDate": "2026-10-20",
+      "endDate": "2026-10-25",
+      "dateNote": "期間中",
+      "time": "9:00-17:00（最終日15:30まで）",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "展覧会",
+      "title": "第72回伊勢市美術展覧会",
+      "venue": "シンフォニアテクノロジー響ホール伊勢(伊勢市観光文化会館)",
+      "cost": "無料",
+      "audience": "公式に対象の記載なし",
+      "summary": "市民の美術展。表彰式・作品を語る会は10/25に予定。",
+      "tags": [
+        "展覧会",
+        "市民文化",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢市",
+        "url": "https://www.city.ise.mie.jp/cul_spo_edu/culture/gyouji/isecole/geijutsusai/bijutsu/1014720.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-13"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "ise-spocul-walk-4-2026-11-15",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "dateNote": "日",
+      "time": "受付9:00・出発9:30",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "スポーツ",
+      "title": "市民ふれあいスポカルウォーク 第4回「楠部・中村町コース(御幸道路と月読宮)」",
+      "venue": "集合: ダイムスタジアム伊勢 消防本部正面駐車場",
+      "cost": "1人100円(当日持参)",
+      "audience": "公式に条件の記載なし（募集100〜150人）",
+      "summary": "御幸道路と月読宮をめぐるウォーキング。天候で中止の場合あり（当日午前7時決定）。",
+      "tags": [
+        "ウォーキング",
+        "歴史",
+        "日程変更注意"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢市",
+        "url": "https://www.city.ise.mie.jp/kyouiku/sports/event/walk/1005805.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-08"
+      },
+      "childFit": "conditional"
+    },
+    {
+      "id": "ise-kenmin-chakai-2026-10-25",
+      "startDate": "2026-10-25",
+      "endDate": "2026-10-25",
+      "dateNote": "日",
+      "time": "9:00-15:00",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "交流",
+      "title": "県民茶会",
+      "venue": "左王舎、右王舎(五十鈴塾)",
+      "cost": "2,000円",
+      "audience": "公式に対象の記載なし",
+      "summary": "茶道協会が主催する茶会（市の文化行事一覧に掲載）。",
+      "tags": [
+        "茶道",
+        "有料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢市",
+        "url": "https://www.city.ise.mie.jp/cul_spo_edu/culture/gyouji/bunkajigyo/1020336.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "ise-rainbow-festa-2026-10-31",
+      "startDate": "2026-10-31",
+      "endDate": "2026-10-31",
+      "dateNote": "土",
+      "time": "10:00-14:00",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "交流",
+      "title": "れいんぼうフェスタ(男女共同参画都市宣言20周年事業)",
+      "venue": "いせトピア(伊勢市生涯学習センター) 1階 ふれあい広場ほか",
+      "cost": "無料（費用不要と記載）",
+      "audience": "どなたでも",
+      "summary": "男女共同参画都市宣言20周年事業。バルーンアート・木工教室など。整理券が要るブースあり。",
+      "tags": [
+        "男女共同参画",
+        "体験",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢市",
+        "url": "https://www.city.ise.mie.jp/machi/danjo/moyoosi/1020596.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-24"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "ise-senguu-forum-4-2026-11-17",
+      "startDate": "2026-11-17",
+      "endDate": "2026-11-17",
+      "dateNote": "火",
+      "time": "17:30-20:00",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "学び",
+      "title": "第4回遷宮フォーラム「御遷宮と伊勢の人々」",
+      "venue": "おかげ横丁 オカゲ屋敷",
+      "cost": "一般6,500円、五十鈴塾会員6,000円",
+      "audience": "公式に対象の記載なし",
+      "summary": "五十鈴塾が主催する遷宮フォーラム。",
+      "tags": [
+        "講演",
+        "歴史",
+        "有料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢市",
+        "url": "https://www.city.ise.mie.jp/cul_spo_edu/culture/gyouji/bunkajigyo/1020793.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-10"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "ise-chorus-platinum-9-2026-12-26",
+      "startDate": "2026-12-26",
+      "endDate": "2026-12-26",
+      "dateNote": "土",
+      "time": "13:30-16:30（開演14:00）",
+      "region": "伊勢志摩",
+      "municipality": "伊勢市",
+      "category": "音楽",
+      "title": "合唱団プラチナ 第9回演奏会",
+      "venue": "いせトピア",
+      "cost": "入場料500円",
+      "audience": "公式に対象の記載なし",
+      "summary": "合唱団プラチナ2000の第9回演奏会。",
+      "tags": [
+        "合唱",
+        "有料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "伊勢市",
+        "url": "https://www.city.ise.mie.jp/cul_spo_edu/culture/gyouji/bunkajigyo/1020329.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-12-19"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "suzuka-kouko-iseki-aruki-1-2026-10-03",
+      "startDate": "2026-10-03",
+      "endDate": "2026-10-03",
+      "dateNote": "土",
+      "time": "13:30開始(受付13:00)",
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "category": "学び",
+      "title": "遺跡の歩きかた 第1回「史跡 伊勢国分寺跡」",
+      "venue": "考古博物館講堂及び史跡 伊勢国分寺跡歴史公園",
+      "cost": "聴講料 無料(定員50人・当日窓口で先着順)",
+      "audience": "公式に条件の記載なし（定員50人・先着）",
+      "summary": "史跡 伊勢国分寺跡を考古博物館の講堂と現地で学ぶ回。当日のみ常設展を無料観覧可。",
+      "tags": [
+        "歴史・講座",
+        "史跡",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "鈴鹿市",
+        "url": "https://www.city.suzuka.lg.jp/kouko/information/1016374/1017867.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-10-02"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "suzuka-yamada-kuniko-lecture-2026-11-29",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "dateNote": "日",
+      "time": "13:30-15:45(12:30開場)",
+      "region": "北勢",
+      "municipality": "鈴鹿市",
+      "category": "学び",
+      "title": "講演会「笑顔で行こう!山田邦子と考える人生会議」",
+      "venue": "ハヤシユナイテッド文化ホール鈴鹿",
+      "cost": "無料(要申込・定員400名)",
+      "audience": "どなたでも（定員400名）",
+      "summary": "人生会議（ACP）などを扱う講演会。要申込（10/1〜11/15）。",
+      "tags": [
+        "講演",
+        "要申込",
+        "無料"
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "鈴鹿市",
+        "url": "https://www.city.suzuka.lg.jp/fukushi/kenshin/1015857/1017873.html",
+        "verifiedAt": "2026-10-01",
+        "nextCheckAt": "2026-11-22"
+      },
+      "childFit": "allowed"
     }
   ]
 }
