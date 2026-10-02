@@ -422,9 +422,8 @@ export default function EventFinder() {
         <div className="hero-copy">
           <p className="eyebrow">祭りも、試合も、音も、展覧会も、三重の予定へ。</p>
           <h1>
-            今度の休み、
-            <br />
-            どこまで行こう。
+            <span className="hero-line">今度の休み、</span>
+            <span className="hero-line">どこまで行こう。</span>
           </h1>
           <p className="hero-lead">
             日付、地域、参加条件をひと目で比べる。

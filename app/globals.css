@@ -205,13 +205,22 @@ main {
   margin: 0 0 16px;
 }
 
+.hero-copy {
+  container-type: inline-size;
+}
+
 .hero h1 {
   font-family: "YuMincho", "Hiragino Mincho ProN", serif;
-  font-size: clamp(48px, 6.4vw, 88px);
+  font-size: clamp(48px, min(6.4vw, 12.6cqi), 88px);
   font-weight: 600;
   letter-spacing: -0.06em;
   line-height: 1.13;
   margin: 0;
+}
+
+.hero h1 .hero-line {
+  display: block;
+  white-space: nowrap;
 }
 
 .hero-lead {
