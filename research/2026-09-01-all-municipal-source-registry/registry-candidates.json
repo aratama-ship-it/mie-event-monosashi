@@ -1,0 +1,281 @@
+{
+  "version": 1,
+  "observedAt": "2026-09-01",
+  "status": "candidate-review",
+  "coverageArea": "三重県29市町",
+  "authoritativeMunicipalitySource": "https://www.pref.mie.lg.jp/link/link1.htm",
+  "canonicalTarget": "data/municipal-sources.json",
+  "municipalities": [
+    {
+      "name": "桑名市",
+      "region": "北勢",
+      "sources": [
+        {"id":"kuwana-tourism-events","label":"まつり・イベント情報","kind":"tourism","role":"both","url":"https://www.city.kuwana.lg.jp/kanko/news/202210event.html","format":"HTML+JS","retrievalStatus":"available","suggestedFrequency":"twice-weekly","evidenceNote":"市公式観光サイトの催事入口。外部主催リンクは個票確認が必要。"},
+        {"id":"kuwana-tourism-news","label":"観光サイト新着情報","kind":"tourism","role":"signal","url":"https://www.city.kuwana.lg.jp/kanko/news/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"twice-weekly","evidenceNote":"イベント以外の観光情報も混在する時系列新着。"},
+        {"id":"kuwana-public-relations","label":"広報くわな","kind":"municipality","role":"signal","url":"https://www.city.kuwana.lg.jp/shiseijouhou/kouchoukouhou/kouhou/kouhoukuwana/index.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"月刊広報とバックナンバーの入口。"}
+      ]
+    },
+    {
+      "name": "いなべ市",
+      "region": "北勢",
+      "sources": [
+        {"id":"inabe-event-calendar","label":"イベントカレンダー","kind":"municipality","role":"both","url":"https://www.city.inabe.mie.jp/event_calendar.html?prev=2","format":"HTML calendar","retrievalStatus":"available","suggestedFrequency":"twice-weekly","evidenceNote":"月表示クエリを生成して前後月を確認する必要がある。"},
+        {"id":"inabe-link-magazine","label":"情報誌Link","kind":"municipality","role":"signal","url":"https://www.city.inabe.mie.jp/shisei/koho/link/1015251/index.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"月刊情報誌の全体・ページ別PDF入口。"},
+        {"id":"inabe-tourism-entry","label":"いなべ市の魅力・観光入口","kind":"tourism","role":"signal","url":"https://www.city.inabe.mie.jp/sangyo/kanko/miryoku.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"市観光協会とイベント情報への市公式導線。"}
+      ]
+    },
+    {
+      "name": "木曽岬町",
+      "region": "北勢",
+      "sources": [
+        {"id":"kisosaki-events","label":"イベント","kind":"municipality","role":"both","url":"https://www.town.kisosaki.lg.jp/category/2-4-0-0-0-0-0-0-0-0.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"祭り、募集、教室が同居する公式一覧。"},
+        {"id":"kisosaki-public-relations","label":"広報きそさき","kind":"municipality","role":"signal","url":"https://www.town.kisosaki.lg.jp/category/5-1-7-0-0-0-0-0-0-0.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"最新号と年度別広報PDF。"},
+        {"id":"kisosaki-news","label":"町公式トップ・新着","kind":"municipality","role":"signal","url":"https://www.town.kisosaki.lg.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"カテゴリ取りこぼし監視用の公式トップ。"}
+      ]
+    },
+    {
+      "name": "東員町",
+      "region": "北勢",
+      "sources": [
+        {"id":"toin-events","label":"イベント情報","kind":"municipality","role":"both","url":"https://www.town.toin.lg.jp/event/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"町公式のイベント・参加募集一覧。"},
+        {"id":"toin-public-relations","label":"広報とういん","kind":"municipality","role":"signal","url":"https://www.town.toin.lg.jp/gyosei/koho_kocho/1/index.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"広報最新号とバックナンバー。"},
+        {"id":"toin-news","label":"町公式トップ・新着","kind":"municipality","role":"signal","url":"https://www.town.toin.lg.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"イベント、新着、募集の公式ハブ。"}
+      ]
+    },
+    {
+      "name": "四日市市",
+      "region": "北勢",
+      "sources": [
+        {"id":"yokkaichi-event-calendar","label":"イベントカレンダー","kind":"municipality","role":"both","url":"https://www.city.yokkaichi.lg.jp/www/genre/1487124103404/index.html","format":"HTML calendar","retrievalStatus":"available","suggestedFrequency":"three-times-weekly","evidenceNote":"分類付きで件数の多い市公式主入口。"},
+        {"id":"yokkaichi-public-relations","label":"広報よっかいち","kind":"municipality","role":"signal","url":"https://www.city.yokkaichi.lg.jp/www/genre/1000100000053/index.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"twice-monthly","evidenceNote":"月2回発行。下旬号にイベント・募集を掲載。"},
+        {"id":"yokkaichi-culture","label":"文化振興","kind":"municipality","role":"both","url":"https://www.city.yokkaichi.lg.jp/www/genre/1000100000355/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"市文化課の催事・募集一覧。投稿型外部サイトは発見用途に限定。"}
+      ]
+    },
+    {
+      "name": "菰野町",
+      "region": "北勢",
+      "sources": [
+        {"id":"komono-event-calendar","label":"カレンダーでさがす","kind":"municipality","role":"both","url":"https://www2.town.komono.mie.jp/calendar/","format":"HTML calendar","retrievalStatus":"available","suggestedFrequency":"twice-weekly","evidenceNote":"長期開催と締切間近を表示する町公式カレンダー。"},
+        {"id":"komono-notice-edition","label":"広報こもの おしらせ版","kind":"municipality","role":"both","url":"https://www.town.komono.mie.jp/oshirase/","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"twice-weekly","evidenceNote":"募集・イベント・講座。カレンダーとの重複が多い見込み。"},
+        {"id":"komono-public-relations","label":"広報こもの","kind":"municipality","role":"signal","url":"https://www2.town.komono.mie.jp/site/koho/index-2.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"月刊号一覧。公式ドメインがwwwとwww2へ分散。"}
+      ]
+    },
+    {
+      "name": "朝日町",
+      "region": "北勢",
+      "sources": [
+        {"id":"asahi-event-calendar","label":"イベントカレンダー","kind":"municipality","role":"both","url":"https://www2.town.asahi.mie.jp/www/genre/1000100000036/index.html","format":"HTML calendar","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"図書館行事等を含む町公式カレンダー。"},
+        {"id":"asahi-public-relations","label":"広報・町民課 情報一覧","kind":"municipality","role":"signal","url":"https://www2.town.asahi.mie.jp/www/section/1485152659695/index.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"広報あさひ各号を含む課別更新一覧。"},
+        {"id":"asahi-library-museum","label":"朝日町教育文化施設 お知らせ","kind":"public-facility","role":"both","url":"https://library-museum.town.asahi.mie.jp/osirase/osirase.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"図書館・博物館・児童館の展示、映画会、体験等。"}
+      ]
+    },
+    {
+      "name": "川越町",
+      "region": "北勢",
+      "sources": [
+        {"id":"kawagoe-event-hub","label":"町公式トップのイベント・新着","kind":"municipality","role":"both","url":"https://www.town.kawagoe.mie.jp/","format":"HTML dynamic","retrievalStatus":"partial","suggestedFrequency":"twice-weekly","evidenceNote":"トップ内カレンダー。イベント専用固定URLは未特定。"},
+        {"id":"kawagoe-public-relations","label":"広報かわごえ","kind":"municipality","role":"signal","url":"https://www.town.kawagoe.mie.jp/gyousei/koho/1001974/1004037/index.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"各号の一括PDFと広報カレンダーPDF。"},
+        {"id":"kawagoe-information-program","label":"行政情報番組 情報満載！かわごえ","kind":"municipality","role":"signal","url":"https://www.town.kawagoe.mie.jp/gyousei/koho/1001970/index.html","format":"HTML+video","retrievalStatus":"partial","suggestedFrequency":"twice-monthly","evidenceNote":"外部動画を含む補助入口。個別イベントの一次資料ではない。"}
+      ]
+    },
+    {
+      "name": "鈴鹿市",
+      "region": "北勢",
+      "sources": [
+        {"id":"suzuka-events","label":"イベント情報","kind":"municipality","role":"both","url":"https://www.city.suzuka.lg.jp/bunka/event/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"twice-weekly","evidenceNote":"庁内、市民ギャラリー、公園、スポーツ等へ分岐する総合入口。"},
+        {"id":"suzuka-public-relations","label":"広報すずか","kind":"municipality","role":"signal","url":"https://www.city.suzuka.lg.jp/shisei/kohokocho/1005616/1005623/","format":"HTML+PDF+audio","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"月刊広報PDF・音声・年度別号。"},
+        {"id":"suzuka-archaeology-museum","label":"考古博物館 お知らせ・イベント情報","kind":"public-facility","role":"both","url":"https://www.city.suzuka.lg.jp/kouko/information/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"展示、講演、体験、申込の市公式施設入口。"}
+      ]
+    },
+    {
+      "name": "亀山市",
+      "region": "北勢",
+      "sources": [
+        {"id":"kameyama-event-calendar","label":"亀山のイベントカレンダー","kind":"municipality","role":"both","url":"https://www.city.kameyama.mie.jp/kosodate_yuyu/event-calendar/2025/08/","format":"HTML calendar","retrievalStatus":"available","suggestedFrequency":"twice-weekly","evidenceNote":"年月パス型。対象月URLの生成と存在確認が必要。"},
+        {"id":"kameyama-tourism-news","label":"観光・地域ブランドグループ","kind":"tourism","role":"both","url":"https://www.city.kameyama.mie.jp/soshiki/sankan/shokokanko/kanko/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"twice-weekly","evidenceNote":"市商工観光課のイベント・募集新着。"},
+        {"id":"kameyama-public-relations","label":"広報亀山","kind":"municipality","role":"signal","url":"https://www.city.kameyama.mie.jp/docs/2025120200084/","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"月刊広報号一覧。"}
+      ]
+    },
+    {
+      "name": "津市",
+      "region": "中勢・伊賀",
+      "sources": [
+        {"id":"tsu-event-hub","label":"市公式トップ・イベントカレンダー","kind":"municipality","role":"both","url":"https://www.info.city.tsu.mie.jp/","format":"HTML+JS","retrievalStatus":"partial","suggestedFrequency":"daily","evidenceNote":"新着、イベントカレンダー、広報入口。JS依存でHTML差分だけでは不完全。"},
+        {"id":"tsu-hisai-ars","label":"久居アルスプラザ 公演・イベント","kind":"public-facility","role":"both","url":"https://www.tsuhisai-ars.jp/sitemap/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"公演一覧、カレンダー、情報誌への施設公式入口。"},
+        {"id":"tsu-library-events","label":"津市図書館 イベント情報","kind":"public-facility","role":"both","url":"https://www.library.city.tsu.mie.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"複数館のイベントと子ども向け催事。"}
+      ]
+    },
+    {
+      "name": "松阪市",
+      "region": "中勢・伊賀",
+      "sources": [
+        {"id":"matsusaka-event-calendar","label":"市イベントカレンダー","kind":"municipality","role":"both","url":"https://www.city.matsusaka.mie.jp/calendar/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"カテゴリ、対象、地域、申込有無で検索可能。"},
+        {"id":"matsusaka-public-relations","label":"広報まつさか","kind":"municipality","role":"signal","url":"https://www.city.matsusaka.mie.jp/site/kouhou/list139.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"月刊広報の一覧入口。"},
+        {"id":"matsusaka-tourism","label":"松阪市観光協会","kind":"tourism","role":"both","url":"https://www.matsusaka-kanko.com/","format":"HTML+iframe+PDF","retrievalStatus":"partial","suggestedFrequency":"weekly","evidenceNote":"協会主催情報と季節行事。市カレンダーとの重複に注意。"},
+        {"id":"matsusaka-kuragi-hall","label":"クラギ文化ホール 文化・イベント情報","kind":"public-facility","role":"both","url":"https://www.city.matsusaka.mie.jp/site/kuragi-hall/list27.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"ホールのイベントカレンダーと自主事業。"}
+      ]
+    },
+    {
+      "name": "明和町",
+      "region": "中勢・伊賀",
+      "sources": [
+        {"id":"meiwa-event-hub","label":"町公式トップ・イベント・新着","kind":"municipality","role":"both","url":"https://www.town.meiwa.mie.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"イベントカレンダー、新着、広報入口。"},
+        {"id":"meiwa-saiku-events","label":"斎宮跡・文化観光課 イベント情報","kind":"municipality","role":"both","url":"https://www.town.meiwa.mie.jp/main/soshiki/saikuuato/kankok/event/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"祭礼等の担当課一覧。横断カレンダーではない。"},
+        {"id":"meiwa-public-relations","label":"広報めいわ","kind":"municipality","role":"signal","url":"https://www.town.meiwa.mie.jp/main/soshiki/soumu/soumuk/senryaku01_1/koho_kocho/koho_meiwa/5158.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"月刊広報PDF。"}
+      ]
+    },
+    {
+      "name": "多気町",
+      "region": "中勢・伊賀",
+      "sources": [
+        {"id":"taki-news","label":"町公式トップ・注目情報","kind":"municipality","role":"signal","url":"https://www.town.taki.mie.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"開催・募集系の新着が混在。"},
+        {"id":"taki-tourism-events","label":"商工観光課 観光・イベント","kind":"municipality","role":"both","url":"https://www.town.taki.mie.jp/life/soshiki/shokokanko/kanko_event/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"イベント、体験、観光情報の町公式入口。"},
+        {"id":"taki-public-relations-sample","label":"広報たきPDF（一覧未特定）","kind":"municipality","role":"signal","url":"https://www.town.taki.mie.jp/material/files/group/4/kouhou_TAKI-vol241-low_LAST.pdf","format":"PDF","retrievalStatus":"partial","suggestedFrequency":"monthly-manual","evidenceNote":"町発行PDFは確認済みだが、安定した号一覧URLは未特定。"},
+        {"id":"taki-tourism-association-old-domain","label":"多気町観光協会 旧ドメイン","kind":"tourism","role":"signal","url":"https://takichou-kanko.com/","format":"HTML redirect","retrievalStatus":"blocked","suggestedFrequency":"do-not-poll","evidenceNote":"無関係な外部ドメインへ転送されるため採用不可。"}
+      ]
+    },
+    {
+      "name": "大台町",
+      "region": "中勢・伊賀",
+      "sources": [
+        {"id":"odai-news","label":"町公式トップ","kind":"municipality","role":"signal","url":"https://www.odaitown.jp/","format":"HTML","retrievalStatus":"blocked","suggestedFrequency":"retry-weekly","evidenceNote":"調査時はタイムアウト。イベントなしとは判定しない。"},
+        {"id":"odai-public-relations","label":"広報おおだい","kind":"municipality","role":"signal","url":"https://www.odaitown.jp/soshiki/yakuba/2/3/6/index.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"年度別月刊PDF一覧。"},
+        {"id":"odai-tourism-calendar","label":"大台町観光協会 イベント","kind":"tourism","role":"both","url":"https://web-odai.info/calendar/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"日付付きイベント・キャンペーン一覧。"}
+      ]
+    },
+    {
+      "name": "伊賀市",
+      "region": "中勢・伊賀",
+      "sources": [
+        {"id":"iga-news","label":"市公式トップ・新着","kind":"municipality","role":"signal","url":"https://www.city.iga.lg.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"文化、観光、広報への市公式入口。"},
+        {"id":"iga-public-relations","label":"広報いが","kind":"municipality","role":"signal","url":"https://www.city.iga.lg.jp/category/6-13-4-0-0-0-0-0-0-0.html","format":"HTML+PDF+audio","retrievalStatus":"available","suggestedFrequency":"biweekly","evidenceNote":"PDF版・音声版。月2回発行の時期あり。"},
+        {"id":"iga-guide-calendar","label":"伊賀イド イベントカレンダー","kind":"tourism","role":"both","url":"https://www.iga-guide.com/recommend/event.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"公式観光サイトの月別イベント。"},
+        {"id":"iga-bunto","label":"伊賀市文化都市協会","kind":"public-facility","role":"both","url":"https://www.bunto.com/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"市文化施設の公演、募集、展示一覧。"}
+      ]
+    },
+    {
+      "name": "名張市",
+      "region": "中勢・伊賀",
+      "sources": [
+        {"id":"nabari-event-calendar","label":"市イベントカレンダー","kind":"municipality","role":"both","url":"https://www.city.nabari.lg.jp/220/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"分野別公式カレンダー。空表示は開催なしとみなさない。"},
+        {"id":"nabari-public-relations","label":"PDF版広報なばり","kind":"municipality","role":"signal","url":"https://www.city.nabari.lg.jp/130/120/020/index.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"年別PDF・音声版・特集。"},
+        {"id":"nabari-tourism","label":"名張市観光協会","kind":"tourism","role":"both","url":"https://kankou-nabari.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"協会主催・会員情報が混在するため掲載主体を確認する。"},
+        {"id":"nabari-ads-hall","label":"adsホール・エナジーウィズホール","kind":"public-facility","role":"both","url":"https://www.adshall.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"会場名称変更を同一会場として扱う必要がある。"}
+      ]
+    },
+    {
+      "name": "伊勢市",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"ise-event-calendar","label":"イベント","kind":"municipality","role":"both","url":"https://www.city.ise.mie.jp/event/index.html","format":"HTML+JS","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"イベントカレンダーと一覧の市公式入口。"},
+        {"id":"ise-public-relations","label":"広報いせ","kind":"municipality","role":"signal","url":"https://www.city.ise.mie.jp/shisei/koho_kocho/koho/2026/0701.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"月刊PDFとイベント掲示板。"},
+        {"id":"ise-tourism-events","label":"観光行事・イベント","kind":"tourism","role":"both","url":"https://www.city.ise.mie.jp/kankou/event/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"市公式観光分類。"},
+        {"id":"ise-kanbun","label":"シンフォニアテクノロジー響ホール伊勢","kind":"public-facility","role":"both","url":"https://www.ise-kanbun.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"公演、募集、中止告知の公設文化施設入口。"},
+        {"id":"ise-topia","label":"いせトピア","kind":"public-facility","role":"both","url":"https://www.isetopia.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"生涯学習施設のイベント・講座・新着。"}
+      ]
+    },
+    {
+      "name": "鳥羽市",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"toba-event-calendar","label":"イベントカレンダー","kind":"municipality","role":"both","url":"https://www.city.toba.mie.jp/calendar.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"市公式の月別カレンダー。"},
+        {"id":"toba-news","label":"市公式トップ・新着","kind":"municipality","role":"signal","url":"https://www.city.toba.mie.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"新着確認用の市公式入口。"},
+        {"id":"toba-tourism-events","label":"鳥羽市観光協会 イベント・行事","kind":"tourism","role":"both","url":"https://www.toba.gr.jp/events/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"観光協会のイベント入口。"}
+      ]
+    },
+    {
+      "name": "志摩市",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"shima-event-calendar","label":"イベントカレンダー","kind":"municipality","role":"both","url":"https://www.city.shima.mie.jp/calendar.html","format":"HTML filtered","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"分野、地区、募集締切・終了で絞り込み可能。"},
+        {"id":"shima-public-relations","label":"広報しま","kind":"municipality","role":"signal","url":"https://www.city.shima.mie.jp/kakuka/seisakusuishin/kouhoukoutyouka/kohokocho_paburikkukomento/kouhou/kohoshima/index.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"今月号と年度別PDF。"},
+        {"id":"shima-press-conference","label":"市長定例記者会見・発表資料","kind":"municipality","role":"signal","url":"https://www.city.shima.mie.jp/kakuka/seisakusuishin/kouhoukoutyouka/kohokocho_paburikkukomento/pressrelease/R8_1/9216.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"イベント資料が個別PDFで掲載される補助入口。"},
+        {"id":"shima-tourism-hub","label":"市公式トップ・観光導線","kind":"tourism","role":"signal","url":"https://www.city.shima.mie.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"観光カテゴリと新着への入口。"}
+      ]
+    },
+    {
+      "name": "玉城町",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"tamaki-event-hub","label":"公式トップ・イベント情報","kind":"municipality","role":"both","url":"https://kizuna.town.tamaki.mie.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"近隣自治体情報も混在するため開催地確認が必要。"},
+        {"id":"tamaki-news","label":"お知らせ一覧","kind":"municipality","role":"signal","url":"https://kizuna.town.tamaki.mie.jp/news/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"企画展・体験等を含む新着。"},
+        {"id":"tamaki-public-relations","label":"広報たまき","kind":"municipality","role":"signal","url":"https://kizuna.town.tamaki.mie.jp/chosei/kohokocho/koho/index.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"月別広報PDF。"},
+        {"id":"tamaki-tourism","label":"観光","kind":"tourism","role":"signal","url":"https://kizuna.town.tamaki.mie.jp/bunkasports/kanko/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"町公式観光と観光協会・アスピア玉城への導線。"}
+      ]
+    },
+    {
+      "name": "度会町",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"watarai-tourism-news","label":"観光案内・新着","kind":"tourism","role":"both","url":"https://www.town.watarai.lg.jp/category_list.php?frmCd=2-3-0-0-0","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"町公式観光のイベント・営業情報。"},
+        {"id":"watarai-event-schedule","label":"イベントスケジュール","kind":"tourism","role":"signal","url":"https://www.town.watarai.lg.jp/kanko/event/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"monthly","evidenceNote":"町内行事の年次案内。更新頻度は要観察。"},
+        {"id":"watarai-public-relations","label":"広報度会","kind":"municipality","role":"signal","url":"https://www.town.watarai.lg.jp/contents_detail.php?co=kak&frmId=1388","format":"HTML+PDF","retrievalStatus":"partial","suggestedFrequency":"monthly","evidenceNote":"検索では月刊広報を確認したが直接取得はエラー。"}
+      ]
+    },
+    {
+      "name": "大紀町",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"taiki-tourism-calendar","label":"観光イベントカレンダー","kind":"tourism","role":"both","url":"https://www.town.taiki.mie.jp/soshiki/shokokanko/gyomu/280.html","format":"HTML table","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"年次カレンダー。中止表示も確認。"},
+        {"id":"taiki-tourism-hub","label":"観光情報","kind":"tourism","role":"signal","url":"https://www.town.taiki.mie.jp/kanko_bunka_sports/kanko/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"祭り、朝市、観光協会への公式入口。"},
+        {"id":"taiki-news","label":"公式トップ・新着","kind":"municipality","role":"signal","url":"https://www.town.taiki.mie.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"町公式新着。"},
+        {"id":"taiki-official-social-guidance","label":"公式SNS運用案内","kind":"municipality","role":"signal","url":"https://www.town.taiki.mie.jp/soshiki/somukikaku/gyomu/koho_kocho/koho/572.html","format":"HTML+social","retrievalStatus":"partial","suggestedFrequency":"manual-review","evidenceNote":"SNS利用条件の確認前は自動取得しない。"}
+      ]
+    },
+    {
+      "name": "南伊勢町",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"minamiise-events","label":"町内イベント・まつり情報","kind":"tourism","role":"both","url":"https://www.town.minamiise.lg.jp/admin/shoshiki/kankoushoukou/kankou/asobu/536.html","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"monthly-plus-pre-event","evidenceNote":"年度地区別行事予定。変更・中止の可能性あり。"},
+        {"id":"minamiise-tourism","label":"観光","kind":"tourism","role":"signal","url":"https://www.town.minamiise.lg.jp/admin/kankoujouhou/kankou/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"町公式観光分類とパンフレット導線。"},
+        {"id":"minamiise-news","label":"公式トップ・新着","kind":"municipality","role":"signal","url":"https://www.town.minamiise.lg.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"町公式新着。"}
+      ]
+    },
+    {
+      "name": "紀北町",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"kihoku-tourism-calendar","label":"観光・移住 イベントカレンダー","kind":"tourism","role":"both","url":"https://www.town.mie-kihoku.lg.jp/tourism/","format":"HTML+iframe","retrievalStatus":"partial","suggestedFrequency":"weekly","evidenceNote":"iframe実体URLは次段階で特定が必要。"},
+        {"id":"kihoku-news","label":"公式トップ・新着","kind":"municipality","role":"signal","url":"https://www.town.mie-kihoku.lg.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"町公式トップ。観光ページとの併用が必要。"}
+      ]
+    },
+    {
+      "name": "尾鷲市",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"owase-event-hub","label":"市公式トップ・イベントカレンダー・新着","kind":"municipality","role":"both","url":"https://www.city.owase.lg.jp/index.html","format":"HTML+JS","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"月間カレンダー、新着、RSSへの入口。"},
+        {"id":"owase-tourism-events","label":"観光交流係 イベント","kind":"municipality","role":"both","url":"https://www.city.owase.lg.jp/soshiki/1-13-4-0-0_6.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"観光交流係のイベント一覧。"},
+        {"id":"owase-owatabi","label":"おわたび","kind":"tourism","role":"both","url":"https://www.city.owase.lg.jp/owatabi/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"市商工観光課の観光サイト。"}
+      ]
+    },
+    {
+      "name": "熊野市",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"kumano-event-calendar","label":"イベントカレンダー","kind":"municipality","role":"both","url":"https://www.city.kumano.lg.jp/calendar/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"市公式カレンダー。"},
+        {"id":"kumano-tourism","label":"観光交流","kind":"tourism","role":"both","url":"https://www.city.kumano.lg.jp/tourism/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"市公式観光カテゴリ。"},
+        {"id":"kumano-news","label":"市公式トップ・新着","kind":"municipality","role":"signal","url":"https://www.city.kumano.lg.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"市公式新着。"},
+        {"id":"kumano-tourism-brochures","label":"観光パンフレット","kind":"tourism","role":"signal","url":"https://www.city.kumano.lg.jp/tourism/?content=195","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"quarterly","evidenceNote":"定常観光情報の補助資料。"}
+      ]
+    },
+    {
+      "name": "御浜町",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"mihama-news","label":"公式トップ・新着","kind":"municipality","role":"signal","url":"https://www.town.mihama.mie.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"町公式新着。"},
+        {"id":"mihama-tourism","label":"観光・文化・スポーツ","kind":"tourism","role":"signal","url":"https://www.town.mihama.mie.jp/kanko_bunka_sports/index.html","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"町公式観光入口。"},
+        {"id":"mihama-town-promotion","label":"青を編む","kind":"tourism","role":"signal","url":"https://mihama-mie-townpromotion.jp/visit/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"町公認プロモーション。個別イベントの正本ではない。"},
+        {"id":"mihama-tourism-organization","label":"ツーリズムみはま","kind":"tourism","role":"signal","url":"https://tourismmihama.jp/","format":"HTML dynamic","retrievalStatus":"partial","suggestedFrequency":"manual-review","evidenceNote":"到達可能だがテキスト抽出できず手動確認が必要。"}
+      ]
+    },
+    {
+      "name": "紀宝町",
+      "region": "伊勢志摩・東紀州",
+      "sources": [
+        {"id":"kiho-news","label":"公式トップ・新着","kind":"municipality","role":"both","url":"https://www.town.kiho.lg.jp/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"daily","evidenceNote":"祭り募集、図書館行事等を含む町公式新着。"},
+        {"id":"kiho-tourism-news","label":"観光 新着情報一覧","kind":"tourism","role":"both","url":"https://www.town.kiho.lg.jp/news/news_category/tourism_information/","format":"HTML","retrievalStatus":"available","suggestedFrequency":"weekly","evidenceNote":"町公式観光カテゴリ別新着。"},
+        {"id":"kiho-tourism-guide","label":"紀宝町観光ガイドブック","kind":"tourism","role":"signal","url":"https://www.town.kiho.lg.jp/tourism/sightseeing/kankogaido/","format":"HTML+PDF","retrievalStatus":"available","suggestedFrequency":"quarterly","evidenceNote":"定常観光情報の補助資料。"}
+      ]
+    }
+  ]
+}
