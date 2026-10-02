@@ -701,6 +701,30 @@ main {
   color: #68716d;
 }
 
+.pause-notice {
+  align-items: baseline;
+  border-bottom: 1px solid var(--ink);
+  display: flex;
+  gap: 16px;
+  margin: 0 auto;
+  max-width: 1240px;
+  padding: 12px 28px;
+}
+
+.pause-notice strong {
+  color: var(--rust);
+  flex: 0 0 auto;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+}
+
+.pause-notice p {
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.8;
+  margin: 0;
+}
+
 .kitchen-car-lab {
   border-bottom: 1px solid var(--ink);
   border-top: 2px solid var(--ink);
@@ -1392,6 +1416,14 @@ footer p {
 }
 
 @media (max-width: 620px) {
+  .pause-notice {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px max(12px, env(safe-area-inset-right)) 10px
+      max(12px, env(safe-area-inset-left));
+  }
+
   .site-header {
     background: var(--paper);
     min-height: 64px;

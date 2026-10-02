@@ -411,6 +411,13 @@ export default function EventFinder() {
         </div>
       </header>
 
+      <section className="pause-notice" aria-label="掲載内容について">
+        <strong>掲載について</strong>
+        <p>
+          2026年10月1日時点で確認できた催しを掲載しています。以降の追加は、一次情報で確認できたものから順に行います。
+        </p>
+      </section>
+
       <section className="hero" id="top">
         <div className="hero-copy">
           <p className="eyebrow">祭りも、試合も、音も、展覧会も、三重の予定へ。</p>
