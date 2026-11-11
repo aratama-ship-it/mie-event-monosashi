@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-01",
+  "updatedAt": "2026-11-11",
   "events": [
     {
       "id": "ise-garden-living-restaurant-sep-2026",
@@ -3301,6 +3301,748 @@
         "url": "https://www.city.suzuka.lg.jp/fukushi/kenshin/1015857/1017873.html",
         "verifiedAt": "2026-10-01",
         "nextCheckAt": "2026-11-22"
+      },
+      "childFit": "allowed"
+    },
+    {
+      "id": "vison-food-film-festival-2026-11-13",
+      "startDate": "2026-11-13",
+      "endDate": "2026-11-13",
+      "dates": [
+        "2026-11-13"
+      ],
+      "dateNote": "2026-11-13（11/12分は定員に達し募集終了）",
+      "time": "11:30開始",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "舞台",
+      "title": "食のまち多気 映画祭",
+      "venue": "VISON DOME",
+      "cost": "無料",
+      "audience": "公式に対象の記載なし",
+      "summary": "食にまつわる映画と飲食、監督らのトークを楽しむ映画祭。13日はうどんの実演と実食を予定（12日分は募集終了）。",
+      "tags": [
+        "商業施設"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1375",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-12"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-bar-festival-2026-11",
+      "startDate": "2026-11-12",
+      "endDate": "2026-11-12",
+      "dates": [
+        "2026-11-12"
+      ],
+      "dateNote": "2026-11-12",
+      "time": "18:30～スタート",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "交流",
+      "title": "映画の余韻を楽しむ『バル祭』",
+      "venue": "VISON Casa Urola（カーサ ウローラ）／Zazpi（サスピ）",
+      "cost": "ご飲食は有料となります。",
+      "audience": "公式に対象の記載なし",
+      "summary": "サンセバスチャン通りの2店を巡り、新作ピンチョスやワインを楽しむ夜の催し。映画祭に参加しない人も利用できる。",
+      "tags": [
+        "商業施設"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1376",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-11"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-mirin-snack-2026-11",
+      "startDate": "2026-11-21",
+      "endDate": "2026-11-23",
+      "dates": [
+        "2026-11-21",
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "dateNote": "2026-11-21・2026-11-22・2026-11-23（終了した日程は除外）",
+      "time": "21・22日10時／17時、23日10時",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "さつまいもとりんごのみりんを使った【おやつ】の会",
+      "venue": "VISON 美醂 VIRIN de ISE",
+      "cost": "1,200円/人（試食あり）／※店頭にて現地決済",
+      "audience": "公式に対象の記載なし",
+      "summary": "みりんを使ったさつまいもペーストとりんご煮から、おやつを作って試食する少人数の会。残る開催日は11月21〜23日。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1367",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-sansanichi-2026-11",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "dates": [
+        "2026-11-15"
+      ],
+      "dateNote": "2026-11-15",
+      "time": "9:00〜",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "交流",
+      "title": "【11/15(日)開催】燦燦市",
+      "venue": "VISON 和ヴィソン",
+      "cost": "入場料金は公式に記載なし（企画・商品ごとに有料）",
+      "audience": "公式に対象の記載なし",
+      "summary": "和ヴィソンの朝市に海産物や農産物が集まる。生まぐろの解体ショーや柿の企画も予定され、内容と時刻は更新される。",
+      "tags": [
+        "商業施設"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1065",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-14"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-bread-marche-2026-11",
+      "startDate": "2026-11-22",
+      "endDate": "2026-11-23",
+      "dates": [
+        "2026-11-22",
+        "2026-11-23"
+      ],
+      "dateNote": "2026-11-22・2026-11-23",
+      "time": "11:00～15:00",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "交流",
+      "title": "パンマルシェ in VISON",
+      "venue": "VISON DOME",
+      "cost": "公式に料金の記載なし",
+      "audience": "公式に対象の記載なし",
+      "summary": "VISON DOMEに三重県内のパン店などが集まる2日間のマルシェ。出店者は日によって異なり、各日11〜15時に開催。",
+      "tags": [
+        "商業施設"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1366",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-ise-tea-class-2026-11",
+      "startDate": "2026-11-15",
+      "endDate": "2026-11-15",
+      "dates": [
+        "2026-11-15"
+      ],
+      "dateNote": "2026-11-15（終了した日程は除外）",
+      "time": "13時／14時／15時（各30〜45分）",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "【伊勢茶フェス】美味しいお茶の淹れ方講座",
+      "venue": "VISON クリンスイハウス",
+      "cost": "無料",
+      "audience": "公式に対象の記載なし",
+      "summary": "日本茶の講師から淹れ方のコツを学び、2種類の伊勢茶を飲み比べる講座。11月15日は3回開催、当日10時から整理券。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=637",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-14"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-ise-tea-festival-2026-11",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "dates": [
+        "2026-11-14"
+      ],
+      "dateNote": "2026-11-14",
+      "time": "10:00~16:00",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "交流",
+      "title": "伊勢茶まつり",
+      "venue": "VISON DOME(和ヴィソン内)",
+      "cost": "無料",
+      "audience": "公式に対象の記載なし",
+      "summary": "関西茶業振興大会に合わせた伊勢茶の催し。VISON DOMEでお茶の販売や焙じ体験を行い、三重の茶文化に触れられる。",
+      "tags": [
+        "商業施設"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1374",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-13"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-kasahara-talk-2026-12",
+      "startDate": "2026-12-13",
+      "endDate": "2026-12-13",
+      "dates": [
+        "2026-12-13"
+      ],
+      "dateNote": "2026-12-13",
+      "time": "10：30 受付開始",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "笠原将弘マスター「旅」×「食」1日限りの「スペシャルトークショー」＆お食事会",
+      "venue": "VISON DOME",
+      "cost": "公式に料金の記載なし",
+      "audience": "公式に対象の記載なし",
+      "summary": "笠原将弘氏の料理トークと、本人考案の松花堂弁当を楽しむ食事会。現地集合とバスツアーのプランがあり、事前申込制。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1357",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-okuda-farm-lunch-2026-12",
+      "startDate": "2026-12-19",
+      "endDate": "2026-12-19",
+      "dates": [
+        "2026-12-19"
+      ],
+      "dateNote": "2026-12-19",
+      "time": "11:00～13:30",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "奥田政行シェフ 農園ツアー＆ランチ",
+      "venue": "VISON NOUNIYELL",
+      "cost": "11,000円（1名）",
+      "audience": "公式に対象の記載なし",
+      "summary": "奥田政行シェフと農園を回って野菜を収穫し、持続可能性をテーマにした話と食事を楽しむ会。予約は12月18日締切。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1358",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-world-cuisine-congress-2027-04",
+      "startDate": "2027-04-13",
+      "endDate": "2027-04-13",
+      "dates": [
+        "2027-04-13"
+      ],
+      "dateNote": "2027-04-13",
+      "time": "公式に時刻の記載なし",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "第4回世界料理学会 in VISON 開催決定！",
+      "venue": "VISON DOME",
+      "cost": "公式に料金の記載なし",
+      "audience": "公式に対象の記載なし",
+      "summary": "各地の料理人が食文化や料理への考えを語り合う学会。一般の食に関心がある人も参加でき、交流パーティも開催予定。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1343",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-wildflower-vase-2026-11",
+      "startDate": "2026-11-29",
+      "endDate": "2026-11-29",
+      "dates": [
+        "2026-11-29"
+      ],
+      "dateNote": "2026-11-29（終了した日程は除外）",
+      "time": "10:45-11:45／13:15-14:15",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "【カンタン木工】木目が美しい「野の花一輪挿しづくり」",
+      "venue": "VISON kiond",
+      "cost": "2,000円（税込）／1作品",
+      "audience": "公式に対象の記載なし",
+      "summary": "木のかけらを選び、紙やすりで整えて一輪挿しを作る木工体験。透明な筒の加工やオイル仕上げも行い、次回は11月29日。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1298",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-cutting-board-2026-11",
+      "startDate": "2026-11-22",
+      "endDate": "2026-12-20",
+      "dates": [
+        "2026-11-22",
+        "2026-12-20"
+      ],
+      "dateNote": "2026-11-22・2026-12-20（終了した日程は除外）",
+      "time": "開始時刻は予約ページで確認",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "【お洒落キッチンアイテム】好みの樹種で作るカッティングボード作り",
+      "venue": "VISON kiond",
+      "cost": "3,600円（税込）／1作品",
+      "audience": "公式に対象の記載なし",
+      "summary": "好みの木材を選び、木工機械を使ってカッティングボードを制作する。スタッフの案内があり、11月と12月に開催日が残る。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1296",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-dessert-spoon-2026-11",
+      "startDate": "2026-11-29",
+      "endDate": "2026-12-27",
+      "dates": [
+        "2026-11-29",
+        "2026-12-06",
+        "2026-12-27"
+      ],
+      "dateNote": "2026-11-29・2026-12-06・2026-12-27（終了した日程は除外）",
+      "time": "開始時刻は予約ページで確認",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "【お気軽木工体験】 広葉樹で作るデザートスプーン作り",
+      "venue": "VISON kiond",
+      "cost": "2,600円（税込）／1作品",
+      "audience": "公式に対象の記載なし",
+      "summary": "広葉樹のキットを選び、形を整えてオイルで仕上げるデザートスプーン作り。木の特徴を学びながら、自分の一本を制作する。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1297",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-hinoki-chopsticks-2026-11",
+      "startDate": "2026-11-23",
+      "endDate": "2026-12-13",
+      "dates": [
+        "2026-11-23",
+        "2026-12-13"
+      ],
+      "dateNote": "2026-11-23・2026-12-13（終了した日程は除外）",
+      "time": "開始時刻は予約ページで確認",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "贅沢ヒノキの手作り箸体験",
+      "venue": "VISON kiond",
+      "cost": "3,000円（税込）／1名",
+      "audience": "【対象年齢】4歳～（12歳未満の方は保護者同伴）",
+      "summary": "ヒノキの材料を鉋で削り、自分に合う長さや太さの箸を作る体験。4歳から参加でき、12歳未満は保護者同伴となる。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1355",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "conditional"
+    },
+    {
+      "id": "vison-chainsaw-competition-2026-11",
+      "startDate": "2026-11-14",
+      "endDate": "2026-11-14",
+      "dates": [
+        "2026-11-14"
+      ],
+      "dateNote": "2026-11-14（荒天時11/15へ順延）",
+      "time": "10:00～16:00（予定）",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "交流",
+      "title": "第12回みえチェーンソー技術競技大会　in VISON",
+      "venue": "VISON kiond木育広場",
+      "cost": "公式に料金の記載なし",
+      "audience": "公式に対象の記載なし",
+      "summary": "林業のプロがチェーンソーの安全性や正確さ、速さを競う大会を観戦する。一般向けの解説があり、荒天時は翌日に順延。",
+      "tags": [
+        "商業施設",
+        "日程変更注意"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=571",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-13"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-kumiko-coaster-2026-11",
+      "startDate": "2026-11-15",
+      "endDate": "2026-12-30",
+      "dates": [
+        "2026-11-15",
+        "2026-12-30"
+      ],
+      "dateNote": "2026-11-15・2026-12-30",
+      "time": "開始時刻は予約ページで確認",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "【伝統工芸体験】組子細工でコースター作り",
+      "venue": "VISON kiond",
+      "cost": "3,500円（税込）／1作品",
+      "audience": "公式に対象の記載なし",
+      "summary": "ねじり組子と千鳥柄の2種類から選び、木の部材を組んでコースターを作る。伝統工芸に触れる体験を11月と12月に開催。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1353",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-14"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-animal-adoption-consultation-2026-11",
+      "startDate": "2026-11-23",
+      "endDate": "2026-11-23",
+      "dates": [
+        "2026-11-23"
+      ],
+      "dateNote": "2026-11-23（荒天中止・悪天候予報時11/21へ前倒し）",
+      "time": "11:00~13:00",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "交流",
+      "title": "【ani TERRACE】譲渡相談会  11/23（月・祝）",
+      "venue": "VISON Mariage de Farine 前",
+      "cost": "【ご予約・参加費不要】",
+      "audience": "公式に対象の記載なし",
+      "summary": "保護犬や保護猫を家族に迎えるための相談会。予約・参加費は不要で、動物とのふれあいも可能。当日の譲渡持ち帰りは不可。",
+      "tags": [
+        "商業施設",
+        "日程変更注意"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1381",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-chainsaw-sheep-2026-12",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-05",
+      "dates": [
+        "2026-12-05"
+      ],
+      "dateNote": "2026-12-05",
+      "time": "10:00-12:30／14:00-16:30",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "学び",
+      "title": "【チェーンソーで作る　干支　ひつじ】 新しい年に、手づくりの福を。干支のチェーンソーアート体験！",
+      "venue": "VISON kiond",
+      "cost": "7,800円（税込）／1作品",
+      "audience": "公式に対象の記載なし",
+      "summary": "講師のサポートを受け、チェーンソーで木からひつじの干支飾りを彫る体験。午前と午後に各1回、予約サイトで受け付ける。",
+      "tags": [
+        "商業施設",
+        "体験"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1379",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-dog-yoga-2026-12",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-06",
+      "dates": [
+        "2026-12-05",
+        "2026-12-06"
+      ],
+      "dateNote": "2026-12-05・2026-12-06",
+      "time": "各日11:00／14:00（各約1時間）",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "交流",
+      "title": "【ani TERRACE】『大自然の中 愛犬と絆を深めるドッグヨガ - vol.6冬編』開催！",
+      "venue": "VISON ani TERRACE ドッグラン大型犬エリア",
+      "cost": "1組様（1家族）あたり1,500円／※1名または1頭追加ごとに、500円を追加させていただきます。",
+      "audience": "公式に対象の記載なし",
+      "summary": "ドッグランで愛犬と一緒にヨガを楽しむ催し。犬の同伴が難しい人も参加でき、各日2回開催。撮影データは希望者に提供。",
+      "tags": [
+        "商業施設"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1380",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
+      },
+      "childFit": "unknown"
+    },
+    {
+      "id": "vison-nordic-christmas-concert-2026-12",
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-12",
+      "dates": [
+        "2026-12-12"
+      ],
+      "dateNote": "2026-12-12",
+      "time": "15:30開演（14:30開場）",
+      "region": "中勢",
+      "municipality": "多気町",
+      "category": "音楽",
+      "title": "VISON 北欧の森クリスマスコンサート2026",
+      "venue": "VISON kiond店内",
+      "cost": "【前売・予約料金】／大人　3,500円 1ドリンク付／小中高生　2,000円1ドリンク付／【当日料金】／前売・予約料金に＋500円／※HOTEL VISONにご宿泊のお客様は特別料金(前売価格)にてご提供(席数限定)。",
+      "audience": "小中高生の料金区分あり。未就学児の可否は公式に記載なし",
+      "summary": "北欧音楽のカンランとロリグが出演するコンサート。入場者向けの北欧マーケットを同会場で開き、木工体験も併催する。",
+      "tags": [
+        "商業施設"
+      ],
+      "facilities": [
+        {
+          "name": "VISON",
+          "type": "commercial_resort"
+        }
+      ],
+      "status": "published",
+      "source": {
+        "kind": "primary",
+        "label": "VISON公式イベント詳細",
+        "url": "https://vison.jp/eventcalendar/detail.php?id=1346",
+        "verifiedAt": "2026-11-11",
+        "nextCheckAt": "2026-11-18"
       },
       "childFit": "allowed"
     }
