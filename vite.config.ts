@@ -1,5 +1,5 @@
 import vinext from "vinext";
-import { defineConfig } from "vite";
+import { defineConfig, type UserConfig } from "vite";
 
 // macOS Seatbelt blocks FSEvents, so Codex previews need polling for HMR.
 const isCodexSeatbeltSandbox = process.env.CODEX_SANDBOX === "seatbelt";
@@ -14,7 +14,7 @@ const localBindingConfig = {
   r2_buckets: [],
 };
 
-export default defineConfig(async () => {
+export default defineConfig(async (): Promise<UserConfig> => {
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
   // settings; application environment belongs in ignored `.env*` files.
   process.env.WRANGLER_WRITE_LOGS ??= "false";
@@ -31,7 +31,16 @@ export default defineConfig(async () => {
   // the build by scripts/apply-base-path.mjs; links in our own markup go through
   // app/site-path.ts.
   if (process.env.STATIC_EXPORT === "1") {
-    return { plugins: [vinext()] };
+    return {
+      plugins: [vinext()],
+      experimental: {
+        renderBuiltUrl(_filename, { hostType, ssr }) {
+          // Resolve client preloads relative to the importing JS module. The
+          // RSC manifest keeps the URLs used for prerendering at the root.
+          if (hostType === "js" && !ssr) return { relative: true };
+        },
+      },
+    };
   }
 
   // Wrangler snapshots its log path while the Cloudflare plugin is imported.

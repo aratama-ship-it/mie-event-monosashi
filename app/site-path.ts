@@ -6,7 +6,8 @@
  * fails to prerender routes when `basePath` is set (`RSC handler returned 404`),
  * and prerendering is the whole point of the static build. So instead:
  *
- *   - asset URLs (JS, CSS, fonts) come from Vite's `base`, set in vite.config.ts
+ *   - scripts/apply-base-path.mjs prefixes asset URLs in the static export
+ *   - vite.config.ts makes dynamic-import preloads relative to the JS module
  *   - links and files referenced from our own markup go through `sitePath()`
  *
  * SITE_BASE_PATH is empty for the Cloudflare Workers build and for local dev,
